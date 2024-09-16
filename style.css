@@ -830,3 +830,12 @@ h3.my-profession
         max-width: 100%;
     }
 }
+@media (max-width: 410px) {
+    .about .about-content .personal-info {
+        flex-direction: column;
+    }
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
