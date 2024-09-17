@@ -28,6 +28,8 @@ body
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--skin-color) var(--bg-black-100);
 }
 ::before, ::after
 {
@@ -148,10 +150,60 @@ ul
     border: none;
     background: var(--skin-color);
     transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
 }
-.btn:hover
-{
-    transform: scale(1.05);
+.btn i {
+    transition: transform 0.3s ease;
+}
+b{
+    margin-right: 10px;
+}
+/* hire me icon effect */
+.arrow-container {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 15px; 
+    overflow: hidden;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    margin-top: -3px; /*Move the icon container slightly up*/
+}
+.arrowone {
+    transition: transform 0.3s ease;
+}
+.arrowtwo {
+    position: absolute;
+    bottom: -15px; 
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.btn:hover .arrowone {
+    transform: translateY(-20px); 
+}
+.btn:hover .arrowtwo {
+    transform: translateY(-15px);
+}
+/* download icon effect */
+.downloadtwo {
+    position: absolute;
+    bottom: 20px; 
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.btn:hover .downloadtwo {
+    transform: translateY(20px); 
+}
+.btn:hover .downloadone {
+    transform: translateY(20px);
+}
+.icon-box {
+    position: relative;
+    display: inline-block;
+    width: 30px; 
+    height: 20px;
+    overflow: hidden;
 }
 .shadow-dark
 {
