@@ -178,44 +178,17 @@ ul
 {
     position: absolute;
     top: 50px;
-    font-size: 30px;
-    text-transform: capitalize;
 }
 .aside .logo a
 {
-    color: var(--text-black-900) ;
-    font-weight: 700;
-    padding: 15px 20px;
-    font-size: 30px;
-    letter-spacing: 5px;
+    display: inline-block;
     position: relative;
 }
-.aside .logo a span
-{
-    font-family: 'clicker Script', cursive;
-    font-size: 40px;
-}
-.aside .logo a::before
-{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height:  20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-    bottom: 0;
-    left: 0;
-}
-.aside .logo a::after
-{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height:  20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
-    top: 0;
-    right: 0;
+.aside .logo a img {
+    width: 100px; 
+    height: 100px;
+    display: block;
+    margin: 0 auto;
 }
 .aside .nav-toggler
 {
@@ -342,38 +315,24 @@ h3.my-profession
 }
 .home .home-img
 {
+    padding: 40px; 
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
-}
-.home-img::after
-{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
-}
-.home-img::before
-{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
+    overflow: hidden;
 }
 .home .home-img img
 {
     margin: auto;
-    border-radius: 5px;
-    height: 400px;
+    border-radius: 20px;
+    height: auto;
+    width: 75%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease; 
+}
+.home .home-img img:hover{
+    box-shadow: 0 0 20px 10px var(--skin-color);
 }
 /* About */
 .about .about-content
