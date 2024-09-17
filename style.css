@@ -769,6 +769,9 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
+button:hover{
+    transform: scale(1.05);
+}
 @media (max-width: 1199px)
 {
     .section .container
