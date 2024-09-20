@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="assets/css/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap" rel="stylesheet">
     <!-- Style Switcher -->
     <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
@@ -49,19 +53,15 @@
         <!-- Main Content Start -->
         <div class="main-content">
             <!-- Home Section Start -->
-            <section class="home active section" id="home">
+            <section class="home active section" id="home">                          
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Rasha Alsaleh</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">Full-stack Developer</span></h3>
-                            <p>I'm a Software Engineer from Amman, Jordan.</p>
-                            <a href="assets/resume/Rasha Khalid.docx" class="btn"><b>Download CV</b>
-                                <span class="icon-box">
-                                    <i class="fa-solid fa-download downloadone"></i>
-                                    <i class="fa-solid fa-download downloadtwo"></i>
-                                </span>
-                            </a>
+                            <h3 class="hello">Hello, I'm <span class="name">Rasha Alsaleh</span></h3>
+                            <h3 class="my-profession">A <span class="typing">Full-stack Developer</span></h3>
+                            <p>I'm a Software Engineering Student from Amman, Jordan</p>
+                            <br><br>
+                            <a href="assets/resume/Rasha Khalid.docx" class="btn"><b>Download CV</b></a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="assets/img/pic.jpg" alt="Profile Picture">
@@ -111,16 +111,16 @@
                                             <p>Age : <span>19</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>LinkedIn : <span><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" style="color: inherit; text-decoration: none;">Rasha Alsaleh</a></span></p>
+                                            <p>LinkedIn : <span><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha Alsaleh</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Email : <span><a href="mailto:info@rashaalsaleh.com" target="_blank" style="color: inherit; text-decoration: none;">info@rashaalsaleh.com</a></span></p>
+                                            <p>Email : <span><a href="mailto:info@rashaalsaleh.com" target="_blank" class="link">info@rashaalsaleh.com</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Degree : <span>Software Engineering</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Phone : <span><a href="tel:+962-78-127-7089" style="color: inherit; text-decoration: none;">+962 781277089</a></span></p>
+                                            <p>Phone : <span><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>City : <span>Amman</span></p>
@@ -213,7 +213,20 @@
                                                         strategies.
                                                     </p>
                                                 </div>
-
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> in-progress
+                                                    </h3>
+                                                    <h4 class="timeline-title">Certificate</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -389,7 +402,7 @@
                     </div>
                     <div class="row">
                         <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects : </h2>
+                            <h2 style="display: none;">My Last Projects : </h2>
                         </div>
                     </div>
                     <div class="row">
@@ -406,7 +419,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="progress.jpg" alt="project2" />
+                                    <img src="assets/img/progress.jpg" alt="project2" />
                                 </div>
                             </div>
                         </div>
@@ -415,7 +428,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="progress.jpg" alt="project3" />
+                                    <img src="assets/img/progress.jpg" alt="project3" />
                                 </div>
                             </div>
                         </div>
@@ -424,7 +437,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="progress.jpg" alt="project4" />
+                                    <img src="assets/img/progress.jpg" alt="project4" />
                                 </div>
                             </div>
                         </div>
@@ -433,7 +446,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="progress.jpg" alt="project5" />
+                                    <img src="assets/img/progress.jpg" alt="project5" />
                                 </div>
                             </div>
                         </div>
@@ -442,7 +455,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="progress.jpg" alt="project6" />
+                                    <img src="assets/img/progress.jpg" alt="project6" />
                                 </div>
                             </div>
                         </div>
@@ -459,35 +472,35 @@
                             <h2>Contact Me</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+                    <h3 class="contact-title padd-15">Do you have any questions ?</h3>
                     <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
                     <div class="row">
                         <!-- Contact info item start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h4>Call Me On</h4>
-                            <p>+962 781277089</p>
+                            <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                             <h4>Location</h4>
-                            <p>Amman</p>
+                            <p><a href="#" class="link">Amman</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>Email</h4>
-                            <p>info@rashaalsaleh.com</p>
+                            <p><a href="mailto:info@rashaalsaleh.com" target="_blank" class="link">info@rashaalsaleh.com</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <p>www.domain.com</p>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha Alsaleh</a></p>
                         </div>
                         <!-- Contact info item end -->
                     </div>
@@ -564,5 +577,4 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/style-switcher.js"></script>
 </body>
-
 </html>
