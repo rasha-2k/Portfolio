@@ -1,6 +1,6 @@
 /* typing animation */
 var typed = new Typed(".typing",{
-    strings: ["Software Engineer", "Backend Developer", "Programmer", "QA Tester", "UI/UX designer", "Problem Solver"],
+    strings: ["Software Engineer", "QA Tester", "UI/UX designer", "Backend Developer", "Problem Solver"],
     typeSpeed: 100,
     BackSpeed:60,
     loop:true
@@ -90,3 +90,11 @@ const nav = document.querySelector('.nav'),
             allSection[i].classList.toggle("open");
         }
     }
+    // Add click event listener to the logo
+    document.querySelector('.logo a').addEventListener('click', function(event) {
+        event.preventDefault();
+        const target = this.getAttribute("href").split("#")[1];
+        showSection(this);
+        updateNav(this);
+        removeBackSection(); 
+    });
