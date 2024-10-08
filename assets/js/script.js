@@ -98,3 +98,21 @@ const nav = document.querySelector('.nav'),
         updateNav(this);
         removeBackSection(); 
     });
+/*about tabs*/
+    document.querySelectorAll('.tab-item').forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Remove 'active' class from all tabs and contents
+        document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('outer-shadow'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+        // Add 'active' class to the clicked tab
+        tab.classList.add('active');
+        tab.classList.add('outer-shadow');
+
+        // Show the corresponding content
+        const target = tab.getAttribute('data-target');
+        document.querySelector(target).classList.add('active');
+    });
+});
+
