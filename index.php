@@ -1,3 +1,14 @@
+
+<?php
+session_start();
+
+function generateCSRFToken() {
+    if (!isset($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));  
+    }
+    return $_SESSION['csrf_token'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +38,17 @@
     <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="assets/css/style-switcher.css">
     <!-- upload icon -->
-    <link rel="icon" href="assets/img/icon black.png" type="image/png">
+ 
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/icon black.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/icon black.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/icon black.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/icon black.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/icon black.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/icon black.png"> 
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/icon black.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/icon black.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/icon black.png">
+    <link rel="icon" href="./assets/img/icon black.png" type="image/png">
 </head>
 
 <body>
@@ -205,8 +226,8 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> October 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">NASA Space Apps Challenge - Creativity
-                                                        Award</h4>
+                                                    <h4 class="timeline-title"><a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">NASA Space Apps Challenge - Creativity
+                                                        Award</a></h4>
                                                     <p class="timeline-text">Awarded the 'Creativity Award' for
                                                         designing a 3D interactive game, <b
                                                             style="color: var(--skin-color);">The Planetary
@@ -229,7 +250,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> May 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">2nd Place | AAU-XDT 2024</h4>
+                                                    <h4 class="timeline-title"><a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">2nd Place | AAU-XDT 2024</a></h4>
                                                     <p class="timeline-text">A UI/UX competition for 3rd and 4th-year
                                                         students, where teams were tasked with designing a prototype for
                                                         an e-learning management system.
@@ -244,7 +265,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> Jan 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">3rd Place | 3Minutes Competition</h4>
+                                                    <h4 class="timeline-title"><a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3rd Place | 3Minutes Competition</a></h4>
                                                     <p class="timeline-text">This competition challenged participants to
                                                         convince judges of their project idea in just 3 minutes.
                                                         Our project, UniBus, aimed to streamline transportation for
@@ -278,7 +299,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> May 2023
                                                     </h3>
-                                                    <h4 class="timeline-title">4th Place | AAU-PC 2023</h4>
+                                                    <h4 class="timeline-title"><a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">First Team To Solve | AAU-PC 2023</a></h4>
                                                     <p class="timeline-text">
                                                         A problem-solving competition held annually in May, designed to
                                                         simulate JCPC and ICPC contests.
@@ -319,7 +340,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> August 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">PMI-ACP Exam Prep Course</h4>
+                                                    <h4 class="timeline-title"><a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP Exam Prep Course</a></h4>
                                                     <p class="timeline-text">Completed the PMI-ACP Exam Prep Course on
                                                         Udemy,
                                                         covering the 7 domains outlined in the PMI-ACP exam content.
@@ -518,7 +539,7 @@
                     <div class="row">
                         <!-- Contact info item start -->
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <div class="icon"><i class="fab fa-whatsapp"></i></div>
                             <h4>Call Me On</h4>
                             <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
                         </div>
@@ -540,7 +561,7 @@
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <div class="icon"><i class="fab fa-linkedin"></i></div>
                             <h4>LinkedIn</h4>
                             <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha
                                     Alsaleh</a></p>
@@ -552,38 +573,41 @@
                     <!-- Contact Form -->
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <form action="#" method="POST">
+                            <form action="mail/contact" method="POST">
+                                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name">
+                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="Email">
+                                            <input type="email" name="email" class="form-control" placeholder="Email" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" name="subject" class="form-control"
-                                                placeholder="Subject">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id=""
-                                                placeholder="Message"></textarea>
+                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="control-group" style="color: white;">
+                                    <input type="checkbox" id="agreeCheckbox" onchange="startCountdown()" required> I agree to the terms and conditions
+                                </div>
+                                <div id="countdown" style="color: white; display: none; font-weight: bold;"></div> <!-- Countdown message -->
                                 <div class="row">
                                     <div class="buttons col-12 padd-15">
-                                        <button type="submit" class="btn"><b>Send Message</b></button>
+                                        <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
                                     </div>
                                 </div>
                             </form>
@@ -620,6 +644,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/style-switcher.js"></script>
+<script>
+    function startCountdown() {
+        var agreeCheckbox = document.getElementById("agreeCheckbox");
+        var countdown = document.getElementById("countdown");
+        var button = document.getElementById("sendMessageButton");
+
+        if (agreeCheckbox.checked) {
+            countdown.style.display = "block";
+            var count = 3;
+            button.disabled = true; // Disable the button initially
+            var interval = setInterval(function () {
+                countdown.textContent = "You can submit the email after " + count + "s";
+                count--;
+                if (count < 0) {
+                    clearInterval(interval);
+                    countdown.textContent = "You can submit right now!";
+                    button.disabled = false; // Enable the button after countdown
+                }
+            }, 1000);
+        } else {
+            countdown.style.display = "none";
+            countdown.textContent = "";
+            button.disabled = true; // Disable the button if unchecked
+        }
+    }
+</script>
+
+        
 </body>
 
 </html>

@@ -797,7 +797,7 @@ h3.my-profession
 {
     display: inline-block;
 }
-.contact .contact-info-item .icon .fa
+.contact .contact-info-item .icon .fa, .contact .contact-info-item .icon .fab
 {
     font-size: 25px;
     color: var(--skin-color);
@@ -900,16 +900,6 @@ button:hover, .btn:hover
     {
         display: block;
         margin-left: 0;
-    }
-}
-@media (max-width: 991px)
-{
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item
-    {
-        flex: 0 0 50%;
-        max-width: 50%;
     }
 }
 @media (max-width: 660px) {
