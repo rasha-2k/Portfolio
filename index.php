@@ -27,7 +27,8 @@ function generateCSRFToken() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap"
         rel="stylesheet">
     <!-- Style Switcher -->
@@ -38,7 +39,6 @@ function generateCSRFToken() {
     <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="assets/css/style-switcher.css">
     <!-- upload icon -->
- 
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/icon black.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/icon black.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/icon black.png">
@@ -80,9 +80,26 @@ function generateCSRFToken() {
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, I'm <span class="name">Rasha Alsaleh</span></h3>
                             <h3 class="my-profession">A <span class="typing">Full-stack Developer</span></h3>
-                            <p>I'm a Software Engineering Student from Amman, Jordan</p>
-                            <br><br>
-                            <a href="assets/resume/Rasha Alsaleh.docx" class="btn"><b>Download CV</b></a>
+                            <div class="cv-button">
+                                <div class="social-buttons">
+                                        <a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+                                            <span class="social-button__inner">
+                                            <i class="fab fa-linkedin-in"></i>
+                                            </span>
+                                        </a>
+                                        <a href="https://github.com/rasha-2k" target="_blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+                                            <span class="social-button__inner">
+                                            <i class="fab fa-github"></i>
+                                            </span>
+                                        </a>
+                                        <a href="https://www.instagram.com/rasha2k_/" target="_blank" class="social-buttons__button social-button social-button--instagram" aria-label="InstaGram">
+                                            <span class="social-button__inner">
+                                            <i class="fab fa-instagram"></i>
+                                            </span>
+                                        </a>
+                                </div>
+                                <a href="assets/resume/Rasha Alsaleh.docx" class="btn"><b>Download CV</b></a>
+                            </div>
                         </div>
                         <div class="home-img padd-15">
                             <img src="assets/img/pic.jpg" alt="Profile Picture">
@@ -105,23 +122,16 @@ function generateCSRFToken() {
                                     <div class="about-text padd-15">
                                         <h3>I'm Rasha Alsaleh and <span>Software Engineer</span></h3>
                                         <p style="text-align: justify;">
-                                            I am a passionate and driven software engineering student at Amman Arab
-                                            University,
-                                            currently in my third year. My journey in the tech world is fueled by a love
-                                            for
-                                            problem-solving,
-                                            creativity, and continuous learning. I have actively participated in various
-                                            competitions,
-                                            earning accolades for my innovative ideas and technical skills. My focus is
-                                            on
-                                            mobile app development,
-                                            where I am exploring cross-platform solutions using Flutter. Additionally,
-                                            I have a strong foundation in C++, Java, and C# with .NET.<br>
-                                            I am constantly seeking new challenges that will push me to grow as a
-                                            developer
-                                            and a problem solver.
-                                            My goal is to contribute to impactful projects that improve people’s lives
-                                            through technology.
+                                            I am a passionate third-year software engineering student at Amman Arab University, 
+                                            dedicated to exploring a wide range of technologies, 
+                                            from software testing and quality assurance to game development and mobile app design. 
+                                            With hands-on experience in the Unity framework and a solid foundation in C++, Java, and C# with .NET, 
+                                            I bring both technical expertise and creativity to my projects. 
+                                            My journey in tech is fueled by a love for problem-solving and continuous learning, 
+                                            and I’ve earned recognition in various competitions for my innovative ideas and technical skills.
+                                            <br>
+                                            I'm always looking for new challenges that allow me to grow as a developer and contribute 
+                                            to impactful projects that use technology to make a positive difference.
                                         </p>
                                     </div>
                                 </div>
@@ -194,8 +204,8 @@ function generateCSRFToken() {
                                             <div class="skill-item padd-15">
                                                 <h5>C#</h5>
                                                 <div class="progress">
-                                                    <div class="progress-in" style="width: 48%;"></div>
-                                                    <div class="skill-percent">48%</div>
+                                                    <div class="progress-in" style="width: 66%;"></div>
+                                                    <div class="skill-percent">66%</div>
                                                 </div>
                                             </div>
                                             <div class="skill-item padd-15">
@@ -226,11 +236,11 @@ function generateCSRFToken() {
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> October 2024
                                                     </h3>
-                                                    <h4 class="timeline-title"><a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">NASA Space Apps Challenge - Creativity
-                                                        Award</a></h4>
+                                                    <h4 class="timeline-title">
+                                                        <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">Creativity Award | NASA Space Apps Challenge</a>
+                                                    </h4>
                                                     <p class="timeline-text">Awarded the 'Creativity Award' for
-                                                        designing a 3D interactive game, <b
-                                                            style="color: var(--skin-color);">The Planetary
+                                                        designing a 3D interactive game, <b>The Planetary
                                                             Explorer</b>using the Unity engine.
                                                         Targeted at elementary to high school students, the game
                                                         combines engaging gameplay with educational content about
@@ -501,7 +511,7 @@ function generateCSRFToken() {
                                         <div class="project_content">
                                             <span class="subtitle">3D Game</span>
                                             <h3 class="title">
-                                                <a href="https://github.com/rasha-2k" target="_blank">The Planetary Explorer</a>
+                                                <a href="https://github.com/rasha-2k/The-Planetary-Explorer" target="_blank">The Planetary Explorer</a>
                                             </h3>
                                             <p class="desc">Planetary Explorer is a 3D space adventure game developed in Unity and C# 
                                                 that aims to provide players with an immersive experience of exploring exoplanet environments. 
@@ -606,7 +616,7 @@ function generateCSRFToken() {
                                 </div>
                                 <div id="countdown" style="color: white; display: none; font-weight: bold;"></div> <!-- Countdown message -->
                                 <div class="row">
-                                    <div class="buttons col-12 padd-15">
+                                    <div class="buttons col-12 padd-15" style="margin-top:10px">
                                         <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
                                     </div>
                                 </div>
