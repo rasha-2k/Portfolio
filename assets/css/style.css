@@ -609,10 +609,6 @@ h3.my-profession
     max-width: 100%;
     text-align: center;
 }
-.about .about-tabs .tab-item.active {
-    color: var(--skin-color);
-    border: 1px solid var(--bg-black-50);
-}
 .about .about-tabs .tab-item {
     display: inline-block;
     margin: 0 5px 5px;
@@ -625,14 +621,20 @@ h3.my-profession
     font-weight: var(--secondary-font-weight);
     font-family: var(--secondary-font-family);
 }
-.about .about-tabs .tab-item:hover{
+.about .about-tabs .tab-item.active {
     background-color: var(--skin-color);    
     color: var(--text-black-900);
     border: 1px solid var(--bg-black-50);
 }
-.outer-shadow {
-    box-shadow: var(--outer-shadow);
+.about .about-tabs .tab-item.active:hover {
+    color: var(--text-black-900);
+    border: 1px solid var(--skin-color);
 }
+.about .about-tabs .tab-item:hover{
+    color: var(--skin-color);
+    border: 1px solid var(--skin-color);
+}
+
 .tab-content {
     display: none; /* Hide all content by default */
 }
