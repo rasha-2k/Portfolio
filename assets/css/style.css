@@ -641,8 +641,8 @@ h3.my-profession
 .tab-content.active {
     display: block;
 }
-.about .about-content .education,
-.about .about-content .experience
+.about .about-content .certifications,
+.about .about-content .activities
 {
     flex: 0 0 80%;
     max-width: 80%;
@@ -1057,8 +1057,8 @@ button:hover, .btn:hover
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item,
-    .about .about-content .experience,
-    .about .about-content .education,
+    .about .about-content .activities,
+    .about .about-content .certifications,
     .about .about-content .skills,
     .about .about-content .personal-info 
     {

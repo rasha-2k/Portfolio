@@ -122,7 +122,7 @@ function generateCSRFToken() {
                                                 I am a passionate third-year software engineering student at Amman Arab University, 
                                                 dedicated to exploring a wide range of technologies, 
                                                 from software testing and quality assurance to game development and mobile app design. 
-                                                With hands-on experience in the Unity framework and a solid foundation in C++, Java, and C# with .NET, 
+                                                With hands-on activities in the Unity framework and a solid foundation in C++, Java, and C# with .NET, 
                                                 I bring both technical expertise and creativity to my projects. 
                                                 My journey in tech is fueled by a love for problem-solving and continuous learning, 
                                                 and I’ve earned recognition in various competitions for my innovative ideas and technical skills.
@@ -218,11 +218,77 @@ function generateCSRFToken() {
                                 <div class="row Box">
                                     <div class="row">
                                         <div class="about-tabs">
-                                            <span class="tab-item active" data-target=".experience">Activities</span>
-                                            <span class="tab-item" data-target=".education">Certifications</span>
+                                        <span class="tab-item active" data-target=".certifications">Certifications</span>
+                                            <span class="tab-item" data-target=".activities">Activities</span>
                                         </div>
                                     </div>
-                                    <div class="experience padd-15 tab-content active">
+                                    <div class="certifications padd-15 tab-content active">
+                                        <!-- <h3 class="title">Certifications</h3> -->
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                    <div class="timeline shadow-dark">
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> in-progress
+                                                        </h3>
+                                                        <h4 class="timeline-title">Advanced Software Testing "Automated Testing"</h4>
+                                                        <p class="timeline-text">This course focuses on advanced topics in software testing, 
+                                                            with a primary emphasis on automation. 
+                                                            It builds on my foundation in manual testing and provides hands-on training in 
+                                                            automated testing tools and frameworks, API testing, 
+                                                            scripting, and continuous testing in CI/CD pipelines. 
+                                                            Designed to meet industry demands, this comprehensive program equips me 
+                                                            with the technical skills and expertise to excel in modern quality assurance 
+                                                            and secure advanced roles in the field of software testing.
+                                                        </p>
+                                                    </div>
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> Jan 2025
+                                                        </h3>
+                                                        <h4 class="timeline-title">Manual Software Testing & QA</h4>
+                                                        <p class="timeline-text">An in-depth 40-hour course offered by "The Hope International" company, 
+                                                            focusing on the core principles and practices of manual software testing. 
+                                                            This program covers theoretical and practical aspects of QA testing, including testing fundamentals, 
+                                                            brfecycle integration, test management, and tool support. <br>
+                                                            The course emphasizes:
+                                                                <br>• Understanding the necessity and principles of software testing.
+                                                                <br>• Applying test techniques such as Black Box, White Box, and activities-based methods.
+                                                                <br>• Mastering defect management and risk-based testing approaches.
+                                                                <br>• Gaining insights into static testing, reviews, and tool-supported static analysis.
+                                                                <br>• Learning the fundamentals of test planning, estimation, and monitoring processes.
+                                                                <br>• Exploring the basics of API testing and an introduction to automated testing tools like Selenium.
+                                                                <br>
+                                                            This course provides a strong foundation for manual testing while offering a glimpse into automation testing, 
+                                                            preparing participants for advanced roles in software quality assurance.
+                                                        </p>
+                                                    </div>  
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> August 2024
+                                                        </h3>
+                                                        <h4 class="timeline-title"><a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP Exam Prep Course</a></h4>
+                                                        <p class="timeline-text">Completed the PMI-ACP Exam Prep Course on
+                                                            Udemy,
+                                                            covering the 7 domains outlined in the PMI-ACP exam content.
+                                                            The course included comprehensive practice exams, mock tests,
+                                                            and review sessions,
+                                                            with a focus on achieving a minimum score of 80%.
+                                                            Successfully completed all requirements to earn 21 PDUs,
+                                                            necessary for PMI-ACP certification application.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="activities padd-15 tab-content">
                                         <!-- <h3 class="title">Activities</h3> -->
                                         <div class="row">
                                             <div class="timeline-box padd-15">
@@ -240,7 +306,7 @@ function generateCSRFToken() {
                                                             designing a 3D interactive game, <b>The Planetary
                                                                 Explorer</b>using the Unity engine.
                                                             Targeted at elementary to high school students, the game
-                                                            combines engaging gameplay with educational content about
+                                                            combines engaging gameplay with certificationsal content about
                                                             exoplanets.
                                                             By utilizing scientifically accurate data from NASA and Space
                                                             Agency Partner Resources, the game encourages both curiosity and
@@ -320,49 +386,6 @@ function generateCSRFToken() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="education padd-15 tab-content">
-                                        <!-- <h3 class="title">Certifications</h3> -->
-                                        <div class="row">
-                                            <div class="timeline-box padd-15">
-                                                <div class="timeline shadow-dark">
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> in-progress
-                                                        </h3>
-                                                        <h4 class="timeline-title">Advanced Automated Software Testing & QA Course</h4>
-                                                        <p class="timeline-text">This course focuses on advanced topics in software testing, 
-                                                            with a primary emphasis on automation. 
-                                                            It builds on my foundation in manual testing and provides hands-on training in 
-                                                            automated testing tools and frameworks, API testing, 
-                                                            scripting, and continuous testing in CI/CD pipelines. 
-                                                            Designed to meet industry demands, this comprehensive program equips me 
-                                                            with the technical skills and expertise to excel in modern quality assurance 
-                                                            and secure advanced roles in the field of software testing.
-                                                        </p>
-                                                    </div>
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> August 2024
-                                                        </h3>
-                                                        <h4 class="timeline-title"><a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP Exam Prep Course</a></h4>
-                                                        <p class="timeline-text">Completed the PMI-ACP Exam Prep Course on
-                                                            Udemy,
-                                                            covering the 7 domains outlined in the PMI-ACP exam content.
-                                                            The course included comprehensive practice exams, mock tests,
-                                                            and review sessions,
-                                                            with a focus on achieving a minimum score of 80%.
-                                                            Successfully completed all requirements to earn 21 PDUs,
-                                                            necessary for PMI-ACP certification application.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +410,7 @@ function generateCSRFToken() {
                                     <h4>App Development</h4>
                                     <p>Developing cross-platform mobile applications using Flutter,
                                         creating seamless and efficient apps for both Android and iOS platforms.
-                                        Focused on providing responsive design and smooth user experience.
+                                        Focused on providing responsive design and smooth user activities.
                                     </p>
                                 </div>
                             </div>
@@ -414,7 +437,7 @@ function generateCSRFToken() {
                                     </div>
                                     <h4>UI/UX Design</h4>
                                     <p>Creating intuitive and visually appealing user interfaces.
-                                        Focused on user experience design, wireframing, and prototyping,
+                                        Focused on user activities design, wireframing, and prototyping,
                                         ensuring smooth interactions for both mobile and web applications.
                                     </p>
                                 </div>
@@ -429,7 +452,7 @@ function generateCSRFToken() {
                                     <h4>Software Testing & QA</h4>
                                     <p>Ensuring the highest quality software through thorough testing,
                                         including unit testing, API testing, and automated testing tools.
-                                        Experienced with industry-standard tools such as JIRA, Postman, and Fiddler.
+                                        activitiesd with industry-standard tools such as JIRA, Postman, and Fiddler.
                                     </p>
                                 </div>
                             </div>
@@ -458,7 +481,7 @@ function generateCSRFToken() {
                                     <p>mplementing Agile methodologies in project management,
                                         leading development teams through sprints and iterations to deliver high-quality
                                         products.
-                                        Experienced in Jira and managing cross-functional teams.
+                                        activitiesd in Jira and managing cross-functional teams.
                                     </p>
                                 </div>
                             </div>
@@ -512,7 +535,7 @@ function generateCSRFToken() {
                                                     <a href="https://github.com/rasha-2k/The-Planetary-Explorer" target="_blank">The Planetary Explorer</a>
                                                 </h3>
                                                 <p class="desc">Planetary Explorer is a 3D space adventure game developed in Unity and C# 
-                                                    that aims to provide players with an immersive experience of exploring exoplanet environments. 
+                                                    that aims to provide players with an immersive activities of exploring exoplanet environments. 
                                                     Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, 
                                                     the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools, 
                                                     enhancing their exploration journey across multiple planets.

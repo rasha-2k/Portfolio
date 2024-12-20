@@ -22,7 +22,7 @@ Options -Indexes
 </FilesMatch>
 
 <IfModule mod_negotiation.c>
-	#Options -MultiViews
+
 </IfModule>
 RewriteEngine On
 RewriteBase /
@@ -35,23 +35,23 @@ DirectoryIndex index.php index.cgi index.html
     RewriteEngine On
     RewriteBase /
 
-    # To externally redirect /filename.php to /filename
+
     RewriteCond %{THE_REQUEST} ^GET\ /(.+)\.php\ HTTP
     RewriteRule ^(.+)\.php$ /$1 [L,R=301]
 
-    # To internally redirect /filename to /filename.php
+
     RewriteCond %{REQUEST_FILENAME}.php -f
     RewriteRule ^(.*)$ $1.php [L]
 
-    # To hide .html extension
+
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule ^(.+)$ $1.html [L]
 
-    # To remove "index" from the URL
+
     RewriteCond %{THE_REQUEST} ^GET\ /index(\.php)?\ HTTP
     RewriteRule ^index(\.php)?$ / [L,R=301]
 
-    # To remove trailing slash if it's not a directory
+
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 </IfModule>
@@ -63,7 +63,7 @@ RewriteCond %{REQUEST_FILENAME} !-f [OR]
 RewriteCond %{REQUEST_URI} ^\/(js\/(main\.js|bootstrap\.min\.js)|css\/(\d+\.css|common\.css|site\.css|bootstrap\.min\.css))$
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ ncsitebuilder/$1 [L,QSA]
-#### PERSISTENT CONTENT ####
+
 DirectoryIndex index.php index.cgi index.html
 RewriteCond %{REQUEST_FILENAME} !-f [OR]
 RewriteCond %{REQUEST_URI} ^\/(js\/(main\.js|bootstrap\.min\.js)|css\/(\d+\.css|common\.css|site\.css|bootstrap\.min\.css))$
@@ -75,12 +75,12 @@ order allow,deny
 allow from all
 </Files>
 
-# DO NOT REMOVE THIS LINE AND THE LINES BELOW HOTLINKID:pm1BMOr4bD
+
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?rashaalsaleh.com/.*$      [NC]
-RewriteRule .*\.(exe)$ http://cyberalien.net [R,NC]
-# DO NOT REMOVE THIS LINE AND THE LINES ABOVE pm1BMOr4bD:HOTLINKID
+RewriteRule .*\.(exe)$ http://rashaalsaleh.net [R,NC]
 
-# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:D77KdEm8MO
+
+
 ErrorDocument 403 /403.html
-# DO NOT REMOVE THIS LINE AND THE LINES ABOVE D77KdEm8MO:ERRORPAGEID
+
