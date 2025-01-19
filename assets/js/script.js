@@ -6,11 +6,11 @@ var typed = new Typed(".typing",{
     loop:true
 })
 /*Aside*/
-const nav = document.querySelector('.nav'),
-    navlist = nav.querySelectorAll('li'),
-    totalNavList = navlist.length,
-    allSection = document.querySelectorAll('.section'),
-    totalSection = allSection.length;
+const nav = document.querySelector('.nav');
+const navlist = nav.querySelectorAll('li');
+const totalNavList = navlist.length;
+const allSection = document.querySelectorAll('.section');
+const totalSection = allSection.length;
     for(let i=0 ; i<totalNavList ; i++)
     {
         const a = navlist[i].querySelector('a');

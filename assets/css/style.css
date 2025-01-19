@@ -95,7 +95,7 @@ ul
     }
     100%
     {
-        transform: (0%);
+        transform:  rotate(0%);
     }
 }
 .hidden

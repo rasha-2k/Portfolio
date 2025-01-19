@@ -27,8 +27,7 @@ function generateCSRFToken() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap" rel="stylesheet">
         <!-- Style Switcher -->
         <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
         <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
@@ -95,7 +94,7 @@ function generateCSRFToken() {
                                                 </span>
                                             </a>
                                     </div>
-                                    <a href="assets/docs/Rasha Alsaleh.docx" class="btn"><b>Download CV</b></a>
+                                    <a href="assets/docs/Rasha Alsaleh.pdf" class="btn"><b>Download Resume</b></a>
                                 </div>
                             </div>
                             <div class="home-img padd-15">
