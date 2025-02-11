@@ -200,6 +200,32 @@ ul
 b{
     margin-right: 10px;
 }
+/* download icon effect */
+.downloadtwo {
+    position: absolute;
+    bottom: 20px; 
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.btn:hover .downloadtwo {
+    transform: translateY(20px); 
+}
+.btn:hover .downloadone {
+    transform: translateY(20px);
+}
+.icon-box {
+    position: relative;
+    display: inline-block;
+    width: 12px; 
+    height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    bottom: 3px;
+}
+.shadow-dark
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
 /* hire me icon effect */
 .arrow-container {
     display: inline-block;
@@ -998,6 +1024,46 @@ h3.my-profession
     font-family: var(--secondary-font-family);
     font-weight: var(--secondary-font-weight);
 }
+.agreeCheckbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--skin-color);
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.agreeCheckbox:before {
+    content: "";
+    background-color: var(--skin-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.agreeCheckbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.agreeCheckbox-label {
+    font-size: 18px;
+    color: var(--text-black-700);
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
 button:hover, .btn:hover
 {
     transform: scale(1.05);

@@ -88,13 +88,15 @@ function generateCSRFToken() {
                                                 <i class="fab fa-github"></i>
                                                 </span>
                                             </a>
-                                            <a href="https://www.instagram.com/rasha2k_/" target="_blank" class="social-buttons__button social-button social-button--instagram" aria-label="InstaGram">
+                                            <!-- <a href="https://www.instagram.com/rasha2k_/" target="_blank" class="social-buttons__button social-button social-button--instagram" aria-label="InstaGram">
                                                 <span class="social-button__inner">
                                                 <i class="fab fa-instagram"></i>
                                                 </span>
-                                            </a>
+                                            </a> -->
                                     </div>
-                                    <a href="assets/docs/Rasha Alsaleh.pdf" class="btn"><b>Download Resume</b></a>
+                                    <a href="assets/docs/Rasha Alsaleh.pdf" class="btn"><b>Resume</b>
+                                    <span class="icon-box"><i class="fa fa-arrow-down downloadone"></i>
+                                    <i class="fa fa-arrow-down downloadtwo"></i></span></a>
                                 </div>
                             </div>
                             <div class="home-img padd-15">
@@ -227,7 +229,7 @@ function generateCSRFToken() {
                                             <div class="timeline-box padd-15">
                                                     <div class="timeline shadow-dark">
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <!-- <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
                                                             <i class="fa fa-calendar"></i> in-progress
@@ -242,14 +244,14 @@ function generateCSRFToken() {
                                                             with the technical skills and expertise to excel in modern quality assurance 
                                                             and secure advanced roles in the field of software testing.
                                                         </p>
-                                                    </div>
+                                                    </div> -->
                                                     <!-- timeline item -->
                                                     <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> Jan 2025
+                                                            <i class="fa fa-calendar"></i> Dec 2024
                                                         </h3>
-                                                        <h4 class="timeline-title">Manual Software Testing & QA</h4>
+                                                        <h4 class="timeline-title"><a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a></h4>
                                                         <p class="timeline-text">An in-depth 40-hour course offered by "The Hope International" company, 
                                                             focusing on the core principles and practices of manual software testing. 
                                                             This program covers theoretical and practical aspects of QA testing, including testing fundamentals, 
@@ -260,7 +262,7 @@ function generateCSRFToken() {
                                                                 <br>• Mastering defect management and risk-based testing approaches.
                                                                 <br>• Gaining insights into static testing, reviews, and tool-supported static analysis.
                                                                 <br>• Learning the fundamentals of test planning, estimation, and monitoring processes.
-                                                                <br>• Exploring the basics of API testing and an introduction to automated testing tools like Selenium.
+                                                                <br>• Exploring the basics of API testing and an introduction to automated testing tools.
                                                                 <br>
                                                             This course provides a strong foundation for manual testing while offering a glimpse into automation testing, 
                                                             preparing participants for advanced roles in software quality assurance.
@@ -632,9 +634,11 @@ function generateCSRFToken() {
                                         </div>
                                     </div>
                                     <div class="control-group" style="color: var(--text-black-900);">
-                                        <input type="checkbox" id="agreeCheckbox" onchange="startCountdown()" required> I agree to the terms and conditions
+                                    <label class="agreeCheckbox-label">
+                                        <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
+                                    </label>
                                     </div>
-                                    <div id="countdown" style="color: white; display: none; font-weight: bold;"></div> <!-- Countdown message -->
+                                    <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
                                     <div class="row">
                                         <div class="buttons col-12 padd-15" style="margin-top:10px">
                                             <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
