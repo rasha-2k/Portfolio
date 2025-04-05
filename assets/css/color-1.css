@@ -1,4 +1,8 @@
-:root
-{
-    --skin-color:#f021b2;
+:root {
+    --skin-color: hsl(318, 87%, 54%);
+    --secondary-color: rgba(144, 20, 106, 0.336);
+    --skill-box-shadow: 0 0 1px 0 rgba(219, 31, 163, 0.5), 0 0 0.5px 0.5px rgba(144, 20, 106, 0.336);
+    --skill-webkit-box-shadow: 0 0 1px 0 rgba(219, 31, 163, 0.5), 0 0 0.5px 0.5px rgba(144, 20, 106, 0.336);
+    --skill-before-background: radial-gradient(circle, rgba(220, 32, 164, 0.3) 10%, rgba(144, 20, 106, 0) 50%);
+    --skill-hover-box-shadow: 0 0 10px rgba(220, 32, 164, 0.8), 0 0 20px rgba(144, 20, 106, 0.6);
 }
