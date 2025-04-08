@@ -73,24 +73,11 @@ ul {
     display: block;
     padding: 0 30px;
     opacity: 1;
-    position: fixed;
-    left: 270px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: all 0.3s ease;
-}
-
-.section.back-section {
+    position: relative;
+    margin-left: 270px;
     z-index: 1;
-}
-
-.section.active {
-    z-index: 2;
-    opacity: 1;
+    transition: transform  0.3s ease, background 0.3s ease, opacity 0.3s ease;
+    will-change: transform;
 }
 
 @keyframes slideSection {
@@ -285,7 +272,7 @@ b {
     justify-content: center;
     align-items: center;
     z-index: 10;
-    transition: all 0.3s ease;
+    transition: left 0.3s ease, transform 0.3s ease;
 }
 
 .aside .logo {
@@ -311,7 +298,7 @@ b {
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    left: 300px;
+    left: 290px;
     top: 20px;
     border-radius: 5px;
     background: var(--bg-black-100);
@@ -850,35 +837,6 @@ h3.my-profession {
     color: var(--skin-color);
 }
 
-.circular-progress {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: conic-gradient(var(--bg-black-50) 0deg, var(--bg-black-50) 360deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s;
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.circular-progress::before {
-    content: "";
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    background: var(--bg-black-100);
-    border-radius: 50%;
-}
-
-.value-container {
-    position: relative;
-    z-index: 1;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text-black-900);
-}
 
 @keyframes pulseIn {
     0% {
@@ -1042,9 +1000,6 @@ h3.my-profession {
 }
 
 /* service */
-.service .container {
-    padding: 40px;
-}
 
 .service .service-item {
     margin-bottom: 30px;
@@ -1093,6 +1048,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner h4 {
+    font-family: var(--primary-font-family);
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
@@ -1102,10 +1058,10 @@ h3.my-profession {
 
 .service .service-item .service-item-inner p {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     font-family: var(--secondary-font-family);
     font-weight: var(--secondary-font-weight);
-    font-style: var(--secondary-font-style);
+    font-style: var(--primary-font-style);
     color: var(--text-black-700);
     line-height: 25px;
 }
@@ -1366,6 +1322,11 @@ button:hover,
 }
 
 @media (max-width: 480px) {
+    .personal-info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
     .personal-info-container .section-subtitle {
         text-align: center;
     }
@@ -1377,7 +1338,6 @@ button:hover,
 }
 
 @media (max-width: 660px) {
-
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
@@ -1389,7 +1349,6 @@ button:hover,
 }
 
 @media (max-width: 767px) {
-
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -1398,11 +1357,6 @@ button:hover,
     .about .about-content .certifications {
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    .personal-info-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
     }
 
     .info-title {
@@ -1419,18 +1373,12 @@ button:hover,
 }
 
 @media (max-width: 860px) {
-
     .about .about-content .timeline-box {
         max-width: 100%;
     }
 }
 
 @media (max-width: 991px) {
-    .personal-info-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px 30px;
-    }
-
     .skill {
         width: 120px;
     }
@@ -1447,11 +1395,12 @@ button:hover,
 
     .aside.open {
         left: 0;
+        z-index: 20
     }
 
     .aside .nav-toggler {
         display: flex;
-        left: 30px;
+        left: 20px;
     }
 
     .aside .nav-toggler.open {
@@ -1459,13 +1408,16 @@ button:hover,
     }
 
     .section {
-        left: 0;
+        margin-left: 0;
+        transition: transform 0.3s ease;
+        transform: translateX(0);
     }
 
     .section.open {
-        left: 270px;
-    }
+        filter: brightness(0.5); 
 
+    } 
+    
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;

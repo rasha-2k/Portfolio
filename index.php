@@ -65,7 +65,7 @@ function generateCSRFToken()
         <!-- Main Content Start -->
         <div class="main-content">
             <!-- Home Section Start -->
-            <section class="home active section" id="home">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row Box shadowEffect">
                         <div class="home-info padd-15">
@@ -659,9 +659,9 @@ function generateCSRFToken()
                                 </div>
                                 <h4>Web Development</h4>
                                 <p>
-                                    Building responsive, scalable web applications that offer seamless user experiences 
-                                    by integrating front-end and back-end technologies to create robust solutions that meet the needs of both users and businesses.
-                                    I ensure efficient performance and smooth functionality.
+                                    Building responsive, scalable web apps that provide seamless user experiences. 
+                                    I combine front-end and back-end technologies 
+                                    to create reliable solutions that perform efficiently and meet both user and business needs.
                                 </p>
                             </div>
                         </div>
