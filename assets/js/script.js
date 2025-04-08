@@ -75,25 +75,11 @@ function showSection(element) {
     window.requestAnimationFrame(step);
 }
 
-function updateNav(element) {
-    const target = element.getAttribute("href").split("#")[1];
-
-    for (let i = 0; i < totalNavList; i++) {
-        const link = navlist[i].querySelector("a");
-        link.classList.remove("active");
-
-        if (target === link.getAttribute("href").split("#")[1]) {
-            link.classList.add("active");
-        }
-    }
-}
-
 /* Hire Me Button */
 document.querySelector(".hire-me").addEventListener("click", function (e) {
     e.preventDefault();
 
     showSection(this);
-    updateNav(this);
 });
 
 /* Toggle Aside Panel */
@@ -118,7 +104,6 @@ document.querySelector('.logo a').addEventListener('click', function (e) {
     e.preventDefault();
 
     showSection(this);
-    updateNav(this);
 });
 
 /* About Tabs */
