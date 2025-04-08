@@ -181,6 +181,7 @@ ul {
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+    justify-content: space-around;
 }
 
 .btn {
@@ -604,6 +605,7 @@ h3.my-profession {
     width: 50px;
     background-color: var(--skin-color);
 }
+
 /* Personal Info Section */
 .personal-info-grid {
     display: grid;
@@ -678,7 +680,8 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.info-item:hover .info-link, .info-item:hover .info-value {
+.info-item:hover .info-link,
+.info-item:hover .info-value {
     color: var(--skin-color);
 }
 
@@ -693,48 +696,16 @@ h3.my-profession {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Responsive adjustments */
-@media (max-width: 991px) {
-    .personal-info-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px 30px;
-    }
-}
-
-@media (max-width: 767px) {
-    .personal-info-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .info-title {
-        font-size: 13px;
-    }
-    
-    .info-value {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .personal-info-container .section-subtitle {
-        text-align: center;
-    }
-    
-    .personal-info-container .section-subtitle .title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
 /* Skills Section */
 .skills-tabs {
-    padding: 30px 15px;
+    padding: 30px 15px 10px;
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
@@ -768,6 +739,7 @@ h3.my-profession {
     color: var(--skin-color);
     border: 1px solid var(--skin-color);
 }
+
 .skill-progress {
     width: 80px;
     height: 80px;
@@ -789,7 +761,7 @@ h3.my-profession {
 .about .about-content .skills-container {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .skills-grid {
@@ -800,7 +772,7 @@ h3.my-profession {
 }
 
 .skill {
-    width: 150px;
+    width: 130px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -811,7 +783,7 @@ h3.my-profession {
     background-color: transparent;
     border: 1px solid var(--skin-color);
     border-radius: 25px;
-    filter: grayscale(85%)  brightness(0.9);
+    filter: grayscale(85%) brightness(0.9);
     box-shadow: var(--skill-box-shadow);
     -webkit-box-shadow: var(--skill-webkit-box-shadow);
     position: relative;
@@ -921,26 +893,13 @@ h3.my-profession {
 }
 
 .skills-container {
-    padding: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-@media (max-width: 991px) {
-    .skill {
-        width: 130px;
-    }
-}
-
-@media (max-width: 767px) {
-    .skills-grid {
-        gap: 15px;
-    }
-}
-
 .about .about-tabs {
-    padding: 50px 15px 50px;
+    padding: 30px 15px 10px;
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
@@ -975,14 +934,16 @@ h3.my-profession {
     border: 1px solid var(--skin-color);
 }
 
-.about-tab-content, .skills-tab-content {
+.about-tab-content,
+.skills-tab-content {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
     /* Hide all content by default */
 }
 
-.about-tab-content.active, .skills-tab-content.active {
+.about-tab-content.active,
+.skills-tab-content.active {
     display: block;
     opacity: 1;
 }
@@ -990,20 +951,19 @@ h3.my-profession {
 .about .about-content .certifications,
 .about .about-content .activities {
     flex: 0 0 80%;
-    max-width: 80%;
     margin-top: 30px;
 }
 
 .about .about-content h3.title {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: 700;
     color: var(--text-black-900);
 }
 
 .about .about-content .timeline-box {
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .about .about-content .timeline {
@@ -1405,6 +1365,77 @@ button:hover,
     transform: scale(1.05);
 }
 
+@media (max-width: 480px) {
+    .personal-info-container .section-subtitle {
+        text-align: center;
+    }
+
+    .personal-info-container .section-subtitle .title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 660px) {
+
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .activities,
+    .about .about-content .certifications {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .personal-info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .info-title {
+        font-size: 13px;
+    }
+
+    .info-value {
+        font-size: 15px;
+    }
+
+    .skills-grid {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .about .about-content .timeline-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .personal-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 30px;
+    }
+
+    .skill {
+        width: 120px;
+    }
+}
+
 @media (max-width: 1199px) {
     .section .container {
         padding-top: 70px;
@@ -1438,43 +1469,5 @@ button:hover,
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
-    }
-}
-
-@media (max-width: 660px) {
-
-    .home .home-info {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .home .home-img {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-
-    .contact .contact-form .col-6,
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item,
-    .about .about-content .activities,
-    .about .about-content .certifications,
-    .about .about-content .skills,
-    .about .about-content .personal-info {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 410px) {
-    .about .about-content .personal-info {
-        flex-direction: column;
-    }
-
-    .about .about-content .personal-info .info-item {
-        flex: 0 0 100%;
-        max-width: 100%;
     }
 }

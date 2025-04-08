@@ -113,18 +113,20 @@ function generateCSRFToken()
                         <div class="about-content padd-15">
                             <div class="row Box">
                                 <div class="about-text padd-15">
-                                    <h3>I'm Rasha Alsaleh and <span>Software Engineer</span></h3>
+                                    <h3>I'm Rasha Alsaleh, a <span>Software Engineer</span></h3>
                                     <p style="text-align: justify;">
                                         I am a passionate third-year software engineering student at Amman Arab University,
-                                        dedicated to exploring a wide range of technologies,
-                                        from software testing and quality assurance to game development and mobile app design.
-                                        With hands-on activities in the Unity framework and a solid foundation in C++, Java, and C# with .NET,
-                                        I bring both technical expertise and creativity to my projects.
-                                        My journey in tech is fueled by a love for problem-solving and continuous learning,
-                                        and I’ve earned recognition in various competitions for my innovative ideas and technical skills.
+                                        focused on delivering high-quality results and continuous improvement. 
+                                        With a strong foundation in software development, quality assurance, and DevOps, 
+                                        I excel in collaborative environments where I can apply my technical expertise and contribute to team success. 
+                                        I’m passionate about problem-solving and ensuring efficiency through automated testing and process optimization.
                                         <br>
-                                        I'm always looking for new challenges that allow me to grow as a developer and contribute
-                                        to impactful projects that use technology to make a positive difference.
+                                        My journey has involved embracing new challenges, refining my skills in QA/QC, 
+                                        and integrating DevOps practices to streamline workflows. 
+                                        I bring a hands-on approach to project management, balancing technical needs with clear communication to meet deadlines and drive project success.
+                                        <br>
+                                        I’m always looking for opportunities to grow, 
+                                        and my goal is to combine my technical expertise with strong teamwork and project management skills to make a meaningful impact in the tech industry.
                                     </p>
                                 </div>
                             </div>
@@ -247,42 +249,42 @@ function generateCSRFToken()
                                                 <div class="col">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/html_css_js.png" alt="HTML, CSS, JS" class="skill-image grayscale">
-                                                        <div class="skill-percentage" data-percentage="95">95%</div>
+                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">HTML, CSS, JS</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/go.svg" alt="Golang" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/Go.svg" alt="Golang" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Go Lang</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/python.svg" alt="Python" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/Python.svg" alt="Python" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Python</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/php.svg" alt="PHP" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/PHP.svg" alt="PHP" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">PHP</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/CSharp.svg" alt="C#" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">C#</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/java.svg" alt="Java" class="skill-image grayscale">
-                                                        <div class="skill-percentage" data-percentage="95">95%</div>
+                                                        <img src="assets/images/technologies/Java.svg" alt="Java" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Java</p>
                                                 </div>
@@ -294,71 +296,71 @@ function generateCSRFToken()
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/postman.svg" alt="Postman" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/Postman.svg" alt="Postman" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Postman</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/selenium.svg" alt="Selenium" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/Selenium.svg" alt="Selenium" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Selenium</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/githubactions.svg" alt="GitHub Actions" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/GitHubActions.svg" alt="GitHub Actions" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">GitHub Actions</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/git.svg" alt="Git" class="skill-image grayscale">
-                                                        <div class="skill-percentage">85%</div>
+                                                        <img src="assets/images/technologies/Git.svg" alt="Git" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">Git</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/docker.svg" alt="Docker" class="skill-image grayscale">
-                                                        <div class="skill-percentage">80%</div>
+                                                        <img src="assets/images/technologies/Docker.svg" alt="Docker" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Docker</p>
                                                 </div>
                                                 <!-- <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/kubernetes.svg" alt="Kubernetes" class="skill-image grayscale">
+                                                        <img src="assets/images/technologies/Kubernetes.svg" alt="Kubernetes" class="skill-image grayscale">
                                                         <div class="skill-percentage">80%</div>
                                                     </div>
                                                     <p class="skill-name">Kubernetes</p>
                                                 </div> -->
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/virtualbox.svg" alt="VirtualBox" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/VirtualBox.svg" alt="VirtualBox" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">VirtualBox</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/VSCode.svg" alt="VS Code" class="skill-image grayscale">
-                                                        <div class="skill-percentage">90%</div>
+                                                        <!-- <div class="skill-percentage">90%</div> -->
                                                     </div>
                                                     <p class="skill-name">VS Code</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/chatgpt.svg" alt="ChatGPT" class="skill-image grayscale">
-                                                        <div class="skill-percentage">85%</div>
+                                                        <img src="assets/images/technologies/ChatGPT.svg" alt="ChatGPT" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">ChatGPT</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/figma.svg" alt="Figma" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/Figma.svg" alt="Figma" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Figma</p>
                                                 </div>
@@ -370,71 +372,71 @@ function generateCSRFToken()
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/devops.svg" alt="Devops" class="skill-image grayscale">
-                                                        <div class="skill-percentage">85%</div>
+                                                        <img src="assets/images/technologies/Devops.svg" alt="Devops" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">Devops</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/linux.svg" alt="Linux" class="skill-image grayscale">
-                                                        <div class="skill-percentage">80%</div>
+                                                        <img src="assets/images/technologies/Linux.svg" alt="Linux" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Linux</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/bash.svg" alt="Bash Script" class="skill-image grayscale">
-                                                        <div class="skill-percentage">80%</div>
+                                                        <img src="assets/images/technologies/Bash.svg" alt="Bash Script" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Bash Script</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/powershell.svg" alt="PowerShell" class="skill-image grayscale">
-                                                        <div class="skill-percentage">80%</div>
+                                                        <img src="assets/images/technologies/Powershell.svg" alt="PowerShell" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">PowerShell</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/mysql.svg" alt="MySQL" class="skill-image grayscale">
-                                                        <div class="skill-percentage">85%</div>
+                                                        <img src="assets/images/technologies/MySQL.svg" alt="MySQL" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">MySQL</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/postgressql.svg" alt="PostgreSQL" class="skill-image grayscale">
-                                                        <div class="skill-percentage">85%</div>
+                                                        <img src="assets/images/technologies/PostgresSQL.svg" alt="PostgreSQL" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">PostgreSQL</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/NetCore.svg" alt=".Net Core" class="skill-image grayscale">
-                                                        <div class="skill-percentage">80%</div>
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">.Net Core</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/jira.svg" alt="Jira" class="skill-image grayscale">
-                                                        <div class="skill-percentage">80%</div>
+                                                        <img src="assets/images/technologies/Jira.svg" alt="Jira" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Jira</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/trello.svg" alt="Trello" class="skill-image grayscale">
-                                                        <div class="skill-percentage">95%</div>
+                                                        <img src="assets/images/technologies/Trello.svg" alt="Trello" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Trello</p>
                                                 </div>
                                                 <div class="col">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/unity.svg" alt="Unity" class="skill-image grayscale">
-                                                        <div class="skill-percentage">80%</div>
+                                                        <img src="assets/images/technologies/Unity.svg" alt="Unity" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Unity</p>
                                                 </div>
@@ -444,171 +446,176 @@ function generateCSRFToken()
                                 </div>
                             </div>
                             <div class="row Box">
-                                <div class="row">
-                                    <div class="about-tabs">
-                                        <span class="about-tab-item active" data-target=".certifications">Certifications</span>
-                                        <span class="about-tab-item" data-target=".activities">Activities</span>
+                                <div class="section-container padd-15">
+                                    <div class="section-subtitle padd-15">
+                                        <h3 class="title">Achievements</h3>
                                     </div>
-                                </div>
-                                <div class="certifications padd-15 about-tab-content active">
-                                    <!-- <h3 class="title">Certifications</h3> -->
                                     <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <!-- <div class="timeline-item">
+                                        <div class="about-tabs">
+                                            <span class="about-tab-item active" data-target=".certifications">Certifications</span>
+                                            <span class="about-tab-item" data-target=".activities">Activities</span>
+                                        </div>
+                                    </div>
+                                    <div class="certifications padd-15 about-tab-content active">
+                                        <!-- <h3 class="title">Certifications</h3> -->
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                <div class="timeline shadow-dark">
+                                                    <!-- timeline item -->
+                                                    <!-- <div class="timeline-item">
+                                                            <div class="circle-dot"></div>
+                                                            <h3 class="timeline-date">
+                                                                <i class="fa fa-calendar"></i> in-progress
+                                                            </h3>
+                                                            <h4 class="timeline-title">Advanced Software Testing "Automated Testing"</h4>
+                                                            <p class="timeline-text">This course focuses on advanced topics in software testing, 
+                                                                with a primary emphasis on automation. 
+                                                                It builds on my foundation in manual testing and provides hands-on training in 
+                                                                automated testing tools and frameworks, API testing, 
+                                                                scripting, and continuous testing in CI/CD pipelines. 
+                                                                Designed to meet industry demands, this comprehensive program equips me 
+                                                                with the technical skills and expertise to excel in modern quality assurance 
+                                                                and secure advanced roles in the field of software testing.
+                                                            </p>
+                                                        </div> -->
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
                                                         <div class="circle-dot"></div>
                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> in-progress
+                                                            <i class="fa fa-calendar"></i> Dec 2024
                                                         </h3>
-                                                        <h4 class="timeline-title">Advanced Software Testing "Automated Testing"</h4>
-                                                        <p class="timeline-text">This course focuses on advanced topics in software testing, 
-                                                            with a primary emphasis on automation. 
-                                                            It builds on my foundation in manual testing and provides hands-on training in 
-                                                            automated testing tools and frameworks, API testing, 
-                                                            scripting, and continuous testing in CI/CD pipelines. 
-                                                            Designed to meet industry demands, this comprehensive program equips me 
-                                                            with the technical skills and expertise to excel in modern quality assurance 
-                                                            and secure advanced roles in the field of software testing.
+                                                        <h4 class="timeline-title"><a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a></h4>
+                                                        <p class="timeline-text">An in-depth 40-hour course offered by "The Hope International" company,
+                                                            focusing on the core principles and practices of manual software testing.
+                                                            This program covers theoretical and practical aspects of QA testing, including testing fundamentals,
+                                                            brfecycle integration, test management, and tool support. <br>
+                                                            The course emphasizes:
+                                                            <br>• Understanding the necessity and principles of software testing.
+                                                            <br>• Applying test techniques such as Black Box, White Box, and activities-based methods.
+                                                            <br>• Mastering defect management and risk-based testing approaches.
+                                                            <br>• Gaining insights into static testing, reviews, and tool-supported static analysis.
+                                                            <br>• Learning the fundamentals of test planning, estimation, and monitoring processes.
+                                                            <br>• Exploring the basics of API testing and an introduction to automated testing tools.
+                                                            <br>
+                                                            This course provides a strong foundation for manual testing while offering a glimpse into automation testing,
+                                                            preparing participants for advanced roles in software quality assurance.
                                                         </p>
-                                                    </div> -->
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Dec 2024
-                                                    </h3>
-                                                    <h4 class="timeline-title"><a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a></h4>
-                                                    <p class="timeline-text">An in-depth 40-hour course offered by "The Hope International" company,
-                                                        focusing on the core principles and practices of manual software testing.
-                                                        This program covers theoretical and practical aspects of QA testing, including testing fundamentals,
-                                                        brfecycle integration, test management, and tool support. <br>
-                                                        The course emphasizes:
-                                                        <br>• Understanding the necessity and principles of software testing.
-                                                        <br>• Applying test techniques such as Black Box, White Box, and activities-based methods.
-                                                        <br>• Mastering defect management and risk-based testing approaches.
-                                                        <br>• Gaining insights into static testing, reviews, and tool-supported static analysis.
-                                                        <br>• Learning the fundamentals of test planning, estimation, and monitoring processes.
-                                                        <br>• Exploring the basics of API testing and an introduction to automated testing tools.
-                                                        <br>
-                                                        This course provides a strong foundation for manual testing while offering a glimpse into automation testing,
-                                                        preparing participants for advanced roles in software quality assurance.
-                                                    </p>
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> August 2024
-                                                    </h3>
-                                                    <h4 class="timeline-title"><a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP Exam Prep Course</a></h4>
-                                                    <p class="timeline-text">Completed the PMI-ACP Exam Prep Course on
-                                                        Udemy,
-                                                        covering the 7 domains outlined in the PMI-ACP exam content.
-                                                        The course included comprehensive practice exams, mock tests,
-                                                        and review sessions,
-                                                        with a focus on achieving a minimum score of 80%.
-                                                        Successfully completed all requirements to earn 21 PDUs,
-                                                        necessary for PMI-ACP certification application.
-                                                    </p>
+                                                    </div>
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> August 2024
+                                                        </h3>
+                                                        <h4 class="timeline-title"><a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP Exam Prep Course</a></h4>
+                                                        <p class="timeline-text">Completed the PMI-ACP Exam Prep Course on
+                                                            Udemy,
+                                                            covering the 7 domains outlined in the PMI-ACP exam content.
+                                                            The course included comprehensive practice exams, mock tests,
+                                                            and review sessions,
+                                                            with a focus on achieving a minimum score of 80%.
+                                                            Successfully completed all requirements to earn 21 PDUs,
+                                                            necessary for PMI-ACP certification application.
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="activities padd-15 about-tab-content">
-                                    <!-- <h3 class="title">Activities</h3> -->
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> October 2024
-                                                    </h3>
-                                                    <h4 class="timeline-title">
-                                                        <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">Creativity Award | NASA Space Apps Challenge</a>
-                                                    </h4>
-                                                    <p class="timeline-text">Awarded the 'Creativity Award' for
-                                                        designing a 3D interactive game, <b>The Planetary
-                                                            Explorer</b>using the Unity engine.
-                                                        Targeted at elementary to high school students, the game
-                                                        combines engaging gameplay with certificationsal content about
-                                                        exoplanets.
-                                                        By utilizing scientifically accurate data from NASA and Space
-                                                        Agency Partner Resources, the game encourages both curiosity and
-                                                        learning,
-                                                        allowing players to explore distant worlds while expanding their
-                                                        knowledge of the universe.
-                                                        The game integrates accurate scientific data from NASA
-                                                        resources, encouraging both learning and enjoyment.
-                                                    </p>
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> May 2024
-                                                    </h3>
-                                                    <h4 class="timeline-title"><a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">2nd Place | AAU-XDT 2024</a></h4>
-                                                    <p class="timeline-text">A UI/UX competition for 3rd and 4th-year
-                                                        students, where teams were tasked with designing a prototype for
-                                                        an e-learning management system.
-                                                        Our project successfully met complex requirements, standing out
-                                                        for its clean user interface, smooth navigation, and intuitive
-                                                        design, which contributed to our 2nd place win.
-                                                    </p>
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Jan 2024
-                                                    </h3>
-                                                    <h4 class="timeline-title"><a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3rd Place | 3Minutes Competition</a></h4>
-                                                    <p class="timeline-text">This competition challenged participants to
-                                                        convince judges of their project idea in just 3 minutes.
-                                                        Our project, UniBus, aimed to streamline transportation for
-                                                        university students, drivers, and employees
-                                                        by offering real-time tracking and scheduling features. The
-                                                        judges were impressed
-                                                        by how effectively we conveyed the core idea and innovative
-                                                        solutions within the limited time, earning us 3rd place.
-                                                    </p>
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Nov 2023
-                                                    </h3>
-                                                    <h4 class="timeline-title">Participant | JCPC23</h4>
-                                                    <p class="timeline-text"> Participated in the JCPC23 (Jordanian
-                                                        Collegiate Programming Contest),
-                                                        a competitive programming contest aimed at university students
-                                                        in Jordan.
-                                                        The contest challenges participants with complex algorithmic
-                                                        problems and promotes teamwork,
-                                                        problem-solving, and programming skills. It serves as a stepping
-                                                        stone for the regional ICPC contest.
-                                                    </p>
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> May 2023
-                                                    </h3>
-                                                    <h4 class="timeline-title"><a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">First Team To Solve | AAU-PC 2023</a></h4>
-                                                    <p class="timeline-text">
-                                                        A problem-solving competition held annually in May, designed to
-                                                        simulate JCPC and ICPC contests.
-                                                        It serves as a valuable training ground for competitive
-                                                        programming. Our team placed 4th and was the first to solve one
-                                                        of the problems, showcasing our problem-solving skills and time
-                                                        management.
-                                                    </p>
+                                    <div class="activities padd-15 about-tab-content">
+                                        <!-- <h3 class="title">Activities</h3> -->
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                <div class="timeline shadow-dark">
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> October 2024
+                                                        </h3>
+                                                        <h4 class="timeline-title">
+                                                            <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">Creativity Award | NASA Space Apps Challenge</a>
+                                                        </h4>
+                                                        <p class="timeline-text">Awarded the 'Creativity Award' for
+                                                            designing a 3D interactive game, <b>The Planetary
+                                                                Explorer</b>using the Unity engine.
+                                                            Targeted at elementary to high school students, the game
+                                                            combines engaging gameplay with certificationsal content about
+                                                            exoplanets.
+                                                            By utilizing scientifically accurate data from NASA and Space
+                                                            Agency Partner Resources, the game encourages both curiosity and
+                                                            learning,
+                                                            allowing players to explore distant worlds while expanding their
+                                                            knowledge of the universe.
+                                                            The game integrates accurate scientific data from NASA
+                                                            resources, encouraging both learning and enjoyment.
+                                                        </p>
+                                                    </div>
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> May 2024
+                                                        </h3>
+                                                        <h4 class="timeline-title"><a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">2nd Place | AAU-XDT 2024</a></h4>
+                                                        <p class="timeline-text">A UI/UX competition for 3rd and 4th-year
+                                                            students, where teams were tasked with designing a prototype for
+                                                            an e-learning management system.
+                                                            Our project successfully met complex requirements, standing out
+                                                            for its clean user interface, smooth navigation, and intuitive
+                                                            design, which contributed to our 2nd place win.
+                                                        </p>
+                                                    </div>
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> Jan 2024
+                                                        </h3>
+                                                        <h4 class="timeline-title"><a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3rd Place | 3Minutes Competition</a></h4>
+                                                        <p class="timeline-text">This competition challenged participants to
+                                                            convince judges of their project idea in just 3 minutes.
+                                                            Our project, UniBus, aimed to streamline transportation for
+                                                            university students, drivers, and employees
+                                                            by offering real-time tracking and scheduling features. The
+                                                            judges were impressed
+                                                            by how effectively we conveyed the core idea and innovative
+                                                            solutions within the limited time, earning us 3rd place.
+                                                        </p>
+                                                    </div>
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> Nov 2023
+                                                        </h3>
+                                                        <h4 class="timeline-title">Participant | JCPC23</h4>
+                                                        <p class="timeline-text"> Participated in the JCPC23 (Jordanian
+                                                            Collegiate Programming Contest),
+                                                            a competitive programming contest aimed at university students
+                                                            in Jordan.
+                                                            The contest challenges participants with complex algorithmic
+                                                            problems and promotes teamwork,
+                                                            problem-solving, and programming skills. It serves as a stepping
+                                                            stone for the regional ICPC contest.
+                                                        </p>
+                                                    </div>
+                                                    <!-- timeline item -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> May 2023
+                                                        </h3>
+                                                        <h4 class="timeline-title"><a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">First Team To Solve | AAU-PC 2023</a></h4>
+                                                        <p class="timeline-text">
+                                                            A problem-solving competition held annually in May, designed to
+                                                            simulate JCPC and ICPC contests.
+                                                            It serves as a valuable training ground for competitive
+                                                            programming. Our team placed 4th and was the first to solve one
+                                                            of the problems, showcasing our problem-solving skills and time
+                                                            management.
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -633,12 +640,13 @@ function generateCSRFToken()
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
+                                    <i class="fa fa-bug"></i>
                                 </div>
-                                <h4>App Development</h4>
-                                <p>Developing cross-platform mobile applications using Flutter,
-                                    creating seamless and efficient apps for both Android and iOS platforms.
-                                    Focused on providing responsive design and smooth user activities.
+                                <h4>Software Testing & QA</h4>
+                                <p>
+                                    Ensuring software reliability with automated testing. 
+                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency. 
+                                    My focus is on delivering high-quality, bug-free releases.
                                 </p>
                             </div>
                         </div>
@@ -650,9 +658,10 @@ function generateCSRFToken()
                                     <i class="fa fa-globe"></i>
                                 </div>
                                 <h4>Web Development</h4>
-                                <p>Building modern, responsive, and user-friendly websites.
-                                    Specializing in front-end technologies like HTML, CSS, and JavaScript,
-                                    along with back-end development using PHP.
+                                <p>
+                                    Building responsive, scalable web applications that offer seamless user experiences 
+                                    by integrating front-end and back-end technologies to create robust solutions that meet the needs of both users and businesses.
+                                    I ensure efficient performance and smooth functionality.
                                 </p>
                             </div>
                         </div>
@@ -661,12 +670,13 @@ function generateCSRFToken()
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-pencil-ruler"></i>
+                                    <i class="fa fa-paint-brush"></i>
                                 </div>
                                 <h4>UI/UX Design</h4>
-                                <p>Creating intuitive and visually appealing user interfaces.
-                                    Focused on user activities design, wireframing, and prototyping,
-                                    ensuring smooth interactions for both mobile and web applications.
+                                <p>
+                                    Designing intuitive interfaces that prioritize user experience. 
+                                    I focus on creating smooth, clean, interactive designs through wireframing, 
+                                    prototyping, and testing to ensure usability.
                                 </p>
                             </div>
                         </div>
@@ -675,12 +685,13 @@ function generateCSRFToken()
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-bug"></i>
+                                    <i class="fa fa-solid fa-gears"></i>
                                 </div>
-                                <h4>Software Testing & QA</h4>
-                                <p>Ensuring the highest quality software through thorough testing,
-                                    including unit testing, API testing, and automated testing tools.
-                                    activitiesd with industry-standard tools such as JIRA, Postman, and Fiddler.
+                                <h4>DevOps & CI/CD</h4>
+                                <p>
+                                    Streamlining development with CI/CD pipelines to automate workflows. 
+                                    I focus on increasing collaboration, accelerating software delivery, 
+                                    and maintaining stability and quality through automated processes.
                                 </p>
                             </div>
                         </div>
@@ -689,12 +700,13 @@ function generateCSRFToken()
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-cogs"></i>
+                                    <i class="fa fa-puzzle-piece"></i>
                                 </div>
-                                <h4>Problem-Solving & Algorithms</h4>
-                                <p>Proficient in developing efficient algorithms and solving complex problems.
-                                    Participated in various programming competitions like AAU-PC and JCPC,
-                                    consistently demonstrating strong analytical skills.
+                                <h4>Problem-Solving & Optimization</h4>
+                                <p>
+                                    Developing efficient algorithms and optimized solutions 
+                                    to enhance system performance, scalability, and reliability. 
+                                    I tackle challenges with creative and practical approaches to deliver impactful results.
                                 </p>
                             </div>
                         </div>
@@ -703,13 +715,13 @@ function generateCSRFToken()
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-sync-alt"></i>
+                                    <i class="fa fa-users"></i>
                                 </div>
-                                <h4>Project Management (Agile)</h4>
-                                <p>mplementing Agile methodologies in project management,
-                                    leading development teams through sprints and iterations to deliver high-quality
-                                    products.
-                                    activitiesd in Jira and managing cross-functional teams.
+                                <h4>Project Management</h4>
+                                <p>
+                                    Leading teams with Agile methods to ensure timely and high-quality project delivery. 
+                                    I facilitate sprints, encourage communication, 
+                                    and use tools like Jira to ensure everyone stays aligned and focused on goals.
                                 </p>
                             </div>
                         </div>

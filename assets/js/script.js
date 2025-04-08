@@ -4,7 +4,7 @@ const typed = new Typed(".typing", {
     typeSpeed: 100,
     BackSpeed: 60,
     loop: true
-})
+});
 /*Aside*/
 const nav = document.querySelector('.nav');
 const navlist = nav.querySelectorAll('li');
@@ -22,12 +22,12 @@ for (let i = 0; i < totalNavList; i++) {
             }
             navlist[j].querySelector('a').classList.remove('active');
         }
-        this.classList.add('active')
+        this.classList.add('active');
         showSection(this);
         if (window.innerWidth <= 1200) {
             asideSectionTogglerBtn();
         }
-    })
+    });
 }
 function removeBackSection() {
     for (let i = 0; i < totalSection; i++) {
@@ -42,7 +42,7 @@ function showSection(element) {
         allSection[i].classList.remove("active");
     }
     const target = element.getAttribute("href").split("#")[1];
-    document.querySelector(`#${target}`).classList.add("active")
+    document.querySelector(`#${target}`).classList.add("active");
 }
 function updateNav(element) {
     for (let i = 0; i < totalNavList; i++) {
@@ -70,12 +70,12 @@ document.querySelector(".hire-me").addEventListener("click", function () {
     updateNav(this);
     removeBackSection();
     addBackSection(sectionIndex);
-})
+});
 const navTogglerBtn = document.querySelector(".nav-toggler");
 const aside = document.querySelector(".aside");
 navTogglerBtn.addEventListener("click", () => {
     asideSectionTogglerBtn();
-})
+});
 function asideSectionTogglerBtn() {
     aside.classList.toggle("open");
     navTogglerBtn.classList.toggle("open");
@@ -105,7 +105,6 @@ for (const aboutItem of aboutTabItems) {
             content.classList.remove('active');
         }
 
-        // Activate the clicked tab and its content
         aboutItem.classList.add('active');
         document.querySelector(aboutItem.getAttribute('data-target')).classList.add('active');
     });
@@ -116,7 +115,6 @@ const skillsContents = document.querySelectorAll('.skills-tab-content');
 for (const skillsItem of skillsTabItems) {
     skillsItem.addEventListener('click', () => {
 
-        // Remove active classes from all tab items and contents
         for (const tab of skillsTabItems) {
             tab.classList.remove('active');
         }
@@ -128,44 +126,3 @@ for (const skillsItem of skillsTabItems) {
         document.querySelector(skillsItem.getAttribute('data-target')).classList.add('active');
     });
 }
-
-//skills
-document.addEventListener('DOMContentLoaded', () => {
-    const skillCounters = document.querySelectorAll('.skill-percentage');
-    let animated = false;
-
-    function animateSkills() {
-        if (animated) return;
-        animated = true;
-
-        for (const el of skillCounters) {
-            const target = Number.parseInt(el.getAttribute('data-percentage'), 10);
-            let count = 0;
-
-            const interval = setInterval(() => {
-                if (count >= target) {
-                    clearInterval(interval);
-                } else {
-                    count++;
-                    el.textContent = `${count}%`;
-                }
-            }, 20);
-        }
-    }
-
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return rect.top <= window.innerHeight && rect.bottom >= 0;
-    }
-
-    function checkScroll() {
-        const skillsSection = document.getElementById('skills');
-        if (skillsSection && isElementInViewport(skillsSection)) {
-            animateSkills();
-            window.removeEventListener('scroll', checkScroll);
-        }
-    }
-
-    window.addEventListener('scroll', checkScroll);
-    checkScroll();
-});
