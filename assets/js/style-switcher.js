@@ -19,6 +19,7 @@ function setActiveStyle(color) {
             style.setAttribute("disabled", "true");
         }
     }
+    document.querySelector(".style-switcher").classList.remove("open");
 }
 /*=========================== theme light and dark mode ===========================*/
 const dayNight = document.querySelector(".day-night");
