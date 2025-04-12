@@ -11,28 +11,59 @@ window.addEventListener("scroll", () => {
 })
 /*=========================== theme colors ===========================*/
 const alternateStyles = document.querySelectorAll(".alternate-style");
+
 function setActiveStyle(color) {
-    for (const style of alternateStyles) {
-        if (color === style.getAttribute("title")) {
-            style.removeAttribute("disabled");
-        } else {
-            style.setAttribute("disabled", "true");
+    localStorage.setItem("themeColor", color);
+        for (const style of alternateStyles) {
+            if (color === style.getAttribute("title")) {
+                style.removeAttribute("disabled");
+            } else {
+                style.setAttribute("disabled", "true");
+            }
         }
-    }
     document.querySelector(".style-switcher").classList.remove("open");
 }
+
+// On page load, apply saved color
+const savedColor = localStorage.getItem("themeColor");
+if (savedColor) {
+    setActiveStyle(savedColor);
+}
+
 /*=========================== theme light and dark mode ===========================*/
 const dayNight = document.querySelector(".day-night");
+
+// Toggle theme + icon + store in localStorage
 dayNight.addEventListener("click", () => {
-    dayNight.querySelector("i").classList.toggle("fa-sun");
-    dayNight.querySelector("i").classList.toggle("fa-moon");
-    document.body.classList.toggle("light");
-})
+    document.documentElement.classList.toggle("light");
+
+    const icon = dayNight.querySelector("i");
+    icon.classList.toggle("fa-sun");
+    icon.classList.toggle("fa-moon");
+
+    // Save theme preference
+    const currentTheme = document.documentElement.classList.contains("light") ? "light" : "dark";
+    localStorage.setItem("themeMode", currentTheme);
+});
+
+// On load, apply saved theme and correct icon
 window.addEventListener("load", () => {
-    if (document.body.classList.contains("light")) {
+    const savedTheme = localStorage.getItem("themeMode") || "dark";
+
+    if (savedTheme === "light") {
+        document.documentElement.classList.add("light");
         dayNight.querySelector("i").classList.add("fa-moon");
-    }
-    else {
+    } else {
+        document.documentElement.classList.remove("light");
         dayNight.querySelector("i").classList.add("fa-sun");
     }
-})
+
+    // Make sure the sun/moon icons are properly toggled based on the class
+    if (document.documentElement.classList.contains("light")) {
+        dayNight.querySelector("i").classList.remove("fa-sun");
+        dayNight.querySelector("i").classList.add("fa-moon");
+    } else {
+        dayNight.querySelector("i").classList.remove("fa-moon");
+        dayNight.querySelector("i").classList.add("fa-sun");
+    }
+});
