@@ -19,6 +19,30 @@ function generateCSRFToken()
     <meta property="og:image" content="assets/images/logo black.png">
 
     <title>Rasha's Portfolio</title>
+    <script>
+        (function() {
+            // === Load Saved Theme Color ===
+            const savedColor = localStorage.getItem("themeColor");
+            if (savedColor) {
+                const links = document.querySelectorAll('link.alternate-style');
+                links.forEach(link => {
+                    if (link.getAttribute("title") === savedColor) {
+                        link.removeAttribute("disabled");
+                    } else {
+                        link.setAttribute("disabled", "true");
+                    }
+                });
+            }
+
+            // === Load Saved Theme Mode (light or dark) ===
+            const savedTheme = localStorage.getItem("themeMode");
+            if (savedTheme === "light") {
+                document.documentElement.classList.add("light");
+            } else {
+                document.documentElement.classList.remove("light");
+            }
+        })();
+    </script>
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/color-1.css">
@@ -116,16 +140,16 @@ function generateCSRFToken()
                                     <h3>I'm Rasha Alsaleh, a <span>Software Engineer</span></h3>
                                     <p style="text-align: justify;">
                                         I am a passionate third-year software engineering student at Amman Arab University,
-                                        focused on delivering high-quality results and continuous improvement. 
-                                        With a strong foundation in software development, quality assurance, and DevOps, 
-                                        I excel in collaborative environments where I can apply my technical expertise and contribute to team success. 
+                                        focused on delivering high-quality results and continuous improvement.
+                                        With a strong foundation in software development, quality assurance, and DevOps,
+                                        I excel in collaborative environments where I can apply my technical expertise and contribute to team success.
                                         I’m passionate about problem-solving and ensuring efficiency through automated testing and process optimization.
                                         <br>
-                                        My journey has involved embracing new challenges, refining my skills in QA/QC, 
-                                        and integrating DevOps practices to streamline workflows. 
+                                        My journey has involved embracing new challenges, refining my skills in QA/QC,
+                                        and integrating DevOps practices to streamline workflows.
                                         I bring a hands-on approach to project management, balancing technical needs with clear communication to meet deadlines and drive project success.
                                         <br>
-                                        I’m always looking for opportunities to grow, 
+                                        I’m always looking for opportunities to grow,
                                         and my goal is to combine my technical expertise with strong teamwork and project management skills to make a meaningful impact in the tech industry.
                                     </p>
                                 </div>
@@ -644,8 +668,8 @@ function generateCSRFToken()
                                 </div>
                                 <h4>Software Testing & QA</h4>
                                 <p>
-                                    Ensuring software reliability with automated testing. 
-                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency. 
+                                    Ensuring software reliability with automated testing.
+                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
                                     My focus is on delivering high-quality, bug-free releases.
                                 </p>
                             </div>
@@ -659,8 +683,8 @@ function generateCSRFToken()
                                 </div>
                                 <h4>Web Development</h4>
                                 <p>
-                                    Building responsive, scalable web apps that provide seamless user experiences. 
-                                    I combine front-end and back-end technologies 
+                                    Building responsive, scalable web apps that provide seamless user experiences.
+                                    I combine front-end and back-end technologies
                                     to create reliable solutions that perform efficiently and meet both user and business needs.
                                 </p>
                             </div>
@@ -674,8 +698,8 @@ function generateCSRFToken()
                                 </div>
                                 <h4>UI/UX Design</h4>
                                 <p>
-                                    Designing intuitive interfaces that prioritize user experience. 
-                                    I focus on creating smooth, clean, interactive designs through wireframing, 
+                                    Designing intuitive interfaces that prioritize user experience.
+                                    I focus on creating smooth, clean, interactive designs through wireframing,
                                     prototyping, and testing to ensure usability.
                                 </p>
                             </div>
@@ -689,8 +713,8 @@ function generateCSRFToken()
                                 </div>
                                 <h4>DevOps & CI/CD</h4>
                                 <p>
-                                    Streamlining development with CI/CD pipelines to automate workflows. 
-                                    I focus on increasing collaboration, accelerating software delivery, 
+                                    Streamlining development with CI/CD pipelines to automate workflows.
+                                    I focus on increasing collaboration, accelerating software delivery,
                                     and maintaining stability and quality through automated processes.
                                 </p>
                             </div>
@@ -704,8 +728,8 @@ function generateCSRFToken()
                                 </div>
                                 <h4>Problem-Solving & Optimization</h4>
                                 <p>
-                                    Developing efficient algorithms and optimized solutions 
-                                    to enhance system performance, scalability, and reliability. 
+                                    Developing efficient algorithms and optimized solutions
+                                    to enhance system performance, scalability, and reliability.
                                     I tackle challenges with creative and practical approaches to deliver impactful results.
                                 </p>
                             </div>
@@ -719,8 +743,8 @@ function generateCSRFToken()
                                 </div>
                                 <h4>Project Management</h4>
                                 <p>
-                                    Leading teams with Agile methods to ensure timely and high-quality project delivery. 
-                                    I facilitate sprints, encourage communication, 
+                                    Leading teams with Agile methods to ensure timely and high-quality project delivery.
+                                    I facilitate sprints, encourage communication,
                                     and use tools like Jira to ensure everyone stays aligned and focused on goals.
                                 </p>
                             </div>
@@ -893,6 +917,14 @@ function generateCSRFToken()
         <!-- Main Content End -->
     </div>
     <!-- Main Container End -->
+    <!-- Back-to-Top Button -->
+    <div id="backToTop">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring-circle" cx="30" cy="30" r="28" stroke-width="4"></circle>
+            <circle class="progress-ring-progress" cx="30" cy="30" r="28" stroke-width="4"></circle>
+        </svg>
+        <i class="fa fa-arrow-up"></i>
+    </div>
     <!-- Style Switcher Start -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
