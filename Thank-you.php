@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Thank you</title>
@@ -16,9 +17,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icon black.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/icon black.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icon black.png">
+    <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="assets/css/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="assets/css/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
     <link href="./assets/thanks/css/Mail.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div class="left">
@@ -28,5 +35,41 @@
         </div>
     </div>
     <script src="./assets/thanks/js/home.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedColor = localStorage.getItem('themeColor') || 'color-1';
+
+            const colorMappings = {
+                'color-1': { rgb: '236, 37, 176', hex: '#f024b3' },
+                'color-2': { rgb: '135, 80, 247', hex: '#8750f7' },
+                'color-3': { rgb: '64, 93, 230', hex: '#405DE6' },
+                'color-4': { rgb: '236, 24, 57', hex: '#ec1839' },
+                'color-5': { rgb: '255, 127, 62', hex: '#FF7F3E' }
+            };
+
+            // Set the CSS variables
+            const root = document.documentElement;
+            const selectedColor = colorMappings[savedColor];
+
+            if (selectedColor) {
+                root.style.setProperty('--skin-color-rgb', selectedColor.rgb);
+                root.style.setProperty('--skin-color', selectedColor.hex);
+                root.style.setProperty('--skin-gradient', `linear-gradient(135deg, 
+                rgba(${selectedColor.rgb}, 0.8) 0%, 
+                rgba(${selectedColor.rgb}, 0.3) 100%)`);
+            }
+
+            // Load the corresponding color stylesheet
+            const links = document.querySelectorAll('link.alternate-style');
+            links.forEach(link => {
+                if (link.getAttribute('title') === savedColor) {
+                    link.removeAttribute('disabled');
+                } else {
+                    link.setAttribute('disabled', 'true');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

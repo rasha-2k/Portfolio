@@ -1,13 +1,21 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--skin-color) white;
+        scroll-behavior: smooth;
+    }
+
     body {
         font-family: 'Montserrat', sans-serif;
-        /* Updated background color with linear gradient of black and purple */
-        background: linear-gradient(to right, white 50%, #E50D7F 50%);
+        background: linear-gradient(to right, white 50%, var(--skin-color) 50%);
         margin: 0;
         padding: 0;
-        scroll-behavior: smooth;
-        /* Added smooth scrolling behavior */
+    }
+
+    ::selection {
+        background-color: white;
+        color: var(--skin-color);
     }
 
     .container {
@@ -18,7 +26,7 @@
 
     .left {
         flex: 1;
-        background-color: #E50D7F;
+        background-color: var(--skin-color);
         color: white;
         display: flex;
         flex-direction: column;
@@ -45,7 +53,7 @@
         flex: 1;
         background-color: white;
         /* Updated to black */
-        color: #E50D7F;
+        color: var(--skin-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -130,7 +138,7 @@
         margin: 21 auto;
         padding: 8px 16px;
         background-color: white;
-        color: #E50D7F;
+        color: var(--skin-color);
         text-align: center;
         text-decoration: none;
         cursor: pointer;
@@ -171,7 +179,7 @@
     }
 
     ::-webkit-scrollbar-track {
-        background: #E50D7F;
+        background: var(--skin-color);
         /* Light gray background for the track */
     }
 
@@ -180,7 +188,7 @@
         /* Dark gray color for the thumb */
         border-radius: 5px;
         /* Round the corners of the thumb */
-        border: 2px solid #E50D7F;
+        border: 2px solid var(--skin-color);
         /* Add a subtle border to the thumb */
     }
 
@@ -200,7 +208,7 @@
         cursor: pointer;
         width: 50px;
         height: 50px;
-        background-color: #E50D7F;
+        background-color: var(--skin-color);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -254,7 +262,7 @@
             cursor: pointer;
             width: 90%;
             height: 100px;
-            background-color: #E50D7F;
+            background-color: var(--skin-color);
             border-radius: 0%;
             display: flex;
             justify-content: center;
