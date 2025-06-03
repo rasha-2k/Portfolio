@@ -396,7 +396,6 @@ function generateCSRFToken()
                                             </div>
                                         </div>
 
-                                        <!-- Others (Unity, Trello, GitHub, Jira, etc.) -->
                                         <div class="others skills-tab-content">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
                                                 <div class="col">
@@ -873,7 +872,7 @@ function generateCSRFToken()
                         </div>
 
                         <!-- Project 3 - The Planetary Explorer -->
-                        <div class="portfolio-item" data-category="game" data-github="https://github.com/rasha-2k/The-Planetary-Explorer" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
+                        <div class="portfolio-item" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
                             <div class="portfolio-media">
                                 <video autoplay muted loop playsinline>
                                     <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
@@ -890,7 +889,7 @@ function generateCSRFToken()
                             <div class="portfolio-content">
                                 <span class="project-category">3D Game</span>
                                 <h3 class="project-title">
-                                    <a href="https://github.com/rasha-2k/The-Planetary-Explorer" target="_blank" class="link">
+                                    <a target="_blank" class="link">
                                         <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
                                     </a>
                                 </h3>
@@ -949,7 +948,7 @@ function generateCSRFToken()
                     </div>
                     <div class="modal-content">
                         <span class="modal-category" id="modalCategory"></span>
-                        <h2 class="modal-title" id="modalTitle"><a target="_blank" class="link"></a></h2>
+                        <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link"></a></h2>
                         <p class="modal-description" id="modalDescription"></p>
                         <ul class="modal-tags" id="modalTags"></ul>
                         <div class="modal-actions">
@@ -960,13 +959,13 @@ function generateCSRFToken()
                                     <i class="fa-solid fa-arrow-up arrowtwo"></i>
                                 </span>
                             </a>
-                            <!-- <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
+                            <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
                                 <i class="fa-solid fa-meteor"></i> Live Demo
                                 <span class="arrow-container">
                                     <i class="fa-solid fa-arrow-up arrowone"></i>
                                     <i class="fa-solid fa-arrow-up arrowtwo"></i>
                                 </span>
-                            </a> -->
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1106,7 +1105,7 @@ function generateCSRFToken()
         AOS.init({
             duration: 800,
             easing: 'ease-out',
-            once: true,
+            once: false,
             offset: 150,
             delay: 100,
             anchorPlacement: 'center-bottom',
