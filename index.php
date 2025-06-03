@@ -1105,7 +1105,7 @@ function generateCSRFToken()
         AOS.init({
             duration: 800,
             easing: 'ease-out',
-            once: false,
+            once: true,
             offset: 150,
             delay: 100,
             anchorPlacement: 'center-bottom',

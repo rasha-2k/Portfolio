@@ -17,11 +17,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icon black.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/icon black.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icon black.png">
-    <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="assets/css/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="assets/css/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
     <link href="./assets/thanks/css/Mail.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
