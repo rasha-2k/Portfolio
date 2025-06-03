@@ -169,7 +169,6 @@
 
         // Portfolio Section
         const projectData = {
-
             'packtrack': {
                 description: `PackTrack is a full-stack delivery management platform designed to simplify package tracking for users and admins. The app features a clean dashboard UI, real-time courier tracking via external APIs, and JWT-based role authentication.
                             Users can securely log in, submit delivery forms, monitor package statuses, and get intelligent packaging tips. Admins get access to a powerful admin panel with dynamic data visualizations (Chart.js), user activity logs, and system analytics.
@@ -180,6 +179,8 @@
                 description: `Planetary Explorer is a 3D space exploration game built in Unity and C#, where players travel to procedurally generated exoplanets inspired by real NASA data. The game combines realistic physics with artistic design to simulate low-gravity environments, alien terrains, and interactive exploration.
                             From advanced physics-based movement to immersive soundscapes, the game is both educational and visually engaging. It’s designed to spark curiosity about space science while showcasing real-time rendering and gameplay optimization techniques.`,
                 tags: ['Unity', 'C#', '3D Environment Design', 'Low-Gravity Simulation', 'NASA Data', 'Game Physics'],
+                mediaType: 'video',
+                mediaSrc: 'assets/videos/Game View.mp4',
             },
 
             'arduino-smart-alert-system': {
@@ -201,38 +202,65 @@
         const modalVideoSource = document.getElementById('modalVideoSource');
         const modalImage = document.getElementById('modalImage');
 
-        // const viewProjectBtns = document.querySelectorAll('.view-project-btn');
-
         //open modal 
         const viewProjectBtns = document.querySelectorAll('.view-project-btn');
-        for (const btn of viewProjectBtns) {
-            btn.addEventListener('click', (e) => {
+        for (const viewBtn of viewProjectBtns) {
+            viewBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                const item = btn.closest('.portfolio-item');
-                const projectId = btn.dataset.project;
+                const item = viewBtn.closest('.portfolio-item');
+                const projectId = viewBtn.dataset.project;
                 const category = item.querySelector('.project-category')?.textContent.trim() || '';
-                const mediaType = item.dataset.mediatype || '';
-                const mediaSrc = item.dataset.mediasrc || '';
+                const mediaType = projectData[projectId]?.mediaType || item.dataset.mediatype || '';
+                const mediaSrc = projectData[projectId]?.mediaSrc || item.dataset.mediasrc || '';
 
-                const githubUrl = item.querySelector('.project-title a')?.getAttribute('href') || '#';
-                // const liveUrl = item.querySelector('.project-title a')?.getAttribute('data-live') || '#';
+                const githubUrl = item.dataset.github || '';
+                const modalGithubBtn = document.getElementById('modalGithubBtn');
+                const liveUrl = item.dataset.live || '';
+                const modalLiveBtn = document.getElementById('modalLiveBtn');
+
+                // Show/hide GitHub button based on URL availability
+                if (githubUrl && githubUrl !== '#') {
+                    modalGithubBtn.style.display = 'inline-flex';
+                    modalGithubBtn.href = githubUrl;
+                } else {
+                    modalGithubBtn.style.display = 'none';
+                }
+
+                // show/hide Live button based on URL availability
+                if (liveUrl && liveUrl !== '#') {
+                    modalLiveBtn.style.display = 'inline-flex';
+                    modalLiveBtn.href = liveUrl;
+                } else {
+                    modalLiveBtn.style.display = 'none';
+                }
 
                 const title = item.querySelector('.project-title a')?.textContent.trim() || '';
                 const modalTitle = document.getElementById('modalTitle');
-                modalTitle.innerHTML = ''; 
+                modalTitle.innerHTML = '';
 
                 const titleLink = document.createElement('a');
                 titleLink.textContent = title;
-                titleLink.href = githubUrl;
+                if (githubUrl && githubUrl !== '#') {
+                    titleLink.href = githubUrl;
+                }
                 titleLink.target = '_blank';
                 titleLink.classList.add('link');
 
                 modalTitle.appendChild(titleLink);
-
                 const description = projectData[projectId]?.description || '';
                 const tags = projectData[projectId]?.tags || [];
-
-                // Set modal content
+                if (!description) {
+                    console.error(`No description found for project ID: ${projectId}`);
+                    return;
+                }
+                if (!tags || !Array.isArray(tags)) {
+                    console.error(`No tags found for project ID: ${projectId}`);
+                    return;
+                }
+                if (!mediaSrc) {
+                    console.error(`No media source found for project ID: ${projectId}`);
+                    return;
+                }                // Set modal content
                 document.getElementById('modalCategory').textContent = category;
                 document.getElementById('modalDescription').innerHTML = description.replace(/\n/g, '<br>');
 
@@ -268,6 +296,15 @@
                 // Show modal
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
+
+                // Show/hide GitHub button based on URL availability
+                const btn = document.getElementById('modalGithubBtn');
+                if (githubUrl && githubUrl !== '#') {
+                    btn.style.display = 'inline-flex';
+                    btn.href = githubUrl;
+                } else {
+                    btn.style.display = 'none';
+                }
             });
         }
 
