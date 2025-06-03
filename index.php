@@ -54,6 +54,8 @@ function generateCSRFToken()
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Style Switcher -->
     <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
@@ -92,7 +94,7 @@ function generateCSRFToken()
             <section class="home section" id="home">
                 <div class="container">
                     <div class="row Box shadowEffect">
-                        <div class="home-info padd-15">
+                        <div class="home-info padd-15" data-aos="fade-in">
                             <h3 class="hello">Hello, I'm <span class="name">Rasha Alsaleh</span></h3>
                             <h3 class="my-profession">A <span class="typing">Full-stack Developer</span></h3>
                             <div class="cv-button">
@@ -114,12 +116,15 @@ function generateCSRFToken()
                                             </a> -->
                                 </div>
                                 <a href="assets/docs/Rasha Alsaleh.pdf" class="btn"><b>Resume</b>
-                                    <span class="icon-box"><i class="fa fa-arrow-down downloadone"></i>
-                                        <i class="fa fa-arrow-down downloadtwo"></i></span></a>
+                                    <span class="icon-box">
+                                        <i class="fa fa-arrow-down downloadone"></i>
+                                        <i class="fa fa-arrow-down downloadtwo"></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
-                        <div class="home-img padd-15">
-                            <img src="assets/images/pic.jpg" alt="Profile Picture">
+                        <div class="home-img padd-15" data-aos="fade-in">
+                            <img src="assets/images/pfp.jpg" alt="Profile Picture">
                         </div>
                     </div>
                 </div>
@@ -129,13 +134,13 @@ function generateCSRFToken()
             <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
+                        <div class="section-title padd-15" data-aos="fade-in">
                             <h2>About Me</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="about-content padd-15">
-                            <div class="row Box">
+                            <!-- <div class="row Box" style="margin-top: 0;">
                                 <div class="about-text padd-15">
                                     <h3>I'm Rasha Alsaleh, a <span>Software Engineer</span></h3>
                                     <p style="text-align: justify;">
@@ -153,15 +158,15 @@ function generateCSRFToken()
                                         and my goal is to combine my technical expertise with strong teamwork and project management skills to make a meaningful impact in the tech industry.
                                     </p>
                                 </div>
-                            </div>
-                            <div class="row Box">
+                            </div> -->
+                            <div class="row Box" style="margin-top: 0;">
                                 <div class="section-container padd-15">
                                     <div class="section-subtitle padd-15">
                                         <h3 class="title">Personal Information</h3>
                                     </div>
 
                                     <div class="personal-info-grid" data-aos="fade-up" data-aos-delay="200">
-                                        <div class="info-item">
+                                        <div class="info-item" data-aos="fade-in">
                                             <div class="info-icon">
                                                 <i class="fa-solid fa-calendar-days"></i>
                                             </div>
@@ -171,7 +176,7 @@ function generateCSRFToken()
                                             </div>
                                         </div>
 
-                                        <div class="info-item">
+                                        <div class="info-item" data-aos="fade-in">
                                             <div class="info-icon">
                                                 <i class="fa-solid fa-user"></i>
                                             </div>
@@ -201,7 +206,7 @@ function generateCSRFToken()
                                             </div>
                                         </div>
 
-                                        <div class="info-item">
+                                        <div class="info-item" data-aos="fade-in">
                                             <div class="info-icon">
                                                 <i class="fa-solid fa-graduation-cap"></i>
                                             </div>
@@ -221,17 +226,17 @@ function generateCSRFToken()
                                             </div>
                                         </div>
 
-                                        <div class="info-item">
+                                        <div class="info-item" data-aos="fade-in">
                                             <div class="info-icon">
                                                 <i class="fa-solid fa-location-dot"></i>
                                             </div>
                                             <div class="info-content">
-                                                <h4 class="info-title">City</h4>
-                                                <p class="info-value">Amman</p>
+                                                <h4 class="info-title">Location</h4>
+                                                <p class="info-value">Amman - Jordan</p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item">
+                                        <div class="info-item" data-aos="fade-in">
                                             <div class="info-icon">
                                                 <i class="fa-solid fa-briefcase"></i>
                                             </div>
@@ -259,14 +264,14 @@ function generateCSRFToken()
                                         <h3 class="title">My Technical Skills</h3>
                                     </div>
                                     <div class="row">
-                                        <div class="skills-tabs">
+                                        <div class="skills-tabs" data-aos="fade-up">
                                             <span class="skills-tab-item active" data-target=".languages">Languages</span>
                                             <span class="skills-tab-item" data-target=".tools">Tools</span>
                                             <span class="skills-tab-item" data-target=".others">Others</span>
                                         </div>
                                     </div>
                                     <!-- Tab Contents -->
-                                    <div class="skills-container">
+                                    <div class="skills-container" data-aos="fade-in">
                                         <!-- Languages -->
                                         <div class="languages skills-tab-content active">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
@@ -475,7 +480,7 @@ function generateCSRFToken()
                                         <h3 class="title">Achievements</h3>
                                     </div>
                                     <div class="row">
-                                        <div class="about-tabs">
+                                        <div class="about-tabs" data-aos="fade-up">
                                             <span class="about-tab-item active" data-target=".certifications">Certifications</span>
                                             <span class="about-tab-item" data-target=".activities">Activities</span>
                                         </div>
@@ -503,13 +508,18 @@ function generateCSRFToken()
                                                             </p>
                                                         </div> -->
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
+                                                        <h3 class="timeline-date" data-aos="fade-in">
                                                             <i class="fa fa-calendar"></i> Dec 2024
                                                         </h3>
-                                                        <h4 class="timeline-title"><a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a></h4>
-                                                        <p class="timeline-text">An in-depth 40-hour course offered by "The Hope International" company,
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            <a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">
+                                                                QA Software Testing
+                                                            </a>
+                                                        </h4>
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            An in-depth 40-hour course offered by "The Hope International" company,
                                                             focusing on the core principles and practices of manual software testing.
                                                             This program covers theoretical and practical aspects of QA testing, including testing fundamentals,
                                                             brfecycle integration, test management, and tool support. <br>
@@ -526,13 +536,18 @@ function generateCSRFToken()
                                                         </p>
                                                     </div>
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
+                                                        <h3 class="timeline-date" data-aos="fade-in">
                                                             <i class="fa fa-calendar"></i> August 2024
                                                         </h3>
-                                                        <h4 class="timeline-title"><a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP Exam Prep Course</a></h4>
-                                                        <p class="timeline-text">Completed the PMI-ACP Exam Prep Course on
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">
+                                                                PMI-ACP Exam Prep Course
+                                                            </a>
+                                                        </h4>
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            Completed the PMI-ACP Exam Prep Course on
                                                             Udemy,
                                                             covering the 7 domains outlined in the PMI-ACP exam content.
                                                             The course included comprehensive practice exams, mock tests,
@@ -552,15 +567,18 @@ function generateCSRFToken()
                                             <div class="timeline-box padd-15">
                                                 <div class="timeline shadow-dark">
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
+                                                        <h3 class="timeline-date" data-aos="fade-in">
                                                             <i class="fa fa-calendar"></i> October 2024
                                                         </h3>
-                                                        <h4 class="timeline-title">
-                                                            <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">Creativity Award | NASA Space Apps Challenge</a>
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">
+                                                                Creativity Award | NASA Space Apps Challenge
+                                                            </a>
                                                         </h4>
-                                                        <p class="timeline-text">Awarded the 'Creativity Award' for
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            Awarded the 'Creativity Award' for
                                                             designing a 3D interactive game, <b>The Planetary
                                                                 Explorer</b>using the Unity engine.
                                                             Targeted at elementary to high school students, the game
@@ -576,13 +594,18 @@ function generateCSRFToken()
                                                         </p>
                                                     </div>
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
+                                                        <h3 class="timeline-date" data-aos="fade-in">
                                                             <i class="fa fa-calendar"></i> May 2024
                                                         </h3>
-                                                        <h4 class="timeline-title"><a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">2nd Place | AAU-XDT 2024</a></h4>
-                                                        <p class="timeline-text">A UI/UX competition for 3rd and 4th-year
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            <a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">
+                                                                2nd Place | AAU-XDT 2024
+                                                            </a>
+                                                        </h4>
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            A UI/UX competition for 3rd and 4th-year
                                                             students, where teams were tasked with designing a prototype for
                                                             an e-learning management system.
                                                             Our project successfully met complex requirements, standing out
@@ -591,13 +614,18 @@ function generateCSRFToken()
                                                         </p>
                                                     </div>
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
+                                                        <h3 class="timeline-date" data-aos="fade-in">
                                                             <i class="fa fa-calendar"></i> Jan 2024
                                                         </h3>
-                                                        <h4 class="timeline-title"><a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3rd Place | 3Minutes Competition</a></h4>
-                                                        <p class="timeline-text">This competition challenged participants to
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">
+                                                                3rd Place | 3Minutes Competition
+                                                            </a>
+                                                        </h4>
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            This competition challenged participants to
                                                             convince judges of their project idea in just 3 minutes.
                                                             Our project, UniBus, aimed to streamline transportation for
                                                             university students, drivers, and employees
@@ -608,13 +636,16 @@ function generateCSRFToken()
                                                         </p>
                                                     </div>
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
+                                                        <h3 class="timeline-date" data-aos="fade-in">
                                                             <i class="fa fa-calendar"></i> Nov 2023
                                                         </h3>
-                                                        <h4 class="timeline-title">Participant | JCPC23</h4>
-                                                        <p class="timeline-text"> Participated in the JCPC23 (Jordanian
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            Participant | JCPC23
+                                                        </h4>
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            Participated in the JCPC23 (Jordanian
                                                             Collegiate Programming Contest),
                                                             a competitive programming contest aimed at university students
                                                             in Jordan.
@@ -625,13 +656,17 @@ function generateCSRFToken()
                                                         </p>
                                                     </div>
                                                     <!-- timeline item -->
-                                                    <div class="timeline-item">
+                                                    <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
+                                                        <h3 class="timeline-date" data-aos="fade-in">
                                                             <i class="fa fa-calendar"></i> May 2023
                                                         </h3>
-                                                        <h4 class="timeline-title"><a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">First Team To Solve | AAU-PC 2023</a></h4>
-                                                        <p class="timeline-text">
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">
+                                                                First Team To Solve | AAU-PC 2023
+                                                            </a>
+                                                        </h4>
+                                                        <p class="timeline-text" data-aos="fade-in">
                                                             A problem-solving competition held annually in May, designed to
                                                             simulate JCPC and ICPC contests.
                                                             It serves as a valuable training ground for competitive
@@ -655,14 +690,14 @@ function generateCSRFToken()
             <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
+                        <div class="section-title padd-15" data-aos="fade-in">
                             <h2>Services</h2>
                         </div>
                     </div>
                     <div class="row">
                         <!-- Service Item Start -->
                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                            <div class="service-item-inner" data-aos="fade-in">
                                 <div class="icon">
                                     <i class="fa fa-bug"></i>
                                 </div>
@@ -677,7 +712,7 @@ function generateCSRFToken()
                         <!-- Service Item End -->
                         <!-- Service Item Start -->
                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                            <div class="service-item-inner" data-aos="fade-in">
                                 <div class="icon">
                                     <i class="fa fa-globe"></i>
                                 </div>
@@ -692,7 +727,7 @@ function generateCSRFToken()
                         <!-- Service Item End -->
                         <!-- Service Item Start -->
                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                            <div class="service-item-inner" data-aos="fade-in">
                                 <div class="icon">
                                     <i class="fa fa-paint-brush"></i>
                                 </div>
@@ -707,7 +742,7 @@ function generateCSRFToken()
                         <!-- Service Item End -->
                         <!-- Service Item Start -->
                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                            <div class="service-item-inner" data-aos="fade-in">
                                 <div class="icon">
                                     <i class="fa fa-solid fa-gears"></i>
                                 </div>
@@ -722,7 +757,7 @@ function generateCSRFToken()
                         <!-- Service Item End -->
                         <!-- Service Item Start -->
                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                            <div class="service-item-inner" data-aos="fade-in">
                                 <div class="icon">
                                     <i class="fa fa-puzzle-piece"></i>
                                 </div>
@@ -737,7 +772,7 @@ function generateCSRFToken()
                         <!-- Service Item End -->
                         <!-- Service Item Start -->
                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                            <div class="service-item-inner" data-aos="fade-in">
                                 <div class="icon">
                                     <i class="fa fa-users"></i>
                                 </div>
@@ -758,74 +793,190 @@ function generateCSRFToken()
             <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
+                        <div class="section-title padd-15" data-aos="fade-in">
                             <h2>Portfolio</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2 style="display: none;">My Last Projects : </h2>
-                        </div>
+                    <!-- Portfolio Filter -->
+                    <div class="portfolio-filter" data-aos="fade-up">
+
+                        <span class="filter-btn active" data-filter="all">All Projects</span>
+                        <span class="filter-btn" data-filter="web">Web Apps</span>
+                        <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
+                        <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
+                        <span class="filter-btn" data-filter="iot">IoT</span>
+                        <span class="filter-btn" data-filter="game">Games</span>
+                        <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
                     </div>
-                    <div class="row Box">
-                        <!-- portfolio item start -->
-                        <!-- <div class="portfolio-item padd-15">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <video autoplay muted loop width="100%" playsinline>
-                                            <source src="assets/images/the planetary explorer.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                </div>
-                            </div> -->
-                        <!-- portfolio item end -->
-                        <!-- portfolio item start -->
-                        <div class="row">
-                            <div class="portfolio-item padd-15">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <!-- Project Video/Image -->
-                                    <div class="portfolio-img">
-                                        <video autoplay muted loop width="100%" playsinline>
-                                            <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                    <!-- Project Content -->
-                                    <div class="project-left-content">
-                                        <div class="project_content">
-                                            <span class="subtitle">3D Game</span>
-                                            <h3 class="title">
-                                                <a href="https://github.com/rasha-2k/The-Planetary-Explorer" target="_blank">The Planetary Explorer</a>
-                                            </h3>
-                                            <p class="desc">Planetary Explorer is a 3D space adventure game developed in Unity and C#
-                                                that aims to provide players with an immersive activities of exploring exoplanet environments.
-                                                Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources,
-                                                the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools,
-                                                enhancing their exploration journey across multiple planets.
-                                            </p>
-                                        </div>
-                                        <!-- Project Tags/Technologies Used -->
-                                        <ul class="project_tags">
-                                            <li><a href="#">Unity</a></li>
-                                            <li><a href="#">C#</a></li>
-                                            <li><a href="#">3D Environment Design</a></li>
-                                            <li><a href="#">Low-Gravity Simulation</a></li>
-                                        </ul>
+                    <!-- Portfolio Grid -->
+                    <div class="portfolio-grid" data-aos="slide-up">
+
+                        <!-- Project 1 - PackTrack -->
+                        <div class="portfolio-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/images/website-background.jpg" data-aos="fade-in" data-aos-delay="100">
+                            <div class="portfolio-media">
+                                <img src="assets/images/website-background.jpg" alt="PackTrack Web App">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-overlay-content">
+                                        <button class="view-project-btn" data-project="packtrack">
+                                            View Details
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="portfolio-content">
+                                <span class="project-category">Full-Stack Web App</span>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link"><i class="fa-solid fa-truck"></i> PackTrack</a>
+                                </h3>
+                                <p class="project-description" data-aos="fade-in">
+                                    A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
+                                <ul class="project-tags" data-aos="slide-up">
+                                    <li><a>PHP</a></li>
+                                    <li><a>MySQL</a></li>
+                                    <li><a>API Integration</a></li>
+                                    <li><a>JWT Auth</a></li>
+                                    <li><a>Docker</a></li>
+                                    <li><a>Chart.js</a></li>
+                                    <li><a>Tailwind CSS</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <!-- portfolio item end -->
+
+                        <!-- Project 2 - Smart Alert System -->
+                        <div class="portfolio-item" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" data-aos="fade-in" data-aos-delay="100">
+                            <div class="portfolio-media">
+                                <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-overlay-content">
+                                        <button class="view-project-btn" data-project="arduino-smart-alert-system">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="project-category">IoT Project</span>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link">
+                                        <i class="fa-solid fa-microchip"></i> Smart Alert System
+                                    </a>
+                                </h3>
+                                <p class="project-description" data-aos="fade-in">
+                                    An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
+                                <ul class="project-tags">
+                                    <li><a>Arduino</a></li>
+                                    <li><a>PIR Sensor</a></li>
+                                    <li><a>Ultrasonic</a></li>
+                                    <li><a>Water Sensor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 - The Planetary Explorer -->
+                        <div class="portfolio-item" data-category="game" data-github="https://github.com/rasha-2k/The-Planetary-Explorer" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
+                            <div class="portfolio-media">
+                                <video autoplay muted loop playsinline>
+                                    <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-overlay-content">
+                                        <button class="view-project-btn" data-project="planetary-explorer">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="project-category">3D Game</span>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/rasha-2k/The-Planetary-Explorer" target="_blank" class="link">
+                                        <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
+                                    </a>
+                                </h3>
+                                <p class="project-description" data-aos="fade-in">
+                                    Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
+                                </p>
+                                <ul class="project-tags">
+                                    <li><a>Unity</a></li>
+                                    <li><a>C#</a></li>
+                                    <li><a>3D Environment Design</a></li>
+                                    <li><a>Low-Gravity Simulation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 - Sample AI Project -->
+                        <!-- <div class="portfolio-item" data-category="ai" data-github="#" data-live="#" data-mediatype="image" data-mediasrc="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop">
+                            <div class="portfolio-media">
+                                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop" alt="AI Image Recognition">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-overlay-content">
+                                        <button class="view-project-btn" data-project="ai-recognition">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="project-category">AI/Machine Learning</span>
+                                <h3 class="project-title">
+                                    <a target="_blank" class="link">Smart Image Recognition System</a>
+                                </h3>
+                                <p class="project-description">
+                                    An advanced AI-powered image recognition system using deep learning techniques to classify and analyze images with high accuracy. Features real-time processing, batch analysis, and custom model training capabilities for various industries.
+                                </p>
+                                <ul class="project-tags">
+                                    <li><a>Python</a></li>
+                                    <li><a>TensorFlow</a></li>
+                                    <li><a>OpenCV</a></li>
+                                    <li><a>FastAPI</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
+            <!-- Project Modal -->
+            <div class="modal-overlay" id="projectModal">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <video class="modal-media" id="modalMedia" autoplay muted loop playsinline style="display: none;">
+                            <source id="modalVideoSource" src="" type="video/mp4">
+                        </video>
+                        <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
+                        <button class="modal-close" id="modalClose">x</button>
+                    </div>
+                    <div class="modal-content">
+                        <span class="modal-category" id="modalCategory"></span>
+                        <h2 class="modal-title" id="modalTitle"><a target="_blank" class="link"></a></h2>
+                        <p class="modal-description" id="modalDescription"></p>
+                        <ul class="modal-tags" id="modalTags"></ul>
+                        <div class="modal-actions">
+                            <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
+                                <i class="fa-solid fa-link"></i> View on GitHub
+                                <span class="arrow-container">
+                                    <i class="fa-solid fa-arrow-up arrowone"></i>
+                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                                </span>
+                            </a>
+                            <!-- <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
+                                <i class="fa-solid fa-meteor"></i> Live Demo
+                                <span class="arrow-container">
+                                    <i class="fa-solid fa-arrow-up arrowone"></i>
+                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                                </span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Portfolio Section End -->
             <!-- Contact Section Start -->
             <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
+                        <div class="section-title padd-15" data-aos="fade-in">
                             <h2>Contact Me</h2>
                         </div>
                     </div>
@@ -833,21 +984,21 @@ function generateCSRFToken()
                     <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
                     <div class="row">
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15">
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
                             <div class="icon"><i class="fab fa-whatsapp"></i></div>
                             <h4>Call Me On</h4>
                             <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15">
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                             <h4>Location</h4>
-                            <p><a href="#" class="link">Amman</a></p>
+                            <p><a class="link">Amman</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15">
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>Email</h4>
                             <p><a href="mailto:info@rashaalsaleh.com" target="_blank"
@@ -855,7 +1006,7 @@ function generateCSRFToken()
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15">
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
                             <div class="icon"><i class="fab fa-linkedin"></i></div>
                             <h4>LinkedIn</h4>
                             <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha
@@ -867,8 +1018,8 @@ function generateCSRFToken()
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- Contact Form -->
                     <div class="row">
-                        <div class="contact-form padd-15">
-                            <form action="mail/contact" method="POST">
+                        <div class="contact-form padd-15" data-aos="fade-up">
+                            <form action="mail/contact" method="POST" data-aos="fade-in">
                                 <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
@@ -949,6 +1100,19 @@ function generateCSRFToken()
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/style-switcher.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+            offset: 150,
+            delay: 100,
+            anchorPlacement: 'center-bottom',
+        });
+    </script>
+
     <script>
         function startCountdown() {
             var agreeCheckbox = document.getElementById("agreeCheckbox");
