@@ -115,7 +115,7 @@ function generateCSRFToken()
                                                 </span>
                                             </a> -->
                                 </div>
-                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn"><b>Resume</b>
+                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank"><b>Resume</b>
                                     <span class="icon-box">
                                         <i class="fa fa-arrow-down downloadone"></i>
                                         <i class="fa fa-arrow-down downloadtwo"></i>
