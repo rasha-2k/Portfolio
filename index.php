@@ -14,7 +14,7 @@ function generateCSRFToken()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rasha Alsaleh's portfolio - Quality Control Engineer and Software Engineer based in Amman, Jordan.">
+    <meta name="description" content="Rasha Alsaleh's portfolio - Software Engineer based in Amman, Jordan.">
     <meta name="keywords" content="Rasha Alsaleh, Software Engineer, Quality Control, Quality Assurance, QC, QA, manual Testing, Portfolio, Amman, Jordan">
     <meta property="og:image" content="assets/images/logo(ice bear).png">
 
@@ -165,7 +165,7 @@ function generateCSRFToken()
                                         <h3 class="title">Personal Information</h3>
                                     </div>
 
-                                    <div class="personal-info-grid" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="personal-info-grid" data-aos="fade-up" data-aos-delay="10">
                                         <div class="info-item" data-aos="fade-in">
                                             <div class="info-icon">
                                                 <i class="fa-solid fa-calendar-days"></i>
@@ -264,7 +264,7 @@ function generateCSRFToken()
                                         <h3 class="title">My Technical Skills</h3>
                                     </div>
                                     <div class="row">
-                                        <div class="skills-tabs" data-aos="fade-up">
+                                        <div class="tabs" data-aos="fade-up">
                                             <span class="skills-tab-item active" data-target=".languages">Languages</span>
                                             <span class="skills-tab-item" data-target=".tools">Tools</span>
                                             <span class="skills-tab-item" data-target=".others">Others</span>
@@ -275,42 +275,42 @@ function generateCSRFToken()
                                         <!-- Languages -->
                                         <div class="languages skills-tab-content active">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/html_css_js.png" alt="HTML, CSS, JS" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">HTML, CSS, JS</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Go.svg" alt="Golang" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Go Lang</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Python.svg" alt="Python" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Python</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/PHP.svg" alt="PHP" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">PHP</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/CSharp.svg" alt="C#" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">C#</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Java.svg" alt="Java" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
@@ -323,35 +323,35 @@ function generateCSRFToken()
                                         <!-- Tools -->
                                         <div class="tools skills-tab-content">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Postman.svg" alt="Postman" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Postman</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Selenium.svg" alt="Selenium" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Selenium</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/GitHubActions.svg" alt="GitHub Actions" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">GitHub Actions</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Git.svg" alt="Git" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">Git</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Docker.svg" alt="Docker" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
@@ -365,28 +365,28 @@ function generateCSRFToken()
                                                     </div>
                                                     <p class="skill-name">Kubernetes</p>
                                                 </div> -->
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/VirtualBox.svg" alt="VirtualBox" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">VirtualBox</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/VSCode.svg" alt="VS Code" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">90%</div> -->
                                                     </div>
                                                     <p class="skill-name">VS Code</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/ChatGPT.svg" alt="ChatGPT" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">ChatGPT</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Figma.svg" alt="Figma" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
@@ -398,70 +398,70 @@ function generateCSRFToken()
 
                                         <div class="others skills-tab-content">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Devops.svg" alt="Devops" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">Devops</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Linux.svg" alt="Linux" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Linux</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Bash.svg" alt="Bash Script" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Bash Script</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Powershell.svg" alt="PowerShell" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">PowerShell</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/MySQL.svg" alt="MySQL" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">MySQL</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/PostgresSQL.svg" alt="PostgreSQL" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
                                                     <p class="skill-name">PostgreSQL</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/NetCore.svg" alt=".Net Core" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">.Net Core</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Jira.svg" alt="Jira" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Jira</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Trello.svg" alt="Trello" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Trello</p>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1000">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Unity.svg" alt="Unity" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
@@ -473,224 +473,218 @@ function generateCSRFToken()
                                     </div>
                                 </div>
                             </div>
-                            <div class="row Box">
+                            <div class="row Box" id="achievements">
                                 <div class="section-container padd-15">
-                                    <div class="section-subtitle padd-15">
-                                        <h3 class="title">Achievements</h3>
-                                    </div>
-                                    <div class="row">
-                                        <div class="about-tabs" data-aos="fade-up">
-                                            <span class="about-tab-item active" data-target=".certifications">Certifications</span>
-                                            <span class="about-tab-item" data-target=".activities">Activities</span>
+                                    <div class="achievements-container" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="bg-decoration"></div>
+                                        <div class="section-subtitle padd-15" data-aos="fade-down" data-aos-duration="800">
+                                            <h3 class="title">Achievements</h3>
                                         </div>
-                                    </div>
-                                    <div class="certifications padd-15 about-tab-content active">
-                                        <!-- <h3 class="title">Certifications</h3> -->
                                         <div class="row">
-                                            <div class="timeline-box">
-                                                <div class="timeline shadow-dark">
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> In Progress – 2025
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a class="link" target="_blank">
-                                                                Advanced Software Testing – Automation Track
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text">
-                                                            A hands-on training program offered by "The Hope International" focused on test automation tools and practices.
-                                                            This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
-                                                            It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
-                                                            <br>
-                                                            <b>Key learning areas include:</b>
-                                                        </p>
-                                                        <ul class="timeline-text" data-aos="fade-in">
-                                                            <li>• Automating test cases and reducing manual testing overhead.</li>
-                                                            <li>• Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
-                                                            <li>• Mobile testing best practices (ASTQB Mobile Testing standards).</li>
-                                                            <li>• Agile and DevOps integration (Agile Tester & Scrum Master concepts).</li>
-                                                            <li>• API automation and Selenium WebDriver-based testing workflows.</li>
-                                                        </ul>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            This course equips participants with the tools and mindset to evolve from QA analysts to automation specialists,
-                                                            ready to build robust and scalable test automation solutions.
-                                                        </p>
+                                            <div class="tabs" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                                                <span class="about-tab-item active" data-target=".certifications">Certifications</span>
+                                                <span class="about-tab-item" data-target=".activities">Activities</span>
+                                            </div>
+                                        </div>
+                                        <div id="certifications" class="certifications about-tab-content active">
+                                            <div class="achievement-grid">
+                                                <!-- timeline item -->
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                                    <div class="status-indicator in-progress">In Progress</div>
+                                                    <div class="timeline-header">
+                                                        <div class="timeline-icon">
+                                                            <i class="fas fa-code"></i>
+                                                        </div>
+                                                        <div class="timeline-meta">
+                                                            <div class="timeline-date">IN PROGRESS • 2025</div>
+                                                            <h3 class="timeline-title">
+                                                                <a class="link" target="_blank">Advanced Software Testing – Automation Track</a>
+                                                            </h3>
+                                                        </div>
                                                     </div>
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date" data-aos="fade-in">
-                                                            <i class="fa fa-calendar"></i> Dec 2024
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">
-                                                                QA Software Testing
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            A comprehensive 40-hour course by "The Hope International" focused on the principles, methodologies, and tools of manual software testing.
-                                                            This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
-                                                            <br>
-                                                            <b>The course emphasizes:</b>
-                                                        </p>
-                                                        <ul class="timeline-text" data-aos="fade-in">
-                                                            <li>• Core software testing concepts and industry best practices.</li>
-                                                            <li>• Test design techniques including Black Box, and experience-based methods.</li>
-                                                            <li>• Defect lifecycle, bug reporting, and risk-based testing strategies.</li>
-                                                            <li>• Static testing techniques such as reviews and tool-supported analysis.</li>
-                                                            <li>• Test planning, estimation, execution, and monitoring fundamentals.</li>
-                                                            <li>• Basics of API testing and introduction to automation tools.</li>
+                                                    <div class="timeline-description" data-aos="fade-in">
+                                                        A hands-on training program offered by <b>The Hope International</b> focused on test automation tools and practices.
+                                                        This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
+                                                        It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
+                                                        <br><br>
+                                                        <b>Specialized Learning Areas:</b>
+                                                        <ul class="timeline-list">
+                                                            <li>Automating test cases and reducing manual testing overhead.</li>
+                                                            <li>Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
+                                                            <li>Mobile testing best practices (ASTQB Mobile Testing standards).</li>
+                                                            <li>Agile and DevOps integration (Agile Tester &amp; Scrum Master concepts).</li>
+                                                            <li>API automation and Selenium WebDriver-based testing workflows.</li>
                                                         </ul>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            This course built a strong manual testing foundation while introducing automation concepts, 
-                                                            preparing participants for entry-level QA roles and advanced training.
-                                                        </p>
                                                     </div>
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date" data-aos="fade-in">
-                                                            <i class="fa fa-calendar"></i> August 2024
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">
-                                                                PMI-ACP Exam Prep Course
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            Completed the PMI-ACP Exam Prep Course on
-                                                            Udemy,
-                                                            covering the 7 domains outlined in the PMI-ACP exam content.
-                                                            The course included comprehensive practice exams, mock tests,
-                                                            and review sessions,
-                                                            with a focus on achieving a minimum score of 80%.
-                                                            Successfully completed all requirements to earn 21 PDUs,
-                                                            necessary for PMI-ACP certification application.
-                                                        </p>
+                                                </div>
+                                                <!-- timeline item -->
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                                    <div class="status-indicator completed">Completed</div>
+                                                    <div class="timeline-header">
+                                                        <div class="timeline-icon">
+                                                            <i class="fas fa-bug"></i>
+                                                        </div>
+                                                        <div class="timeline-meta">
+                                                            <div class="timeline-date">DEC 2024 • 40 HOURS</div>
+                                                            <h3 class="timeline-title">
+                                                                <a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-description" data-aos="fade-in">
+                                                        Comprehensive manual software testing course by <b>The Hope International</b> focused on the principles,
+                                                        methodologies, and tools of manual software testing.
+                                                        This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
+                                                        <br><br>
+                                                        <b>The course emphasizes:</b>
+                                                        <ul class="timeline-list">
+                                                            <li>Core software testing concepts and industry best practices.</li>
+                                                            <li>Test design techniques including Black Box, and experience-based methods.</li>
+                                                            <li>Defect lifecycle, bug reporting, and risk-based testing strategies.</li>
+                                                            <li>Static testing techniques such as reviews and tool-supported analysis.</li>
+                                                            <li>Test planning, estimation, execution, and monitoring fundamentals.</li>
+                                                            <li>Basics of API testing and introduction to automation tools.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- timeline item -->
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                                    <div class="status-indicator completed">Completed</div>
+                                                    <div class="timeline-header">
+                                                        <div class="timeline-icon">
+                                                            <i class="fas fa-project-diagram"></i>
+                                                        </div>
+                                                        <div class="timeline-meta">
+                                                            <div class="timeline-date">AUG 2024 • 28 PDUS</div>
+                                                            <h3 class="timeline-title">
+                                                                <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP<sup>®</sup> Exam Prep</a>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-description" data-aos="fade-in">
+                                                        A hands-on Agile training program focused on building practical project management skills and preparing for PMI-ACP<sup>®</sup> certification.
+                                                        This course helped me strengthen my ability to lead Agile teams and deliver projects using modern frameworks and adaptive planning strategies.
+                                                        <br><br>
+                                                        <b>Skills and knowledge gained:</b>
+                                                        <ul class="timeline-list">
+                                                            <li>Deep understanding of Agile principles, values, and mindset (Scrum, Kanban, XP, Lean).</li>
+                                                            <li>Developed skills in stakeholder communication, adaptive planning, and team facilitation.</li>
+                                                            <li>Learned risk management, estimation, and prioritization techniques in dynamic projects.</li>
+                                                            <li>Strengthened knowledge of Agile metrics, velocity tracking, and iterative delivery cycles.</li>
+                                                            <li>Practiced applying Agile techniques through case scenarios and mock exam simulations.</li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="activities padd-15 about-tab-content">
-                                        <!-- <h3 class="title">Activities</h3> -->
-                                        <div class="row">
-                                            <div class="timeline-box">
-                                                <div class="timeline shadow-dark">
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date" data-aos="fade-in">
-                                                            <i class="fa fa-calendar"></i> October 2024
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">
-                                                                Creativity Award | NASA Space Apps Challenge
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            Awarded the 'Creativity Award' for
-                                                            designing a 3D interactive game, <b>The Planetary
-                                                                Explorer</b>using the Unity engine.
-                                                            Targeted at elementary to high school students, the game
-                                                            combines engaging gameplay with certificationsal content about
-                                                            exoplanets.
-                                                            By utilizing scientifically accurate data from NASA and Space
-                                                            Agency Partner Resources, the game encourages both curiosity and
-                                                            learning,
-                                                            allowing players to explore distant worlds while expanding their
-                                                            knowledge of the universe.
-                                                            The game integrates accurate scientific data from NASA
-                                                            resources, encouraging both learning and enjoyment.
-                                                        </p>
+
+                                        <div id="activities" class="activities about-tab-content" data-aos="fade-in">
+                                            <div class="achievement-grid" data-aos="fade-in" data-aos-delay="200">
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
+                                                    <div class="timeline-header">
+                                                        <div class="timeline-icon">
+                                                            <i class="fas fa-rocket"></i>
+                                                        </div>
+                                                        <div class="timeline-meta">
+                                                            <div class="timeline-date">OCT 2024 • NASA SPACE APPS</div>
+                                                            <h3 class="timeline-title">
+                                                                <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">NASA Space Apps Challenge</a>
+                                                                <span class="award-badge">
+                                                                    <i class="fas fa-award"></i> Creativity Award
+                                                                </span>
+                                                            </h3>
+                                                        </div>
                                                     </div>
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date" data-aos="fade-in">
-                                                            <i class="fa fa-calendar"></i> May 2024
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">
-                                                                2nd Place | AAU-XDT 2024
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            A UI/UX competition for 3rd and 4th-year
-                                                            students, where teams were tasked with designing a prototype for
-                                                            an e-learning management system.
-                                                            Our project successfully met complex requirements, standing out
-                                                            for its clean user interface, smooth navigation, and intuitive
-                                                            design, which contributed to our 2nd place win.
-                                                        </p>
+                                                    <div class="timeline-description" data-aos="fade-in">
+                                                        Received the <b>Creativity Award</b> for designing <b>The Planetary Explorer</b>, an educational 3D game built with Unity.
+                                                        The game targets elementary to high school students, combining interactive gameplay with scientifically accurate NASA data on exoplanets.
+                                                        <br>
+                                                        By integrating real data from NASA and space agency partners, the game fosters curiosity and expands player knowledge of distant worlds and the universe.
+                                                        It was developed to make space science accessible, engaging, and fun through immersive digital exploration.
                                                     </div>
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date" data-aos="fade-in">
-                                                            <i class="fa fa-calendar"></i> Jan 2024
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">
-                                                                3rd Place | 3Minutes Competition
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            This competition challenged participants to
-                                                            convince judges of their project idea in just 3 minutes.
-                                                            Our project, UniBus, aimed to streamline transportation for
-                                                            university students, drivers, and employees
-                                                            by offering real-time tracking and scheduling features. The
-                                                            judges were impressed
-                                                            by how effectively we conveyed the core idea and innovative
-                                                            solutions within the limited time, earning us 3rd place.
-                                                        </p>
+                                                </div>
+                                                <!-- timeline item -->
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
+                                                    <div class="timeline-header">
+                                                        <div class="timeline-icon">
+                                                            <i class="fas fa-palette"></i>
+                                                        </div>
+                                                        <div class="timeline-meta">
+                                                            <div class="timeline-date">MAY 2024 • AAU-XDT</div>
+                                                            <h3 class="timeline-title">
+                                                                <a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">UI/UX Design Competition</a>
+                                                                <span class="award-badge">
+                                                                    <i class="fas fa-medal"></i> 2nd Place
+                                                                </span>
+                                                            </h3>
+                                                        </div>
                                                     </div>
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date" data-aos="fade-in">
-                                                            <i class="fa fa-calendar"></i> Nov 2023
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a class="link" target="_blank">
-                                                                Participant | JCPC23
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            Participated in the JCPC23 (Jordanian
-                                                            Collegiate Programming Contest),
-                                                            a competitive programming contest aimed at university students
-                                                            in Jordan.
-                                                            The contest challenges participants with complex algorithmic
-                                                            problems and promotes teamwork,
-                                                            problem-solving, and programming skills. It serves as a stepping
-                                                            stone for the regional ICPC contest.
-                                                        </p>
+                                                    <div class="timeline-description" data-aos="fade-in">
+                                                        Earned <b>2nd place</b> in a university-level UI/UX design competition for senior students.
+                                                        As a team, we developed a high-fidelity prototype of an e-learning management system, praised for its clean visual design,
+                                                        seamless user flow, and strong emphasis on accessibility and usability principles.
                                                     </div>
-                                                    <!-- timeline item -->
-                                                    <div class="timeline-item" data-aos="fade-in">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date" data-aos="fade-in">
-                                                            <i class="fa fa-calendar"></i> May 2023
-                                                        </h3>
-                                                        <h4 class="timeline-title" data-aos="fade-in">
-                                                            <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">
-                                                                First Team To Solve | AAU-PC 2023
-                                                            </a>
-                                                        </h4>
-                                                        <p class="timeline-text" data-aos="fade-in">
-                                                            A problem-solving competition held annually in May, designed to
-                                                            simulate JCPC and ICPC contests.
-                                                            It serves as a valuable training ground for competitive
-                                                            programming. Our team placed 4th and was the first to solve one
-                                                            of the problems, showcasing our problem-solving skills and time
-                                                            management.
-                                                        </p>
+                                                </div>
+                                            </div>
+                                            <!-- timeline item -->
+                                            <div class="timeline-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                                <div class="timeline-header">
+                                                    <div class="timeline-icon">
+                                                        <i class="fas fa-clock"></i>
                                                     </div>
+                                                    <div class="timeline-meta">
+                                                        <div class="timeline-date">JAN 2024 • </div>
+                                                        <h3 class="timeline-title">
+                                                            <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3 Minutes Competition</a>
+                                                            <span class="award-badge">
+                                                                <i class="fas fa-trophy"></i> 3rd Place
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-description" data-aos="fade-in">
+                                                    Earned <b>3rd place</b> in a fast-paced pitch competition where teams had just 3 minutes to convince judges.
+                                                    Presented <b>UniBus</b>, a transportation solution for university communities featuring real-time tracking and smart scheduling.
+                                                    Judges praised our clear communication and innovative approach within the time constraint.
+                                                </div>
+                                            </div>
+                                            <!-- timeline item -->
+                                            <div class="timeline-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                                                <div class="timeline-header">
+                                                    <div class="timeline-icon">
+                                                        <i class="fas fa-code"></i>
+                                                    </div>
+                                                    <div class="timeline-meta">
+                                                        <div class="timeline-date">NOV 2023 • JCPC</div>
+                                                        <h3 class="timeline-title">
+                                                            <a class="link" target="_blank">Jordanian Collegiate Programming Contest</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-description" data-aos="fade-in">
+                                                    Competed in <b>JCPC23</b>, Jordan’s national collegiate programming contest and qualifier for the ICPC regionals for university students.
+                                                    The contest challenges participants with complex algorithmic problems, promoting teamwork, advanced problem-solving skills, and team collaboration in a high-stakes competitive environment.
+                                                </div>
+                                            </div>
+                                            <!-- timeline item -->
+                                            <div class="timeline-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                                <div class="timeline-header">
+                                                    <div class="timeline-icon">
+                                                        <i class="fas fa-lightbulb"></i>
+                                                    </div>
+                                                    <div class="timeline-meta">
+                                                        <div class="timeline-date">MAY 2023 • AAU-PC</div>
+                                                        <h3 class="timeline-title">
+                                                            <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">AAU Programming Contest</a>
+                                                            <span class="award-badge">
+                                                                <i class="fas fa-bolt"></i> First Solve
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-description" data-aos="fade-in">
+                                                    Placed <b>4th overall</b> in AAU’s annual programming contest and earned the <b>First Solve</b> award for being the first team to crack a problem under time pressure.
+                                                    The competition mirrors JCPC/ICPC formats and served as hands-on training in algorithmic thinking, time management, and collaborative coding.
                                                 </div>
                                             </div>
                                         </div>
@@ -700,230 +694,231 @@ function generateCSRFToken()
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- About Section End -->
-            <!-- Service Section Start -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>Services</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner" data-aos="fade-in">
-                                <div class="icon">
-                                    <i class="fa fa-bug"></i>
-                                </div>
-                                <h4>Software Testing & QA</h4>
-                                <p>
-                                    Ensuring software reliability with automated testing.
-                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
-                                    My focus is on delivering high-quality, bug-free releases.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner" data-aos="fade-in">
-                                <div class="icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h4>Web Development</h4>
-                                <p>
-                                    Building responsive, scalable web apps that provide seamless user experiences.
-                                    I combine front-end and back-end technologies
-                                    to create reliable solutions that perform efficiently and meet both user and business needs.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner" data-aos="fade-in">
-                                <div class="icon">
-                                    <i class="fa fa-paint-brush"></i>
-                                </div>
-                                <h4>UI/UX Design</h4>
-                                <p>
-                                    Designing intuitive interfaces that prioritize user experience.
-                                    I focus on creating smooth, clean, interactive designs through wireframing,
-                                    prototyping, and testing to ensure usability.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner" data-aos="fade-in">
-                                <div class="icon">
-                                    <i class="fa fa-solid fa-gears"></i>
-                                </div>
-                                <h4>DevOps & CI/CD</h4>
-                                <p>
-                                    Streamlining development with CI/CD pipelines to automate workflows.
-                                    I focus on increasing collaboration, accelerating software delivery,
-                                    and maintaining stability and quality through automated processes.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner" data-aos="fade-in">
-                                <div class="icon">
-                                    <i class="fa fa-puzzle-piece"></i>
-                                </div>
-                                <h4>Problem-Solving & Optimization</h4>
-                                <p>
-                                    Developing efficient algorithms and optimized solutions
-                                    to enhance system performance, scalability, and reliability.
-                                    I tackle challenges with creative and practical approaches to deliver impactful results.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner" data-aos="fade-in">
-                                <div class="icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <h4>Project Management</h4>
-                                <p>
-                                    Leading teams with Agile methods to ensure timely and high-quality project delivery.
-                                    I facilitate sprints, encourage communication,
-                                    and use tools like Jira to ensure everyone stays aligned and focused on goals.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
+        </div>
+        </section>
+        <!-- About Section End -->
+        <!-- Service Section Start -->
+        <section class="service section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15" data-aos="fade-in">
+                        <h2>Services</h2>
                     </div>
                 </div>
-            </section>
-            <!-- Service Section End -->
-            <!-- Portfolio Section Start -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>Portfolio</h2>
+                <div class="row">
+                    <!-- Service Item Start -->
+                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="service-item-inner">
+                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                <i class="fa fa-bug"></i>
+                            </div>
+                            <h4>Software Testing & QA</h4>
+                            <p>
+                                Ensuring software reliability with automated testing.
+                                Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
+                                My focus is on delivering high-quality, bug-free releases.
+                            </p>
                         </div>
                     </div>
-                    <!-- Portfolio Filter -->
-                    <div class="portfolio-filter" data-aos="fade-up">
-
-                        <span class="filter-btn active" data-filter="all">All Projects</span>
-                        <span class="filter-btn" data-filter="web">Web Apps</span>
-                        <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
-                        <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
-                        <span class="filter-btn" data-filter="iot">IoT</span>
-                        <span class="filter-btn" data-filter="game">Games</span>
-                        <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
+                    <!-- Service Item End -->
+                    <!-- Service Item Start -->
+                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="service-item-inner">
+                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <h4>Web Development</h4>
+                            <p>
+                                Building responsive, scalable web apps that provide seamless user experiences.
+                                I combine front-end and back-end technologies
+                                to create reliable solutions that perform efficiently and meet both user and business needs.
+                            </p>
+                        </div>
                     </div>
-                    <!-- Portfolio Grid -->
-                    <div class="portfolio-grid" data-aos="slide-up">
+                    <!-- Service Item End -->
+                    <!-- Service Item Start -->
+                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="service-item-inner">
+                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>
+                                Designing intuitive interfaces that prioritize user experience.
+                                I focus on creating smooth, clean, interactive designs through wireframing,
+                                prototyping, and testing to ensure usability.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                    <!-- Service Item Start -->
+                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="service-item-inner">
+                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
+                                <i class="fa fa-solid fa-gears"></i>
+                            </div>
+                            <h4>DevOps & CI/CD</h4>
+                            <p>
+                                Streamlining development with CI/CD pipelines to automate workflows.
+                                I focus on increasing collaboration, accelerating software delivery,
+                                and maintaining stability and quality through automated processes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                    <!-- Service Item Start -->
+                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <div class="service-item-inner">
+                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1000">
+                                <i class="fa fa-puzzle-piece"></i>
+                            </div>
+                            <h4>Problem-Solving & Optimization</h4>
+                            <p>
+                                Developing efficient algorithms and optimized solutions
+                                to enhance system performance, scalability, and reliability.
+                                I tackle challenges with creative and practical approaches to deliver impactful results.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                    <!-- Service Item Start -->
+                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        <div class="service-item-inner">
+                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1100">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h4>Project Management</h4>
+                            <p>
+                                Leading teams with Agile methods to ensure timely and high-quality project delivery.
+                                I facilitate sprints, encourage communication,
+                                and use tools like Jira to ensure everyone stays aligned and focused on goals.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+            </div>
+        </section>
+        <!-- Service Section End -->
+        <!-- Portfolio Section Start -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15" data-aos="fade-in">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <!-- Portfolio Filter -->
+                <div class="portfolio-filter" data-aos="fade-up">
 
-                        <!-- Project 1 - PackTrack -->
-                        <div class="portfolio-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" data-aos="fade-in" data-aos-delay="100">
-                            <div class="portfolio-media">
-                                <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-overlay-content">
-                                        <button class="view-project-btn" data-project="packtrack">
-                                            View Details
-                                        </button>
-                                    </div>
+                    <span class="filter-btn active" data-filter="all">All Projects</span>
+                    <span class="filter-btn" data-filter="web">Web Apps</span>
+                    <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
+                    <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
+                    <span class="filter-btn" data-filter="iot">IoT</span>
+                    <span class="filter-btn" data-filter="game">Games</span>
+                    <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
+                </div>
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="slide-up">
+
+                    <!-- Project 1 - PackTrack -->
+                    <div class="portfolio-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" data-aos="fade-in" data-aos-delay="100">
+                        <div class="portfolio-media">
+                            <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <button class="view-project-btn" data-project="packtrack">
+                                        View Details
+                                    </button>
                                 </div>
                             </div>
-                            <div class="portfolio-content">
-                                <span class="project-category">Full-Stack Web App</span>
-                                <h3 class="project-title">
-                                    <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link"><i class="fa-solid fa-truck"></i> PackTrack</a>
-                                </h3>
-                                <p class="project-description" data-aos="fade-in">
-                                    A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
-                                <ul class="project-tags" data-aos="slide-up">
-                                    <li><a>PHP</a></li>
-                                    <li><a>MySQL</a></li>
-                                    <li><a>API Integration</a></li>
-                                    <li><a>JWT Auth</a></li>
-                                    <li><a>Docker</a></li>
-                                    <li><a>Chart.js</a></li>
-                                    <li><a>Tailwind CSS</a></li>
-                                </ul>
-                            </div>
                         </div>
+                        <div class="portfolio-content">
+                            <span class="project-category">Full-Stack Web App</span>
+                            <h3 class="project-title">
+                                <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link"><i class="fa-solid fa-truck"></i> PackTrack</a>
+                            </h3>
+                            <p class="project-description" data-aos="fade-in">
+                                A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
+                            <ul class="project-tags" data-aos="slide-up">
+                                <li><a>PHP</a></li>
+                                <li><a>MySQL</a></li>
+                                <li><a>API Integration</a></li>
+                                <li><a>JWT Auth</a></li>
+                                <li><a>Docker</a></li>
+                                <li><a>Chart.js</a></li>
+                                <li><a>Tailwind CSS</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <!-- Project 2 - Smart Alert System -->
-                        <div class="portfolio-item" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" data-aos="fade-in" data-aos-delay="100">
-                            <div class="portfolio-media">
-                                <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-overlay-content">
-                                        <button class="view-project-btn" data-project="arduino-smart-alert-system">
-                                            View Details
-                                        </button>
-                                    </div>
+                    <!-- Project 2 - Smart Alert System -->
+                    <div class="portfolio-item" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" data-aos="fade-in" data-aos-delay="100">
+                        <div class="portfolio-media">
+                            <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <button class="view-project-btn" data-project="arduino-smart-alert-system">
+                                        View Details
+                                    </button>
                                 </div>
                             </div>
-                            <div class="portfolio-content">
-                                <span class="project-category">IoT Project</span>
-                                <h3 class="project-title">
-                                    <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link">
-                                        <i class="fa-solid fa-microchip"></i> Smart Alert System
-                                    </a>
-                                </h3>
-                                <p class="project-description" data-aos="fade-in">
-                                    An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
-                                <ul class="project-tags">
-                                    <li><a>Arduino</a></li>
-                                    <li><a>PIR Sensor</a></li>
-                                    <li><a>Ultrasonic</a></li>
-                                    <li><a>Water Sensor</a></li>
-                                </ul>
-                            </div>
                         </div>
+                        <div class="portfolio-content">
+                            <span class="project-category">IoT Project</span>
+                            <h3 class="project-title">
+                                <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link">
+                                    <i class="fa-solid fa-microchip"></i> Smart Alert System
+                                </a>
+                            </h3>
+                            <p class="project-description" data-aos="fade-in">
+                                An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
+                            <ul class="project-tags">
+                                <li><a>Arduino</a></li>
+                                <li><a>PIR Sensor</a></li>
+                                <li><a>Ultrasonic</a></li>
+                                <li><a>Water Sensor</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <!-- Project 3 - The Planetary Explorer -->
-                        <div class="portfolio-item" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
-                            <div class="portfolio-media">
-                                <video autoplay muted loop playsinline>
-                                    <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-overlay-content">
-                                        <button class="view-project-btn" data-project="planetary-explorer">
-                                            View Details
-                                        </button>
-                                    </div>
+                    <!-- Project 3 - The Planetary Explorer -->
+                    <div class="portfolio-item" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
+                        <div class="portfolio-media">
+                            <video autoplay muted loop playsinline>
+                                <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <button class="view-project-btn" data-project="planetary-explorer">
+                                        View Details
+                                    </button>
                                 </div>
                             </div>
-                            <div class="portfolio-content">
-                                <span class="project-category">3D Game</span>
-                                <h3 class="project-title">
-                                    <a target="_blank" class="link">
-                                        <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
-                                    </a>
-                                </h3>
-                                <p class="project-description" data-aos="fade-in">
-                                    Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
-                                </p>
-                                <ul class="project-tags">
-                                    <li><a>Unity</a></li>
-                                    <li><a>C#</a></li>
-                                    <li><a>3D Environment Design</a></li>
-                                    <li><a>Low-Gravity Simulation</a></li>
-                                </ul>
-                            </div>
                         </div>
+                        <div class="portfolio-content">
+                            <span class="project-category">3D Game</span>
+                            <h3 class="project-title">
+                                <a target="_blank" class="link">
+                                    <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
+                                </a>
+                            </h3>
+                            <p class="project-description" data-aos="fade-in">
+                                Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
+                            </p>
+                            <ul class="project-tags">
+                                <li><a>Unity</a></li>
+                                <li><a>C#</a></li>
+                                <li><a>3D Environment Design</a></li>
+                                <li><a>Low-Gravity Simulation</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <!-- Project 4 - Sample AI Project -->
-                        <!-- <div class="portfolio-item" data-category="ai" data-github="#" data-live="#" data-mediatype="image" data-mediasrc="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop">
+                    <!-- Project 4 - Sample AI Project -->
+                    <!-- <div class="portfolio-item" data-category="ai" data-github="#" data-live="#" data-mediatype="image" data-mediasrc="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop">
                             <div class="portfolio-media">
                                 <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop" alt="AI Image Recognition">
                                 <div class="portfolio-overlay">
@@ -950,138 +945,138 @@ function generateCSRFToken()
                                 </ul>
                             </div>
                         </div> -->
-                    </div>
                 </div>
-            </section>
-            <!-- Project Modal -->
-            <div class="modal-overlay" id="projectModal">
-                <div class="modal-container">
-                    <div class="modal-header">
-                        <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
-                            <source id="modalVideoSource" src="" type="video/mp4">
-                        </video>
-                        <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
-                        <button class="modal-close" id="modalClose">x</button>
-                    </div>
-                    <div class="modal-content">
-                        <span class="modal-category" id="modalCategory"></span>
-                        <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link"></a></h2>
-                        <p class="modal-description" id="modalDescription"></p>
-                        <ul class="modal-tags" id="modalTags"></ul>
-                        <div class="modal-actions">
-                            <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
-                                <i class="fa-solid fa-link"></i> View on GitHub
-                                <span class="arrow-container">
-                                    <i class="fa-solid fa-arrow-up arrowone"></i>
-                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
-                                <i class="fa-solid fa-meteor"></i> Live Demo
-                                <span class="arrow-container">
-                                    <i class="fa-solid fa-arrow-up arrowone"></i>
-                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                                </span>
-                            </a>
-                        </div>
+            </div>
+        </section>
+        <!-- Project Modal -->
+        <div class="modal-overlay" id="projectModal">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
+                        <source id="modalVideoSource" src="" type="video/mp4">
+                    </video>
+                    <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
+                    <button class="modal-close" id="modalClose">x</button>
+                </div>
+                <div class="modal-content">
+                    <span class="modal-category" id="modalCategory"></span>
+                    <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link"></a></h2>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <ul class="modal-tags" id="modalTags"></ul>
+                    <div class="modal-actions">
+                        <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
+                            <i class="fa-solid fa-link"></i> View on GitHub
+                            <span class="arrow-container">
+                                <i class="fa-solid fa-arrow-up arrowone"></i>
+                                <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
+                            <i class="fa-solid fa-meteor"></i> Live Demo
+                            <span class="arrow-container">
+                                <i class="fa-solid fa-arrow-up arrowone"></i>
+                                <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- Portfolio Section End -->
-            <!-- Contact Section Start -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Do you have any questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                    <div class="row">
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fab fa-whatsapp"></i></div>
-                            <h4>Call Me On</h4>
-                            <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Location</h4>
-                            <p><a class="link">Amman</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@rashaalsaleh.com" target="_blank"
-                                    class="link">info@rashaalsaleh.com</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fab fa-linkedin"></i></div>
-                            <h4>LinkedIn</h4>
-                            <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha
-                                    Alsaleh</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                    </div>
-                    <h3 class="contact-title padd-15">Get In Touch</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- Contact Form -->
-                    <div class="row">
-                        <div class="contact-form padd-15" data-aos="fade-up">
-                            <form action="mail/contact" method="POST" data-aos="fade-in">
-                                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group" style="color: var(--text-black-900);">
-                                    <label class="agreeCheckbox-label">
-                                        <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
-                                    </label>
-                                </div>
-                                <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
-                                <div class="row">
-                                    <div class="buttons col-12 padd-15" style="margin-top:10px">
-                                        <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+        </div>
+        <!-- Portfolio Section End -->
+        <!-- Contact Section Start -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15" data-aos="fade-in">
+                        <h2>Contact Me</h2>
                     </div>
                 </div>
-            </section>
-            <!-- Contact Section End -->
-        </div>
-        <!-- Main Content End -->
+                <h3 class="contact-title padd-15">Do you have any questions ?</h3>
+                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                <div class="row">
+                    <!-- Contact info item start -->
+                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                        <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                        <h4>Call Me On</h4>
+                        <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
+                    </div>
+                    <!-- Contact info item end -->
+                    <!-- Contact info item start -->
+                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <h4>Location</h4>
+                        <p><a class="link">Amman</a></p>
+                    </div>
+                    <!-- Contact info item end -->
+                    <!-- Contact info item start -->
+                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@rashaalsaleh.com" target="_blank"
+                                class="link">info@rashaalsaleh.com</a></p>
+                    </div>
+                    <!-- Contact info item end -->
+                    <!-- Contact info item start -->
+                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                        <div class="icon"><i class="fab fa-linkedin"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha
+                                Alsaleh</a></p>
+                    </div>
+                    <!-- Contact info item end -->
+                </div>
+                <h3 class="contact-title padd-15">Get In Touch</h3>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                <!-- Contact Form -->
+                <div class="row">
+                    <div class="contact-form padd-15" data-aos="fade-up">
+                        <form action="mail/contact" method="POST" data-aos="fade-in">
+                            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group" style="color: var(--text-black-900);">
+                                <label class="agreeCheckbox-label">
+                                    <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
+                                </label>
+                            </div>
+                            <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
+                            <div class="row">
+                                <div class="buttons col-12 padd-15" style="margin-top:10px">
+                                    <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+    </div>
+    <!-- Main Content End -->
     </div>
     <!-- Main Container End -->
     <!-- Back-to-Top Button -->
@@ -1121,11 +1116,13 @@ function generateCSRFToken()
     <script>
         AOS.init({
             duration: 800,
-            easing: 'ease-out',
-            once: true,
-            offset: 150,
-            delay: 100,
-            anchorPlacement: 'center-bottom',
+            easing: 'ease-out-cubic',
+            once: false,
+            mirror: false,
+            offset: 50,
+            delay: 50,
+            anchorPlacement: 'top-bottom',
+            disable: 'mobile'
         });
     </script>
 
