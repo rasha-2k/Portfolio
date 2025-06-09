@@ -26,7 +26,7 @@
         window.requestAnimationFrame(step);
     }
 
-    // Tabs Setup
+    // Tabs Setup    
     function setupTabs(tabSelector, contentSelector, activeClass = 'active') {
         const tabs = document.querySelectorAll(tabSelector);
         const contents = document.querySelectorAll(contentSelector);
@@ -38,9 +38,24 @@
                 }
                 for (const c of contents) {
                     c.classList.remove(activeClass);
+                    // Reset AOS animations
+                    const elements = c.querySelectorAll('[data-aos]');
+                    elements.forEach(element => {
+                        element.classList.remove('aos-animate');
+                    });
                 }
                 tab.classList.add(activeClass);
-                document.querySelector(tab.getAttribute('data-target')).classList.add(activeClass);
+                const activeContent = document.querySelector(tab.getAttribute('data-target'));
+                activeContent.classList.add(activeClass);
+                
+                // Refresh AOS animations
+                setTimeout(() => {
+                    const elements = activeContent.querySelectorAll('[data-aos]');
+                    elements.forEach(element => {
+                        element.classList.add('aos-animate');
+                    });
+                    AOS.refresh();
+                }, 100);
             });
         }
     }
@@ -50,9 +65,7 @@
         for (const section of allSection) {
             section.classList[action](className);
         }
-    }
-
-    // Typed Text Animation
+    }    // Typed Text Animation
     new Typed(".typing", {
         strings: ["Software Engineer", "QA Tester", "Backend Developer", "Problem Solver"],
         typeSpeed: 100,
