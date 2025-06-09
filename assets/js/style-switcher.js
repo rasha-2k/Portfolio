@@ -21,7 +21,6 @@ function setActiveStyle(color) {
                 style.setAttribute("disabled", "true");
             }
         }
-    document.querySelector(".style-switcher").classList.remove("open");
 }
 
 // On page load, apply saved color
