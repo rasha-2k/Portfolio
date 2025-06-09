@@ -1115,17 +1115,22 @@ h3.my-profession {
 .about .about-content .timeline .timeline-text {
     font-family: var(--secondary-font-family);
     font-weight: var(--secondary-font-weight);
-    font-style: var(--secondary-font-style);
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
 }
-
+.about .about-content .timeline ul.timeline-text li {
+    font-family: var(--secondary-font-family);
+    font-weight: var(--secondary-font-weight);
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+    color: var(--text-black-700);
+}
 .about .about-content .timeline .timeline-text b {
     font-family: var(--primary-font-family);
     font-weight: var(--primary-font-weight);
-    font-style: var(--primary-font-style);
     color: var(--skin-color);
 }
 

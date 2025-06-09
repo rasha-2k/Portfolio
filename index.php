@@ -490,22 +490,35 @@ function generateCSRFToken()
                                             <div class="timeline-box">
                                                 <div class="timeline shadow-dark">
                                                     <!-- timeline item -->
-                                                    <!-- <div class="timeline-item">
-                                                            <div class="circle-dot"></div>
-                                                            <h3 class="timeline-date">
-                                                                <i class="fa fa-calendar"></i> in-progress
-                                                            </h3>
-                                                            <h4 class="timeline-title">Advanced Software Testing "Automated Testing"</h4>
-                                                            <p class="timeline-text">This course focuses on advanced topics in software testing, 
-                                                                with a primary emphasis on automation. 
-                                                                It builds on my foundation in manual testing and provides hands-on training in 
-                                                                automated testing tools and frameworks, API testing, 
-                                                                scripting, and continuous testing in CI/CD pipelines. 
-                                                                Designed to meet industry demands, this comprehensive program equips me 
-                                                                with the technical skills and expertise to excel in modern quality assurance 
-                                                                and secure advanced roles in the field of software testing.
-                                                            </p>
-                                                        </div> -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> In Progress – 2025
+                                                        </h3>
+                                                        <h4 class="timeline-title" data-aos="fade-in">
+                                                            <a class="link" target="_blank">
+                                                                Advanced Software Testing – Automation Track
+                                                            </a>
+                                                        </h4>
+                                                        <p class="timeline-text">
+                                                            A hands-on training program offered by "The Hope International" focused on test automation tools and practices.
+                                                            This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
+                                                            It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
+                                                            <br>
+                                                            <b>Key learning areas include:</b>
+                                                        </p>
+                                                        <ul class="timeline-text" data-aos="fade-in">
+                                                            <li>• Automating test cases and reducing manual testing overhead.</li>
+                                                            <li>• Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
+                                                            <li>• Mobile testing best practices (ASTQB Mobile Testing standards).</li>
+                                                            <li>• Agile and DevOps integration (Agile Tester & Scrum Master concepts).</li>
+                                                            <li>• API automation and Selenium WebDriver-based testing workflows.</li>
+                                                        </ul>
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            This course equips participants with the tools and mindset to evolve from QA analysts to automation specialists,
+                                                            ready to build robust and scalable test automation solutions.
+                                                        </p>
+                                                    </div>
                                                     <!-- timeline item -->
                                                     <div class="timeline-item" data-aos="fade-in">
                                                         <div class="circle-dot"></div>
@@ -518,20 +531,22 @@ function generateCSRFToken()
                                                             </a>
                                                         </h4>
                                                         <p class="timeline-text" data-aos="fade-in">
-                                                            An in-depth 40-hour course offered by "The Hope International" company,
-                                                            focusing on the core principles and practices of manual software testing.
-                                                            This program covers theoretical and practical aspects of QA testing, including testing fundamentals,
-                                                            brfecycle integration, test management, and tool support. <br>
-                                                            The course emphasizes:
-                                                            <br>• Understanding the necessity and principles of software testing.
-                                                            <br>• Applying test techniques such as Black Box, White Box, and activities-based methods.
-                                                            <br>• Mastering defect management and risk-based testing approaches.
-                                                            <br>• Gaining insights into static testing, reviews, and tool-supported static analysis.
-                                                            <br>• Learning the fundamentals of test planning, estimation, and monitoring processes.
-                                                            <br>• Exploring the basics of API testing and an introduction to automated testing tools.
+                                                            A comprehensive 40-hour course by "The Hope International" focused on the principles, methodologies, and tools of manual software testing.
+                                                            This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
                                                             <br>
-                                                            This course provides a strong foundation for manual testing while offering a glimpse into automation testing,
-                                                            preparing participants for advanced roles in software quality assurance.
+                                                            <b>The course emphasizes:</b>
+                                                        </p>
+                                                        <ul class="timeline-text" data-aos="fade-in">
+                                                            <li>• Core software testing concepts and industry best practices.</li>
+                                                            <li>• Test design techniques including Black Box, and experience-based methods.</li>
+                                                            <li>• Defect lifecycle, bug reporting, and risk-based testing strategies.</li>
+                                                            <li>• Static testing techniques such as reviews and tool-supported analysis.</li>
+                                                            <li>• Test planning, estimation, execution, and monitoring fundamentals.</li>
+                                                            <li>• Basics of API testing and introduction to automation tools.</li>
+                                                        </ul>
+                                                        <p class="timeline-text" data-aos="fade-in">
+                                                            This course built a strong manual testing foundation while introducing automation concepts, 
+                                                            preparing participants for entry-level QA roles and advanced training.
                                                         </p>
                                                     </div>
                                                     <!-- timeline item -->
@@ -641,7 +656,9 @@ function generateCSRFToken()
                                                             <i class="fa fa-calendar"></i> Nov 2023
                                                         </h3>
                                                         <h4 class="timeline-title" data-aos="fade-in">
-                                                            Participant | JCPC23
+                                                            <a class="link" target="_blank">
+                                                                Participant | JCPC23
+                                                            </a>
                                                         </h4>
                                                         <p class="timeline-text" data-aos="fade-in">
                                                             Participated in the JCPC23 (Jordanian
