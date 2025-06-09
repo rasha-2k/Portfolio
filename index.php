@@ -16,7 +16,7 @@ function generateCSRFToken()
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rasha Alsaleh's portfolio - Quality Control Engineer and Software Engineer based in Amman, Jordan.">
     <meta name="keywords" content="Rasha Alsaleh, Software Engineer, Quality Control, Quality Assurance, QC, QA, manual Testing, Portfolio, Amman, Jordan">
-    <meta property="og:image" content="assets/images/logo black.png">
+    <meta property="og:image" content="assets/images/logo(ice bear).png">
 
     <title>Rasha's Portfolio</title>
     <script>
@@ -64,8 +64,8 @@ function generateCSRFToken()
     <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="assets/css/style-switcher.css">
     <!-- upload icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/icon black.png">
-    <link rel="icon" href="./assets/images/icon black.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo(ice bear).png">
+    <link rel="icon" href="./assets/images/logo(ice bear).png" type="image/png">
 </head>
 
 <body>
@@ -74,7 +74,7 @@ function generateCSRFToken()
         <!-- Aside Start -->
         <div class="aside">
             <div class="logo">
-                <a href="#home"><img src="assets/images/logo black.png" alt="Logo"></a>
+                <a href="#home"><img src="assets/images/logo(ice bear).png" alt="Logo"></a>
             </div>
             <div class="nav-toggler">
                 <span></span>
@@ -487,7 +487,7 @@ function generateCSRFToken()
                                     <div class="certifications padd-15 about-tab-content active">
                                         <!-- <h3 class="title">Certifications</h3> -->
                                         <div class="row">
-                                            <div class="timeline-box padd-15">
+                                            <div class="timeline-box">
                                                 <div class="timeline shadow-dark">
                                                     <!-- timeline item -->
                                                     <!-- <div class="timeline-item">
@@ -563,7 +563,7 @@ function generateCSRFToken()
                                     <div class="activities padd-15 about-tab-content">
                                         <!-- <h3 class="title">Activities</h3> -->
                                         <div class="row">
-                                            <div class="timeline-box padd-15">
+                                            <div class="timeline-box">
                                                 <div class="timeline shadow-dark">
                                                     <!-- timeline item -->
                                                     <div class="timeline-item" data-aos="fade-in">
@@ -811,9 +811,9 @@ function generateCSRFToken()
                     <div class="portfolio-grid" data-aos="slide-up">
 
                         <!-- Project 1 - PackTrack -->
-                        <div class="portfolio-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/images/website-background.jpg" data-aos="fade-in" data-aos-delay="100">
+                        <div class="portfolio-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" data-aos="fade-in" data-aos-delay="100">
                             <div class="portfolio-media">
-                                <img src="assets/images/website-background.jpg" alt="PackTrack Web App">
+                                <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-overlay-content">
                                         <button class="view-project-btn" data-project="packtrack">
@@ -940,7 +940,7 @@ function generateCSRFToken()
             <div class="modal-overlay" id="projectModal">
                 <div class="modal-container">
                     <div class="modal-header">
-                        <video class="modal-media" id="modalMedia" autoplay muted loop playsinline style="display: none;">
+                        <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
                             <source id="modalVideoSource" src="" type="video/mp4">
                         </video>
                         <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">

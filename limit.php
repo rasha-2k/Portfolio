@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Try Again later</title>
-    <link rel="icon" href="./assets/img/icon black.png">
-    <link rel="apple-touch-icon" href="./assets/img/icon black.png">
+    <link rel="icon" href="./assets/img/logo(ice bear).png">
+    <link rel="apple-touch-icon" href="./assets/img/logo(ice bear).png">
     <link href="./assets/thanks/css/Mail.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
