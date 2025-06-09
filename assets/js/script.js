@@ -93,6 +93,9 @@
     document.querySelector('.logo a').addEventListener('click', function (e) {
         e.preventDefault();
         showSection(this);
+        if (window.innerWidth <= 1200 && aside.classList.contains('open')) {
+            asideSectionTogglerBtn();
+        }
     });
 
     // Active Link on Scroll
@@ -174,6 +177,8 @@
                             Users can securely log in, submit delivery forms, monitor package statuses, and get intelligent packaging tips. Admins get access to a powerful admin panel with dynamic data visualizations (Chart.js), user activity logs, and system analytics.
                             PackTrack stands out for its modern DevOps workflow—containerized with Docker, automated via GitHub Actions—and includes secure backend logic, role-based access control, and responsive design for seamless use on any device.`,
                 tags: ['PHP', 'MySQL', 'JWT', 'API Integration', 'Docker', 'GitHub Actions', 'Role-Based Access Control'],
+                mediaType: 'video',
+                mediaSrc: 'assets/videos/PackTrack Recording.mp4',
             },
             'planetary-explorer': {
                 description: `Planetary Explorer is a 3D space exploration game built in Unity and C#, where players travel to procedurally generated exoplanets inspired by real NASA data. The game combines realistic physics with artistic design to simulate low-gravity environments, alien terrains, and interactive exploration.
@@ -370,18 +375,25 @@
             });
         }
 
-        // Initialize portfolio items with transition
-        // let index = 0;
-        // for (const item of portfolioItems) {
-        //     item.style.opacity = '0';
-        //     item.style.transform = 'translateY(30px)';
+        // Swipe Gesture Functionality
+        let touchStartX = 0;
+        let touchEndX = 0;
 
-        //     setTimeout(() => {
-        //         item.style.transition = 'all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)';
-        //         item.style.opacity = '1';
-        //         item.style.transform = 'translateY(0)';
-        //     }, index * 150);
-        //     index++;
-        // }
+        function handleGesture() {
+            if (touchEndX < touchStartX - 50 && aside.classList.contains('open')) {
+                asideSectionTogglerBtn(); // Swipe left to close
+            } else if (touchEndX > touchStartX + 50 && !aside.classList.contains('open')) {
+                asideSectionTogglerBtn(); // Swipe right to open
+            }
+        }
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleGesture();
+        });
     });
 })();
