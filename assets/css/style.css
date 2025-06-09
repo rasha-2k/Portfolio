@@ -1480,7 +1480,7 @@ h3.my-profession {
 
 .modal-header {
     position: relative;
-    height: 300px;
+    height: 750px;
     overflow: hidden;
     background: var(--bg-black-50);
 }
@@ -1654,72 +1654,7 @@ h3.my-profession {
 }
 
 /* Responsive Modal */
-@media (max-width: 768px) {
-    .modal-container {
-        width: 95%;
-        max-height: 85vh;
-    }
 
-    .modal-header {
-        height: 200px;
-    }
-
-    .modal-content {
-        padding: 20px;
-        max-height: 50vh;
-    }
-
-    .modal-title {
-        font-size: 24px;
-    }
-
-    .modal-actions {
-        flex-direction: column;
-    }
-
-    .modal-btn {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .section {
-        margin-left: 0;
-        padding: 0 20px;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .portfolio-media {
-        height: 200px;
-    }
-
-    .portfolio-filter {
-        gap: 10px;
-    }
-
-    .filter-btn {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .portfolio-content {
-        padding: 20px;
-    }
-
-    .project-title {
-        font-size: 20px;
-    }
-
-    .section-title h2 {
-        font-size: 32px;
-    }
-}
 
 /* contact */
 .contact-title {
@@ -1868,70 +1803,6 @@ button:hover,
     transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
-    .personal-info-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .personal-info-container .section-subtitle {
-        text-align: center;
-    }
-
-    .personal-info-container .section-subtitle .title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 660px) {
-    .home .home-info {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .home .home-img {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-
-    .contact .contact-form .col-6,
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item,
-    .about .about-content .activities,
-    .about .about-content .certifications {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .info-title {
-        font-size: 13px;
-    }
-
-    .info-value {
-        font-size: 15px;
-    }
-
-    .skills-grid {
-        gap: 15px;
-    }
-}
-
-@media (max-width: 860px) {
-    .about .about-content .timeline-box {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 991px) {
-    .skill {
-        width: 120px;
-    }
-}
-
 @media (max-width: 1199px) {
     .section .container {
         padding-top: 70px;
@@ -1969,5 +1840,152 @@ button:hover,
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .skill {
+        width: 120px;
+    }
+}
+
+@media (max-width: 860px) {
+    .about .about-content .timeline-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .activities,
+    .about .about-content .certifications {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .info-title {
+        font-size: 13px;
+    }
+
+    .info-value {
+        font-size: 15px;
+    }
+
+    .skills-grid {
+        gap: 15px;
+    }
+
+    .modal-container {
+        width: 95%;
+        max-height: 85vh;
+    }
+
+    .modal-header {
+        height: 450px;
+    }
+
+    .modal-content {
+        padding: 20px;
+        max-height: 50vh;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-btn {
+        justify-content: center;
+    }
+
+    .section {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-media {
+        height: 200px;
+    }
+
+    .portfolio-filter {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 660px) {
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+
+    .modal-header {
+        height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .modal-header {
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal-header{
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .personal-info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .personal-info-container .section-subtitle {
+        text-align: center;
+    }
+
+    .personal-info-container .section-subtitle .title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .portfolio-content {
+        padding: 20px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }    
+}
+
+@media (max-width: 390px){
+    .modal-header {
+        height: 160px;
     }
 }
