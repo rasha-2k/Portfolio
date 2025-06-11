@@ -547,10 +547,10 @@ sup {
 /* Floating Code Fragments */
 .code-fragment {
     position: absolute;
-    color: rgba(var(--skin-color-rgb), 0.4);
+    color: rgb(var(--skin-color-rgb));
     font-family: 'Courier New', monospace;
     font-size: 10px;
-    background: rgba(var(--skin-color-rgb), 0.02);
+    background: rgba(var(--skin-color-rgb), 0.09);
     padding: 4px 8px;
     border-radius: 4px;
     border: 1px solid rgba(var(--skin-color-rgb), 0.1);
@@ -558,7 +558,7 @@ sup {
 }
 
 .code-1 {
-    top: 20%;
+    top: 15%;
     right: 5%;
     animation-delay: 0s;
 }
@@ -787,22 +787,22 @@ sup {
     0%,
     100% {
         transform: translateY(0);
-        opacity: 0.4;
+        opacity: 0.6;
     }
 
     25% {
         transform: translateY(-20px);
-        opacity: 0.8;
+        opacity: 1;
     }
 
     50% {
         transform: translateY(-10px);
-        opacity: 0.6;
+        opacity: 0.8;
     }
 
     75% {
         transform: translateY(-25px);
-        opacity: 0.8;
+        opacity: 1;
     }
 }
 
@@ -845,11 +845,13 @@ sup {
 .Box {
     justify-content: center;
     display: flex;
-    background: var(--bg-black-25);
     border-radius: 15px;
     padding: 30px;
     margin: 20px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
 }
 
 .Box.shadowEffect {
@@ -1515,6 +1517,8 @@ h3.my-profession {
 #skills {
     background: transparent;
     box-shadow: none;
+    border: none;
+    backdrop-filter: none;
 }
 
 .tabs {
@@ -2708,7 +2712,7 @@ button:hover,
 
     .section.open {
         filter: brightness(0.5);
-
+        backdrop-filter: blur(10px);
     }
 
     .about .about-content .personal-info .info-item p span {
