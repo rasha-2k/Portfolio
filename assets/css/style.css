@@ -8,13 +8,6 @@
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
     --outer-shadow: 0 20px 60px rgba(255, 255, 255, 0.5);
-    --skin-color-rgb: 236, 37, 176;
-    --skin-gradient: linear-gradient(135deg,
-            rgba(236, 37, 176, 0.8) 0%,
-            rgba(236, 37, 176, 0.3) 100%);
-    --circuit-color: rgba(var(--skin-color-rgb), 0.4);
-    --circuit-glow: rgba(var(--skin-color-rgb), 0.7);
-    --data-color: rgba(var(--skin-color-rgb), 0.8);
     --primary-font-family: "Roboto Slab", serif;
     --secondary-font-family: "Noto Serif", serif;
     --primary-font-weight: 550;
@@ -487,7 +480,7 @@ sup {
 }
 
 /* Holographic Binary Matrix */
-.binary-rain {
+/* .binary-rain {
     position: absolute;
     color: rgba(var(--skin-color-rgb), 0.5);
     font-size: 14px;
@@ -526,7 +519,7 @@ sup {
     top: -80px;
     left: 25%;
     animation-delay: 6s;
-}
+} */
 
 /* Enhanced Grid with Depth */
 .grid-overlay {
@@ -564,8 +557,8 @@ sup {
 }
 
 .code-2 {
-    top: 70%;
-    left: 5%;
+    top: 5%;
+    left: 10%;
     animation-delay: 5s;
 }
 
@@ -573,6 +566,12 @@ sup {
     top: 40%;
     right: 35%;
     animation-delay: 10s;
+}
+
+.code-4 {
+    top: 80%;
+    left: 35%;
+    animation-delay: 12s;
 }
 
 /* Quantum Dots */
@@ -752,7 +751,7 @@ sup {
     }
 }
 
-@keyframes binaryFall {
+/* @keyframes binaryFall {
     0% {
         transform: translateY(-80px);
         opacity: 0;
@@ -770,7 +769,7 @@ sup {
         transform: translateY(calc(100vh + 80px));
         opacity: 0;
     }
-}
+} */
 
 @keyframes gridShift {
     0% {
@@ -787,22 +786,22 @@ sup {
     0%,
     100% {
         transform: translateY(0);
-        opacity: 0.6;
+        opacity: 0.4;
     }
 
     25% {
         transform: translateY(-20px);
-        opacity: 1;
+        opacity: 0.8;
     }
 
     50% {
         transform: translateY(-10px);
-        opacity: 0.8;
+        opacity: 0.6;
     }
 
     75% {
         transform: translateY(-25px);
-        opacity: 1;
+        opacity: 0.8;
     }
 }
 

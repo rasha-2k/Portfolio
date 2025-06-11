@@ -22,7 +22,7 @@ function generateCSRFToken()
     <script>
         (function() {
             // === Load Saved Theme Color ===
-            const savedColor = localStorage.getItem("themeColor");
+            const savedColor = localStorage.getItem("themeColor") || "color-1";
             if (savedColor) {
                 const links = document.querySelectorAll('link.alternate-style');
                 links.forEach(link => {
@@ -33,6 +33,10 @@ function generateCSRFToken()
                     }
                 });
             }
+            const linkElement = document.createElement("link");
+            linkElement.rel = "stylesheet";
+            linkElement.href = `assets/css/${savedColor}.css`;
+            document.head.appendChild(linkElement);
 
             // === Load Saved Theme Mode (light or dark) ===
             const savedTheme = localStorage.getItem("themeMode");
@@ -45,7 +49,14 @@ function generateCSRFToken()
     </script>
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/color-1.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="assets/css/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="assets/css/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="assets/css/style-switcher.css">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,16 +67,14 @@ function generateCSRFToken()
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap" rel="stylesheet">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Style Switcher -->
-    <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="assets/css/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="assets/css/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="assets/css/style-switcher.css">
     <!-- upload icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo(ice bear).png">
     <link rel="icon" href="./assets/images/logo(ice bear).png" type="image/png">
+    <script>
+        (function() {
+
+        })();
+    </script>
 </head>
 
 <body>
@@ -1110,16 +1119,17 @@ function generateCSRFToken()
                 <div class="data-particle particle-5"></div>
 
                 <!-- Holographic Binary Matrix -->
-                <div class="binary-rain binary-1">101010<br>110100<br>100101<br>010101<br>111000</div>
+                <!-- <div class="binary-rain binary-1">101010<br>110100<br>100101<br>010101<br>111000</div>
                 <div class="binary-rain binary-2">110011<br>001100<br>101010<br>010101<br>000111</div>
                 <div class="binary-rain binary-3">011001<br>100110<br>010101<br>101010<br>110011</div>
                 <div class="binary-rain binary-4">101101<br>010010<br>111000<br>000111<br>101010</div>
-                <div class="binary-rain binary-5">001110<br>110001<br>010101<br>101010<br>111111</div>
+                <div class="binary-rain binary-5">001110<br>110001<br>010101<br>101010<br>111111</div> -->
 
                 <!-- Floating Code Fragments -->
-                <div class="code-fragment code-1">const app = () => { }</div>
-                <div class="code-fragment code-2">return &lt;div&gt;;</div>
-                <div class="code-fragment code-3">function() { }</div>
+                <div class="code-fragment code-1">let user = &#123; name: "Rasha", role: "Dev" &#125;;</div>
+                <div class="code-fragment code-2">useEffect(() =&gt; &#123; init(); &#125;, []);</div>
+                <div class="code-fragment code-3">for (let i = 0; i &lt; 5; i++) &#123; console.log(i); &#125;</div>
+                <div class="code-fragment code-4">function fetchData() &#123; return fetch('/api/data'); &#125;</div>
 
                 <!-- Quantum Dots -->
                 <div class="quantum-dot quantum-1"></div>
@@ -1179,6 +1189,7 @@ function generateCSRFToken()
         });
     </script>
 
+    <!-- Countdown Script -->
     <script>
         function startCountdown() {
             var agreeCheckbox = document.getElementById("agreeCheckbox");
