@@ -1076,31 +1076,58 @@ function generateCSRFToken()
             </div>
             <!-- Background Animation -->
             <div class="background-container">
-                <!-- Floating dots -->
-                <div class="floating-dot dot-1"></div>
-                <div class="floating-dot dot-2"></div>
-                <div class="floating-dot dot-3"></div>
-                <div class="floating-dot dot-4"></div>
-                <div class="floating-dot dot-5"></div>
+                <!-- Multi-layer Grid -->
+                <div class="grid-overlay"></div>
 
-                <!-- Geometric shapes -->
-                <div class="geometric-shape triangle"></div>
-                <div class="geometric-shape diamond"></div>
-                <div class="geometric-shape hexagon"></div>
+                <!-- Enhanced Circuit Lines -->
+                <div class="circuit-line circuit-h1"></div>
+                <div class="circuit-line circuit-h2"></div>
+                <div class="circuit-line circuit-h3"></div>
+                <div class="circuit-line circuit-h4"></div>
+                <div class="circuit-line circuit-h5"></div>
+                <div class="circuit-line circuit-v1"></div>
+                <div class="circuit-line circuit-v2"></div>
+                <div class="circuit-line circuit-v3"></div>
+                <div class="circuit-line circuit-v4"></div>
 
-                <!-- Gradient orbs -->
-                <div class="gradient-orb orb-1"></div>
-                <div class="gradient-orb orb-2"></div>
-                <div class="gradient-orb orb-3"></div>
+                <!-- Enhanced Circuit Nodes with Rings -->
+                <div class="circuit-node node-1"></div>
+                <div class="circuit-node node-2"></div>
+                <div class="circuit-node node-3"></div>
+                <div class="circuit-node node-4"></div>
+                <div class="circuit-node node-5"></div>
 
-                <!-- Animated lines -->
-                <div class="animated-line line-1"></div>
-                <div class="animated-line line-2"></div>
+                <!-- Advanced Microchips -->
+                <div class="microchip chip-1"></div>
+                <div class="microchip chip-2"></div>
+                <div class="microchip chip-3"></div>
 
-                <!-- Glowing particles -->
-                <div class="particle particle-1"></div>
-                <div class="particle particle-2"></div>
-                <div class="particle particle-3"></div>
+                <!-- Enhanced Data Particles -->
+                <div class="data-particle particle-1"></div>
+                <div class="data-particle particle-2"></div>
+                <div class="data-particle particle-3"></div>
+                <div class="data-particle particle-4"></div>
+                <div class="data-particle particle-5"></div>
+
+                <!-- Holographic Binary Matrix -->
+                <div class="binary-rain binary-1">101010<br>110100<br>100101<br>010101<br>111000</div>
+                <div class="binary-rain binary-2">110011<br>001100<br>101010<br>010101<br>000111</div>
+                <div class="binary-rain binary-3">011001<br>100110<br>010101<br>101010<br>110011</div>
+                <div class="binary-rain binary-4">101101<br>010010<br>111000<br>000111<br>101010</div>
+                <div class="binary-rain binary-5">001110<br>110001<br>010101<br>101010<br>111111</div>
+
+                <!-- Floating Code Fragments -->
+                <div class="code-fragment code-1">const app = () => { }</div>
+                <div class="code-fragment code-2">return &lt;div&gt;;</div>
+                <div class="code-fragment code-3">function() { }</div>
+
+                <!-- Quantum Dots -->
+                <div class="quantum-dot quantum-1"></div>
+                <div class="quantum-dot quantum-2"></div>
+                <div class="quantum-dot quantum-3"></div>
+                <div class="quantum-dot quantum-4"></div>
+                <div class="quantum-dot quantum-5"></div>
+                <div class="quantum-dot quantum-6"></div>
             </div>
         </div>
         <!-- Main Content End -->
