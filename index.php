@@ -15,7 +15,7 @@ function generateCSRFToken()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rasha Alsaleh's portfolio - Software Engineer based in Amman, Jordan.">
-    <meta name="keywords" content="Rasha Alsaleh, Software Engineer, Quality Control, Quality Assurance, QC, QA, manual Testing, Portfolio, Amman, Jordan">
+    <meta name="keywords" content="Rasha Alsaleh, Software Engineer, Quality Control, Quality Assurance, QC, QA, manual Testing, Automation Testing, Full Stack Developer, Backend Developer, Amman, Jordan">
     <meta property="og:image" content="assets/images/logo(ice bear).png">
 
     <title>Rasha's Portfolio</title>
@@ -83,7 +83,7 @@ function generateCSRFToken()
                 <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
                 <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
@@ -563,13 +563,13 @@ function generateCSRFToken()
                                                     </div>
                                                     <div class="timeline-description" data-aos="fade-in">
                                                         A hands-on Agile training program focused on building practical project management skills and preparing for PMI-ACP<sup>®</sup> certification.
-                                                        This course helped me strengthen my ability to lead Agile teams and deliver projects using modern frameworks and adaptive planning strategies.
+                                                        This course helped me strengthen my ability to lead Agile teams and deliver project using modern frameworks and adaptive planning strategies.
                                                         <br><br>
                                                         <b>Skills and knowledge gained:</b>
                                                         <ul class="timeline-list">
                                                             <li>Deep understanding of Agile principles, values, and mindset (Scrum, Kanban, XP, Lean).</li>
                                                             <li>Developed skills in stakeholder communication, adaptive planning, and team facilitation.</li>
-                                                            <li>Learned risk management, estimation, and prioritization techniques in dynamic projects.</li>
+                                                            <li>Learned risk management, estimation, and prioritization techniques in dynamic project.</li>
                                                             <li>Strengthened knowledge of Agile metrics, velocity tracking, and iterative delivery cycles.</li>
                                                             <li>Practiced applying Agile techniques through case scenarios and mock exam simulations.</li>
                                                         </ul>
@@ -694,242 +694,241 @@ function generateCSRFToken()
                         </div>
                     </div>
                 </div>
-        </div>
-        </section>
-        <!-- About Section End -->
-        <!-- Service Section Start -->
-        <section class="service section" id="services">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15" data-aos="fade-in">
-                        <h2>Services</h2>
+            </section>
+            <!-- About Section End -->
+            <!-- Service Section Start -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15" data-aos="fade-in">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bug"></i>
+                                </div>
+                                <h4>Software Testing & QA</h4>
+                                <p>
+                                    Ensuring software reliability with automated testing.
+                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
+                                    My focus is on delivering high-quality, bug-free releases.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>
+                                    Building responsive, scalable web apps that provide seamless user experiences.
+                                    I combine front-end and back-end technologies
+                                    to create reliable solutions that perform efficiently and meet both user and business needs.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-paint-brush"></i>
+                                </div>
+                                <h4>UI/UX Design</h4>
+                                <p>
+                                    Designing intuitive interfaces that prioritize user experience.
+                                    I focus on creating smooth, clean, interactive designs through wireframing,
+                                    prototyping, and testing to ensure usability.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-solid fa-gears"></i>
+                                </div>
+                                <h4>DevOps & CI/CD</h4>
+                                <p>
+                                    Streamlining development with CI/CD pipelines to automate workflows.
+                                    I focus on increasing collaboration, accelerating software delivery,
+                                    and maintaining stability and quality through automated processes.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-puzzle-piece"></i>
+                                </div>
+                                <h4>Problem-Solving & Optimization</h4>
+                                <p>
+                                    Developing efficient algorithms and optimized solutions
+                                    to enhance system performance, scalability, and reliability.
+                                    I tackle challenges with creative and practical approaches to deliver impactful results.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <h4>Project Management</h4>
+                                <p>
+                                    Leading teams with Agile methods to ensure timely and high-quality project delivery.
+                                    I facilitate sprints, encourage communication,
+                                    and use tools like Jira to ensure everyone stays aligned and focused on goals.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
                     </div>
                 </div>
-                <div class="row">
-                    <!-- Service Item Start -->
-                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                        <div class="service-item-inner">
-                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
-                                <i class="fa fa-bug"></i>
-                            </div>
-                            <h4>Software Testing & QA</h4>
-                            <p>
-                                Ensuring software reliability with automated testing.
-                                Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
-                                My focus is on delivering high-quality, bug-free releases.
-                            </p>
+            </section>
+            <!-- Service Section End -->
+            <!-- Projects Section Start -->
+            <section class="project section" id="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15" data-aos="fade-in">
+                            <h2>Projects</h2>
                         </div>
                     </div>
-                    <!-- Service Item End -->
-                    <!-- Service Item Start -->
-                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <div class="service-item-inner">
-                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
-                                <i class="fa fa-globe"></i>
-                            </div>
-                            <h4>Web Development</h4>
-                            <p>
-                                Building responsive, scalable web apps that provide seamless user experiences.
-                                I combine front-end and back-end technologies
-                                to create reliable solutions that perform efficiently and meet both user and business needs.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                    <!-- Service Item Start -->
-                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                        <div class="service-item-inner">
-                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
-                                <i class="fa fa-paint-brush"></i>
-                            </div>
-                            <h4>UI/UX Design</h4>
-                            <p>
-                                Designing intuitive interfaces that prioritize user experience.
-                                I focus on creating smooth, clean, interactive designs through wireframing,
-                                prototyping, and testing to ensure usability.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                    <!-- Service Item Start -->
-                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                        <div class="service-item-inner">
-                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
-                                <i class="fa fa-solid fa-gears"></i>
-                            </div>
-                            <h4>DevOps & CI/CD</h4>
-                            <p>
-                                Streamlining development with CI/CD pipelines to automate workflows.
-                                I focus on increasing collaboration, accelerating software delivery,
-                                and maintaining stability and quality through automated processes.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                    <!-- Service Item Start -->
-                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                        <div class="service-item-inner">
-                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1000">
-                                <i class="fa fa-puzzle-piece"></i>
-                            </div>
-                            <h4>Problem-Solving & Optimization</h4>
-                            <p>
-                                Developing efficient algorithms and optimized solutions
-                                to enhance system performance, scalability, and reliability.
-                                I tackle challenges with creative and practical approaches to deliver impactful results.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                    <!-- Service Item Start -->
-                    <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                        <div class="service-item-inner">
-                            <div class="icon" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1100">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <h4>Project Management</h4>
-                            <p>
-                                Leading teams with Agile methods to ensure timely and high-quality project delivery.
-                                I facilitate sprints, encourage communication,
-                                and use tools like Jira to ensure everyone stays aligned and focused on goals.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-            </div>
-        </section>
-        <!-- Service Section End -->
-        <!-- Portfolio Section Start -->
-        <section class="portfolio section" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15" data-aos="fade-in">
-                        <h2>Portfolio</h2>
-                    </div>
-                </div>
-                <!-- Portfolio Filter -->
-                <div class="portfolio-filter" data-aos="fade-up">
+                    <!-- Projects Filter -->
+                    <div class="project-filter" data-aos="fade-up">
 
-                    <span class="filter-btn active" data-filter="all">All Projects</span>
-                    <span class="filter-btn" data-filter="web">Web Apps</span>
-                    <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
-                    <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
-                    <span class="filter-btn" data-filter="iot">IoT</span>
-                    <span class="filter-btn" data-filter="game">Games</span>
-                    <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
-                </div>
-                <!-- Portfolio Grid -->
-                <div class="portfolio-grid" data-aos="slide-up">
+                        <span class="filter-btn active" data-filter="all">All Projects</span>
+                        <span class="filter-btn" data-filter="web">Web Apps</span>
+                        <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
+                        <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
+                        <span class="filter-btn" data-filter="iot">IoT</span>
+                        <span class="filter-btn" data-filter="game">Games</span>
+                        <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
+                    </div>
+                    <!-- Projects Grid -->
+                    <div class="project-grid" data-aos="slide-up">
 
-                    <!-- Project 1 - PackTrack -->
-                    <div class="portfolio-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" data-aos="fade-in" data-aos-delay="100">
-                        <div class="portfolio-media">
-                            <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-overlay-content">
-                                    <button class="view-project-btn" data-project="packtrack">
-                                        View Details
-                                    </button>
+                        <!-- Project 1 - PackTrack -->
+                        <div class="project-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" data-aos="fade-in" data-aos-delay="100">
+                            <div class="project-media">
+                                <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <button class="view-project-btn" data-project="packtrack">
+                                            View Details
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <span class="project-category">Full-Stack Web App</span>
-                            <h3 class="project-title">
-                                <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link"><i class="fa-solid fa-truck"></i> PackTrack</a>
-                            </h3>
-                            <p class="project-description" data-aos="fade-in">
-                                A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
-                            <ul class="project-tags" data-aos="slide-up">
-                                <li><a>PHP</a></li>
-                                <li><a>MySQL</a></li>
-                                <li><a>API Integration</a></li>
-                                <li><a>JWT Auth</a></li>
-                                <li><a>Docker</a></li>
-                                <li><a>Chart.js</a></li>
-                                <li><a>Tailwind CSS</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 - Smart Alert System -->
-                    <div class="portfolio-item" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" data-aos="fade-in" data-aos-delay="100">
-                        <div class="portfolio-media">
-                            <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-overlay-content">
-                                    <button class="view-project-btn" data-project="arduino-smart-alert-system">
-                                        View Details
-                                    </button>
-                                </div>
+                            <div class="project-content">
+                                <span class="project-category">Full-Stack Web App</span>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link"><i class="fa-solid fa-truck"></i> PackTrack</a>
+                                </h3>
+                                <p class="project-description" data-aos="fade-in">
+                                    A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
+                                <ul class="project-tags" data-aos="slide-up">
+                                    <li><a>PHP</a></li>
+                                    <li><a>MySQL</a></li>
+                                    <li><a>API Integration</a></li>
+                                    <li><a>JWT Auth</a></li>
+                                    <li><a>Docker</a></li>
+                                    <li><a>Chart.js</a></li>
+                                    <li><a>Tailwind CSS</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="portfolio-content">
-                            <span class="project-category">IoT Project</span>
-                            <h3 class="project-title">
-                                <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link">
-                                    <i class="fa-solid fa-microchip"></i> Smart Alert System
-                                </a>
-                            </h3>
-                            <p class="project-description" data-aos="fade-in">
-                                An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
-                            <ul class="project-tags">
-                                <li><a>Arduino</a></li>
-                                <li><a>PIR Sensor</a></li>
-                                <li><a>Ultrasonic</a></li>
-                                <li><a>Water Sensor</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Project 3 - The Planetary Explorer -->
-                    <div class="portfolio-item" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
-                        <div class="portfolio-media">
-                            <video autoplay muted loop playsinline>
-                                <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-overlay-content">
-                                    <button class="view-project-btn" data-project="planetary-explorer">
-                                        View Details
-                                    </button>
+                        <!-- Project 2 - Smart Alert System -->
+                        <div class="project-item" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" data-aos="fade-in" data-aos-delay="100">
+                            <div class="project-media">
+                                <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <button class="view-project-btn" data-project="arduino-smart-alert-system">
+                                            View Details
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="project-content">
+                                <span class="project-category">IoT Project</span>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link">
+                                        <i class="fa-solid fa-microchip"></i> Smart Alert System
+                                    </a>
+                                </h3>
+                                <p class="project-description" data-aos="fade-in">
+                                    An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
+                                <ul class="project-tags">
+                                    <li><a>Arduino</a></li>
+                                    <li><a>PIR Sensor</a></li>
+                                    <li><a>Ultrasonic</a></li>
+                                    <li><a>Water Sensor</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="portfolio-content">
-                            <span class="project-category">3D Game</span>
-                            <h3 class="project-title">
-                                <a target="_blank" class="link">
-                                    <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
-                                </a>
-                            </h3>
-                            <p class="project-description" data-aos="fade-in">
-                                Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
-                            </p>
-                            <ul class="project-tags">
-                                <li><a>Unity</a></li>
-                                <li><a>C#</a></li>
-                                <li><a>3D Environment Design</a></li>
-                                <li><a>Low-Gravity Simulation</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Project 4 - Sample AI Project -->
-                    <!-- <div class="portfolio-item" data-category="ai" data-github="#" data-live="#" data-mediatype="image" data-mediasrc="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop">
-                            <div class="portfolio-media">
+                        <!-- Project 3 - The Planetary Explorer -->
+                        <div class="project-item" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
+                            <div class="project-media">
+                                <video autoplay muted loop playsinline>
+                                    <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <button class="view-project-btn" data-project="planetary-explorer">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">3D Game</span>
+                                <h3 class="project-title">
+                                    <a target="_blank" class="link">
+                                        <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
+                                    </a>
+                                </h3>
+                                <p class="project-description" data-aos="fade-in">
+                                    Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
+                                </p>
+                                <ul class="project-tags">
+                                    <li><a>Unity</a></li>
+                                    <li><a>C#</a></li>
+                                    <li><a>3D Environment Design</a></li>
+                                    <li><a>Low-Gravity Simulation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 - Sample AI Project -->
+                        <!-- <div class="project-item" data-category="ai" data-github="#" data-live="#" data-mediatype="image" data-mediasrc="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop">
+                            <div class="project-media">
                                 <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop" alt="AI Image Recognition">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-overlay-content">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
                                         <button class="view-project-btn" data-project="ai-recognition">
                                             View Details
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio-content">
+                            <div class="project-content">
                                 <span class="project-category">AI/Machine Learning</span>
                                 <h3 class="project-title">
                                     <a target="_blank" class="link">Smart Image Recognition System</a>
@@ -945,138 +944,166 @@ function generateCSRFToken()
                                 </ul>
                             </div>
                         </div> -->
-                </div>
-            </div>
-        </section>
-        <!-- Project Modal -->
-        <div class="modal-overlay" id="projectModal">
-            <div class="modal-container">
-                <div class="modal-header">
-                    <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
-                        <source id="modalVideoSource" src="" type="video/mp4">
-                    </video>
-                    <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
-                    <button class="modal-close" id="modalClose">x</button>
-                </div>
-                <div class="modal-content">
-                    <span class="modal-category" id="modalCategory"></span>
-                    <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link"></a></h2>
-                    <p class="modal-description" id="modalDescription"></p>
-                    <ul class="modal-tags" id="modalTags"></ul>
-                    <div class="modal-actions">
-                        <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
-                            <i class="fa-solid fa-link"></i> View on GitHub
-                            <span class="arrow-container">
-                                <i class="fa-solid fa-arrow-up arrowone"></i>
-                                <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                            </span>
-                        </a>
-                        <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
-                            <i class="fa-solid fa-meteor"></i> Live Demo
-                            <span class="arrow-container">
-                                <i class="fa-solid fa-arrow-up arrowone"></i>
-                                <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                            </span>
-                        </a>
                     </div>
                 </div>
+            </section>
+            <!-- Projects Section End -->
+            <!-- Contact Section Start -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15" data-aos="fade-in">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Do you have any questions ?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                            <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                            <h4>Call Me On</h4>
+                            <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
+                        </div>
+                        <!-- Contact info item end -->
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Location</h4>
+                            <p><a class="link">Amman</a></p>
+                        </div>
+                        <!-- Contact info item end -->
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@rashaalsaleh.com" target="_blank"
+                                    class="link">info@rashaalsaleh.com</a></p>
+                        </div>
+                        <!-- Contact info item end -->
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
+                            <div class="icon"><i class="fab fa-linkedin"></i></div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha
+                                    Alsaleh</a></p>
+                        </div>
+                        <!-- Contact info item end -->
+                    </div>
+                    <h3 class="contact-title padd-15">Get In Touch</h3>
+                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <!-- Contact Form -->
+                    <div class="row">
+                        <div class="contact-form padd-15" data-aos="fade-up">
+                            <form action="mail/contact" method="POST" data-aos="fade-in">
+                                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group" style="color: var(--text-black-900);">
+                                    <label class="agreeCheckbox-label">
+                                        <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
+                                    </label>
+                                </div>
+                                <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
+                                <div class="row">
+                                    <div class="buttons col-12 padd-15" style="margin-top:10px">
+                                        <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section End -->
+            <!-- Project Modal -->
+            <div class="modal-overlay" id="projectModal">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
+                            <source id="modalVideoSource" src="" type="video/mp4">
+                        </video>
+                        <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
+                        <button class="modal-close" id="modalClose">x</button>
+                    </div>
+                    <div class="modal-content">
+                        <span class="modal-category" id="modalCategory"></span>
+                        <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link"></a></h2>
+                        <p class="modal-description" id="modalDescription"></p>
+                        <ul class="modal-tags" id="modalTags"></ul>
+                        <div class="modal-actions">
+                            <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
+                                <i class="fa-solid fa-link"></i> View on GitHub
+                                <span class="arrow-container">
+                                    <i class="fa-solid fa-arrow-up arrowone"></i>
+                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
+                                <i class="fa-solid fa-meteor"></i> Live Demo
+                                <span class="arrow-container">
+                                    <i class="fa-solid fa-arrow-up arrowone"></i>
+                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Background Animation -->
+            <div class="background-container">
+                <!-- Floating dots -->
+                <div class="floating-dot dot-1"></div>
+                <div class="floating-dot dot-2"></div>
+                <div class="floating-dot dot-3"></div>
+                <div class="floating-dot dot-4"></div>
+                <div class="floating-dot dot-5"></div>
+
+                <!-- Geometric shapes -->
+                <div class="geometric-shape triangle"></div>
+                <div class="geometric-shape diamond"></div>
+                <div class="geometric-shape hexagon"></div>
+
+                <!-- Gradient orbs -->
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+
+                <!-- Animated lines -->
+                <div class="animated-line line-1"></div>
+                <div class="animated-line line-2"></div>
+
+                <!-- Glowing particles -->
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
             </div>
         </div>
-        <!-- Portfolio Section End -->
-        <!-- Contact Section Start -->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15" data-aos="fade-in">
-                        <h2>Contact Me</h2>
-                    </div>
-                </div>
-                <h3 class="contact-title padd-15">Do you have any questions ?</h3>
-                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                <div class="row">
-                    <!-- Contact info item start -->
-                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                        <div class="icon"><i class="fab fa-whatsapp"></i></div>
-                        <h4>Call Me On</h4>
-                        <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
-                    </div>
-                    <!-- Contact info item end -->
-                    <!-- Contact info item start -->
-                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                        <h4>Location</h4>
-                        <p><a class="link">Amman</a></p>
-                    </div>
-                    <!-- Contact info item end -->
-                    <!-- Contact info item start -->
-                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <p><a href="mailto:info@rashaalsaleh.com" target="_blank"
-                                class="link">info@rashaalsaleh.com</a></p>
-                    </div>
-                    <!-- Contact info item end -->
-                    <!-- Contact info item start -->
-                    <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                        <div class="icon"><i class="fab fa-linkedin"></i></div>
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha
-                                Alsaleh</a></p>
-                    </div>
-                    <!-- Contact info item end -->
-                </div>
-                <h3 class="contact-title padd-15">Get In Touch</h3>
-                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                <!-- Contact Form -->
-                <div class="row">
-                    <div class="contact-form padd-15" data-aos="fade-up">
-                        <form action="mail/contact" method="POST" data-aos="fade-in">
-                            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" placeholder="Message" required></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="control-group" style="color: var(--text-black-900);">
-                                <label class="agreeCheckbox-label">
-                                    <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
-                                </label>
-                            </div>
-                            <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
-                            <div class="row">
-                                <div class="buttons col-12 padd-15" style="margin-top:10px">
-                                    <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section End -->
-    </div>
-    <!-- Main Content End -->
+        <!-- Main Content End -->
     </div>
     <!-- Main Container End -->
     <!-- Back-to-Top Button -->
@@ -1118,11 +1145,10 @@ function generateCSRFToken()
             duration: 800,
             easing: 'ease-out-cubic',
             once: false,
-            mirror: false,
+            mirror: true,
             offset: 50,
             delay: 50,
-            anchorPlacement: 'top-bottom',
-            disable: 'mobile'
+            anchorPlacement: 'top-bottom'
         });
     </script>
 
