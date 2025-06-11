@@ -1,4 +1,13 @@
 (() => {
+    // Typed Text Animation
+    new Typed(".typing", {
+        strings: ["Software Engineer", "Full-Stack Developer", "QA Engineer", "Problem Solver"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    // Utility Functions
     function easeInOutQuad(t) {
         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
@@ -26,59 +35,24 @@
         window.requestAnimationFrame(step);
     }
 
-    // Tabs Setup    
-    function setupTabs(tabSelector, contentSelector, activeClass = 'active') {
-        const tabs = document.querySelectorAll(tabSelector);
-        const contents = document.querySelectorAll(contentSelector);
-
-        for (const tab of tabs) {
-            tab.addEventListener('click', () => {
-                for (const t of tabs) {
-                    t.classList.remove(activeClass);
-                }
-                for (const c of contents) {
-                    c.classList.remove(activeClass);
-                    // Reset AOS animations
-                    const elements = c.querySelectorAll('[data-aos]');
-                    elements.forEach(element => {
-                        element.classList.remove('aos-animate');
-                    });
-                }
-                tab.classList.add(activeClass);
-                const activeContent = document.querySelector(tab.getAttribute('data-target'));
-                activeContent.classList.add(activeClass);
-                
-                // Refresh AOS animations
-                setTimeout(() => {
-                    const elements = activeContent.querySelectorAll('[data-aos]');
-                    elements.forEach(element => {
-                        element.classList.add('aos-animate');
-                    });
-                    AOS.refresh();
-                }, 100);
-            });
-        }
-    }
-
-    // Toggle "open" class on all sections
-    function toggleClassOnSections(className, action = 'toggle') {
-        for (const section of allSection) {
-            section.classList[action](className);
-        }
-    }    // Typed Text Animation
-    new Typed(".typing", {
-        strings: ["Software Engineer", "QA Tester", "Backend Developer", "Problem Solver"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    // Aside Navigation
+    // Navigation
     const nav = document.querySelector('.nav');
     const navLinks = nav.querySelectorAll('a');
     const allSection = document.querySelectorAll('.section');
     const navTogglerBtn = document.querySelector(".nav-toggler");
     const aside = document.querySelector(".aside");
+
+    function asideSectionTogglerBtn() {
+        aside.classList.toggle("open");
+        navTogglerBtn.classList.toggle("open");
+        toggleClassOnSections("open");
+    }
+
+    function toggleClassOnSections(className, action = 'toggle') {
+        for (const section of allSection) {
+            section.classList[action](className);
+        }
+    }
 
     for (link of navLinks) {
         link.addEventListener('click', function (e) {
@@ -88,12 +62,6 @@
                 asideSectionTogglerBtn();
             }
         });
-    };
-
-    function asideSectionTogglerBtn() {
-        aside.classList.toggle("open");
-        navTogglerBtn.classList.toggle("open");
-        toggleClassOnSections("open");
     }
 
     navTogglerBtn.addEventListener("click", asideSectionTogglerBtn);
@@ -139,7 +107,40 @@
         }
     });
 
-    // Tabs for About and Skills Sections
+    // Tabs Setup
+    function setupTabs(tabSelector, contentSelector, activeClass = 'active') {
+        const tabs = document.querySelectorAll(tabSelector);
+        const contents = document.querySelectorAll(contentSelector);
+
+        for (const tab of tabs) {
+            tab.addEventListener('click', () => {
+                for (const t of tabs) {
+                    t.classList.remove(activeClass);
+                }
+                for (const c of contents) {
+                    c.classList.remove(activeClass);
+                    // Reset AOS animations
+                    const elements = c.querySelectorAll('[data-aos]');
+                    elements.forEach(element => {
+                        element.classList.remove('aos-animate');
+                    });
+                }
+                tab.classList.add(activeClass);
+                const activeContent = document.querySelector(tab.getAttribute('data-target'));
+                activeContent.classList.add(activeClass);
+
+                // Refresh AOS animations
+                setTimeout(() => {
+                    const elements = activeContent.querySelectorAll('[data-aos]');
+                    elements.forEach(element => {
+                        element.classList.add('aos-animate');
+                    });
+                    AOS.refresh();
+                }, 100);
+            });
+        }
+    }
+
     setupTabs('.about-tab-item', '.about-tab-content');
     setupTabs('.skills-tab-item', '.skills-tab-content');
 
@@ -183,7 +184,7 @@
         window.addEventListener("scroll", updateProgress);
         updateProgress();
 
-        // Portfolio Section
+        // Projects Section
         const projectData = {
             'packtrack': {
                 description: `PackTrack is a full-stack delivery management platform designed to simplify package tracking for users and admins. The app features a clean dashboard UI, real-time courier tracking via external APIs, and JWT-based role authentication.
@@ -220,12 +221,12 @@
         const modalVideoSource = document.getElementById('modalVideoSource');
         const modalImage = document.getElementById('modalImage');
 
-        //open modal 
+        // Open modal
         const viewProjectBtns = document.querySelectorAll('.view-project-btn');
         for (const viewBtn of viewProjectBtns) {
             viewBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                const item = viewBtn.closest('.portfolio-item');
+                const item = viewBtn.closest('.project-item');
                 const projectId = viewBtn.dataset.project;
                 const category = item.querySelector('.project-category')?.textContent.trim() || '';
                 const mediaType = projectData[projectId]?.mediaType || item.dataset.mediatype || '';
@@ -244,7 +245,7 @@
                     modalGithubBtn.style.display = 'none';
                 }
 
-                // show/hide Live button based on URL availability
+                // Show/hide Live button based on URL availability
                 if (liveUrl && liveUrl !== '#') {
                     modalLiveBtn.style.display = 'inline-flex';
                     modalLiveBtn.href = liveUrl;
@@ -278,7 +279,9 @@
                 if (!mediaSrc) {
                     console.error(`No media source found for project ID: ${projectId}`);
                     return;
-                }                // Set modal content
+                }
+
+                // Set modal content
                 document.getElementById('modalCategory').textContent = category;
                 document.getElementById('modalDescription').innerHTML = description.replace(/\n/g, '<br>');
 
@@ -355,9 +358,9 @@
             }
         });
 
-        // Portfolio Filter Functionality
+        // Projects Filter Functionality
         const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const projectItems = document.querySelectorAll('.project-item');
 
         for (const btn of filterBtns) {
             btn.addEventListener('click', () => {
@@ -368,7 +371,7 @@
 
                 const filterValue = btn.getAttribute('data-filter');
 
-                for (const item of portfolioItems) {
+                for (const item of projectItems) {
                     const itemCategory = item.getAttribute('data-category');
 
                     if (filterValue === 'all' || itemCategory === filterValue) {
@@ -387,26 +390,25 @@
                 }
             });
         }
-
-        // Swipe Gesture Functionality
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        function handleGesture() {
-            if (touchEndX < touchStartX - 50 && aside.classList.contains('open')) {
-                asideSectionTogglerBtn(); // Swipe left to close
-            } else if (touchEndX > touchStartX + 50 && !aside.classList.contains('open')) {
-                asideSectionTogglerBtn(); // Swipe right to open
-            }
-        }
-
-        document.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-
-        document.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleGesture();
-        });
     });
+    // // Swipe Gesture Functionality
+    // let touchStartX = 0;
+    // let touchEndX = 0;
+
+    // function handleGesture() {
+    //     if (touchEndX < touchStartX - 50 && aside.classList.contains('open')) {
+    //         asideSectionTogglerBtn(); // Swipe left to close
+    //     } else if (touchEndX > touchStartX + 50 && !aside.classList.contains('open')) {
+    //         asideSectionTogglerBtn(); // Swipe right to open
+    //     }
+    // }
+
+    // document.addEventListener('touchstart', (e) => {
+    //     touchStartX = e.changedTouches[0].screenX;
+    // });
+
+    // document.addEventListener('touchend', (e) => {
+    //     touchEndX = e.changedTouches[0].screenX;
+    //     handleGesture();
+    // });
 })();
