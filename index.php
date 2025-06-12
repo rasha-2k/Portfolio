@@ -91,8 +91,8 @@ function generateCSRFToken()
             <ul class="nav">
                 <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
                 <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
@@ -124,7 +124,7 @@ function generateCSRFToken()
                                                 </span>
                                             </a> -->
                                 </div>
-                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank"><b>Resume</b>
+                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank"><b>Resume</b> 
                                     <span class="icon-box">
                                         <i class="fa fa-arrow-down downloadone"></i>
                                         <i class="fa fa-arrow-down downloadtwo"></i>
@@ -258,7 +258,7 @@ function generateCSRFToken()
 
                                     <div class="hire-me-container">
                                         <a href="#contact" data-section-index="1" class="btn hire-me">
-                                            <b>Hire Me</b>
+                                            <b>Hire Me</b> 
                                             <span class="arrow-container">
                                                 <i class="fa-solid fa-arrow-up arrowone"></i>
                                                 <i class="fa-solid fa-arrow-up arrowtwo"></i>
@@ -485,215 +485,282 @@ function generateCSRFToken()
                             <div class="row Box" id="achievements">
                                 <div class="section-container padd-15">
                                     <div class="achievements-container" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="bg-decoration"></div>
                                         <div class="section-subtitle padd-15" data-aos="fade-down" data-aos-duration="800">
                                             <h3 class="title">Achievements</h3>
                                         </div>
+
                                         <div class="row">
                                             <div class="tabs" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                                                 <span class="about-tab-item active" data-target=".certifications">Certifications</span>
                                                 <span class="about-tab-item" data-target=".activities">Activities</span>
                                             </div>
                                         </div>
-                                        <div id="certifications" class="certifications about-tab-content active">
-                                            <div class="achievement-grid">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                                    <div class="status-indicator in-progress">In Progress</div>
-                                                    <div class="timeline-header">
-                                                        <div class="timeline-icon">
-                                                            <i class="fas fa-code"></i>
-                                                        </div>
-                                                        <div class="timeline-meta">
+
+                                        <!-- Certifications Timeline -->
+                                        <div id="certifications" class="certifications about-tab-content active" data-aos="fade-in">
+                                            <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
+                                                        <i class="fas fa-code"></i>
+                                                    </div>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
                                                             <div class="timeline-date">IN PROGRESS • 2025</div>
-                                                            <h3 class="timeline-title">
+                                                            <div class="timeline-title">
                                                                 <a class="link" target="_blank">Advanced Software Testing – Automation Track</a>
-                                                            </h3>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="status-indicator in-progress">
+                                                                    <i class="fas fa-clock"></i>
+                                                                    In Progress
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="timeline-description" data-aos="fade-in">
-                                                        A hands-on training program offered by <b>The Hope International</b> focused on test automation tools and practices.
-                                                        This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
-                                                        It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
-                                                        <br><br>
-                                                        <b>Specialized Learning Areas:</b>
-                                                        <ul class="timeline-list">
-                                                            <li>Automating test cases and reducing manual testing overhead.</li>
-                                                            <li>Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
-                                                            <li>Mobile testing best practices (ASTQB Mobile Testing standards).</li>
-                                                            <li>Agile and DevOps integration (Agile Tester &amp; Scrum Master concepts).</li>
-                                                            <li>API automation and Selenium WebDriver-based testing workflows.</li>
-                                                        </ul>
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                A hands-on training program offered by <b>The Hope International</b> focused on test automation tools and practices.
+                                                                This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
+                                                                It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
+                                                                <br><br>
+                                                                <b>Specialized Learning Areas:</b> 
+                                                                <ul class="timeline-list">
+                                                                    <li>Automating test cases and reducing manual testing overhead.</li>
+                                                                    <li>Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
+                                                                    <li>Mobile testing best practices (ASTQB Mobile Testing standards).</li>
+                                                                    <li>Agile and DevOps integration (Agile Tester &amp; Scrum Master concepts).</li>
+                                                                    <li>API automation and Selenium WebDriver-based testing workflows.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                                    <div class="status-indicator completed">Completed</div>
-                                                    <div class="timeline-header">
-                                                        <div class="timeline-icon">
-                                                            <i class="fas fa-bug"></i>
-                                                        </div>
-                                                        <div class="timeline-meta">
+
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
+                                                        <i class="fas fa-bug"></i>
+                                                    </div>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
                                                             <div class="timeline-date">DEC 2024 • 40 HOURS</div>
-                                                            <h3 class="timeline-title">
+                                                            <div class="timeline-title">
                                                                 <a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a>
-                                                            </h3>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="status-indicator completed">
+                                                                    <i class="fas fa-check"></i>
+                                                                    Completed
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="timeline-description" data-aos="fade-in">
-                                                        Comprehensive manual software testing course by <b>The Hope International</b> focused on the principles,
-                                                        methodologies, and tools of manual software testing.
-                                                        This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
-                                                        <br><br>
-                                                        <b>The course emphasizes:</b>
-                                                        <ul class="timeline-list">
-                                                            <li>Core software testing concepts and industry best practices.</li>
-                                                            <li>Test design techniques including Black Box, and experience-based methods.</li>
-                                                            <li>Defect lifecycle, bug reporting, and risk-based testing strategies.</li>
-                                                            <li>Static testing techniques such as reviews and tool-supported analysis.</li>
-                                                            <li>Test planning, estimation, execution, and monitoring fundamentals.</li>
-                                                            <li>Basics of API testing and introduction to automation tools.</li>
-                                                        </ul>
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                Comprehensive manual software testing course by <b>The Hope International</b> focused on the principles,
+                                                                methodologies, and tools of manual software testing.
+                                                                This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
+                                                                <br><br>
+                                                                <b>The course emphasizes:</b> 
+                                                                <ul class="timeline-list">
+                                                                    <li>Core software testing concepts and industry best practices.</li>
+                                                                    <li>Test design techniques including Black Box, and experience-based methods.</li>
+                                                                    <li>Defect lifecycle, bug reporting, and risk-based testing strategies.</li>
+                                                                    <li>Static testing techniques such as reviews and tool-supported analysis.</li>
+                                                                    <li>Test planning, estimation, execution, and monitoring fundamentals.</li>
+                                                                    <li>Basics of API testing and introduction to automation tools.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                                    <div class="status-indicator completed">Completed</div>
-                                                    <div class="timeline-header">
-                                                        <div class="timeline-icon">
-                                                            <i class="fas fa-project-diagram"></i>
-                                                        </div>
-                                                        <div class="timeline-meta">
-                                                            <div class="timeline-date">AUG 2024 • 28 PDUS</div>
-                                                            <h3 class="timeline-title">
-                                                                <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP<sup>®</sup> Exam Prep</a>
-                                                            </h3>
-                                                        </div>
+
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
+                                                        <i class="fas fa-project-diagram"></i>
                                                     </div>
-                                                    <div class="timeline-description" data-aos="fade-in">
-                                                        A hands-on Agile training program focused on building practical project management skills and preparing for PMI-ACP<sup>®</sup> certification.
-                                                        This course helped me strengthen my ability to lead Agile teams and deliver project using modern frameworks and adaptive planning strategies.
-                                                        <br><br>
-                                                        <b>Skills and knowledge gained:</b>
-                                                        <ul class="timeline-list">
-                                                            <li>Deep understanding of Agile principles, values, and mindset (Scrum, Kanban, XP, Lean).</li>
-                                                            <li>Developed skills in stakeholder communication, adaptive planning, and team facilitation.</li>
-                                                            <li>Learned risk management, estimation, and prioritization techniques in dynamic project.</li>
-                                                            <li>Strengthened knowledge of Agile metrics, velocity tracking, and iterative delivery cycles.</li>
-                                                            <li>Practiced applying Agile techniques through case scenarios and mock exam simulations.</li>
-                                                        </ul>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
+                                                            <div class="timeline-date">AUG 2024 • 28 PDUS</div>
+                                                            <div class="timeline-title">
+                                                                <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP<sup>®</sup> Exam Prep</a>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="status-indicator completed">
+                                                                    <i class="fas fa-check"></i>
+                                                                    Completed
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                A hands-on Agile training program focused on building practical project management skills and preparing for PMI-ACP<sup>®</sup> certification.
+                                                                This course helped me strengthen my ability to lead Agile teams and deliver project using modern frameworks and adaptive planning strategies.
+                                                                <br><br>
+                                                                <b>Skills and knowledge gained:</b>
+                                                                <ul class="timeline-list">
+                                                                    <li>Deep understanding of Agile principles, values, and mindset (Scrum, Kanban, XP, Lean).</li>
+                                                                    <li>Developed skills in stakeholder communication, adaptive planning, and team facilitation.</li>
+                                                                    <li>Learned risk management, estimation, and prioritization techniques in dynamic project.</li>
+                                                                    <li>Strengthened knowledge of Agile metrics, velocity tracking, and iterative delivery cycles.</li>
+                                                                    <li>Practiced applying Agile techniques through case scenarios and mock exam simulations.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
+                                        <!-- Activities Timeline -->
                                         <div id="activities" class="activities about-tab-content" data-aos="fade-in">
-                                            <div class="achievement-grid" data-aos="fade-in" data-aos-delay="200">
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
-                                                    <div class="timeline-header">
-                                                        <div class="timeline-icon">
-                                                            <i class="fas fa-rocket"></i>
-                                                        </div>
-                                                        <div class="timeline-meta">
+                                            <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
+                                                        <i class="fas fa-rocket"></i>
+                                                    </div>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
                                                             <div class="timeline-date">OCT 2024 • NASA SPACE APPS</div>
-                                                            <h3 class="timeline-title">
+                                                            <div class="timeline-title">
                                                                 <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">NASA Space Apps Challenge</a>
-                                                                <span class="award-badge">
-                                                                    <i class="fas fa-award"></i> Creativity Award
-                                                                </span>
-                                                            </h3>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="award-badge">
+                                                                    <i class="fas fa-award"></i>
+                                                                    Creativity Award
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="timeline-description" data-aos="fade-in">
-                                                        Received the <b>Creativity Award</b> for designing <b>The Planetary Explorer</b>, an educational 3D game built with Unity.
-                                                        The game targets elementary to high school students, combining interactive gameplay with scientifically accurate NASA data on exoplanets.
-                                                        <br>
-                                                        By integrating real data from NASA and space agency partners, the game fosters curiosity and expands player knowledge of distant worlds and the universe.
-                                                        It was developed to make space science accessible, engaging, and fun through immersive digital exploration.
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                Received the <b>Creativity Award</b> for designing <b>The Planetary Explorer</b>, an educational 3D game built with Unity.
+                                                                The game targets elementary to high school students, combining interactive gameplay with scientifically accurate NASA data on exoplanets.
+                                                                <br>
+                                                                By integrating real data from NASA and space agency partners, the game fosters curiosity and expands player knowledge of distant worlds and the universe.
+                                                                It was developed to make space science accessible, engaging, and fun through immersive digital exploration.
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="600">
-                                                    <div class="timeline-header">
-                                                        <div class="timeline-icon">
-                                                            <i class="fas fa-palette"></i>
-                                                        </div>
-                                                        <div class="timeline-meta">
+
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
+                                                        <i class="fas fa-palette"></i>
+                                                    </div>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
                                                             <div class="timeline-date">MAY 2024 • AAU-XDT</div>
-                                                            <h3 class="timeline-title">
+                                                            <div class="timeline-title">
                                                                 <a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">UI/UX Design Competition</a>
-                                                                <span class="award-badge">
-                                                                    <i class="fas fa-medal"></i> 2nd Place
-                                                                </span>
-                                                            </h3>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="award-badge">
+                                                                    <i class="fas fa-medal"></i>
+                                                                    2nd Place
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                Earned <b>2nd place</b> in a university-level UI/UX design competition for senior students.
+                                                                As a team, we developed a high-fidelity prototype of an e-learning management system, praised for its clean visual design,
+                                                                seamless user flow, and strong emphasis on accessibility and usability principles.
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="timeline-description" data-aos="fade-in">
-                                                        Earned <b>2nd place</b> in a university-level UI/UX design competition for senior students.
-                                                        As a team, we developed a high-fidelity prototype of an e-learning management system, praised for its clean visual design,
-                                                        seamless user flow, and strong emphasis on accessibility and usability principles.
-                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- timeline item -->
-                                            <div class="timeline-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                                <div class="timeline-header">
-                                                    <div class="timeline-icon">
+
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
                                                         <i class="fas fa-clock"></i>
                                                     </div>
-                                                    <div class="timeline-meta">
-                                                        <div class="timeline-date">JAN 2024 • </div>
-                                                        <h3 class="timeline-title">
-                                                            <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3 Minutes Competition</a>
-                                                            <span class="award-badge">
-                                                                <i class="fas fa-trophy"></i> 3rd Place
-                                                            </span>
-                                                        </h3>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
+                                                            <div class="timeline-date">JAN 2024</div>
+                                                            <div class="timeline-title">
+                                                                <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3 Minutes Competition</a>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="award-badge">
+                                                                    <i class="fas fa-trophy"></i>
+                                                                    3rd Place
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                Earned <b>3rd place</b> in a fast-paced pitch competition where teams had just 3 minutes to convince judges.
+                                                                Presented <b>UniBus</b>, a transportation solution for university communities featuring real-time tracking and smart scheduling.
+                                                                Judges praised our clear communication and innovative approach within the time constraint.
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="timeline-description" data-aos="fade-in">
-                                                    Earned <b>3rd place</b> in a fast-paced pitch competition where teams had just 3 minutes to convince judges.
-                                                    Presented <b>UniBus</b>, a transportation solution for university communities featuring real-time tracking and smart scheduling.
-                                                    Judges praised our clear communication and innovative approach within the time constraint.
-                                                </div>
-                                            </div>
-                                            <!-- timeline item -->
-                                            <div class="timeline-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                                                <div class="timeline-header">
-                                                    <div class="timeline-icon">
+
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
                                                         <i class="fas fa-code"></i>
                                                     </div>
-                                                    <div class="timeline-meta">
-                                                        <div class="timeline-date">NOV 2023 • JCPC</div>
-                                                        <h3 class="timeline-title">
-                                                            <a class="link" target="_blank">Jordanian Collegiate Programming Contest</a>
-                                                        </h3>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
+                                                            <div class="timeline-date">NOV 2023 • JCPC</div>
+                                                            <div class="timeline-title">
+                                                                <a class="link" target="_blank">Jordanian Collegiate Programming Contest</a>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="award-badge">
+                                                                    <i class="fas fa-user"></i>
+                                                                    Competitor
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                Competed in <b>JCPC23</b>, Jordan’s national collegiate programming contest and qualifier for the ICPC regionals for university students.
+                                                                The contest challenges participants with complex algorithmic problems, promoting teamwork, advanced problem-solving skills, and team collaboration in a high-stakes competitive environment.
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="timeline-description" data-aos="fade-in">
-                                                    Competed in <b>JCPC23</b>, Jordan’s national collegiate programming contest and qualifier for the ICPC regionals for university students.
-                                                    The contest challenges participants with complex algorithmic problems, promoting teamwork, advanced problem-solving skills, and team collaboration in a high-stakes competitive environment.
-                                                </div>
-                                            </div>
-                                            <!-- timeline item -->
-                                            <div class="timeline-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                                                <div class="timeline-header">
-                                                    <div class="timeline-icon">
+
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                    <div class="timeline-node">
                                                         <i class="fas fa-lightbulb"></i>
                                                     </div>
-                                                    <div class="timeline-meta">
-                                                        <div class="timeline-date">MAY 2023 • AAU-PC</div>
-                                                        <h3 class="timeline-title">
-                                                            <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">AAU Programming Contest</a>
-                                                            <span class="award-badge">
-                                                                <i class="fas fa-bolt"></i> First Solve
-                                                            </span>
-                                                        </h3>
+                                                    <div class="timeline-content">
+                                                        <div class="timeline-header">
+                                                            <div class="timeline-date">MAY 2023 • AAU-PC</div>
+                                                            <div class="timeline-title">
+                                                                <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">AAU Programming Contest</a>
+                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                            </div>
+                                                            <div class="timeline-badges">
+                                                                <div class="award-badge">
+                                                                    <i class="fas fa-bolt"></i>
+                                                                    First Solve
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-details">
+                                                            <div class="timeline-description" data-aos="fade-in">
+                                                                Placed <b>4th overall</b> in AAU’s annual programming contest and earned the <b>First Solve</b> award for being the first team to crack a problem under time pressure.
+                                                                The competition mirrors JCPC/ICPC formats and served as hands-on training in algorithmic thinking, time management, and collaborative coding.
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="timeline-description" data-aos="fade-in">
-                                                    Placed <b>4th overall</b> in AAU’s annual programming contest and earned the <b>First Solve</b> award for being the first team to crack a problem under time pressure.
-                                                    The competition mirrors JCPC/ICPC formats and served as hands-on training in algorithmic thinking, time management, and collaborative coding.
                                                 </div>
                                             </div>
                                         </div>
@@ -705,109 +772,6 @@ function generateCSRFToken()
                 </div>
             </section>
             <!-- About Section End -->
-            <!-- Service Section Start -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>Services</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-bug"></i>
-                                </div>
-                                <h4>Software Testing & QA</h4>
-                                <p>
-                                    Ensuring software reliability with automated testing.
-                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
-                                    My focus is on delivering high-quality, bug-free releases.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h4>Web Development</h4>
-                                <p>
-                                    Building responsive, scalable web apps that provide seamless user experiences.
-                                    I combine front-end and back-end technologies
-                                    to create reliable solutions that perform efficiently and meet both user and business needs.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-paint-brush"></i>
-                                </div>
-                                <h4>UI/UX Design</h4>
-                                <p>
-                                    Designing intuitive interfaces that prioritize user experience.
-                                    I focus on creating smooth, clean, interactive designs through wireframing,
-                                    prototyping, and testing to ensure usability.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-solid fa-gears"></i>
-                                </div>
-                                <h4>DevOps & CI/CD</h4>
-                                <p>
-                                    Streamlining development with CI/CD pipelines to automate workflows.
-                                    I focus on increasing collaboration, accelerating software delivery,
-                                    and maintaining stability and quality through automated processes.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-puzzle-piece"></i>
-                                </div>
-                                <h4>Problem-Solving & Optimization</h4>
-                                <p>
-                                    Developing efficient algorithms and optimized solutions
-                                    to enhance system performance, scalability, and reliability.
-                                    I tackle challenges with creative and practical approaches to deliver impactful results.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <h4>Project Management</h4>
-                                <p>
-                                    Leading teams with Agile methods to ensure timely and high-quality project delivery.
-                                    I facilitate sprints, encourage communication,
-                                    and use tools like Jira to ensure everyone stays aligned and focused on goals.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Service Item End -->
-                    </div>
-                </div>
-            </section>
-            <!-- Service Section End -->
             <!-- Projects Section Start -->
             <section class="project section" id="projects">
                 <div class="container">
@@ -957,6 +921,109 @@ function generateCSRFToken()
                 </div>
             </section>
             <!-- Projects Section End -->
+            <!-- Service Section Start -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15" data-aos="fade-in">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bug"></i>
+                                </div>
+                                <h4>Software Testing & QA</h4>
+                                <p>
+                                    Ensuring software reliability with automated testing.
+                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
+                                    My focus is on delivering high-quality, bug-free releases.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>
+                                    Building responsive, scalable web apps that provide seamless user experiences.
+                                    I combine front-end and back-end technologies
+                                    to create reliable solutions that perform efficiently and meet both user and business needs.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-paint-brush"></i>
+                                </div>
+                                <h4>UI/UX Design</h4>
+                                <p>
+                                    Designing intuitive interfaces that prioritize user experience.
+                                    I focus on creating smooth, clean, interactive designs through wireframing,
+                                    prototyping, and testing to ensure usability.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-solid fa-gears"></i>
+                                </div>
+                                <h4>DevOps & CI/CD</h4>
+                                <p>
+                                    Streamlining development with CI/CD pipelines to automate workflows.
+                                    I focus on increasing collaboration, accelerating software delivery,
+                                    and maintaining stability and quality through automated processes.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-puzzle-piece"></i>
+                                </div>
+                                <h4>Problem-Solving & Optimization</h4>
+                                <p>
+                                    Developing efficient algorithms and optimized solutions
+                                    to enhance system performance, scalability, and reliability.
+                                    I tackle challenges with creative and practical approaches to deliver impactful results.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                        <!-- Service Item Start -->
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <h4>Project Management</h4>
+                                <p>
+                                    Leading teams with Agile methods to ensure timely and high-quality project delivery.
+                                    I facilitate sprints, encourage communication,
+                                    and use tools like Jira to ensure everyone stays aligned and focused on goals.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Service Item End -->
+                    </div>
+                </div>
+            </section>
+            <!-- Service Section End -->
             <!-- Contact Section Start -->
             <section class="contact section" id="contact">
                 <div class="container">
@@ -1040,7 +1107,7 @@ function generateCSRFToken()
                                 <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
                                 <div class="row">
                                     <div class="buttons col-12 padd-15" style="margin-top:10px">
-                                        <button type="submit" class="btn" id="sendMessageButton" disabled><b>Send Message</b></button> <!-- Button is disabled initially -->
+                                        <button type="submit" class="btn" id="sendMessageButton" disabled><b style="color: #fff;">Send Message</b></button> <!-- Button is disabled initially -->
                                     </div>
                                 </div>
                             </form>
@@ -1169,20 +1236,41 @@ function generateCSRFToken()
         </div>
     </div>
     <!-- Style Switcher End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="logo">
+            <a href="#home"><img src="assets/images/logo(ice bear).png" alt="Logo"></a>
+        </div>
+        <div class="copyright">
+            © 2025 All Rights Reserved by <b>Rasha</b>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
     <!-- JS Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
         integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/style-switcher.js"></script>
+    <script>
+        function toggleExpand(element) {
+            // Prevent event bubbling if clicking on a link
+            if (event.target.tagName === 'A') {
+                return;
+            }
+
+            element.classList.toggle('expanded');
+        }
+    </script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 800,
             easing: 'ease-out-cubic',
-            once: false,
-            mirror: true,
+            once: true,
             offset: 50,
             delay: 50,
             anchorPlacement: 'top-bottom'
@@ -1216,6 +1304,14 @@ function generateCSRFToken()
             }
         }
     </script>
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('light');
+        }
+    </script>
+
 </body>
+
+
 
 </html>
