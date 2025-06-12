@@ -71,12 +71,14 @@
         showSection(this);
     });
 
-    document.querySelector('.logo a').addEventListener('click', function (e) {
-        e.preventDefault();
-        showSection(this);
-        if (window.innerWidth <= 1200 && aside.classList.contains('open')) {
-            asideSectionTogglerBtn();
-        }
+    document.querySelectorAll('.logo a').forEach(logoLink => {
+        logoLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            showSection(this);
+            if (window.innerWidth <= 1200) {
+                asideSectionTogglerBtn();
+            }
+        });
     });
 
     // Active Link on Scroll
@@ -123,6 +125,7 @@
                     const elements = c.querySelectorAll('[data-aos]');
                     elements.forEach(element => {
                         element.classList.remove('aos-animate');
+                        element.setAttribute('data-aos', element.getAttribute('data-aos')); // Reset AOS attributes
                     });
                 }
                 tab.classList.add(activeClass);
