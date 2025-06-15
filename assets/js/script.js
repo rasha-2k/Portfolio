@@ -392,6 +392,11 @@
                         }, 300);
                     }
                 }
+
+                // Refresh AOS animations after filtering
+                setTimeout(() => {
+                    AOS.refresh();
+                }, 300);
             });
         }
     });
