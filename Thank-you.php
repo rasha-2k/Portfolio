@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Thank you</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo(ice bear).png">
-    <link rel="icon" href="./assets/images/logo(ice bear).png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo.png">
+    <link rel="icon" href="./assets/images/logo.png" type="image/png">
     <link href="./assets/thanks/css/Mail.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
