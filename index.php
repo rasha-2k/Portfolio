@@ -16,7 +16,7 @@ function generateCSRFToken()
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rasha Alsaleh's portfolio - Software Engineer based in Amman, Jordan.">
     <meta name="keywords" content="Rasha Alsaleh, Software Engineer, Quality Control, Quality Assurance, QC, QA, manual Testing, Automation Testing, Full Stack Developer, Backend Developer, Amman, Jordan">
-    <meta property="og:image" content="assets/images/logo(ice bear).png">
+    <meta property="og:image" content="assets/images/logo.png">
 
     <title>Rasha's Portfolio</title>
     <script>
@@ -68,8 +68,8 @@ function generateCSRFToken()
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- upload icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo(ice bear).png">
-    <link rel="icon" href="./assets/images/logo(ice bear).png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo.png">
+    <link rel="icon" href="./assets/images/logo.png" type="image/png">
     <script>
         (function() {
 
@@ -83,7 +83,7 @@ function generateCSRFToken()
         <!-- Aside Start -->
         <div class="aside">
             <div class="logo">
-                <a href="#home"><img src="assets/images/logo(ice bear).png" alt="Logo"></a>
+                <a href="#home"><img src="assets/images/logo.png" alt="Logo"></a>
             </div>
             <div class="nav-toggler">
                 <span></span>
@@ -124,7 +124,7 @@ function generateCSRFToken()
                                                 </span>
                                             </a> -->
                                 </div>
-                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank"><b>Resume</b> 
+                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank"><b style="color: #fff; margin-right: 10px;">Resume</b>
                                     <span class="icon-box">
                                         <i class="fa fa-arrow-down downloadone"></i>
                                         <i class="fa fa-arrow-down downloadtwo"></i>
@@ -258,7 +258,7 @@ function generateCSRFToken()
 
                                     <div class="hire-me-container">
                                         <a href="#contact" data-section-index="1" class="btn hire-me">
-                                            <b>Hire Me</b> 
+                                            <b style="color: #fff; margin-right: 10px;">Hire Me</b>
                                             <span class="arrow-container">
                                                 <i class="fa-solid fa-arrow-up arrowone"></i>
                                                 <i class="fa-solid fa-arrow-up arrowtwo"></i>
@@ -284,48 +284,56 @@ function generateCSRFToken()
                                         <!-- Languages -->
                                         <div class="languages skills-tab-content active">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
+
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/html_css_js.png" alt="HTML, CSS, JS" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">HTML, CSS, JS</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Go.svg" alt="Golang" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">Go Lang</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Python.svg" alt="Python" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">Python</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/PHP.svg" alt="PHP" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">PHP</p>
                                                 </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
+
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/CSharp.svg" alt="C#" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">C#</p>
                                                 </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/Go.svg" alt="Golang" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">Go Lang</p>
+                                                </div>
+
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Java.svg" alt="Java" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Java</p>
                                                 </div>
+
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/html_css_js.png" alt="HTML, CSS, JS" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">HTML, CSS, JS</p>
+                                                </div>
+
+                                                <!-- <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Python.svg" alt="Python" class="skill-image grayscale">
+                                                            <div class="skill-percentage">95%</div> 
+                                                        </div>
+                                                        <p class="skill-name">Python</p>
+                                                    </div> 
+                                                -->
+
                                             </div>
                                         </div>
 
@@ -484,7 +492,7 @@ function generateCSRFToken()
                             </div>
                             <div class="row Box" id="achievements">
                                 <div class="section-container padd-15">
-                                    <div class="achievements-container" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="achievements-container" data-aos="fade-up" data-aos-duration="800">
                                         <div class="section-subtitle padd-15" data-aos="fade-down" data-aos-duration="800">
                                             <h3 class="title">Achievements</h3>
                                         </div>
@@ -500,7 +508,7 @@ function generateCSRFToken()
                                         <div id="certifications" class="certifications about-tab-content active" data-aos="fade-in">
                                             <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" onclick="toggleExpand(this)">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-code"></i>
                                                     </div>
@@ -524,7 +532,7 @@ function generateCSRFToken()
                                                                 This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
                                                                 It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
                                                                 <br><br>
-                                                                <b>Specialized Learning Areas:</b> 
+                                                                <b>Specialized Learning Areas:</b>
                                                                 <ul class="timeline-list">
                                                                     <li>Automating test cases and reducing manual testing overhead.</li>
                                                                     <li>Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
@@ -538,7 +546,7 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" onclick="toggleExpand(this)">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-bug"></i>
                                                     </div>
@@ -562,7 +570,7 @@ function generateCSRFToken()
                                                                 methodologies, and tools of manual software testing.
                                                                 This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
                                                                 <br><br>
-                                                                <b>The course emphasizes:</b> 
+                                                                <b>The course emphasizes:</b>
                                                                 <ul class="timeline-list">
                                                                     <li>Core software testing concepts and industry best practices.</li>
                                                                     <li>Test design techniques including Black Box, and experience-based methods.</li>
@@ -619,7 +627,7 @@ function generateCSRFToken()
                                         <div id="activities" class="activities about-tab-content" data-aos="fade-in">
                                             <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" onclick="toggleExpand(this)">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-rocket"></i>
                                                     </div>
@@ -650,7 +658,7 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" onclick="toggleExpand(this)">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-palette"></i>
                                                     </div>
@@ -708,7 +716,7 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" onclick="toggleExpand(this)">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-code"></i>
                                                     </div>
@@ -736,7 +744,7 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" onclick="toggleExpand(this)">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-lightbulb"></i>
                                                     </div>
@@ -785,17 +793,17 @@ function generateCSRFToken()
 
                         <span class="filter-btn active" data-filter="all">All Projects</span>
                         <span class="filter-btn" data-filter="web">Web Apps</span>
-                        <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
-                        <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
                         <span class="filter-btn" data-filter="iot">IoT</span>
                         <span class="filter-btn" data-filter="game">Games</span>
+                        <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
+                        <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
                         <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
                     </div>
                     <!-- Projects Grid -->
-                    <div class="project-grid" data-aos="slide-up">
+                    <div class="project-grid" data-aos="fade-in">
 
                         <!-- Project 1 - PackTrack -->
-                        <div class="project-item" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" data-aos="fade-in" data-aos-delay="100">
+                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4">
                             <div class="project-media">
                                 <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App">
                                 <div class="project-overlay">
@@ -826,7 +834,7 @@ function generateCSRFToken()
                         </div>
 
                         <!-- Project 2 - Smart Alert System -->
-                        <div class="project-item" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" data-aos="fade-in" data-aos-delay="100">
+                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="200" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg">
                             <div class="project-media">
                                 <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System">
                                 <div class="project-overlay">
@@ -856,7 +864,7 @@ function generateCSRFToken()
                         </div>
 
                         <!-- Project 3 - The Planetary Explorer -->
-                        <div class="project-item" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" data-aos="fade-in" data-aos-delay="100">
+                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4">
                             <div class="project-media">
                                 <video autoplay muted loop playsinline>
                                     <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
@@ -1240,7 +1248,7 @@ function generateCSRFToken()
     <!-- Footer Start -->
     <footer class="footer">
         <div class="logo">
-            <a href="#home"><img src="assets/images/logo(ice bear).png" alt="Logo"></a>
+            <a href="#home"><img src="assets/images/logo.png" alt="Logo"></a>
         </div>
         <div class="copyright">
             © 2025 All Rights Reserved by <b>Rasha</b>
@@ -1256,12 +1264,14 @@ function generateCSRFToken()
     <script src="assets/js/style-switcher.js"></script>
     <script>
         function toggleExpand(element) {
-            // Prevent event bubbling if clicking on a link
             if (event.target.tagName === 'A') {
                 return;
             }
 
-            element.classList.toggle('expanded');
+            const timelineItem = element.closest('.timeline-item');
+            if (timelineItem) {
+                timelineItem.classList.toggle('expanded');
+            }
         }
     </script>
     <!-- AOS JS -->
