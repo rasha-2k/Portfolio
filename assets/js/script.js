@@ -75,7 +75,8 @@
         logoLink.addEventListener('click', function (e) {
             e.preventDefault();
             showSection(this);
-            if (window.innerWidth <= 1200) {
+            const isInsideAside = this.closest('.aside') !== null;
+            if (isInsideAside && window.innerWidth <= 1200) {
                 asideSectionTogglerBtn();
             }
         });
