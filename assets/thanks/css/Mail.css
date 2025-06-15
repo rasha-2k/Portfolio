@@ -1,8 +1,5 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-    :root {
-        --skin-color: #f024b3; 
-    }
     * {
         scrollbar-width: thin;
         scrollbar-color: var(--skin-color) white;
