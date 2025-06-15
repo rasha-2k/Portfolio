@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /mail/
+Disallow: /assets/videos/
+Disallow: /limit.php
+Disallow: /Thank-you.php
+Sitemap: https://rashaalsaleh.com/sitemap.xml
