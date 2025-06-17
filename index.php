@@ -292,7 +292,6 @@ function generateCSRFToken()
                                                     </div>
                                                     <p class="skill-name">PHP</p>
                                                 </div>
-
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/CSharp.svg" alt="C#" class="skill-image grayscale">
@@ -300,7 +299,6 @@ function generateCSRFToken()
                                                     </div>
                                                     <p class="skill-name">C#</p>
                                                 </div>
-
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Go.svg" alt="Golang" class="skill-image grayscale">
@@ -308,7 +306,6 @@ function generateCSRFToken()
                                                     </div>
                                                     <p class="skill-name">Go Lang</p>
                                                 </div>
-
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Java.svg" alt="Java" class="skill-image grayscale">
@@ -316,15 +313,13 @@ function generateCSRFToken()
                                                     </div>
                                                     <p class="skill-name">Java</p>
                                                 </div>
-
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/html_css_js.png" alt="HTML, CSS, JS" class="skill-image grayscale">
+                                                        <img src="assets/images/technologies/CPlusPlus.svg" alt="C++" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
                                                     </div>
-                                                    <p class="skill-name">HTML, CSS, JS</p>
+                                                    <p class="skill-name">C++</p>
                                                 </div>
-
                                                 <!-- <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
                                                         <div class="skill">
                                                             <img src="assets/images/technologies/Python.svg" alt="Python" class="skill-image grayscale">
@@ -333,6 +328,13 @@ function generateCSRFToken()
                                                         <p class="skill-name">Python</p>
                                                     </div> 
                                                 -->
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/html.svg" alt="HTML, CSS, JS" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">HTML CSS JS</p>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -342,38 +344,52 @@ function generateCSRFToken()
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/Postman.svg" alt="Postman" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                        <img src="assets/images/technologies/Docker.svg" alt="Docker" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
-                                                    <p class="skill-name">Postman</p>
+                                                    <p class="skill-name">Docker</p>
                                                 </div>
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/VSCode.svg" alt="VS Code" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">90%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">VS Code</p>
+                                                </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/VisualStudio.svg" alt="Visual Studio" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">Visual Studio</p>
+                                                </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/Eclipse.svg" alt="Eclipse IDE" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">Eclipse IDE</p>
+                                                </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Selenium.svg" alt="Selenium" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">Selenium</p>
                                                 </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/GitHubActions.svg" alt="GitHub Actions" class="skill-image grayscale">
+                                                        <img src="assets/images/technologies/Postman.svg" alt="Postman" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
-                                                    <p class="skill-name">GitHub Actions</p>
+                                                    <p class="skill-name">Postman</p>
                                                 </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/Git.svg" alt="Git" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
+                                                        <img src="assets/images/technologies/JUnit.svg" alt="JUnit 5" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
-                                                    <p class="skill-name">Git</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Docker.svg" alt="Docker" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">Docker</p>
+                                                    <p class="skill-name">JUnit 5</p>
                                                 </div>
                                                 <!-- <div class="col">
                                                     <div class="skill">
@@ -382,28 +398,29 @@ function generateCSRFToken()
                                                     </div>
                                                     <p class="skill-name">Kubernetes</p>
                                                 </div> -->
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/VirtualBox.svg" alt="VirtualBox" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
                                                     </div>
                                                     <p class="skill-name">VirtualBox</p>
                                                 </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/VSCode.svg" alt="VS Code" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">90%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">VS Code</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/ChatGPT.svg" alt="ChatGPT" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">ChatGPT</p>
-                                                </div>
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/Jira.svg" alt="Jira" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">Jira</p>
+                                                </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1000">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/Trello.svg" alt="Trello" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">Trello</p>
+                                                </div>
+
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1100">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Figma.svg" alt="Figma" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">95%</div> -->
@@ -413,6 +430,7 @@ function generateCSRFToken()
                                             </div>
                                         </div>
 
+                                        <!-- Others -->
                                         <div class="others skills-tab-content">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
@@ -424,67 +442,61 @@ function generateCSRFToken()
                                                 </div>
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
                                                     <div class="skill">
+                                                        <img src="assets/images/technologies/GitHubActions.svg" alt="GitHub Actions" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">GitHub Actions</p>
+                                                </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
+                                                    <div class="skill">
                                                         <img src="assets/images/technologies/Linux.svg" alt="Linux" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">Linux</p>
                                                 </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Bash.svg" alt="Bash Script" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">Bash Script</p>
-                                                </div>
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/Powershell.svg" alt="PowerShell" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                        <img src="assets/images/technologies/Git.svg" alt="Git" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
-                                                    <p class="skill-name">PowerShell</p>
+                                                    <p class="skill-name">Git</p>
                                                 </div>
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/MySQL.svg" alt="MySQL" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">MySQL</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/PostgresSQL.svg" alt="PostgreSQL" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">PostgreSQL</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/NetCore.svg" alt=".Net Core" class="skill-image grayscale">
                                                         <!-- <div class="skill-percentage">80%</div> -->
                                                     </div>
                                                     <p class="skill-name">.Net Core</p>
                                                 </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/Arduino.svg" alt="Arduino" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">Arduino</p>
+                                                </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/Unity.svg" alt="Unity Engine" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">Unity Engine</p>
+                                                </div>
+                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
+                                                    <div class="skill">
+                                                        <img src="assets/images/technologies/MySQL.svg" alt="MySQL" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
+                                                    </div>
+                                                    <p class="skill-name">MySQL</p>
+                                                </div>
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
                                                     <div class="skill">
-                                                        <img src="assets/images/technologies/Jira.svg" alt="Jira" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                        <img src="assets/images/technologies/PostgresSQL.svg" alt="PostgreSQL" class="skill-image grayscale">
+                                                        <!-- <div class="skill-percentage">85%</div> -->
                                                     </div>
-                                                    <p class="skill-name">Jira</p>
+                                                    <p class="skill-name">PostgreSQL</p>
                                                 </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Trello.svg" alt="Trello" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">Trello</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1000">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Unity.svg" alt="Unity" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">Unity</p>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -508,12 +520,12 @@ function generateCSRFToken()
                                         <div id="certifications" class="certifications about-tab-content active" data-aos="fade-in">
                                             <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" onclick="toggleExpand(this)">
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-code"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">IN PROGRESS • 2025</div>
                                                             <div class="timeline-title">
                                                                 <a class="link" target="_blank">Advanced Software Testing – Automation Track</a>
@@ -546,12 +558,12 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" onclick="toggleExpand(this)">
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-bug"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">DEC 2024 • 40 HOURS</div>
                                                             <div class="timeline-title">
                                                                 <a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a>
@@ -585,12 +597,12 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-project-diagram"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">AUG 2024 • 28 PDUS</div>
                                                             <div class="timeline-title">
                                                                 <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP<sup>®</sup> Exam Prep</a>
@@ -627,12 +639,12 @@ function generateCSRFToken()
                                         <div id="activities" class="activities about-tab-content" data-aos="fade-in">
                                             <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" onclick="toggleExpand(this)">
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-rocket"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">OCT 2024 • NASA SPACE APPS</div>
                                                             <div class="timeline-title">
                                                                 <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">NASA Space Apps Challenge</a>
@@ -658,12 +670,12 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" onclick="toggleExpand(this)">
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-palette"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">MAY 2024 • AAU-XDT</div>
                                                             <div class="timeline-title">
                                                                 <a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">UI/UX Design Competition</a>
@@ -687,12 +699,12 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" onclick="toggleExpand(this)">
+                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-clock"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">JAN 2024</div>
                                                             <div class="timeline-title">
                                                                 <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3 Minutes Competition</a>
@@ -716,12 +728,12 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" onclick="toggleExpand(this)">
+                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-code"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">NOV 2023 • JCPC</div>
                                                             <div class="timeline-title">
                                                                 <a class="link" target="_blank">Jordanian Collegiate Programming Contest</a>
@@ -744,12 +756,12 @@ function generateCSRFToken()
                                                 </div>
 
                                                 <!-- Timeline Item -->
-                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" onclick="toggleExpand(this)">
+                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                                                     <div class="timeline-node">
                                                         <i class="fas fa-lightbulb"></i>
                                                     </div>
                                                     <div class="timeline-content">
-                                                        <div class="timeline-header">
+                                                        <div class="timeline-header" onclick="toggleExpand(this)">
                                                             <div class="timeline-date">MAY 2023 • AAU-PC</div>
                                                             <div class="timeline-title">
                                                                 <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">AAU Programming Contest</a>
