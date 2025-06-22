@@ -328,13 +328,6 @@ function generateCSRFToken()
                                                         <p class="skill-name">Python</p>
                                                     </div> 
                                                 -->
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/html.svg" alt="HTML, CSS, JS" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
-                                                    </div>
-                                                    <p class="skill-name">HTML CSS JS</p>
-                                                </div>
 
                                             </div>
                                         </div>
@@ -1333,7 +1326,5 @@ function generateCSRFToken()
     </script>
 
 </body>
-
-
 
 </html>
