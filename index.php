@@ -58,6 +58,7 @@ function generateCSRFToken()
     <link rel="stylesheet" href="assets/css/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="assets/css/style-switcher.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -80,78 +81,96 @@ function generateCSRFToken()
 </head>
 
 <body>
-    <!-- Main Container Start -->
-    <div class="main-container">
-        <!-- Aside Start -->
-        <div class="aside" id="sidebar">
-            <div class="logo" id="logo">
-                <a href="#home" id="logo-link"><img src="assets/images/logo.png" alt="Logo" id="logo-image"></a>
+    <div class="loader-container" id="portfolioLoader">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-btn btn-close"></div>
+                    <div class="terminal-btn btn-minimize"></div>
+                    <div class="terminal-btn btn-maximize"></div>
+                </div>
             </div>
-            <div class="nav-toggler" id="nav-toggler">
-                <span></span>
+            <div class="terminal-content" id="terminal">
+                <div class="terminal-line">
+                    <span class="terminal-prompt">$</span>
+                    <span class="terminal-text">Preparing portfolio interface...</span>
+                </div>
             </div>
-            <ul class="nav" id="main-navigation">
-                <li><a href="#home" class="active" id="nav-home"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#about" id="nav-about"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#projects" id="nav-projects"><i class="fa fa-briefcase"></i>Projects</a></li>
-                <li><a href="#services" id="nav-services"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#contact" id="nav-contact"><i class="fa fa-comments"></i>Contact</a></li>
-            </ul>
         </div>
-        <!-- Aside End -->
-        <!-- Main Content Start -->
-        <div class="main-content">
-            <!-- Home Section Start -->
-            <section class="home section" id="home">
-                <div class="container">
-                    <div class="row Box shadowEffect" id="home-container">
-                        <div class="home-info padd-15" data-aos="fade-in" id="home-info">
-                            <h3 class="hello" id="greeting">Hello, I'm <span class="name" id="name">Rasha Alsaleh</span></h3>
-                            <h3 class="my-profession" id="profession">A <span class="typing" id="typing-text">Full-stack Developer</span></h3>
-                            <div class="cv-button" id="home-buttons">
-                                <div class="social-buttons" id="social-buttons">
-                                    <a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn" id="linkedin-link">
-                                        <span class="social-button__inner">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </span>
-                                    </a>
-                                    <a href="https://github.com/rasha-2k" target="_blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub" id="github-link">
-                                        <span class="social-button__inner">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                    </a>
-                                    <!-- <a href="https://www.instagram.com/rasha2k_/" target="_blank" class="social-buttons__button social-button social-button--instagram" aria-label="InstaGram">
+    </div>
+    <div id="portfolioContent" style="display: none;">
+        <!-- Main Container Start -->
+        <div class="main-container">
+            <!-- Aside Start -->
+            <div class="aside" id="sidebar">
+                <div class="logo" id="logo">
+                    <a href="#home" id="logo-link"><img src="assets/images/logo.png" alt="Logo" id="logo-image"></a>
+                </div>
+                <div class="nav-toggler" id="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav" id="main-navigation">
+                    <li><a href="#home" class="active" id="nav-home"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about" id="nav-about"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="#projects" id="nav-projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+                    <li><a href="#services" id="nav-services"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#contact" id="nav-contact"><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+            </div>
+            <!-- Aside End -->
+            <!-- Main Content Start -->
+            <div class="main-content">
+                <!-- Home Section Start -->
+                <section class="home section" id="home">
+                    <div class="container">
+                        <div class="row Box shadowEffect" id="home-container">
+                            <div class="home-info padd-15" data-aos="fade-in" id="home-info">
+                                <h3 class="hello" id="greeting">Hello, I'm <span class="name" id="name">Rasha Alsaleh</span></h3>
+                                <h3 class="my-profession" id="profession">A <span class="typing" id="typing-text">Full-stack Developer</span></h3>
+                                <div class="cv-button" id="home-buttons">
+                                    <div class="social-buttons" id="social-buttons">
+                                        <a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn" id="linkedin-link">
+                                            <span class="social-button__inner">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </span>
+                                        </a>
+                                        <a href="https://github.com/rasha-2k" target="_blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub" id="github-link">
+                                            <span class="social-button__inner">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        </a>
+                                        <!-- <a href="https://www.instagram.com/rasha2k_/" target="_blank" class="social-buttons__button social-button social-button--instagram" aria-label="InstaGram">
                                                 <span class="social-button__inner">
                                                 <i class="fab fa-instagram"></i>
                                                 </span>
                                             </a> -->
+                                    </div>
+                                    <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank" id="resume-btn"><b style="color: #fff; margin-right: 10px;">Resume</b>
+                                        <span class="icon-box">
+                                            <i class="fa fa-arrow-down downloadone"></i>
+                                            <i class="fa fa-arrow-down downloadtwo"></i>
+                                        </span>
+                                    </a>
                                 </div>
-                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank" id="resume-btn"><b style="color: #fff; margin-right: 10px;">Resume</b>
-                                    <span class="icon-box">
-                                        <i class="fa fa-arrow-down downloadone"></i>
-                                        <i class="fa fa-arrow-down downloadtwo"></i>
-                                    </span>
-                                </a>
+                            </div>
+                            <div class="home-img padd-15" data-aos="fade-in" id="profile-image-container">
+                                <img src="assets/images/pfp.jpg" alt="Profile Picture" id="profile-image">
                             </div>
                         </div>
-                        <div class="home-img padd-15" data-aos="fade-in" id="profile-image-container">
-                            <img src="assets/images/pfp.jpg" alt="Profile Picture" id="profile-image">
-                        </div>
                     </div>
-                </div>
-            </section>
-            <!-- Home Section End -->
-            <!-- About Section Start -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in" id="about-title">
-                            <h2 id="about-heading">About Me</h2>
+                </section>
+                <!-- Home Section End -->
+                <!-- About Section Start -->
+                <section class="about section" id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15" data-aos="fade-in" id="about-title">
+                                <h2 id="about-heading">About Me</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15" id="about-content">
-                            <!-- <div class="row Box" style="margin-top: 0;">
+                        <div class="row">
+                            <div class="about-content padd-15" id="about-content">
+                                <!-- <div class="row Box" style="margin-top: 0;">
                                 <div class="about-text padd-15">
                                     <h3>I'm Rasha Alsaleh, a <span>Software Engineer</span></h3>
                                     <p style="text-align: justify;">
@@ -170,159 +189,159 @@ function generateCSRFToken()
                                     </p>
                                 </div>
                             </div> -->
-                            <div class="row Box" style="margin-top: 0;" id="personal-info-section">
-                                <div class="section-container padd-15" id="personal-info-container">
-                                    <div class="section-subtitle padd-15" id="personal-info-subtitle">
-                                        <h3 class="title" id="personal-info-title">Personal Information</h3>
-                                    </div>
+                                <div class="row Box" style="margin-top: 0;" id="personal-info-section">
+                                    <div class="section-container padd-15" id="personal-info-container">
+                                        <div class="section-subtitle padd-15" id="personal-info-subtitle">
+                                            <h3 class="title" id="personal-info-title">Personal Information</h3>
+                                        </div>
 
-                                    <div class="personal-info-grid" data-aos="fade-up" data-aos-delay="10" id="personal-info-grid">
-                                        <div class="info-item" data-aos="fade-in" id="birthday-item">
-                                            <div class="info-icon" id="birthday-icon">
-                                                <i class="fa-solid fa-calendar-days"></i>
+                                        <div class="personal-info-grid" data-aos="fade-up" data-aos-delay="10" id="personal-info-grid">
+                                            <div class="info-item" data-aos="fade-in" id="birthday-item">
+                                                <div class="info-icon" id="birthday-icon">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                </div>
+                                                <div class="info-content" id="birthday-content">
+                                                    <h4 class="info-title" id="birthday-title">Birthday</h4>
+                                                    <p class="info-value" id="birthday-value">5 Feb 2005</p>
+                                                </div>
                                             </div>
-                                            <div class="info-content" id="birthday-content">
-                                                <h4 class="info-title" id="birthday-title">Birthday</h4>
-                                                <p class="info-value" id="birthday-value">5 Feb 2005</p>
+
+                                            <div class="info-item" data-aos="fade-in" id="age-item">
+                                                <div class="info-icon" id="age-icon">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </div>
+                                                <div class="info-content" id="age-content">
+                                                    <h4 class="info-title" id="age-title">Age</h4>
+                                                    <p class="info-value" id="age-value">20</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-item" data-url="https://www.linkedin.com/in/rasha-alsaleh/" id="linkedin-item">
+                                                <div class="info-icon" id="linkedin-icon">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                </div>
+                                                <div class="info-content" id="linkedin-content">
+                                                    <h4 class="info-title" id="linkedin-title">LinkedIn</h4>
+                                                    <p class="info-value" id="linkedin-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="info-link" id="linkedin-link">Rasha Alsaleh</a></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-item" data-url="mailto:info@rashaalsaleh.com" id="email-item">
+                                                <div class="info-icon" id="email-icon">
+                                                    <i class="fa-solid fa-envelope"></i>
+                                                </div>
+                                                <div class="info-content" id="email-content">
+                                                    <h4 class="info-title" id="email-title">Email</h4>
+                                                    <p class="info-value" id="email-value"><a href="mailto:info@rashaalsaleh.com" target="_blank" class="info-link" id="email-link">info@rashaalsaleh.com</a></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-item" data-aos="fade-in" id="degree-item">
+                                                <div class="info-icon" id="degree-icon">
+                                                    <i class="fa-solid fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="info-content" id="degree-content">
+                                                    <h4 class="info-title" id="degree-title">Degree</h4>
+                                                    <p class="info-value" id="degree-value">Software Engineering</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-item" data-url="tel:+962-78-127-7089" id="phone-item">
+                                                <div class="info-icon" id="phone-icon">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                </div>
+                                                <div class="info-content" id="phone-content">
+                                                    <h4 class="info-title" id="phone-title">Phone</h4>
+                                                    <p class="info-value" id="phone-value"><a href="tel:+962-78-127-7089" target="_blank" class="info-link" id="phone-link">+962 781277089</a></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-item" data-aos="fade-in" id="location-item">
+                                                <div class="info-icon" id="location-icon">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                                <div class="info-content" id="location-content">
+                                                    <h4 class="info-title" id="location-title">Location</h4>
+                                                    <p class="info-value" id="location-value">Amman - Jordan</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-item" data-aos="fade-in" id="freelance-item">
+                                                <div class="info-icon" id="freelance-icon">
+                                                    <i class="fa-solid fa-briefcase"></i>
+                                                </div>
+                                                <div class="info-content" id="freelance-content">
+                                                    <h4 class="info-title" id="freelance-title">Freelance</h4>
+                                                    <p class="info-value" id="freelance-value">Available</p>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-aos="fade-in" id="age-item">
-                                            <div class="info-icon" id="age-icon">
-                                                <i class="fa-solid fa-user"></i>
-                                            </div>
-                                            <div class="info-content" id="age-content">
-                                                <h4 class="info-title" id="age-title">Age</h4>
-                                                <p class="info-value" id="age-value">20</p>
-                                            </div>
+                                        <div class="hire-me-container" id="hire-me-container">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me" id="hire-me-btn">
+                                                <b style="color: #fff; margin-right: 10px;">Hire Me</b>
+                                                <span class="arrow-container">
+                                                    <i class="fa-solid fa-arrow-up arrowone"></i>
+                                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                                                </span>
+                                            </a>
                                         </div>
-
-                                        <div class="info-item" data-url="https://www.linkedin.com/in/rasha-alsaleh/" id="linkedin-item">
-                                            <div class="info-icon" id="linkedin-icon">
-                                                <i class="fa-brands fa-linkedin"></i>
-                                            </div>
-                                            <div class="info-content" id="linkedin-content">
-                                                <h4 class="info-title" id="linkedin-title">LinkedIn</h4>
-                                                <p class="info-value" id="linkedin-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="info-link" id="linkedin-link">Rasha Alsaleh</a></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="info-item" data-url="mailto:info@rashaalsaleh.com" id="email-item">
-                                            <div class="info-icon" id="email-icon">
-                                                <i class="fa-solid fa-envelope"></i>
-                                            </div>
-                                            <div class="info-content" id="email-content">
-                                                <h4 class="info-title" id="email-title">Email</h4>
-                                                <p class="info-value" id="email-value"><a href="mailto:info@rashaalsaleh.com" target="_blank" class="info-link" id="email-link">info@rashaalsaleh.com</a></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="info-item" data-aos="fade-in" id="degree-item">
-                                            <div class="info-icon" id="degree-icon">
-                                                <i class="fa-solid fa-graduation-cap"></i>
-                                            </div>
-                                            <div class="info-content" id="degree-content">
-                                                <h4 class="info-title" id="degree-title">Degree</h4>
-                                                <p class="info-value" id="degree-value">Software Engineering</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="info-item" data-url="tel:+962-78-127-7089" id="phone-item">
-                                            <div class="info-icon" id="phone-icon">
-                                                <i class="fa-solid fa-phone"></i>
-                                            </div>
-                                            <div class="info-content" id="phone-content">
-                                                <h4 class="info-title" id="phone-title">Phone</h4>
-                                                <p class="info-value" id="phone-value"><a href="tel:+962-78-127-7089" target="_blank" class="info-link" id="phone-link">+962 781277089</a></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="info-item" data-aos="fade-in" id="location-item">
-                                            <div class="info-icon" id="location-icon">
-                                                <i class="fa-solid fa-location-dot"></i>
-                                            </div>
-                                            <div class="info-content" id="location-content">
-                                                <h4 class="info-title" id="location-title">Location</h4>
-                                                <p class="info-value" id="location-value">Amman - Jordan</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="info-item" data-aos="fade-in" id="freelance-item">
-                                            <div class="info-icon" id="freelance-icon">
-                                                <i class="fa-solid fa-briefcase"></i>
-                                            </div>
-                                            <div class="info-content" id="freelance-content">
-                                                <h4 class="info-title" id="freelance-title">Freelance</h4>
-                                                <p class="info-value" id="freelance-value">Available</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="hire-me-container" id="hire-me-container">
-                                        <a href="#contact" data-section-index="1" class="btn hire-me" id="hire-me-btn">
-                                            <b style="color: #fff; margin-right: 10px;">Hire Me</b>
-                                            <span class="arrow-container">
-                                                <i class="fa-solid fa-arrow-up arrowone"></i>
-                                                <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                                            </span>
-                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row Box" id="skills">
-                                <div class="section-container padd-15" id="skills-container">
-                                    <div class="section-subtitle padd-15" id="skills-subtitle">
-                                        <h3 class="title" id="skills-title">My Technical Skills</h3>
-                                    </div>
-                                    <div class="row">
-                                        <div class="tabs" data-aos="fade-up" id="skills-tabs">
-                                            <span class="skills-tab-item active" data-target=".languages" id="languages-tab">Languages</span>
-                                            <span class="skills-tab-item" data-target=".tools" id="tools-tab">Tools</span>
-                                            <span class="skills-tab-item" data-target=".others" id="others-tab">Others</span>
+                                <div class="row Box" id="skills">
+                                    <div class="section-container padd-15" id="skills-container">
+                                        <div class="section-subtitle padd-15" id="skills-subtitle">
+                                            <h3 class="title" id="skills-title">My Technical Skills</h3>
                                         </div>
-                                    </div>
-                                    <!-- Tab Contents -->
-                                    <div class="skills-container" data-aos="fade-in" id="skills-content">
-                                        <!-- Languages -->
-                                        <div class="languages skills-tab-content active" id="languages-content">
-                                            <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
+                                        <div class="row">
+                                            <div class="tabs" data-aos="fade-up" id="skills-tabs">
+                                                <span class="skills-tab-item active" data-target=".languages" id="languages-tab">Languages</span>
+                                                <span class="skills-tab-item" data-target=".tools" id="tools-tab">Tools</span>
+                                                <span class="skills-tab-item" data-target=".others" id="others-tab">Others</span>
+                                            </div>
+                                        </div>
+                                        <!-- Tab Contents -->
+                                        <div class="skills-container" data-aos="fade-in" id="skills-content">
+                                            <!-- Languages -->
+                                            <div class="languages skills-tab-content active" id="languages-content">
+                                                <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
 
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/PHP.svg" alt="PHP" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/PHP.svg" alt="PHP" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">PHP</p>
                                                     </div>
-                                                    <p class="skill-name">PHP</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/CSharp.svg" alt="C#" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/CSharp.svg" alt="C#" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">C#</p>
                                                     </div>
-                                                    <p class="skill-name">C#</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Go.svg" alt="Golang" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Go.svg" alt="Golang" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Go Lang</p>
                                                     </div>
-                                                    <p class="skill-name">Go Lang</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Java.svg" alt="Java" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Java.svg" alt="Java" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Java</p>
                                                     </div>
-                                                    <p class="skill-name">Java</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/CPlusPlus.svg" alt="C++" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/CPlusPlus.svg" alt="C++" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage" data-percentage="95">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">C++</p>
                                                     </div>
-                                                    <p class="skill-name">C++</p>
-                                                </div>
-                                                <!-- <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                    <!-- <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
                                                         <div class="skill">
                                                             <img src="assets/images/technologies/Python.svg" alt="Python" class="skill-image grayscale">
                                                             <div class="skill-percentage">95%</div> 
@@ -331,448 +350,449 @@ function generateCSRFToken()
                                                     </div> 
                                                 -->
 
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Tools -->
-                                        <div class="tools skills-tab-content" id="tools-content">
-                                            <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Docker.svg" alt="Docker" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                            <!-- Tools -->
+                                            <div class="tools skills-tab-content" id="tools-content">
+                                                <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Docker.svg" alt="Docker" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">80%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Docker</p>
                                                     </div>
-                                                    <p class="skill-name">Docker</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/VSCode.svg" alt="VS Code" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">90%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/VSCode.svg" alt="VS Code" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">90%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">VS Code</p>
                                                     </div>
-                                                    <p class="skill-name">VS Code</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/VisualStudio.svg" alt="Visual Studio" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/VisualStudio.svg" alt="Visual Studio" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Visual Studio</p>
                                                     </div>
-                                                    <p class="skill-name">Visual Studio</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Eclipse.svg" alt="Eclipse IDE" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Eclipse.svg" alt="Eclipse IDE" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">80%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Eclipse IDE</p>
                                                     </div>
-                                                    <p class="skill-name">Eclipse IDE</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Selenium.svg" alt="Selenium" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Selenium.svg" alt="Selenium" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Selenium</p>
                                                     </div>
-                                                    <p class="skill-name">Selenium</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Postman.svg" alt="Postman" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Postman.svg" alt="Postman" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Postman</p>
                                                     </div>
-                                                    <p class="skill-name">Postman</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/JUnit.svg" alt="JUnit 5" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/JUnit.svg" alt="JUnit 5" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">JUnit 5</p>
                                                     </div>
-                                                    <p class="skill-name">JUnit 5</p>
-                                                </div>
-                                                <!-- <div class="col">
+                                                    <!-- <div class="col">
                                                     <div class="skill">
                                                         <img src="assets/images/technologies/Kubernetes.svg" alt="Kubernetes" class="skill-image grayscale">
                                                         <div class="skill-percentage">80%</div>
                                                     </div>
                                                     <p class="skill-name">Kubernetes</p>
                                                 </div> -->
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/VirtualBox.svg" alt="VirtualBox" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/VirtualBox.svg" alt="VirtualBox" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">VirtualBox</p>
                                                     </div>
-                                                    <p class="skill-name">VirtualBox</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Jira.svg" alt="Jira" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Jira.svg" alt="Jira" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">80%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Jira</p>
                                                     </div>
-                                                    <p class="skill-name">Jira</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1000">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Trello.svg" alt="Trello" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1000">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Trello.svg" alt="Trello" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Trello</p>
                                                     </div>
-                                                    <p class="skill-name">Trello</p>
-                                                </div>
 
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1100">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Figma.svg" alt="Figma" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1100">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Figma.svg" alt="Figma" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Figma</p>
                                                     </div>
-                                                    <p class="skill-name">Figma</p>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Others -->
-                                        <div class="others skills-tab-content" id="others-content">
-                                            <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Devops.svg" alt="Devops" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
+                                            <!-- Others -->
+                                            <div class="others skills-tab-content" id="others-content">
+                                                <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Devops.svg" alt="Devops" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">85%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Devops</p>
                                                     </div>
-                                                    <p class="skill-name">Devops</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/GitHubActions.svg" alt="GitHub Actions" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">95%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/GitHubActions.svg" alt="GitHub Actions" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">95%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">GitHub Actions</p>
                                                     </div>
-                                                    <p class="skill-name">GitHub Actions</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Linux.svg" alt="Linux" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Linux.svg" alt="Linux" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">80%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Linux</p>
                                                     </div>
-                                                    <p class="skill-name">Linux</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Git.svg" alt="Git" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Git.svg" alt="Git" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">85%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Git</p>
                                                     </div>
-                                                    <p class="skill-name">Git</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/NetCore.svg" alt=".Net Core" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/NetCore.svg" alt=".Net Core" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">80%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">.Net Core</p>
                                                     </div>
-                                                    <p class="skill-name">.Net Core</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Arduino.svg" alt="Arduino" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Arduino.svg" alt="Arduino" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">80%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Arduino</p>
                                                     </div>
-                                                    <p class="skill-name">Arduino</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/Unity.svg" alt="Unity Engine" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">80%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/Unity.svg" alt="Unity Engine" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">80%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">Unity Engine</p>
                                                     </div>
-                                                    <p class="skill-name">Unity Engine</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/MySQL.svg" alt="MySQL" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/MySQL.svg" alt="MySQL" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">85%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">MySQL</p>
                                                     </div>
-                                                    <p class="skill-name">MySQL</p>
-                                                </div>
-                                                <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
-                                                    <div class="skill">
-                                                        <img src="assets/images/technologies/PostgresSQL.svg" alt="PostgreSQL" class="skill-image grayscale">
-                                                        <!-- <div class="skill-percentage">85%</div> -->
+                                                    <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800">
+                                                        <div class="skill">
+                                                            <img src="assets/images/technologies/PostgresSQL.svg" alt="PostgreSQL" class="skill-image grayscale">
+                                                            <!-- <div class="skill-percentage">85%</div> -->
+                                                        </div>
+                                                        <p class="skill-name">PostgreSQL</p>
                                                     </div>
-                                                    <p class="skill-name">PostgreSQL</p>
-                                                </div>
 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row Box" id="achievements">
-                                <div class="section-container padd-15" id="achievements-container">
-                                    <div class="achievements-container" data-aos="fade-up" data-aos-duration="800" id="achievements-content">
-                                        <div class="section-subtitle padd-15" data-aos="fade-down" data-aos-duration="800" id="achievements-subtitle">
-                                            <h3 class="title" id="achievements-title">Achievements</h3>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="tabs" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" id="achievements-tabs">
-                                                <span class="about-tab-item active" data-target=".certifications" id="certifications-tab">Certifications</span>
-                                                <span class="about-tab-item" data-target=".activities" id="activities-tab">Activities</span>
+                                <div class="row Box" id="achievements">
+                                    <div class="section-container padd-15" id="achievements-container">
+                                        <div class="achievements-container" data-aos="fade-up" data-aos-duration="800" id="achievements-content">
+                                            <div class="section-subtitle padd-15" data-aos="fade-down" data-aos-duration="800" id="achievements-subtitle">
+                                                <h3 class="title" id="achievements-title">Achievements</h3>
                                             </div>
-                                        </div>
 
-                                        <!-- Certifications Timeline -->
-                                        <div id="certifications" class="certifications about-tab-content active" data-aos="fade-in">
-                                            <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-code"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">IN PROGRESS • 2025</div>
-                                                            <div class="timeline-title">
-                                                                <a class="link" target="_blank">Advanced Software Testing – Automation Track</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
-                                                            </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="status-indicator in-progress">
-                                                                    <i class="fas fa-clock"></i>
-                                                                    In Progress
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                A hands-on training program offered by <b>The Hope International</b> focused on test automation tools and practices.
-                                                                This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
-                                                                It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
-                                                                <br><br>
-                                                                <b>Specialized Learning Areas:</b>
-                                                                <ul class="timeline-list">
-                                                                    <li>Automating test cases and reducing manual testing overhead.</li>
-                                                                    <li>Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
-                                                                    <li>Mobile testing best practices (ASTQB Mobile Testing standards).</li>
-                                                                    <li>Agile and DevOps integration (Agile Tester &amp; Scrum Master concepts).</li>
-                                                                    <li>API automation and Selenium WebDriver-based testing workflows.</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-bug"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">DEC 2024 • 40 HOURS</div>
-                                                            <div class="timeline-title">
-                                                                <a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
-                                                            </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="status-indicator completed">
-                                                                    <i class="fas fa-check"></i>
-                                                                    Completed
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                Comprehensive manual software testing course by <b>The Hope International</b> focused on the principles,
-                                                                methodologies, and tools of manual software testing.
-                                                                This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
-                                                                <br><br>
-                                                                <b>The course emphasizes:</b>
-                                                                <ul class="timeline-list">
-                                                                    <li>Core software testing concepts and industry best practices.</li>
-                                                                    <li>Test design techniques including Black Box, and experience-based methods.</li>
-                                                                    <li>Defect lifecycle, bug reporting, and risk-based testing strategies.</li>
-                                                                    <li>Static testing techniques such as reviews and tool-supported analysis.</li>
-                                                                    <li>Test planning, estimation, execution, and monitoring fundamentals.</li>
-                                                                    <li>Basics of API testing and introduction to automation tools.</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-project-diagram"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">AUG 2024 • 28 PDUS</div>
-                                                            <div class="timeline-title">
-                                                                <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP<sup>®</sup> Exam Prep</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
-                                                            </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="status-indicator completed">
-                                                                    <i class="fas fa-check"></i>
-                                                                    Completed
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                A hands-on Agile training program focused on building practical project management skills and preparing for PMI-ACP<sup>®</sup> certification.
-                                                                This course helped me strengthen my ability to lead Agile teams and deliver project using modern frameworks and adaptive planning strategies.
-                                                                <br><br>
-                                                                <b>Skills and knowledge gained:</b>
-                                                                <ul class="timeline-list">
-                                                                    <li>Deep understanding of Agile principles, values, and mindset (Scrum, Kanban, XP, Lean).</li>
-                                                                    <li>Developed skills in stakeholder communication, adaptive planning, and team facilitation.</li>
-                                                                    <li>Learned risk management, estimation, and prioritization techniques in dynamic project.</li>
-                                                                    <li>Strengthened knowledge of Agile metrics, velocity tracking, and iterative delivery cycles.</li>
-                                                                    <li>Practiced applying Agile techniques through case scenarios and mock exam simulations.</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div class="row">
+                                                <div class="tabs" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" id="achievements-tabs">
+                                                    <span class="about-tab-item active" data-target=".certifications" id="certifications-tab">Certifications</span>
+                                                    <span class="about-tab-item" data-target=".activities" id="activities-tab">Activities</span>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Activities Timeline -->
-                                        <div id="activities" class="activities about-tab-content" data-aos="fade-in">
-                                            <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-rocket"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">OCT 2024 • NASA SPACE APPS</div>
-                                                            <div class="timeline-title">
-                                                                <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">NASA Space Apps Challenge</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                            <!-- Certifications Timeline -->
+                                            <div id="certifications" class="certifications about-tab-content active" data-aos="fade-in">
+                                                <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-code"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">IN PROGRESS • 2025</div>
+                                                                <div class="timeline-title">
+                                                                    <a class="link" target="_blank">Advanced Software Testing – Automation Track</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="status-indicator in-progress">
+                                                                        <i class="fas fa-clock"></i>
+                                                                        In Progress
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="award-badge">
-                                                                    <i class="fas fa-award"></i>
-                                                                    Creativity Award
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    A hands-on training program offered by <b>The Hope International</b> focused on test automation tools and practices.
+                                                                    This course builds on manual testing knowledge and transitions learners into automation and performance testing roles.
+                                                                    It introduces advanced tools, practical frameworks, and certifications aligned with global QA standards.
+                                                                    <br><br>
+                                                                    <b>Specialized Learning Areas:</b>
+                                                                    <ul class="timeline-list">
+                                                                        <li>Automating test cases and reducing manual testing overhead.</li>
+                                                                        <li>Performance testing using JMeter (aligned with ISTQB CTFL-Performance Testing).</li>
+                                                                        <li>Mobile testing best practices (ASTQB Mobile Testing standards).</li>
+                                                                        <li>Agile and DevOps integration (Agile Tester &amp; Scrum Master concepts).</li>
+                                                                        <li>API automation and Selenium WebDriver-based testing workflows.</li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                Received the <b>Creativity Award</b> for designing <b>The Planetary Explorer</b>, an educational 3D game built with Unity.
-                                                                The game targets elementary to high school students, combining interactive gameplay with scientifically accurate NASA data on exoplanets.
-                                                                <br>
-                                                                By integrating real data from NASA and space agency partners, the game fosters curiosity and expands player knowledge of distant worlds and the universe.
-                                                                It was developed to make space science accessible, engaging, and fun through immersive digital exploration.
+                                                    </div>
+
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-bug"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">DEC 2024 • 40 HOURS</div>
+                                                                <div class="timeline-title">
+                                                                    <a href="assets/docs/QA Testing Certificate.pdf" class="link" target="_blank">QA Software Testing</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="status-indicator completed">
+                                                                        <i class="fas fa-check"></i>
+                                                                        Completed
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    Comprehensive manual software testing course by <b>The Hope International</b> focused on the principles,
+                                                                    methodologies, and tools of manual software testing.
+                                                                    This program covered the full QA lifecycle, from planning and static testing to test execution and defect management.
+                                                                    <br><br>
+                                                                    <b>The course emphasizes:</b>
+                                                                    <ul class="timeline-list">
+                                                                        <li>Core software testing concepts and industry best practices.</li>
+                                                                        <li>Test design techniques including Black Box, and experience-based methods.</li>
+                                                                        <li>Defect lifecycle, bug reporting, and risk-based testing strategies.</li>
+                                                                        <li>Static testing techniques such as reviews and tool-supported analysis.</li>
+                                                                        <li>Test planning, estimation, execution, and monitoring fundamentals.</li>
+                                                                        <li>Basics of API testing and introduction to automation tools.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-project-diagram"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">AUG 2024 • 28 PDUS</div>
+                                                                <div class="timeline-title">
+                                                                    <a href="assets/docs/PMI-ACP Certificate.jpg" class="link" target="_blank">PMI-ACP<sup>®</sup> Exam Prep</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="status-indicator completed">
+                                                                        <i class="fas fa-check"></i>
+                                                                        Completed
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    A hands-on Agile training program focused on building practical project management skills and preparing for PMI-ACP<sup>®</sup> certification.
+                                                                    This course helped me strengthen my ability to lead Agile teams and deliver project using modern frameworks and adaptive planning strategies.
+                                                                    <br><br>
+                                                                    <b>Skills and knowledge gained:</b>
+                                                                    <ul class="timeline-list">
+                                                                        <li>Deep understanding of Agile principles, values, and mindset (Scrum, Kanban, XP, Lean).</li>
+                                                                        <li>Developed skills in stakeholder communication, adaptive planning, and team facilitation.</li>
+                                                                        <li>Learned risk management, estimation, and prioritization techniques in dynamic project.</li>
+                                                                        <li>Strengthened knowledge of Agile metrics, velocity tracking, and iterative delivery cycles.</li>
+                                                                        <li>Practiced applying Agile techniques through case scenarios and mock exam simulations.</li>
+                                                                    </ul>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-palette"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">MAY 2024 • AAU-XDT</div>
-                                                            <div class="timeline-title">
-                                                                <a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">UI/UX Design Competition</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                            <!-- Activities Timeline -->
+                                            <div id="activities" class="activities about-tab-content" data-aos="fade-in">
+                                                <div class="timeline-container" data-aos="fade-in" data-aos-delay="200">
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-rocket"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">OCT 2024 • NASA SPACE APPS</div>
+                                                                <div class="timeline-title">
+                                                                    <a href="assets/docs/NasaSpaceApp Certificate.pdf" class="link" target="_blank">NASA Space Apps Challenge</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="award-badge">
+                                                                        <i class="fas fa-award"></i>
+                                                                        Creativity Award
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="award-badge">
-                                                                    <i class="fas fa-medal"></i>
-                                                                    2nd Place
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    Received the <b>Creativity Award</b> for designing <b>The Planetary Explorer</b>, an educational 3D game built with Unity.
+                                                                    The game targets elementary to high school students, combining interactive gameplay with scientifically accurate NASA data on exoplanets.
+                                                                    <br>
+                                                                    By integrating real data from NASA and space agency partners, the game fosters curiosity and expands player knowledge of distant worlds and the universe.
+                                                                    It was developed to make space science accessible, engaging, and fun through immersive digital exploration.
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                Earned <b>2nd place</b> in a university-level UI/UX design competition for senior students.
-                                                                As a team, we developed a high-fidelity prototype of an e-learning management system, praised for its clean visual design,
-                                                                seamless user flow, and strong emphasis on accessibility and usability principles.
-                                                            </div>
-                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-clock"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">JAN 2024</div>
-                                                            <div class="timeline-title">
-                                                                <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3 Minutes Competition</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-palette"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">MAY 2024 • AAU-XDT</div>
+                                                                <div class="timeline-title">
+                                                                    <a href="assets/docs/AAU-XDT Second Place Certificate.jpg" class="link" target="_blank">UI/UX Design Competition</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="award-badge">
+                                                                        <i class="fas fa-medal"></i>
+                                                                        2nd Place
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="award-badge">
-                                                                    <i class="fas fa-trophy"></i>
-                                                                    3rd Place
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    Earned <b>2nd place</b> in a university-level UI/UX design competition for senior students.
+                                                                    As a team, we developed a high-fidelity prototype of an e-learning management system, praised for its clean visual design,
+                                                                    seamless user flow, and strong emphasis on accessibility and usability principles.
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                Earned <b>3rd place</b> in a fast-paced pitch competition where teams had just 3 minutes to convince judges.
-                                                                Presented <b>UniBus</b>, a transportation solution for university communities featuring real-time tracking and smart scheduling.
-                                                                Judges praised our clear communication and innovative approach within the time constraint.
-                                                            </div>
-                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-code"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">NOV 2023 • JCPC</div>
-                                                            <div class="timeline-title">
-                                                                <a class="link" target="_blank">Jordanian Collegiate Programming Contest</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-clock"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">JAN 2024</div>
+                                                                <div class="timeline-title">
+                                                                    <a href="assets/docs/3Minutes Competition Certificate.jpg" class="link" target="_blank">3 Minutes Competition</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="award-badge">
+                                                                        <i class="fas fa-trophy"></i>
+                                                                        3rd Place
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="award-badge">
-                                                                    <i class="fas fa-user"></i>
-                                                                    Competitor
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    Earned <b>3rd place</b> in a fast-paced pitch competition where teams had just 3 minutes to convince judges.
+                                                                    Presented <b>UniBus</b>, a transportation solution for university communities featuring real-time tracking and smart scheduling.
+                                                                    Judges praised our clear communication and innovative approach within the time constraint.
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                Competed in <b>JCPC23</b>, Jordan’s national collegiate programming contest and qualifier for the ICPC regionals for university students.
-                                                                The contest challenges participants with complex algorithmic problems, promoting teamwork, advanced problem-solving skills, and team collaboration in a high-stakes competitive environment.
-                                                            </div>
-                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <!-- Timeline Item -->
-                                                <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                                                    <div class="timeline-node">
-                                                        <i class="fas fa-lightbulb"></i>
-                                                    </div>
-                                                    <div class="timeline-content">
-                                                        <div class="timeline-header" onclick="toggleExpand(this)">
-                                                            <div class="timeline-date">MAY 2023 • AAU-PC</div>
-                                                            <div class="timeline-title">
-                                                                <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">AAU Programming Contest</a>
-                                                                <i class="fas fa-chevron-down expand-icon"></i>
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-code"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">NOV 2023 • JCPC</div>
+                                                                <div class="timeline-title">
+                                                                    <a class="link" target="_blank">Jordanian Collegiate Programming Contest</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="award-badge">
+                                                                        <i class="fas fa-user"></i>
+                                                                        Competitor
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="timeline-badges">
-                                                                <div class="award-badge">
-                                                                    <i class="fas fa-bolt"></i>
-                                                                    First Solve
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    Competed in <b>JCPC23</b>, Jordan’s national collegiate programming contest and qualifier for the ICPC regionals for university students.
+                                                                    The contest challenges participants with complex algorithmic problems, promoting teamwork, advanced problem-solving skills, and team collaboration in a high-stakes competitive environment.
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="timeline-details">
-                                                            <div class="timeline-description" data-aos="fade-in">
-                                                                Placed <b>4th overall</b> in AAU’s annual programming contest and earned the <b>First Solve</b> award for being the first team to crack a problem under time pressure.
-                                                                The competition mirrors JCPC/ICPC formats and served as hands-on training in algorithmic thinking, time management, and collaborative coding.
+                                                    </div>
+
+                                                    <!-- Timeline Item -->
+                                                    <div class="timeline-item  aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                                                        <div class="timeline-node">
+                                                            <i class="fas fa-lightbulb"></i>
+                                                        </div>
+                                                        <div class="timeline-content">
+                                                            <div class="timeline-header" onclick="toggleExpand(this)">
+                                                                <div class="timeline-date">MAY 2023 • AAU-PC</div>
+                                                                <div class="timeline-title">
+                                                                    <a href="assets/docs/AAU-PC 2023 First Solve Certificate.jpg" class="link" target="_blank">AAU Programming Contest</a>
+                                                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                                                </div>
+                                                                <div class="timeline-badges">
+                                                                    <div class="award-badge">
+                                                                        <i class="fas fa-bolt"></i>
+                                                                        First Solve
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-details">
+                                                                <div class="timeline-description" data-aos="fade-in">
+                                                                    Placed <b>4th overall</b> in AAU’s annual programming contest and earned the <b>First Solve</b> award for being the first team to crack a problem under time pressure.
+                                                                    The competition mirrors JCPC/ICPC formats and served as hands-on training in algorithmic thinking, time management, and collaborative coding.
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -784,128 +804,127 @@ function generateCSRFToken()
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- About Section End -->
-            <!-- Projects Section Start -->
-            <section class="project section" id="projects">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in" id="projects-title">
-                            <h2 id="projects-heading">Projects</h2>
+                </section>
+                <!-- About Section End -->
+                <!-- Projects Section Start -->
+                <section class="project section" id="projects">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15" data-aos="fade-in" id="projects-title">
+                                <h2 id="projects-heading">Projects</h2>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Projects Filter -->
-                    <div class="project-filter" data-aos="fade-up" id="project-filter">
+                        <!-- Projects Filter -->
+                        <div class="project-filter" data-aos="fade-up" id="project-filter">
 
-                        <span class="filter-btn active" data-filter="all" id="filter-all">All Projects</span>
-                        <span class="filter-btn" data-filter="web" id="filter-web">Web Apps</span>
-                        <span class="filter-btn" data-filter="iot" id="filter-iot">IoT</span>
-                        <span class="filter-btn" data-filter="game" id="filter-game">Games</span>
-                        <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
-                        <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
-                        <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
-                    </div>
-                    <!-- Projects Grid -->
-                    <div class="project-grid" data-aos="fade-in" id="project-grid">
+                            <span class="filter-btn active" data-filter="all" id="filter-all">All Projects</span>
+                            <span class="filter-btn" data-filter="web" id="filter-web">Web Apps</span>
+                            <span class="filter-btn" data-filter="iot" id="filter-iot">IoT</span>
+                            <span class="filter-btn" data-filter="game" id="filter-game">Games</span>
+                            <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
+                            <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
+                            <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
+                        </div>
+                        <!-- Projects Grid -->
+                        <div class="project-grid" data-aos="fade-in" id="project-grid">
 
-                        <!-- Project 1 - PackTrack -->
-                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" id="project-packtrack">
-                            <div class="project-media" id="packtrack-media">
-                                <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App" id="packtrack-image">
-                                <div class="project-overlay" id="packtrack-overlay">
-                                    <div class="project-overlay-content" id="packtrack-overlay-content">
-                                        <button class="view-project-btn" data-project="packtrack" id="packtrack-view-btn">
-                                            View Details
-                                        </button>
+                            <!-- Project 1 - PackTrack -->
+                            <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" id="project-packtrack">
+                                <div class="project-media" id="packtrack-media">
+                                    <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App" id="packtrack-image">
+                                    <div class="project-overlay" id="packtrack-overlay">
+                                        <div class="project-overlay-content" id="packtrack-overlay-content">
+                                            <button class="view-project-btn" data-project="packtrack" id="packtrack-view-btn">
+                                                View Details
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="project-content" id="packtrack-content">
-                                <span class="project-category" id="packtrack-category">Full-Stack Web App</span>
-                                <h3 class="project-title" id="packtrack-title">
-                                    <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link" id="packtrack-link"><i class="fa-solid fa-truck"></i> PackTrack</a>
-                                </h3>
-                                <p class="project-description" data-aos="fade-in" id="packtrack-description">
-                                    A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
-                                <ul class="project-tags" data-aos="slide-up" id="packtrack-tags">
-                                    <li><a>PHP</a></li>
-                                    <li><a>MySQL</a></li>
-                                    <li><a>API Integration</a></li>
-                                    <li><a>JWT Auth</a></li>
-                                    <li><a>Docker</a></li>
-                                    <li><a>Chart.js</a></li>
-                                    <li><a>Tailwind CSS</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Project 2 - Smart Alert System -->
-                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="200" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" id="project-arduino">
-                            <div class="project-media" id="arduino-media">
-                                <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System" id="arduino-image">
-                                <div class="project-overlay" id="arduino-overlay">
-                                    <div class="project-overlay-content" id="arduino-overlay-content">
-                                        <button class="view-project-btn" data-project="arduino-smart-alert-system" id="arduino-view-btn">
-                                            View Details
-                                        </button>
-                                    </div>
+                                <div class="project-content" id="packtrack-content">
+                                    <span class="project-category" id="packtrack-category">Full-Stack Web App</span>
+                                    <h3 class="project-title" id="packtrack-title">
+                                        <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link" id="packtrack-link"><i class="fa-solid fa-truck"></i> PackTrack</a>
+                                    </h3>
+                                    <p class="project-description" data-aos="fade-in" id="packtrack-description">
+                                        A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
+                                    <ul class="project-tags" data-aos="slide-up" id="packtrack-tags">
+                                        <li><a>PHP</a></li>
+                                        <li><a>MySQL</a></li>
+                                        <li><a>API Integration</a></li>
+                                        <li><a>JWT Auth</a></li>
+                                        <li><a>Docker</a></li>
+                                        <li><a>Chart.js</a></li>
+                                        <li><a>Tailwind CSS</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="project-content" id="arduino-content">
-                                <span class="project-category" id="arduino-category">IoT Project</span>
-                                <h3 class="project-title" id="arduino-title">
-                                    <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link" id="arduino-link">
-                                        <i class="fa-solid fa-microchip"></i> Smart Alert System
-                                    </a>
-                                </h3>
-                                <p class="project-description" data-aos="fade-in" id="arduino-description">
-                                    An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
-                                <ul class="project-tags" id="arduino-tags">
-                                    <li><a>Arduino</a></li>
-                                    <li><a>PIR Sensor</a></li>
-                                    <li><a>Ultrasonic</a></li>
-                                    <li><a>Water Sensor</a></li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <!-- Project 3 - The Planetary Explorer -->
-                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" id="project-planetary">
-                            <div class="project-media" id="planetary-media">
-                                <video autoplay muted loop playsinline id="planetary-video">
-                                    <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div class="project-overlay" id="planetary-overlay">
-                                    <div class="project-overlay-content" id="planetary-overlay-content">
-                                        <button class="view-project-btn" data-project="planetary-explorer" id="planetary-view-btn">
-                                            View Details
-                                        </button>
+                            <!-- Project 2 - Smart Alert System -->
+                            <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="200" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" id="project-arduino">
+                                <div class="project-media" id="arduino-media">
+                                    <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System" id="arduino-image">
+                                    <div class="project-overlay" id="arduino-overlay">
+                                        <div class="project-overlay-content" id="arduino-overlay-content">
+                                            <button class="view-project-btn" data-project="arduino-smart-alert-system" id="arduino-view-btn">
+                                                View Details
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="project-content" id="arduino-content">
+                                    <span class="project-category" id="arduino-category">IoT Project</span>
+                                    <h3 class="project-title" id="arduino-title">
+                                        <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link" id="arduino-link">
+                                            <i class="fa-solid fa-microchip"></i> Smart Alert System
+                                        </a>
+                                    </h3>
+                                    <p class="project-description" data-aos="fade-in" id="arduino-description">
+                                        An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
+                                    <ul class="project-tags" id="arduino-tags">
+                                        <li><a>Arduino</a></li>
+                                        <li><a>PIR Sensor</a></li>
+                                        <li><a>Ultrasonic</a></li>
+                                        <li><a>Water Sensor</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="project-content" id="planetary-content">
-                                <span class="project-category" id="planetary-category">3D Game</span>
-                                <h3 class="project-title" id="planetary-title">
-                                    <a target="_blank" class="link" id="planetary-link">
-                                        <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
-                                    </a>
-                                </h3>
-                                <p class="project-description" data-aos="fade-in" id="planetary-description">
-                                    Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
-                                </p>
-                                <ul class="project-tags" id="planetary-tags">
-                                    <li><a>Unity</a></li>
-                                    <li><a>C#</a></li>
-                                    <li><a>3D Environment Design</a></li>
-                                    <li><a>Low-Gravity Simulation</a></li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <!-- Project 4 - Sample AI Project -->
-                        <!-- <div class="project-item" data-category="ai" data-github="#" data-live="#" data-mediatype="image" data-mediasrc="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop">
+                            <!-- Project 3 - The Planetary Explorer -->
+                            <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" id="project-planetary">
+                                <div class="project-media" id="planetary-media">
+                                    <video autoplay muted loop playsinline id="planetary-video">
+                                        <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="project-overlay" id="planetary-overlay">
+                                        <div class="project-overlay-content" id="planetary-overlay-content">
+                                            <button class="view-project-btn" data-project="planetary-explorer" id="planetary-view-btn">
+                                                View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-content" id="planetary-content">
+                                    <span class="project-category" id="planetary-category">3D Game</span>
+                                    <h3 class="project-title" id="planetary-title">
+                                        <a target="_blank" class="link" id="planetary-link">
+                                            <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
+                                        </a>
+                                    </h3>
+                                    <p class="project-description" data-aos="fade-in" id="planetary-description">
+                                        Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
+                                    </p>
+                                    <ul class="project-tags" id="planetary-tags">
+                                        <li><a>Unity</a></li>
+                                        <li><a>C#</a></li>
+                                        <li><a>3D Environment Design</a></li>
+                                        <li><a>Low-Gravity Simulation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Project 4 - Sample AI Project -->
+                            <!-- <div class="project-item" data-category="ai" data-github="#" data-live="#" data-mediatype="image" data-mediasrc="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop">
                             <div class="project-media">
                                 <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop" alt="AI Image Recognition">
                                 <div class="project-overlay">
@@ -932,346 +951,347 @@ function generateCSRFToken()
                                 </ul>
                             </div>
                         </div> -->
-                    </div>
-                </div>
-            </section>
-            <!-- Projects Section End -->
-            <!-- Service Section Start -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in" id="services-title">
-                            <h2 id="services-heading">Services</h2>
                         </div>
                     </div>
-                    <div class="row" id="services-container">
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" id="service-testing">
-                            <div class="service-item-inner" id="service-testing-inner">
-                                <div class="icon" id="service-testing-icon">
-                                    <i class="fa fa-bug"></i>
-                                </div>
-                                <h4 id="service-testing-title">Software Testing & QA</h4>
-                                <p id="service-testing-description">
-                                    Ensuring software reliability with automated testing.
-                                    Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
-                                    My focus is on delivering high-quality, bug-free releases.
-                                </p>
+                </section>
+                <!-- Projects Section End -->
+                <!-- Service Section Start -->
+                <section class="service section" id="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15" data-aos="fade-in" id="services-title">
+                                <h2 id="services-heading">Services</h2>
                             </div>
                         </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" id="service-web">
-                            <div class="service-item-inner" id="service-web-inner">
-                                <div class="icon" id="service-web-icon">
-                                    <i class="fa fa-globe"></i>
+                        <div class="row" id="services-container">
+                            <!-- Service Item Start -->
+                            <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" id="service-testing">
+                                <div class="service-item-inner" id="service-testing-inner">
+                                    <div class="icon" id="service-testing-icon">
+                                        <i class="fa fa-bug"></i>
+                                    </div>
+                                    <h4 id="service-testing-title">Software Testing & QA</h4>
+                                    <p id="service-testing-description">
+                                        Ensuring software reliability with automated testing.
+                                        Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
+                                        My focus is on delivering high-quality, bug-free releases.
+                                    </p>
                                 </div>
-                                <h4 id="service-web-title">Web Development</h4>
-                                <p id="service-web-description">
-                                    Building responsive, scalable web apps that provide seamless user experiences.
-                                    I combine front-end and back-end technologies
-                                    to create reliable solutions that perform efficiently and meet both user and business needs.
-                                </p>
                             </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-paint-brush"></i>
+                            <!-- Service Item End -->
+                            <!-- Service Item Start -->
+                            <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" id="service-web">
+                                <div class="service-item-inner" id="service-web-inner">
+                                    <div class="icon" id="service-web-icon">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <h4 id="service-web-title">Web Development</h4>
+                                    <p id="service-web-description">
+                                        Building responsive, scalable web apps that provide seamless user experiences.
+                                        I combine front-end and back-end technologies
+                                        to create reliable solutions that perform efficiently and meet both user and business needs.
+                                    </p>
                                 </div>
-                                <h4>UI/UX Design</h4>
-                                <p>
-                                    Designing intuitive interfaces that prioritize user experience.
-                                    I focus on creating smooth, clean, interactive designs through wireframing,
-                                    prototyping, and testing to ensure usability.
-                                </p>
                             </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-solid fa-gears"></i>
+                            <!-- Service Item End -->
+                            <!-- Service Item Start -->
+                            <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-paint-brush"></i>
+                                    </div>
+                                    <h4>UI/UX Design</h4>
+                                    <p>
+                                        Designing intuitive interfaces that prioritize user experience.
+                                        I focus on creating smooth, clean, interactive designs through wireframing,
+                                        prototyping, and testing to ensure usability.
+                                    </p>
                                 </div>
-                                <h4>DevOps & CI/CD</h4>
-                                <p>
-                                    Streamlining development with CI/CD pipelines to automate workflows.
-                                    I focus on increasing collaboration, accelerating software delivery,
-                                    and maintaining stability and quality through automated processes.
-                                </p>
                             </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-puzzle-piece"></i>
+                            <!-- Service Item End -->
+                            <!-- Service Item Start -->
+                            <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-solid fa-gears"></i>
+                                    </div>
+                                    <h4>DevOps & CI/CD</h4>
+                                    <p>
+                                        Streamlining development with CI/CD pipelines to automate workflows.
+                                        I focus on increasing collaboration, accelerating software delivery,
+                                        and maintaining stability and quality through automated processes.
+                                    </p>
                                 </div>
-                                <h4>Problem-Solving & Optimization</h4>
-                                <p>
-                                    Developing efficient algorithms and optimized solutions
-                                    to enhance system performance, scalability, and reliability.
-                                    I tackle challenges with creative and practical approaches to deliver impactful results.
-                                </p>
                             </div>
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-users"></i>
+                            <!-- Service Item End -->
+                            <!-- Service Item Start -->
+                            <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-puzzle-piece"></i>
+                                    </div>
+                                    <h4>Problem-Solving & Optimization</h4>
+                                    <p>
+                                        Developing efficient algorithms and optimized solutions
+                                        to enhance system performance, scalability, and reliability.
+                                        I tackle challenges with creative and practical approaches to deliver impactful results.
+                                    </p>
                                 </div>
-                                <h4>Project Management</h4>
-                                <p>
-                                    Leading teams with Agile methods to ensure timely and high-quality project delivery.
-                                    I facilitate sprints, encourage communication,
-                                    and use tools like Jira to ensure everyone stays aligned and focused on goals.
-                                </p>
                             </div>
+                            <!-- Service Item End -->
+                            <!-- Service Item Start -->
+                            <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-users"></i>
+                                    </div>
+                                    <h4>Project Management</h4>
+                                    <p>
+                                        Leading teams with Agile methods to ensure timely and high-quality project delivery.
+                                        I facilitate sprints, encourage communication,
+                                        and use tools like Jira to ensure everyone stays aligned and focused on goals.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Service Item End -->
                         </div>
-                        <!-- Service Item End -->
                     </div>
-                </div>
-            </section>
-            <!-- Service Section End -->
-            <!-- Contact Section Start -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in" id="contact-title">
-                            <h2 id="contact-heading">Contact Me</h2>
+                </section>
+                <!-- Service Section End -->
+                <!-- Contact Section Start -->
+                <section class="contact section" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15" data-aos="fade-in" id="contact-title">
+                                <h2 id="contact-heading">Contact Me</h2>
+                            </div>
                         </div>
-                    </div>
-                    <h3 class="contact-title padd-15" id="contact-subtitle">Do you have any questions ?</h3>
-                    <h4 class="contact-sub-title padd-15" id="contact-subtitle-text">I'M AT YOUR SERVICES</h4>
-                    <div class="row" id="contact-info-container">
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-phone">
-                            <div class="icon" id="contact-phone-icon"><i class="fab fa-whatsapp"></i></div>
-                            <h4 id="contact-phone-title">Call Me On</h4>
-                            <p id="contact-phone-value"><a href="tel:+962-78-127-7089" target="_blank" class="link" id="contact-phone-link">+962 781277089</a></p>
+                        <h3 class="contact-title padd-15" id="contact-subtitle">Do you have any questions ?</h3>
+                        <h4 class="contact-sub-title padd-15" id="contact-subtitle-text">I'M AT YOUR SERVICES</h4>
+                        <div class="row" id="contact-info-container">
+                            <!-- Contact info item start -->
+                            <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-phone">
+                                <div class="icon" id="contact-phone-icon"><i class="fab fa-whatsapp"></i></div>
+                                <h4 id="contact-phone-title">Call Me On</h4>
+                                <p id="contact-phone-value"><a href="tel:+962-78-127-7089" target="_blank" class="link" id="contact-phone-link">+962 781277089</a></p>
+                            </div>
+                            <!-- Contact info item end -->
+                            <!-- Contact info item start -->
+                            <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-location">
+                                <div class="icon" id="contact-location-icon"><i class="fa fa-map-marker-alt"></i></div>
+                                <h4 id="contact-location-title">Location</h4>
+                                <p id="contact-location-value"><a class="link" id="contact-location-link">Amman</a></p>
+                            </div>
+                            <!-- Contact info item end -->
+                            <!-- Contact info item start -->
+                            <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-email">
+                                <div class="icon" id="contact-email-icon"><i class="fa fa-envelope"></i></div>
+                                <h4 id="contact-email-title">Email</h4>
+                                <p id="contact-email-value"><a href="mailto:info@rashaalsaleh.com" target="_blank"
+                                        class="link" id="contact-email-link">info@rashaalsaleh.com</a></p>
+                            </div>
+                            <!-- Contact info item end -->
+                            <!-- Contact info item start -->
+                            <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-linkedin">
+                                <div class="icon" id="contact-linkedin-icon"><i class="fab fa-linkedin"></i></div>
+                                <h4 id="contact-linkedin-title">LinkedIn</h4>
+                                <p id="contact-linkedin-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link" id="contact-linkedin-link">Rasha
+                                        Alsaleh</a></p>
+                            </div>
+                            <!-- Contact info item end -->
                         </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-location">
-                            <div class="icon" id="contact-location-icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4 id="contact-location-title">Location</h4>
-                            <p id="contact-location-value"><a class="link" id="contact-location-link">Amman</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-email">
-                            <div class="icon" id="contact-email-icon"><i class="fa fa-envelope"></i></div>
-                            <h4 id="contact-email-title">Email</h4>
-                            <p id="contact-email-value"><a href="mailto:info@rashaalsaleh.com" target="_blank"
-                                    class="link" id="contact-email-link">info@rashaalsaleh.com</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-linkedin">
-                            <div class="icon" id="contact-linkedin-icon"><i class="fab fa-linkedin"></i></div>
-                            <h4 id="contact-linkedin-title">LinkedIn</h4>
-                            <p id="contact-linkedin-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link" id="contact-linkedin-link">Rasha
-                                    Alsaleh</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                    </div>
-                    <h3 class="contact-title padd-15" id="contact-form-title">Get In Touch</h3>
-                    <h4 class="contact-sub-title padd-15" id="contact-form-subtitle">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- Contact Form -->
-                    <div class="row">
-                        <div class="contact-form padd-15" data-aos="fade-up" id="contact-form-container">
-                            <form action="mail/contact" method="POST" data-aos="fade-in" id="contact-form">
-                                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15" id="name-form-item">
-                                        <div class="form-group" id="name-form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required id="contact-name">
+                        <h3 class="contact-title padd-15" id="contact-form-title">Get In Touch</h3>
+                        <h4 class="contact-sub-title padd-15" id="contact-form-subtitle">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                        <!-- Contact Form -->
+                        <div class="row">
+                            <div class="contact-form padd-15" data-aos="fade-up" id="contact-form-container">
+                                <form action="mail/contact" method="POST" data-aos="fade-in" id="contact-form">
+                                    <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
+                                    <div class="row">
+                                        <div class="form-item col-6 padd-15" id="name-form-item">
+                                            <div class="form-group" id="name-form-group">
+                                                <input type="text" name="name" class="form-control" placeholder="Name" required id="contact-name">
+                                            </div>
+                                        </div>
+                                        <div class="form-item col-6 padd-15" id="email-form-item">
+                                            <div class="form-group" id="email-form-group">
+                                                <input type="email" name="email" class="form-control" placeholder="Email" required id="contact-email-input">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form-item col-6 padd-15" id="email-form-item">
-                                        <div class="form-group" id="email-form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="Email" required id="contact-email-input">
+                                    <div class="row">
+                                        <div class="form-item col-12 padd-15" id="subject-form-item">
+                                            <div class="form-group" id="subject-form-group">
+                                                <input type="text" name="subject" class="form-control" placeholder="Subject" required id="contact-subject">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15" id="subject-form-item">
-                                        <div class="form-group" id="subject-form-group">
-                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required id="contact-subject">
+                                    <div class="row">
+                                        <div class="form-item col-12 padd-15" id="message-form-item">
+                                            <div class="form-group" id="message-form-group">
+                                                <textarea name="message" class="form-control" placeholder="Message" required id="contact-message"></textarea>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15" id="message-form-item">
-                                        <div class="form-group" id="message-form-group">
-                                            <textarea name="message" class="form-control" placeholder="Message" required id="contact-message"></textarea>
+                                    <div class="control-group" style="color: var(--text-black-900);" id="terms-checkbox-container">
+                                        <label class="agreeCheckbox-label" id="terms-checkbox-label">
+                                            <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
+                                        </label>
+                                    </div>
+                                    <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
+                                    <div class="row">
+                                        <div class="buttons col-12 padd-15" style="margin-top:10px" id="submit-button-container">
+                                            <button type="submit" class="btn" id="sendMessageButton" disabled><b style="color: #fff;">Send Message</b></button> <!-- Button is disabled initially -->
                                         </div>
                                     </div>
-                                </div>
-                                <div class="control-group" style="color: var(--text-black-900);" id="terms-checkbox-container">
-                                    <label class="agreeCheckbox-label" id="terms-checkbox-label">
-                                        <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
-                                    </label>
-                                </div>
-                                <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
-                                <div class="row">
-                                    <div class="buttons col-12 padd-15" style="margin-top:10px" id="submit-button-container">
-                                        <button type="submit" class="btn" id="sendMessageButton" disabled><b style="color: #fff;">Send Message</b></button> <!-- Button is disabled initially -->
-                                    </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact Section End -->
+                <!-- Project Modal -->
+                <div class="modal-overlay" id="projectModal">
+                    <div class="modal-container" id="modal-container">
+                        <div class="modal-header" id="modal-header">
+                            <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
+                                <source id="modalVideoSource" src="" type="video/mp4">
+                            </video>
+                            <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
+                            <button class="modal-close" id="modalClose">x</button>
+                        </div>
+                        <div class="modal-content" id="modal-content">
+                            <span class="modal-category" id="modalCategory"></span>
+                            <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link" id="modal-title-link"></a></h2>
+                            <p class="modal-description" id="modalDescription"></p>
+                            <ul class="modal-tags" id="modalTags"></ul>
+                            <div class="modal-actions" id="modal-actions">
+                                <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
+                                    <i class="fa-solid fa-link"></i> View on GitHub
+                                    <span class="arrow-container">
+                                        <i class="fa-solid fa-arrow-up arrowone"></i>
+                                        <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
+                                    <i class="fa-solid fa-meteor"></i> Live Demo
+                                    <span class="arrow-container">
+                                        <i class="fa-solid fa-arrow-up arrowone"></i>
+                                        <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Contact Section End -->
-            <!-- Project Modal -->
-            <div class="modal-overlay" id="projectModal">
-                <div class="modal-container" id="modal-container">
-                    <div class="modal-header" id="modal-header">
-                        <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
-                            <source id="modalVideoSource" src="" type="video/mp4">
-                        </video>
-                        <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
-                        <button class="modal-close" id="modalClose">x</button>
-                    </div>
-                    <div class="modal-content" id="modal-content">
-                        <span class="modal-category" id="modalCategory"></span>
-                        <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link" id="modal-title-link"></a></h2>
-                        <p class="modal-description" id="modalDescription"></p>
-                        <ul class="modal-tags" id="modalTags"></ul>
-                        <div class="modal-actions" id="modal-actions">
-                            <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
-                                <i class="fa-solid fa-link"></i> View on GitHub
-                                <span class="arrow-container">
-                                    <i class="fa-solid fa-arrow-up arrowone"></i>
-                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
-                                <i class="fa-solid fa-meteor"></i> Live Demo
-                                <span class="arrow-container">
-                                    <i class="fa-solid fa-arrow-up arrowone"></i>
-                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Background Animation -->
-            <div class="background-container">
-                <!-- Multi-layer Grid -->
-                <div class="grid-overlay"></div>
+                <!-- Background Animation -->
+                <div class="background-container">
+                    <!-- Multi-layer Grid -->
+                    <div class="grid-overlay"></div>
 
-                <!-- Enhanced Circuit Lines -->
-                <div class="circuit-line circuit-h1"></div>
-                <div class="circuit-line circuit-h2"></div>
-                <div class="circuit-line circuit-h3"></div>
-                <div class="circuit-line circuit-h4"></div>
-                <div class="circuit-line circuit-h5"></div>
-                <div class="circuit-line circuit-v1"></div>
-                <div class="circuit-line circuit-v2"></div>
-                <div class="circuit-line circuit-v3"></div>
-                <div class="circuit-line circuit-v4"></div>
+                    <!-- Enhanced Circuit Lines -->
+                    <div class="circuit-line circuit-h1"></div>
+                    <div class="circuit-line circuit-h2"></div>
+                    <div class="circuit-line circuit-h3"></div>
+                    <div class="circuit-line circuit-h4"></div>
+                    <div class="circuit-line circuit-h5"></div>
+                    <div class="circuit-line circuit-v1"></div>
+                    <div class="circuit-line circuit-v2"></div>
+                    <div class="circuit-line circuit-v3"></div>
+                    <div class="circuit-line circuit-v4"></div>
 
-                <!-- Enhanced Circuit Nodes with Rings -->
-                <div class="circuit-node node-1"></div>
-                <div class="circuit-node node-2"></div>
-                <div class="circuit-node node-3"></div>
-                <div class="circuit-node node-4"></div>
-                <div class="circuit-node node-5"></div>
+                    <!-- Enhanced Circuit Nodes with Rings -->
+                    <div class="circuit-node node-1"></div>
+                    <div class="circuit-node node-2"></div>
+                    <div class="circuit-node node-3"></div>
+                    <div class="circuit-node node-4"></div>
+                    <div class="circuit-node node-5"></div>
 
-                <!-- Advanced Microchips -->
-                <div class="microchip chip-1"></div>
-                <div class="microchip chip-2"></div>
-                <div class="microchip chip-3"></div>
+                    <!-- Advanced Microchips -->
+                    <div class="microchip chip-1"></div>
+                    <div class="microchip chip-2"></div>
+                    <div class="microchip chip-3"></div>
 
-                <!-- Enhanced Data Particles -->
-                <div class="data-particle particle-1"></div>
-                <div class="data-particle particle-2"></div>
-                <div class="data-particle particle-3"></div>
-                <div class="data-particle particle-4"></div>
-                <div class="data-particle particle-5"></div>
+                    <!-- Enhanced Data Particles -->
+                    <div class="data-particle particle-1"></div>
+                    <div class="data-particle particle-2"></div>
+                    <div class="data-particle particle-3"></div>
+                    <div class="data-particle particle-4"></div>
+                    <div class="data-particle particle-5"></div>
 
-                <!-- Holographic Binary Matrix -->
-                <!-- <div class="binary-rain binary-1">101010<br>110100<br>100101<br>010101<br>111000</div>
+                    <!-- Holographic Binary Matrix -->
+                    <!-- <div class="binary-rain binary-1">101010<br>110100<br>100101<br>010101<br>111000</div>
                 <div class="binary-rain binary-2">110011<br>001100<br>101010<br>010101<br>000111</div>
                 <div class="binary-rain binary-3">011001<br>100110<br>010101<br>101010<br>110011</div>
                 <div class="binary-rain binary-4">101101<br>010010<br>111000<br>000111<br>101010</div>
                 <div class="binary-rain binary-5">001110<br>110001<br>010101<br>101010<br>111111</div> -->
 
-                <!-- Floating Code Fragments -->
-                <div class="code-fragment code-1">let user = &#123; name: "Rasha", role: "Dev" &#125;;</div>
-                <div class="code-fragment code-2">useEffect(() =&gt; &#123; init(); &#125;, []);</div>
-                <div class="code-fragment code-3">for (let i = 0; i &lt; 5; i++) &#123; console.log(i); &#125;</div>
-                <div class="code-fragment code-4">function fetchData() &#123; return fetch('/api/data'); &#125;</div>
+                    <!-- Floating Code Fragments -->
+                    <div class="code-fragment code-1">let user = &#123; name: "Rasha", role: "Dev" &#125;;</div>
+                    <div class="code-fragment code-2">useEffect(() =&gt; &#123; init(); &#125;, []);</div>
+                    <div class="code-fragment code-3">for (let i = 0; i &lt; 5; i++) &#123; console.log(i); &#125;</div>
+                    <div class="code-fragment code-4">function fetchData() &#123; return fetch('/api/data'); &#125;</div>
 
-                <!-- Quantum Dots -->
-                <div class="quantum-dot quantum-1"></div>
-                <div class="quantum-dot quantum-2"></div>
-                <div class="quantum-dot quantum-3"></div>
-                <div class="quantum-dot quantum-4"></div>
-                <div class="quantum-dot quantum-5"></div>
-                <div class="quantum-dot quantum-6"></div>
+                    <!-- Quantum Dots -->
+                    <div class="quantum-dot quantum-1"></div>
+                    <div class="quantum-dot quantum-2"></div>
+                    <div class="quantum-dot quantum-3"></div>
+                    <div class="quantum-dot quantum-4"></div>
+                    <div class="quantum-dot quantum-5"></div>
+                    <div class="quantum-dot quantum-6"></div>
+                </div>
+            </div>
+            <!-- Main Content End -->
+        </div>
+        <!-- Main Container End -->
+        <!-- Back-to-Top Button -->
+        <div id="backToTop">
+            <svg class="progress-ring" width="60" height="60">
+                <circle class="progress-ring-circle" cx="30" cy="30" r="28" stroke-width="4"></circle>
+                <circle class="progress-ring-progress" cx="30" cy="30" r="28" stroke-width="4"></circle>
+            </svg>
+            <i class="fa fa-arrow-up"></i>
+        </div>
+        <!-- Style Switcher Start -->
+        <div class="style-switcher" id="style-switcher">
+            <button class="setting-btn style-switcher-toggler">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar1"></span>
+            </button>
+
+            <div class="day-night s-icon" id="day-night-toggle">
+                <i class="fas "></i>
+            </div>
+            <h4 id="theme-colors-title">Theme Colors</h4>
+            <div class="colors" id="theme-colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')" id="color-1"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')" id="color-2"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')" id="color-3"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')" id="color-4"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')" id="color-5"></span>
             </div>
         </div>
-        <!-- Main Content End -->
-    </div>
-    <!-- Main Container End -->
-    <!-- Back-to-Top Button -->
-    <div id="backToTop">
-        <svg class="progress-ring" width="60" height="60">
-            <circle class="progress-ring-circle" cx="30" cy="30" r="28" stroke-width="4"></circle>
-            <circle class="progress-ring-progress" cx="30" cy="30" r="28" stroke-width="4"></circle>
-        </svg>
-        <i class="fa fa-arrow-up"></i>
-    </div>
-    <!-- Style Switcher Start -->
-    <div class="style-switcher" id="style-switcher">
-        <button class="setting-btn style-switcher-toggler">
-            <span class="bar bar1"></span>
-            <span class="bar bar2"></span>
-            <span class="bar bar1"></span>
-        </button>
+        <!-- Style Switcher End -->
 
-        <div class="day-night s-icon" id="day-night-toggle">
-            <i class="fas "></i>
-        </div>
-        <h4 id="theme-colors-title">Theme Colors</h4>
-        <div class="colors" id="theme-colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')" id="color-1"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')" id="color-2"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')" id="color-3"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')" id="color-4"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')" id="color-5"></span>
-        </div>
+        <!-- Footer Start -->
+        <footer class="footer" id="footer">
+            <div class="logo" id="footer-logo">
+                <a href="#home" id="footer-logo-link"><img src="assets/images/logo.png" alt="Logo" id="footer-logo-image"></a>
+            </div>
+            <div class="copyright" id="footer-copyright">
+                © 2025 All Rights Reserved by <b id="footer-author">Rasha</b>
+            </div>
+        </footer>
+        <!-- Footer End -->
     </div>
-    <!-- Style Switcher End -->
-
-    <!-- Footer Start -->
-    <footer class="footer" id="footer">
-        <div class="logo" id="footer-logo">
-            <a href="#home" id="footer-logo-link"><img src="assets/images/logo.png" alt="Logo" id="footer-logo-image"></a>
-        </div>
-        <div class="copyright" id="footer-copyright">
-            © 2025 All Rights Reserved by <b id="footer-author">Rasha</b>
-        </div>
-    </footer>
-    <!-- Footer End -->
-
     <!-- JS Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
         integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/style-switcher.js"></script>
+    <script src="assets/js/loader.js"></script>
     <script>
         function toggleExpand(element) {
             if (event.target.tagName === 'A') {
