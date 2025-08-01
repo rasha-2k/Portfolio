@@ -1623,10 +1623,10 @@ h3.my-profession {
     justify-content: space-between;
     text-align: center;
     padding: 20px 10px;
-    background-color: transparent;
     border: 1px solid var(--skin-color);
     border-radius: 25px;
     filter: grayscale(85%) brightness(0.9);
+    backdrop-filter: blur(1px);
     box-shadow: var(--skill-box-shadow);
     -webkit-box-shadow: var(--skill-webkit-box-shadow);
     position: relative;
