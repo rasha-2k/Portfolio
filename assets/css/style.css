@@ -29,7 +29,6 @@ html.light {
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
     --box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    --box-shadow: ;
     --glass-bg: rgba(0, 0, 0, 0.03);
     --glass-border: rgba(0, 0, 0, 0.1);
 }

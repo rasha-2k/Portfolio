@@ -43,10 +43,67 @@
     line-height: 40px;
 }
 
+/* Custom Setting Button Styles */
 .style-switcher .style-switcher-toggler {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: var(--glass-bg);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    right: 100%;
+    margin-right: 25px;
     top: 0;
+    transition: all 0.3s ease;
 }
 
+.bar {
+    width: 50%;
+    height: 2px;
+    background-color: var(--skin-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 2px;
+}
+
+.bar::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: var(--skin-color);
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 5px var(--text-black-900);
+}
+
+.bar1::before {
+    transform: translateX(-4px);
+}
+
+.bar2::before {
+    transform: translateX(4px);
+}
+
+.setting-btn:hover .bar1::before {
+    transform: translateX(4px);
+}
+
+.setting-btn:hover .bar2::before {
+    transform: translateX(-4px);
+}
+
+/* Day/Night toggle button */
 .style-switcher .day-night {
     top: 55px;
 }
@@ -70,7 +127,12 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    /*border: 1px solid rgb(0, 0, 0);*/
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.style-switcher .colors span:hover {
+    transform: scale(1.1);
 }
 
 .style-switcher .color-1 {

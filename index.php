@@ -1235,9 +1235,12 @@ function generateCSRFToken()
     </div>
     <!-- Style Switcher Start -->
     <div class="style-switcher" id="style-switcher">
-        <div class="style-switcher-toggler s-icon" id="style-switcher-toggler">
-            <i class="fas fa-cog fa-spin "></i>
-        </div>
+        <button class="setting-btn style-switcher-toggler">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar1"></span>
+        </button>
+
         <div class="day-night s-icon" id="day-night-toggle">
             <i class="fas "></i>
         </div>
