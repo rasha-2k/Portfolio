@@ -14,9 +14,11 @@ function generateCSRFToken()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rasha Alsaleh's portfolio - Software Engineer based in Amman, Jordan.">
+    <meta name="description" content="Rasha Alsaleh's portfolio - Software Engineer">
+    <meta name="author" content="Rasha Alsaleh">
     <meta name="keywords" content="Rasha Alsaleh, Software Engineer, Quality Control, Quality Assurance, QC, QA, manual Testing, Automation Testing, Full Stack Developer, Backend Developer, Amman, Jordan">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="./assets/images/logo.png">
+    <meta property="og:title" content="Rasha's Portfolio">
 
     <title>Rasha's Portfolio</title>
     <script>
@@ -81,19 +83,19 @@ function generateCSRFToken()
     <!-- Main Container Start -->
     <div class="main-container">
         <!-- Aside Start -->
-        <div class="aside">
-            <div class="logo">
-                <a href="#home"><img src="assets/images/logo.png" alt="Logo"></a>
+        <div class="aside" id="sidebar">
+            <div class="logo" id="logo">
+                <a href="#home" id="logo-link"><img src="assets/images/logo.png" alt="Logo" id="logo-image"></a>
             </div>
-            <div class="nav-toggler">
+            <div class="nav-toggler" id="nav-toggler">
                 <span></span>
             </div>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            <ul class="nav" id="main-navigation">
+                <li><a href="#home" class="active" id="nav-home"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" id="nav-about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#projects" id="nav-projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="#services" id="nav-services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#contact" id="nav-contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
         <!-- Aside End -->
@@ -102,18 +104,18 @@ function generateCSRFToken()
             <!-- Home Section Start -->
             <section class="home section" id="home">
                 <div class="container">
-                    <div class="row Box shadowEffect">
-                        <div class="home-info padd-15" data-aos="fade-in">
-                            <h3 class="hello">Hello, I'm <span class="name">Rasha Alsaleh</span></h3>
-                            <h3 class="my-profession">A <span class="typing">Full-stack Developer</span></h3>
-                            <div class="cv-button">
-                                <div class="social-buttons">
-                                    <a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+                    <div class="row Box shadowEffect" id="home-container">
+                        <div class="home-info padd-15" data-aos="fade-in" id="home-info">
+                            <h3 class="hello" id="greeting">Hello, I'm <span class="name" id="name">Rasha Alsaleh</span></h3>
+                            <h3 class="my-profession" id="profession">A <span class="typing" id="typing-text">Full-stack Developer</span></h3>
+                            <div class="cv-button" id="home-buttons">
+                                <div class="social-buttons" id="social-buttons">
+                                    <a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn" id="linkedin-link">
                                         <span class="social-button__inner">
                                             <i class="fab fa-linkedin-in"></i>
                                         </span>
                                     </a>
-                                    <a href="https://github.com/rasha-2k" target="_blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+                                    <a href="https://github.com/rasha-2k" target="_blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub" id="github-link">
                                         <span class="social-button__inner">
                                             <i class="fab fa-github"></i>
                                         </span>
@@ -124,7 +126,7 @@ function generateCSRFToken()
                                                 </span>
                                             </a> -->
                                 </div>
-                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank"><b style="color: #fff; margin-right: 10px;">Resume</b>
+                                <a href="assets/docs/Rasha Alsaleh.pdf" class="btn" target="_blank" id="resume-btn"><b style="color: #fff; margin-right: 10px;">Resume</b>
                                     <span class="icon-box">
                                         <i class="fa fa-arrow-down downloadone"></i>
                                         <i class="fa fa-arrow-down downloadtwo"></i>
@@ -132,8 +134,8 @@ function generateCSRFToken()
                                 </a>
                             </div>
                         </div>
-                        <div class="home-img padd-15" data-aos="fade-in">
-                            <img src="assets/images/pfp.jpg" alt="Profile Picture">
+                        <div class="home-img padd-15" data-aos="fade-in" id="profile-image-container">
+                            <img src="assets/images/pfp.jpg" alt="Profile Picture" id="profile-image">
                         </div>
                     </div>
                 </div>
@@ -143,17 +145,17 @@ function generateCSRFToken()
             <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>About Me</h2>
+                        <div class="section-title padd-15" data-aos="fade-in" id="about-title">
+                            <h2 id="about-heading">About Me</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="about-content padd-15">
+                        <div class="about-content padd-15" id="about-content">
                             <!-- <div class="row Box" style="margin-top: 0;">
                                 <div class="about-text padd-15">
                                     <h3>I'm Rasha Alsaleh, a <span>Software Engineer</span></h3>
                                     <p style="text-align: justify;">
-                                        I am a passionate third-year software engineering student at Amman Arab University,
+                                        I am a passionate final-year software engineering student at Amman Arab University,
                                         focused on delivering high-quality results and continuous improvement.
                                         With a strong foundation in software development, quality assurance, and DevOps,
                                         I excel in collaborative environments where I can apply my technical expertise and contribute to team success.
@@ -168,96 +170,96 @@ function generateCSRFToken()
                                     </p>
                                 </div>
                             </div> -->
-                            <div class="row Box" style="margin-top: 0;">
-                                <div class="section-container padd-15">
-                                    <div class="section-subtitle padd-15">
-                                        <h3 class="title">Personal Information</h3>
+                            <div class="row Box" style="margin-top: 0;" id="personal-info-section">
+                                <div class="section-container padd-15" id="personal-info-container">
+                                    <div class="section-subtitle padd-15" id="personal-info-subtitle">
+                                        <h3 class="title" id="personal-info-title">Personal Information</h3>
                                     </div>
 
-                                    <div class="personal-info-grid" data-aos="fade-up" data-aos-delay="10">
-                                        <div class="info-item" data-aos="fade-in">
-                                            <div class="info-icon">
+                                    <div class="personal-info-grid" data-aos="fade-up" data-aos-delay="10" id="personal-info-grid">
+                                        <div class="info-item" data-aos="fade-in" id="birthday-item">
+                                            <div class="info-icon" id="birthday-icon">
                                                 <i class="fa-solid fa-calendar-days"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">Birthday</h4>
-                                                <p class="info-value">5 Feb 2005</p>
+                                            <div class="info-content" id="birthday-content">
+                                                <h4 class="info-title" id="birthday-title">Birthday</h4>
+                                                <p class="info-value" id="birthday-value">5 Feb 2005</p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-aos="fade-in">
-                                            <div class="info-icon">
+                                        <div class="info-item" data-aos="fade-in" id="age-item">
+                                            <div class="info-icon" id="age-icon">
                                                 <i class="fa-solid fa-user"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">Age</h4>
-                                                <p class="info-value">20</p>
+                                            <div class="info-content" id="age-content">
+                                                <h4 class="info-title" id="age-title">Age</h4>
+                                                <p class="info-value" id="age-value">20</p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-url="https://www.linkedin.com/in/rasha-alsaleh/">
-                                            <div class="info-icon">
+                                        <div class="info-item" data-url="https://www.linkedin.com/in/rasha-alsaleh/" id="linkedin-item">
+                                            <div class="info-icon" id="linkedin-icon">
                                                 <i class="fa-brands fa-linkedin"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">LinkedIn</h4>
-                                                <p class="info-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="info-link">Rasha Alsaleh</a></p>
+                                            <div class="info-content" id="linkedin-content">
+                                                <h4 class="info-title" id="linkedin-title">LinkedIn</h4>
+                                                <p class="info-value" id="linkedin-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="info-link" id="linkedin-link">Rasha Alsaleh</a></p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-url="mailto:info@rashaalsaleh.com">
-                                            <div class="info-icon">
+                                        <div class="info-item" data-url="mailto:info@rashaalsaleh.com" id="email-item">
+                                            <div class="info-icon" id="email-icon">
                                                 <i class="fa-solid fa-envelope"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">Email</h4>
-                                                <p class="info-value"><a href="mailto:info@rashaalsaleh.com" target="_blank" class="info-link">info@rashaalsaleh.com</a></p>
+                                            <div class="info-content" id="email-content">
+                                                <h4 class="info-title" id="email-title">Email</h4>
+                                                <p class="info-value" id="email-value"><a href="mailto:info@rashaalsaleh.com" target="_blank" class="info-link" id="email-link">info@rashaalsaleh.com</a></p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-aos="fade-in">
-                                            <div class="info-icon">
+                                        <div class="info-item" data-aos="fade-in" id="degree-item">
+                                            <div class="info-icon" id="degree-icon">
                                                 <i class="fa-solid fa-graduation-cap"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">Degree</h4>
-                                                <p class="info-value">Software Engineering</p>
+                                            <div class="info-content" id="degree-content">
+                                                <h4 class="info-title" id="degree-title">Degree</h4>
+                                                <p class="info-value" id="degree-value">Software Engineering</p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-url="tel:+962-78-127-7089">
-                                            <div class="info-icon">
+                                        <div class="info-item" data-url="tel:+962-78-127-7089" id="phone-item">
+                                            <div class="info-icon" id="phone-icon">
                                                 <i class="fa-solid fa-phone"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">Phone</h4>
-                                                <p class="info-value"><a href="tel:+962-78-127-7089" target="_blank" class="info-link">+962 781277089</a></p>
+                                            <div class="info-content" id="phone-content">
+                                                <h4 class="info-title" id="phone-title">Phone</h4>
+                                                <p class="info-value" id="phone-value"><a href="tel:+962-78-127-7089" target="_blank" class="info-link" id="phone-link">+962 781277089</a></p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-aos="fade-in">
-                                            <div class="info-icon">
+                                        <div class="info-item" data-aos="fade-in" id="location-item">
+                                            <div class="info-icon" id="location-icon">
                                                 <i class="fa-solid fa-location-dot"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">Location</h4>
-                                                <p class="info-value">Amman - Jordan</p>
+                                            <div class="info-content" id="location-content">
+                                                <h4 class="info-title" id="location-title">Location</h4>
+                                                <p class="info-value" id="location-value">Amman - Jordan</p>
                                             </div>
                                         </div>
 
-                                        <div class="info-item" data-aos="fade-in">
-                                            <div class="info-icon">
+                                        <div class="info-item" data-aos="fade-in" id="freelance-item">
+                                            <div class="info-icon" id="freelance-icon">
                                                 <i class="fa-solid fa-briefcase"></i>
                                             </div>
-                                            <div class="info-content">
-                                                <h4 class="info-title">Freelance</h4>
-                                                <p class="info-value">Available</p>
+                                            <div class="info-content" id="freelance-content">
+                                                <h4 class="info-title" id="freelance-title">Freelance</h4>
+                                                <p class="info-value" id="freelance-value">Available</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="hire-me-container">
-                                        <a href="#contact" data-section-index="1" class="btn hire-me">
+                                    <div class="hire-me-container" id="hire-me-container">
+                                        <a href="#contact" data-section-index="1" class="btn hire-me" id="hire-me-btn">
                                             <b style="color: #fff; margin-right: 10px;">Hire Me</b>
                                             <span class="arrow-container">
                                                 <i class="fa-solid fa-arrow-up arrowone"></i>
@@ -268,21 +270,21 @@ function generateCSRFToken()
                                 </div>
                             </div>
                             <div class="row Box" id="skills">
-                                <div class="section-container padd-15">
-                                    <div class="section-subtitle padd-15">
-                                        <h3 class="title">My Technical Skills</h3>
+                                <div class="section-container padd-15" id="skills-container">
+                                    <div class="section-subtitle padd-15" id="skills-subtitle">
+                                        <h3 class="title" id="skills-title">My Technical Skills</h3>
                                     </div>
                                     <div class="row">
-                                        <div class="tabs" data-aos="fade-up">
-                                            <span class="skills-tab-item active" data-target=".languages">Languages</span>
-                                            <span class="skills-tab-item" data-target=".tools">Tools</span>
-                                            <span class="skills-tab-item" data-target=".others">Others</span>
+                                        <div class="tabs" data-aos="fade-up" id="skills-tabs">
+                                            <span class="skills-tab-item active" data-target=".languages" id="languages-tab">Languages</span>
+                                            <span class="skills-tab-item" data-target=".tools" id="tools-tab">Tools</span>
+                                            <span class="skills-tab-item" data-target=".others" id="others-tab">Others</span>
                                         </div>
                                     </div>
                                     <!-- Tab Contents -->
-                                    <div class="skills-container" data-aos="fade-in">
+                                    <div class="skills-container" data-aos="fade-in" id="skills-content">
                                         <!-- Languages -->
-                                        <div class="languages skills-tab-content active">
+                                        <div class="languages skills-tab-content active" id="languages-content">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
 
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
@@ -333,7 +335,7 @@ function generateCSRFToken()
                                         </div>
 
                                         <!-- Tools -->
-                                        <div class="tools skills-tab-content">
+                                        <div class="tools skills-tab-content" id="tools-content">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
                                                     <div class="skill">
@@ -424,7 +426,7 @@ function generateCSRFToken()
                                         </div>
 
                                         <!-- Others -->
-                                        <div class="others skills-tab-content">
+                                        <div class="others skills-tab-content" id="others-content">
                                             <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-grid">
                                                 <div class="col" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
                                                     <div class="skill">
@@ -496,16 +498,16 @@ function generateCSRFToken()
                                 </div>
                             </div>
                             <div class="row Box" id="achievements">
-                                <div class="section-container padd-15">
-                                    <div class="achievements-container" data-aos="fade-up" data-aos-duration="800">
-                                        <div class="section-subtitle padd-15" data-aos="fade-down" data-aos-duration="800">
-                                            <h3 class="title">Achievements</h3>
+                                <div class="section-container padd-15" id="achievements-container">
+                                    <div class="achievements-container" data-aos="fade-up" data-aos-duration="800" id="achievements-content">
+                                        <div class="section-subtitle padd-15" data-aos="fade-down" data-aos-duration="800" id="achievements-subtitle">
+                                            <h3 class="title" id="achievements-title">Achievements</h3>
                                         </div>
 
                                         <div class="row">
-                                            <div class="tabs" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                                                <span class="about-tab-item active" data-target=".certifications">Certifications</span>
-                                                <span class="about-tab-item" data-target=".activities">Activities</span>
+                                            <div class="tabs" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" id="achievements-tabs">
+                                                <span class="about-tab-item active" data-target=".certifications" id="certifications-tab">Certifications</span>
+                                                <span class="about-tab-item" data-target=".activities" id="activities-tab">Activities</span>
                                             </div>
                                         </div>
 
@@ -789,44 +791,44 @@ function generateCSRFToken()
             <section class="project section" id="projects">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>Projects</h2>
+                        <div class="section-title padd-15" data-aos="fade-in" id="projects-title">
+                            <h2 id="projects-heading">Projects</h2>
                         </div>
                     </div>
                     <!-- Projects Filter -->
-                    <div class="project-filter" data-aos="fade-up">
+                    <div class="project-filter" data-aos="fade-up" id="project-filter">
 
-                        <span class="filter-btn active" data-filter="all">All Projects</span>
-                        <span class="filter-btn" data-filter="web">Web Apps</span>
-                        <span class="filter-btn" data-filter="iot">IoT</span>
-                        <span class="filter-btn" data-filter="game">Games</span>
+                        <span class="filter-btn active" data-filter="all" id="filter-all">All Projects</span>
+                        <span class="filter-btn" data-filter="web" id="filter-web">Web Apps</span>
+                        <span class="filter-btn" data-filter="iot" id="filter-iot">IoT</span>
+                        <span class="filter-btn" data-filter="game" id="filter-game">Games</span>
                         <!-- <span class="filter-btn" data-filter="ai">AI/ML</span> -->
                         <!-- <span class="filter-btn" data-filter="desktop">Desktop Apps</span> -->
                         <!-- <span class="filter-btn" data-filter="mobile">Mobile</span> -->
                     </div>
                     <!-- Projects Grid -->
-                    <div class="project-grid" data-aos="fade-in">
+                    <div class="project-grid" data-aos="fade-in" id="project-grid">
 
                         <!-- Project 1 - PackTrack -->
-                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4">
-                            <div class="project-media">
-                                <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App">
-                                <div class="project-overlay">
-                                    <div class="project-overlay-content">
-                                        <button class="view-project-btn" data-project="packtrack">
+                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100" data-category="web" data-github="https://github.com/rasha-2k/packtrack" data-live="#" data-mediatype="image" data-mediasrc="assets/videos/PackTrack Recording.mp4" id="project-packtrack">
+                            <div class="project-media" id="packtrack-media">
+                                <img src="assets/images/PackTrack Dashboard.png" alt="PackTrack Web App" id="packtrack-image">
+                                <div class="project-overlay" id="packtrack-overlay">
+                                    <div class="project-overlay-content" id="packtrack-overlay-content">
+                                        <button class="view-project-btn" data-project="packtrack" id="packtrack-view-btn">
                                             View Details
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-content">
-                                <span class="project-category">Full-Stack Web App</span>
-                                <h3 class="project-title">
-                                    <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link"><i class="fa-solid fa-truck"></i> PackTrack</a>
+                            <div class="project-content" id="packtrack-content">
+                                <span class="project-category" id="packtrack-category">Full-Stack Web App</span>
+                                <h3 class="project-title" id="packtrack-title">
+                                    <a href="https://github.com/rasha-2k/packtrack" target="_blank" class="link" id="packtrack-link"><i class="fa-solid fa-truck"></i> PackTrack</a>
                                 </h3>
-                                <p class="project-description" data-aos="fade-in">
+                                <p class="project-description" data-aos="fade-in" id="packtrack-description">
                                     A courier management platform offering real-time package tracking and role-based dashboards for users and admins. It delivers analytics that streamline operations, and improve overall shipping efficiency. </p>
-                                <ul class="project-tags" data-aos="slide-up">
+                                <ul class="project-tags" data-aos="slide-up" id="packtrack-tags">
                                     <li><a>PHP</a></li>
                                     <li><a>MySQL</a></li>
                                     <li><a>API Integration</a></li>
@@ -839,27 +841,27 @@ function generateCSRFToken()
                         </div>
 
                         <!-- Project 2 - Smart Alert System -->
-                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="200" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg">
-                            <div class="project-media">
-                                <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System">
-                                <div class="project-overlay">
-                                    <div class="project-overlay-content">
-                                        <button class="view-project-btn" data-project="arduino-smart-alert-system">
+                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="200" data-category="iot" data-github="https://github.com/rasha-2k/Arduino-Smart-Alert-System" data-live="#" data-mediatype="image" data-mediasrc="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" id="project-arduino">
+                            <div class="project-media" id="arduino-media">
+                                <img src="https://t4.ftcdn.net/jpg/03/99/12/51/360_F_399125183_HUy4uv9tzzMq5Kauk1wCl0WVyhVqomLv.jpg" alt="Smart Alert System" id="arduino-image">
+                                <div class="project-overlay" id="arduino-overlay">
+                                    <div class="project-overlay-content" id="arduino-overlay-content">
+                                        <button class="view-project-btn" data-project="arduino-smart-alert-system" id="arduino-view-btn">
                                             View Details
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-content">
-                                <span class="project-category">IoT Project</span>
-                                <h3 class="project-title">
-                                    <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link">
+                            <div class="project-content" id="arduino-content">
+                                <span class="project-category" id="arduino-category">IoT Project</span>
+                                <h3 class="project-title" id="arduino-title">
+                                    <a href="https://github.com/rasha-2k/Arduino-Smart-Alert-System" target="_blank" class="link" id="arduino-link">
                                         <i class="fa-solid fa-microchip"></i> Smart Alert System
                                     </a>
                                 </h3>
-                                <p class="project-description" data-aos="fade-in">
+                                <p class="project-description" data-aos="fade-in" id="arduino-description">
                                     An Arduino-based safety system combining ultrasonic, PIR, and water sensors to detect motion, proximity, and flooding. Provides real-time alerts using LEDs and a buzzer with condition-based feedback logic. </p>
-                                <ul class="project-tags">
+                                <ul class="project-tags" id="arduino-tags">
                                     <li><a>Arduino</a></li>
                                     <li><a>PIR Sensor</a></li>
                                     <li><a>Ultrasonic</a></li>
@@ -869,31 +871,31 @@ function generateCSRFToken()
                         </div>
 
                         <!-- Project 3 - The Planetary Explorer -->
-                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4">
-                            <div class="project-media">
-                                <video autoplay muted loop playsinline>
+                        <div class="project-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300" data-category="game" data-github="" data-live="#" data-mediatype="video" data-mediasrc="assets/videos/the planetary explorer.mp4" id="project-planetary">
+                            <div class="project-media" id="planetary-media">
+                                <video autoplay muted loop playsinline id="planetary-video">
                                     <source src="assets/videos/the planetary explorer.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
-                                <div class="project-overlay">
-                                    <div class="project-overlay-content">
-                                        <button class="view-project-btn" data-project="planetary-explorer">
+                                <div class="project-overlay" id="planetary-overlay">
+                                    <div class="project-overlay-content" id="planetary-overlay-content">
+                                        <button class="view-project-btn" data-project="planetary-explorer" id="planetary-view-btn">
                                             View Details
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-content">
-                                <span class="project-category">3D Game</span>
-                                <h3 class="project-title">
-                                    <a target="_blank" class="link">
+                            <div class="project-content" id="planetary-content">
+                                <span class="project-category" id="planetary-category">3D Game</span>
+                                <h3 class="project-title" id="planetary-title">
+                                    <a target="_blank" class="link" id="planetary-link">
                                         <i class="fa-solid fa-shuttle-space"></i> The Planetary Explorer
                                     </a>
                                 </h3>
-                                <p class="project-description" data-aos="fade-in">
+                                <p class="project-description" data-aos="fade-in" id="planetary-description">
                                     Planetary Explorer is a 3D space adventure game developed in Unity and C# that aims to provide players with an immersive experience of exploring exoplanet environments. Utilizing dynamic low-gravity physics and realistic terrains based on verified NASA resources, the game challenges players to navigate obstacles, solve puzzles, and unlock essential tools.
                                 </p>
-                                <ul class="project-tags">
+                                <ul class="project-tags" id="planetary-tags">
                                     <li><a>Unity</a></li>
                                     <li><a>C#</a></li>
                                     <li><a>3D Environment Design</a></li>
@@ -938,19 +940,19 @@ function generateCSRFToken()
             <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>Services</h2>
+                        <div class="section-title padd-15" data-aos="fade-in" id="services-title">
+                            <h2 id="services-heading">Services</h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="services-container">
                         <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                            <div class="service-item-inner">
-                                <div class="icon">
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" id="service-testing">
+                            <div class="service-item-inner" id="service-testing-inner">
+                                <div class="icon" id="service-testing-icon">
                                     <i class="fa fa-bug"></i>
                                 </div>
-                                <h4>Software Testing & QA</h4>
-                                <p>
+                                <h4 id="service-testing-title">Software Testing & QA</h4>
+                                <p id="service-testing-description">
                                     Ensuring software reliability with automated testing.
                                     Using industry-standard tools to catch issues early, streamline workflows, and improve efficiency.
                                     My focus is on delivering high-quality, bug-free releases.
@@ -959,13 +961,13 @@ function generateCSRFToken()
                         </div>
                         <!-- Service Item End -->
                         <!-- Service Item Start -->
-                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                            <div class="service-item-inner">
-                                <div class="icon">
+                        <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" id="service-web">
+                            <div class="service-item-inner" id="service-web-inner">
+                                <div class="icon" id="service-web-icon">
                                     <i class="fa fa-globe"></i>
                                 </div>
-                                <h4>Web Development</h4>
-                                <p>
+                                <h4 id="service-web-title">Web Development</h4>
+                                <p id="service-web-description">
                                     Building responsive, scalable web apps that provide seamless user experiences.
                                     I combine front-end and back-end technologies
                                     to create reliable solutions that perform efficiently and meet both user and business needs.
@@ -1041,85 +1043,85 @@ function generateCSRFToken()
             <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15" data-aos="fade-in">
-                            <h2>Contact Me</h2>
+                        <div class="section-title padd-15" data-aos="fade-in" id="contact-title">
+                            <h2 id="contact-heading">Contact Me</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">Do you have any questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                    <div class="row">
+                    <h3 class="contact-title padd-15" id="contact-subtitle">Do you have any questions ?</h3>
+                    <h4 class="contact-sub-title padd-15" id="contact-subtitle-text">I'M AT YOUR SERVICES</h4>
+                    <div class="row" id="contact-info-container">
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fab fa-whatsapp"></i></div>
-                            <h4>Call Me On</h4>
-                            <p><a href="tel:+962-78-127-7089" target="_blank" class="link">+962 781277089</a></p>
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-phone">
+                            <div class="icon" id="contact-phone-icon"><i class="fab fa-whatsapp"></i></div>
+                            <h4 id="contact-phone-title">Call Me On</h4>
+                            <p id="contact-phone-value"><a href="tel:+962-78-127-7089" target="_blank" class="link" id="contact-phone-link">+962 781277089</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Location</h4>
-                            <p><a class="link">Amman</a></p>
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-location">
+                            <div class="icon" id="contact-location-icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4 id="contact-location-title">Location</h4>
+                            <p id="contact-location-value"><a class="link" id="contact-location-link">Amman</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@rashaalsaleh.com" target="_blank"
-                                    class="link">info@rashaalsaleh.com</a></p>
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-email">
+                            <div class="icon" id="contact-email-icon"><i class="fa fa-envelope"></i></div>
+                            <h4 id="contact-email-title">Email</h4>
+                            <p id="contact-email-value"><a href="mailto:info@rashaalsaleh.com" target="_blank"
+                                    class="link" id="contact-email-link">info@rashaalsaleh.com</a></p>
                         </div>
                         <!-- Contact info item end -->
                         <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100">
-                            <div class="icon"><i class="fab fa-linkedin"></i></div>
-                            <h4>LinkedIn</h4>
-                            <p><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link">Rasha
+                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-linkedin">
+                            <div class="icon" id="contact-linkedin-icon"><i class="fab fa-linkedin"></i></div>
+                            <h4 id="contact-linkedin-title">LinkedIn</h4>
+                            <p id="contact-linkedin-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link" id="contact-linkedin-link">Rasha
                                     Alsaleh</a></p>
                         </div>
                         <!-- Contact info item end -->
                     </div>
-                    <h3 class="contact-title padd-15">Get In Touch</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <h3 class="contact-title padd-15" id="contact-form-title">Get In Touch</h3>
+                    <h4 class="contact-sub-title padd-15" id="contact-form-subtitle">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- Contact Form -->
                     <div class="row">
-                        <div class="contact-form padd-15" data-aos="fade-up">
-                            <form action="mail/contact" method="POST" data-aos="fade-in">
+                        <div class="contact-form padd-15" data-aos="fade-up" id="contact-form-container">
+                            <form action="mail/contact" method="POST" data-aos="fade-in" id="contact-form">
                                 <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(generateCSRFToken()); ?>">
                                 <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    <div class="form-item col-6 padd-15" id="name-form-item">
+                                        <div class="form-group" id="name-form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Name" required id="contact-name">
                                         </div>
                                     </div>
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                    <div class="form-item col-6 padd-15" id="email-form-item">
+                                        <div class="form-group" id="email-form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Email" required id="contact-email-input">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                    <div class="form-item col-12 padd-15" id="subject-form-item">
+                                        <div class="form-group" id="subject-form-group">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required id="contact-subject">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="control-group" style="color: var(--text-black-900);">
-                                    <label class="agreeCheckbox-label">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15" id="message-form-item">
+                                        <div class="form-group" id="message-form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message" required id="contact-message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group" style="color: var(--text-black-900);" id="terms-checkbox-container">
+                                    <label class="agreeCheckbox-label" id="terms-checkbox-label">
                                         <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
                                     </label>
                                 </div>
                                 <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
                                 <div class="row">
-                                    <div class="buttons col-12 padd-15" style="margin-top:10px">
+                                    <div class="buttons col-12 padd-15" style="margin-top:10px" id="submit-button-container">
                                         <button type="submit" class="btn" id="sendMessageButton" disabled><b style="color: #fff;">Send Message</b></button> <!-- Button is disabled initially -->
                                     </div>
                                 </div>
@@ -1131,20 +1133,20 @@ function generateCSRFToken()
             <!-- Contact Section End -->
             <!-- Project Modal -->
             <div class="modal-overlay" id="projectModal">
-                <div class="modal-container">
-                    <div class="modal-header">
+                <div class="modal-container" id="modal-container">
+                    <div class="modal-header" id="modal-header">
                         <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
                             <source id="modalVideoSource" src="" type="video/mp4">
                         </video>
                         <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
                         <button class="modal-close" id="modalClose">x</button>
                     </div>
-                    <div class="modal-content">
+                    <div class="modal-content" id="modal-content">
                         <span class="modal-category" id="modalCategory"></span>
-                        <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link"></a></h2>
+                        <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link" id="modal-title-link"></a></h2>
                         <p class="modal-description" id="modalDescription"></p>
                         <ul class="modal-tags" id="modalTags"></ul>
-                        <div class="modal-actions">
+                        <div class="modal-actions" id="modal-actions">
                             <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
                                 <i class="fa-solid fa-link"></i> View on GitHub
                                 <span class="arrow-container">
@@ -1232,31 +1234,31 @@ function generateCSRFToken()
         <i class="fa fa-arrow-up"></i>
     </div>
     <!-- Style Switcher Start -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
+    <div class="style-switcher" id="style-switcher">
+        <div class="style-switcher-toggler s-icon" id="style-switcher-toggler">
             <i class="fas fa-cog fa-spin "></i>
         </div>
-        <div class="day-night s-icon">
+        <div class="day-night s-icon" id="day-night-toggle">
             <i class="fas "></i>
         </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        <h4 id="theme-colors-title">Theme Colors</h4>
+        <div class="colors" id="theme-colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')" id="color-1"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')" id="color-2"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')" id="color-3"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')" id="color-4"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')" id="color-5"></span>
         </div>
     </div>
     <!-- Style Switcher End -->
 
     <!-- Footer Start -->
-    <footer class="footer">
-        <div class="logo">
-            <a href="#home"><img src="assets/images/logo.png" alt="Logo"></a>
+    <footer class="footer" id="footer">
+        <div class="logo" id="footer-logo">
+            <a href="#home" id="footer-logo-link"><img src="assets/images/logo.png" alt="Logo" id="footer-logo-image"></a>
         </div>
-        <div class="copyright">
-            © 2025 All Rights Reserved by <b>Rasha</b>
+        <div class="copyright" id="footer-copyright">
+            © 2025 All Rights Reserved by <b id="footer-author">Rasha</b>
         </div>
     </footer>
     <!-- Footer End -->
