@@ -9,7 +9,4 @@
     --skin-gradient: linear-gradient(135deg,
             rgba(var(--skin-color-rgb), 0.8) 0%,
             rgba(var(--skin-color-rgb), 0.3) 100%);
-    --circuit-color: rgba(var(--skin-color-rgb), 0.4);
-    --circuit-glow: rgba(var(--skin-color-rgb), 0.7);
-    --data-color: rgba(var(--skin-color-rgb), 0.8);
 }
