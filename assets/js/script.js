@@ -1,24 +1,78 @@
 (() => {
-    // Typed Text Animation
+    //! cursor functionality
+    const cursor = document.querySelector('.cursor');
+    const linkElements = document.querySelectorAll('.link');
+    const aElements = document.querySelectorAll('a');
+    const socialButtons = document.querySelectorAll('.social-button');
+    const navToggleBtn = document.querySelectorAll('.nav-toggler');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    });
+
+    const handleMouseEnter = () => {
+        cursor.style.transform = 'scale(2) translate(-25%, -25%)';
+    };
+
+    const handleMouseLeave = () => {
+        cursor.style.transform = 'scale(1) translate(-50%, -50%)';
+    };
+
+    const handleMouseRemove = () => {
+        cursor.style.transform = 'scale(0) translate(-50%, -50%)';
+    };
+
+
+    linkElements.forEach(link => {
+        link.addEventListener('mouseenter', handleMouseEnter);
+        link.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    aElements.forEach(a => {
+        if (!a.classList.contains('social-button')) {
+            a.addEventListener('mouseenter', handleMouseEnter);
+            a.addEventListener('mouseleave', handleMouseLeave);
+        }
+    });
+
+    socialButtons.forEach(button => {
+        button.addEventListener('mouseenter', handleMouseRemove);
+        button.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    navToggleBtn.forEach(button => {
+        button.addEventListener('mouseenter', handleMouseRemove);
+        button.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    //! Typed Text Animation
     new Typed(".typing", {
-        strings: ["Software Engineer", "Full-Stack Developer", "QA Engineer", "Problem Solver"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        strings: [
+            "Software Engineer",
+            "Backend Developer",
+            "Quality Engineer",
+            "System Analyst",
+            "Web Developer",
+            "Database Designer"
+        ],
+        typeSpeed: 80,
+        backSpeed: 40,
         loop: true
     });
 
-    // Utility Functions
+    //! Utility Functions
     function easeInOutQuad(t) {
         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
 
+    //! Scroll Functionality
     function showSection(element) {
         const targetId = element.getAttribute("href").split("#")[1];
         const targetSection = document.getElementById(targetId);
-        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY + 50;
+        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
         const startPosition = window.scrollY;
         const distance = targetPosition - startPosition;
-        const duration = 1000;
+        const duration = 400;
         let start = null;
 
         function step(timestamp) {
@@ -35,77 +89,207 @@
         window.requestAnimationFrame(step);
     }
 
-    // Navigation
+    //! Navigation
     const nav = document.querySelector('.nav');
     const navLinks = nav.querySelectorAll('a');
     const allSection = document.querySelectorAll('.section');
     const navTogglerBtn = document.querySelector(".nav-toggler");
     const aside = document.querySelector(".aside");
 
-    function asideSectionTogglerBtn() {
-        aside.classList.toggle("open");
-        navTogglerBtn.classList.toggle("open");
-        toggleClassOnSections("open");
+    function toggleAside() {
+        const isOpen = aside.classList.toggle("open");
+        navTogglerBtn.classList.toggle("open", isOpen);
+        toggleClassOnSections("open", isOpen ? 'add' : 'remove');
+    }
+
+    function closeAside() {
+        aside.classList.remove("open");
+        navTogglerBtn.classList.remove("open");
+        toggleClassOnSections("open", 'remove');
     }
 
     function toggleClassOnSections(className, action = 'toggle') {
-        for (const section of allSection) {
-            section.classList[action](className);
-        }
+        allSection.forEach(section => section.classList[action](className));
     }
 
-    for (link of navLinks) {
+    // Nav links
+    navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             showSection(this);
-            if (window.innerWidth <= 1200) {
-                asideSectionTogglerBtn();
-            }
+            if (window.innerWidth <= 1200) closeAside();
         });
-    }
+    });
 
-    navTogglerBtn.addEventListener("click", asideSectionTogglerBtn);
+    navTogglerBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleAside();
+    });
+
+    document.querySelector(".hire-me")?.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection(this);
+        if (window.innerWidth <= 1200) closeAside();
+    });
+    document.querySelectorAll(".cta-primary").forEach(btn => {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            showSection(this);
+            if (window.innerWidth <= 1200) closeAside();
+        });
+    });
+
 
     document.querySelectorAll('.logo a').forEach(logoLink => {
         logoLink.addEventListener('click', function (e) {
             e.preventDefault();
             showSection(this);
-            const isInsideAside = this.closest('.aside') !== null;
-            if (isInsideAside && window.innerWidth <= 1200) {
-                asideSectionTogglerBtn();
-            }
+            if (this.closest('.aside') && window.innerWidth <= 1200) closeAside();
         });
     });
 
-    // Active Link on Scroll
+    // Active link on scroll
     window.addEventListener('scroll', () => {
         const fromTop = window.scrollY + 150;
         for (const link of navLinks) {
             const section = document.querySelector(link.getAttribute('href'));
-            if (
+            if (section &&
                 section.offsetTop <= fromTop &&
                 section.offsetTop + section.offsetHeight > fromTop
             ) {
-                for (const l of navLinks) {
-                    l.classList.remove('active');
-                }
+                navLinks.forEach(l => l.classList.remove('active'));
                 link.classList.add('active');
             }
         }
     });
 
-    // Close Aside on Outside Click
+    // Close on outside click
     document.addEventListener('click', (e) => {
         const clickedInsideAside = aside.contains(e.target);
-        const clickedInsideSection = [...allSection].some(section => section.contains(e.target));
-        if (aside.classList.contains('open') && clickedInsideSection && !clickedInsideAside) {
-            aside.classList.remove('open');
-            navTogglerBtn.classList.remove('open');
-            toggleClassOnSections('open', 'remove');
+        const clickedToggler = navTogglerBtn.contains(e.target);
+        if (!clickedInsideAside && !clickedToggler && aside.classList.contains('open')) {
+            closeAside();
         }
     });
 
-    // Tabs Setup
+    //close on scroll
+    window.addEventListener("scroll", () => {
+        if (aside.classList.contains("open")) closeAside();
+    });
+
+    //! Background Code snippets for each section
+    const codeSnippets = {
+        home: [
+            'const dev = "Rasha Alsaleh";',
+            'function home() { return "Hello!"; }',
+            'class Portfolio {}',
+            'import React from "react";',
+            'export default Home;'
+        ],
+        about: [
+            'const role = "Software Engineer";',
+            'function getSkills() { return ["PHP", "Java", "MySQL"]; }',
+            'class Dev { learn() { this.experience++; } }',
+            'const passion = true;',
+            'export { role, skills };'
+        ],
+        projects: [
+            'git clone repo.git',
+            'const projects = ["PackTrack", "DevTasks", "Portfolio"];',
+            'function buildProject(name) { return `${name} ready`; }',
+            'docker run project-container',
+            'git push origin main'
+        ],
+        services: [
+            'const services = ["Web Development", "QA Automation"];',
+            'function deliverService(type) { return quality[type]; }',
+            'class ServiceProvider {}',
+            'const quality = 100;',
+            'export default Services;'
+        ],
+        contact: [
+            'const email = "info@rashaalsaleh.com";',
+            'function sendMessage() { return "Message sent"; }',
+            'const social = ["GitHub", "LinkedIn"];',
+            'const available = true;',
+            'export { email, social };'
+        ]
+    };
+
+    function createCodeElements() {
+        const container = document.getElementById('codeElements');
+        const sections = ['home', 'about', 'projects', 'services', 'contact'];
+
+        const positions = [];
+
+        sections.forEach((section, sectionIndex) => {
+            const snippets = codeSnippets[section];
+            snippets.forEach((snippet, index) => {
+                const codeElement = document.createElement('div');
+                codeElement.className = `code-text code-${section}`;
+                codeElement.textContent = snippet;
+
+                let left, top;
+                let attempts = 0;
+                do {
+                    left = Math.random() * 75 + 10;
+                    top = Math.random() * 75 + 10;
+                    attempts++;
+                } while (attempts < 50 && positions.some(pos =>
+                    Math.abs(pos.left - left) < 18 && Math.abs(pos.top - top) < 12
+                ));
+
+                positions.push({ left, top });
+
+                codeElement.style.left = left + '%';
+                codeElement.style.top = top + '%';
+                codeElement.style.animationDelay = (sectionIndex * 1.5 + index * 0.6) + 's';
+
+                container.appendChild(codeElement);
+            });
+        });
+    }
+
+    function updateCodeHighlight() {
+        const sections = ['home', 'about', 'projects', 'services', 'contact'];
+        const navLinks = document.querySelectorAll('.nav a');
+
+        let currentSection = 'home';
+
+        sections.forEach(section => {
+            const element = document.getElementById(section);
+            const rect = element.getBoundingClientRect();
+
+            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                currentSection = section;
+            }
+        });
+
+        // Update code highlighting - only active section gets skin color
+        document.querySelectorAll('.code-text').forEach(el => {
+            el.classList.remove('highlight', 'section-indicator');
+        });
+
+        document.querySelectorAll(`.code-${currentSection}`).forEach((el, index) => {
+            el.classList.add('highlight');
+            if (index === 0) {
+                el.classList.add('section-indicator');
+            }
+        });
+
+
+    }
+    // Initialize
+    createCodeElements();
+
+    // Update code highlighting on scroll
+    window.addEventListener('scroll', updateCodeHighlight);
+    window.addEventListener('resize', updateCodeHighlight);
+
+    // Initial call
+    updateCodeHighlight();
+
+    //! Tabs Setup
     function setupTabs(tabSelector, contentSelector, activeClass = 'active') {
         const tabs = document.querySelectorAll(tabSelector);
         const contents = document.querySelectorAll(contentSelector);
@@ -140,10 +324,10 @@
         }
     }
 
-    setupTabs('.about-tab-item', '.about-tab-content');
+    setupTabs('.achievements-tab-item', '.achievements-tab-content');
     setupTabs('.skills-tab-item', '.skills-tab-content');
 
-    // Back-to-Top Button with Progress Ring
+    //! Back-to-Top Button with Progress Ring
     document.addEventListener('DOMContentLoaded', () => {
         const backToTop = document.getElementById("backToTop");
         const progressCircle = document.querySelector(".progress-ring-progress");
@@ -183,7 +367,7 @@
         window.addEventListener("scroll", updateProgress);
         updateProgress();
 
-        // Projects Section
+        //! Projects Section
         const projectData = {
             'packtrack': {
                 description: `PackTrack is a full-stack delivery management platform designed to simplify package tracking for users and admins. The app features a clean dashboard UI, real-time courier tracking via external APIs, and JWT-based role authentication.
@@ -395,7 +579,8 @@
             });
         }
     });
-    // // Swipe Gesture Functionality
+
+    //! Swipe Gesture Functionality
     // let touchStartX = 0;
     // let touchEndX = 0;
 
