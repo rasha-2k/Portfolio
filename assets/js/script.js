@@ -181,68 +181,102 @@
     const codeSnippets = {
         home: [
             'const dev = "Rasha Alsaleh";',
-            'function home() { return "Hello!"; }',
+            'const theme = "dark";',
             'class Portfolio {}',
-            'import React from "react";',
-            'export default Home;'
+            'export default Home;',
+            'console.log("Welcome to my portfolio");',
+            'const projectsCount = 4;',
+            '/* HTML • CSS • JS */',
+            'let languages = ["PHP", "JS", "Python"];',
+            '// Built with passion'
         ],
         about: [
             'const role = "Software Engineer";',
             'function getSkills() { return ["PHP", "Java", "MySQL"]; }',
             'class Dev { learn() { this.experience++; } }',
             'const passion = true;',
-            'export { role, skills };'
+            'export { role, skills };',
+            'const interests = ["DevOps", "Testing", "AI"];',
+            '// Always be learning',
+            'console.info("Open to opportunities");',
         ],
         projects: [
             'git clone repo.git',
             'const projects = ["PackTrack", "DevTasks", "Portfolio"];',
             'function buildProject(name) { return `${name} ready`; }',
             'docker run project-container',
-            'git push origin main'
+            'git push origin main',
+            'npm run build',
+            'CI: passed ✓',
+            'deploy --env production',
+            'const isResponsive = true;',
         ],
         services: [
             'const services = ["Web Development", "QA Automation"];',
             'function deliverService(type) { return quality[type]; }',
             'class ServiceProvider {}',
             'const quality = 100;',
-            'export default Services;'
+            'export default Services;',
+            'const testingTools = ["Selenium", "Appium", "JUnit"];',
+            'const ci = ["GitHub Actions", "Jenkins"];',
+            'function monitor() { return uptime > 99.9; }',
+            'const deliveryModel = "Agile";'
         ],
         contact: [
             'const email = "info@rashaalsaleh.com";',
             'function sendMessage() { return "Message sent"; }',
             'const social = ["GitHub", "LinkedIn"];',
             'const available = true;',
-            'export { email, social };'
+            'export { email, social };',
+            'const timezone = "UTC+3";',
+            'const responseRate = 98;',
+            'const location = "Remote | Amman";'
         ]
     };
 
     function createCodeElements() {
         const container = document.getElementById('codeElements');
-        const sections = ['home', 'about', 'projects', 'services', 'contact'];
+    if (!container) return;
 
-        const positions = [];
+    container.innerHTML = '';
+
+    const sections = ['home', 'about', 'projects', 'services', 'contact'];
+    const usedPositions = [];
+
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    let densityScale = 1;
+    if (vw < 480) densityScale = 0.35;
+    else if (vw < 768) densityScale = 0.5;
+    else if (vw < 1024) densityScale = 0.75;
+
+        const quadrants = [
+            { x: [0, 48], y: [0, 48] },     // top-left
+            { x: [52, 100], y: [0, 48] },   // top-right
+            { x: [0, 48], y: [52, 100] },   // bottom-left
+            { x: [52, 100], y: [52, 100] }, // bottom-right
+            { x: [20, 80], y: [20, 80] },   // center
+            { x: [0, 100], y: [0, 20] },    // top strip
+            { x: [0, 100], y: [80, 100] },  // bottom strip
+            { x: [0, 20], y: [0, 100] },    // left strip
+            { x: [80, 100], y: [0, 100] }   // right strip
+        ];
 
         sections.forEach((section, sectionIndex) => {
-            const snippets = codeSnippets[section];
-            snippets.forEach((snippet, index) => {
+            const snippets = codeSnippets[section] || [];
+
+            // determine how many snippets to show for this section based on densityScale
+            const maxCount = Math.max(1, Math.round(snippets.length * densityScale));
+            const visibleSnippets = snippets.slice(0, maxCount);
+
+            visibleSnippets.forEach((snippet, index) => {
                 const codeElement = document.createElement('div');
                 codeElement.className = `code-text code-${section}`;
                 codeElement.textContent = snippet;
 
-                let left, top;
-                let attempts = 0;
-                do {
-                    left = Math.random() * 75 + 10;
-                    top = Math.random() * 75 + 10;
-                    attempts++;
-                } while (attempts < 50 && positions.some(pos =>
-                    Math.abs(pos.left - left) < 18 && Math.abs(pos.top - top) < 12
-                ));
+                let position = getRandomPosition(quadrants, usedPositions, sectionIndex, index);
 
-                positions.push({ left, top });
-
-                codeElement.style.left = left + '%';
-                codeElement.style.top = top + '%';
+                codeElement.style.left = position.x + '%';
+                codeElement.style.top = position.y + '%';
                 codeElement.style.animationDelay = (sectionIndex * 1.5 + index * 0.6) + 's';
 
                 container.appendChild(codeElement);
@@ -250,18 +284,59 @@
         });
     }
 
+
+    function getRandomPosition(quadrants, usedPositions, sectionIndex, snippetIndex) {
+        let attempts = 0;
+        let position;
+
+        do {
+            // Choose quadrant based on section and snippet index for better distribution
+            const quadrantIndex = (sectionIndex * 2 + Math.floor(snippetIndex / 2)) % quadrants.length;
+            const quadrant = quadrants[quadrantIndex];
+
+            // Add some randomness to quadrant selection (20% chance to pick random quadrant)
+            const useRandomQuadrant = Math.random() < 0.01;
+            const selectedQuadrant = useRandomQuadrant ?
+                quadrants[Math.floor(Math.random() * quadrants.length)] : quadrant;
+
+            position = {
+                x: Math.random() * (selectedQuadrant.x[1] - selectedQuadrant.x[0]) + selectedQuadrant.x[0],
+                y: Math.random() * (selectedQuadrant.y[1] - selectedQuadrant.y[0]) + selectedQuadrant.y[0]
+            };
+
+            attempts++;
+
+            // Check for overlap
+            const hasAcceptableOverlap = usedPositions.every(usedPos => {
+                const distance = Math.sqrt(
+                    Math.pow(position.x - usedPos.x, 2) + Math.pow(position.y - usedPos.y, 2)
+                );
+                // Allow 10% chance of closer positioning
+                return distance > 8 || Math.random() < 0.1;
+            });
+
+            if (hasAcceptableOverlap || attempts > 30) {
+                usedPositions.push(position);
+                break;
+            }
+
+        } while (attempts < 50);
+
+        return position;
+    }
+
+
     function updateCodeHighlight() {
         const sections = ['home', 'about', 'projects', 'services', 'contact'];
-        const navLinks = document.querySelectorAll('.nav a');
-
         let currentSection = 'home';
 
         sections.forEach(section => {
             const element = document.getElementById(section);
-            const rect = element.getBoundingClientRect();
-
-            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-                currentSection = section;
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    currentSection = section;
+                }
             }
         });
 
@@ -276,9 +351,8 @@
                 el.classList.add('section-indicator');
             }
         });
-
-
     }
+
     // Initialize
     createCodeElements();
 
@@ -288,6 +362,16 @@
 
     // Initial call
     updateCodeHighlight();
+
+    // Debounced rebuild on resize to respect responsive density
+    let __codeResizeTimer = null;
+    window.addEventListener('resize', () => {
+        if (__codeResizeTimer) clearTimeout(__codeResizeTimer);
+        __codeResizeTimer = setTimeout(() => {
+            createCodeElements();
+            updateCodeHighlight();
+        }, 150);
+    });
 
     //! Tabs Setup
     function setupTabs(tabSelector, contentSelector, activeClass = 'active') {
