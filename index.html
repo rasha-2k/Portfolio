@@ -13,7 +13,7 @@
     <title>Rasha's Portfolio</title>
     <!-- Script to Load Saved Theme Color and Mode -->
     <script>
-        (function() {
+        (function () {
             // === Load Saved Theme Color ===
             const savedColor = localStorage.getItem("themeColor") || "color-1";
             if (savedColor) {
@@ -39,6 +39,7 @@
                 document.documentElement.classList.remove("light");
             }
         })();
+
         function toggleTheme() {
             document.documentElement.classList.toggle('light');
         }
@@ -102,7 +103,7 @@
                     <ul class="nav">
                         <li><a href="#home" class="active"><i class="fas fa-laptop-house"></i><span class="nav-text">Home</span></a></li>
                         <li><a href="#about"><i class="fas fa-user-circle"></i><span class="nav-text">About</span></a></li>
-                        <li><a href="#projects"><i class="fas fa-code-branch"></i><span class="nav-text">Projects</span></a></li>
+                        <li><a href="#projects"><i class="fas fa-folder-open"></i><span class="nav-text">Projects</span></a></li>
                         <li><a href="#services"><i class="fas fa-cogs"></i><span class="nav-text">Services</span></a></li>
                         <li><a href="#contact"><i class="fas fa-comments"></i><span class="nav-text">Contact</span></a></li>
                     </ul>
@@ -140,7 +141,7 @@
                         <div class="hero-content">
                             <div class="hero-text">
                                 <h3 class="hello">Hello, I'm <span class="name">Rasha Alsaleh</span></h3>
-                                <h3 class="typing-text">A <span class="typing">Software Engineer</span><span class="typed-cursor" aria-hidden="true"></span></h3>
+                                <h3 class="typing-text"> A <span class="typing">Software Engineer</span><span class="typed-cursor" aria-hidden="true"></span></h3>
                                 <p class="hero-subtitle">
                                     I’m a software engineer with a strong focus on backend systems, quality assurance, and practical problem-solving. Through hands-on projects, training programs, and coding competitions, I’ve developed skills in designing, testing, and delivering reliable software. Continuously learning and exploring new approaches, I aim to build solutions that are both efficient and impactful.
                                 </p>
@@ -203,6 +204,18 @@
                                 <div class="about-text padd-15">
                                     <h3>I'm Rasha Alsaleh, a <span>Software Engineer</span></h3>
                                     <p style="text-align: justify;">
+                                        I am a passionate final-year software engineering student at Amman Arab University,
+                                        focused on delivering high-quality results and continuous improvement.
+                                        With a strong foundation in software development, quality assurance, and DevOps,
+                                        I excel in collaborative environments where I can apply my technical expertise and contribute to team success.
+                                        I’m passionate about problem-solving and ensuring efficiency through automated testing and process optimization.
+                                        <br>
+                                        My journey has involved embracing new challenges, refining my skills in QA/QC,
+                                        and integrating DevOps practices to streamline workflows.
+                                        I bring a hands-on approach to project management, balancing technical needs with clear communication to meet deadlines and drive project success.
+                                        <br>
+                                        I’m always looking for opportunities to grow,
+                                        and my goal is to combine my technical expertise with strong teamwork and project management skills to make a meaningful impact in the tech industry.
                                     </p>
                                 </div>
                             </div> -->
@@ -1006,7 +1019,7 @@
                         <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" id="service-testing">
                             <div class="service-item-inner" id="service-testing-inner">
                                 <div class="icon" id="service-testing-icon">
-                                    <i class="fa fa-bug"></i>
+                                    <ion-icon name="bug-outline"></ion-icon>
                                 </div>
                                 <h4 id="service-testing-title">Software Testing & QA</h4>
                                 <p id="service-testing-description">
@@ -1021,7 +1034,7 @@
                         <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" id="service-web">
                             <div class="service-item-inner" id="service-web-inner">
                                 <div class="icon" id="service-web-icon">
-                                    <i class="fa fa-globe"></i>
+                                    <ion-icon name="globe-outline"></ion-icon>
                                 </div>
                                 <h4 id="service-web-title">Web Development</h4>
                                 <p id="service-web-description">
@@ -1036,7 +1049,7 @@
                         <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-paint-brush"></i>
+                                    <ion-icon name="brush-outline"></ion-icon>
                                 </div>
                                 <h4>UI/UX Design</h4>
                                 <p>
@@ -1051,7 +1064,7 @@
                         <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-solid fa-gears"></i>
+                                    <ion-icon name="git-branch-outline"></ion-icon>
                                 </div>
                                 <h4>DevOps & CI/CD</h4>
                                 <p>
@@ -1066,7 +1079,7 @@
                         <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-puzzle-piece"></i>
+                                    <ion-icon name="bulb-outline"></ion-icon>
                                 </div>
                                 <h4>Problem-Solving & Optimization</h4>
                                 <p>
@@ -1081,7 +1094,7 @@
                         <div class="service-item padd-15" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-users"></i>
+                                    <ion-icon name="people-outline"></ion-icon>
                                 </div>
                                 <h4>Project Management</h4>
                                 <p>
@@ -1104,129 +1117,130 @@
                             <h2 id="contact-heading">Contact Me</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15" id="contact-subtitle">Do you have any questions ?</h3>
-                    <h4 class="contact-sub-title padd-15" id="contact-subtitle-text">I'M AT YOUR SERVICES</h4>
-                    <div class="row" id="contact-info-container">
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-phone">
-                            <div class="icon" id="contact-phone-icon"><i class="fab fa-whatsapp"></i></div>
-                            <h4 id="contact-phone-title">Call Me On</h4>
-                            <p id="contact-phone-value"><a href="tel:+962-78-127-7089" target="_blank" class="link" id="contact-phone-link">+962 781277089</a></p>
+                    <h3 class="contact-title padd-15">Let's Work Together</h3>
+                    <h4 class="contact-sub-title padd-15">READY TO BRING YOUR IDEAS TO LIFE</h4>
+
+                    <div class="contact-wrapper">
+                        <div style="display: flex; justify-content: center;">
+                            <div class="availability-badge">
+                                <div class="availability-dot"></div>
+                                Available for New Projects
+                            </div>
                         </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-location">
-                            <div class="icon" id="contact-location-icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4 id="contact-location-title">Location</h4>
-                            <p id="contact-location-value"><a class="link" id="contact-location-link">Amman</a></p>
+
+                        <div class="contact-grid">
+                            <!-- Phone Contact -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+                                <div class="contact-details">
+                                    <div class="contact-label">Phone</div>
+                                    <div class="contact-value">
+                                        <a href="tel:+962781277089" target="_blank" class="contact-link link">+962 781277089</a>
+                                        <button class="copy-button" onclick="event.stopPropagation(); copyToClipboard('+962781277089', this)" title="Copy phone number">
+                                            <div class="copy-icon">
+                                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email Contact -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </div>
+                                <div class="contact-details">
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">
+                                        <a href="mailto:info@rashaalsaleh.com" class="contact-link link">info@rashaalsaleh.com</a>
+                                        <button class="copy-button" onclick="event.stopPropagation(); copyToClipboard('info@rashaalsaleh.com', this)" title="Copy email address">
+                                            <div class="copy-icon">
+                                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn Contact -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </div>
+                                <div class="contact-details">
+                                    <div class="contact-label">LinkedIn</div>
+                                    <div class="contact-value">
+                                        <a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="contact-link link">Rasha Alsaleh</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- GitHub Contact -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </div>
+                                <div class="contact-details">
+                                    <div class="contact-label">GitHub</div>
+                                    <div class="contact-value">
+                                        <a href="https://github.com/rasha-2k" target="_blank" class="contact-link link">rasha-2k</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-email">
-                            <div class="icon" id="contact-email-icon"><i class="fa fa-envelope"></i></div>
-                            <h4 id="contact-email-title">Email</h4>
-                            <p id="contact-email-value"><a href="mailto:info@rashaalsaleh.com" target="_blank"
-                                    class="link" id="contact-email-link">info@rashaalsaleh.com</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                        <!-- Contact info item start -->
-                        <div class="contact-info-item padd-15" data-aos="fade-in" data-aos-delay="100" id="contact-linkedin">
-                            <div class="icon" id="contact-linkedin-icon"><i class="fab fa-linkedin"></i></div>
-                            <h4 id="contact-linkedin-title">LinkedIn</h4>
-                            <p id="contact-linkedin-value"><a href="https://www.linkedin.com/in/rasha-alsaleh/" target="_blank" class="link" id="contact-linkedin-link">Rasha
-                                    Alsaleh</a></p>
-                        </div>
-                        <!-- Contact info item end -->
-                    </div>
-                    <h3 class="contact-title padd-15" id="contact-form-title">Get In Touch</h3>
-                    <h4 class="contact-sub-title padd-15" id="contact-form-subtitle">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- Contact Form -->
-                    <div class="row">
-                        <div class="contact-form padd-15" data-aos="fade-up" id="contact-form-container">
-                            <form action= "Thank-you.html" method="POST" data-aos="fade-in" id="contact-form">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15" id="name-form-item">
-                                        <div class="form-group" id="name-form-group">
-                                            <input type="text" name="name" class="form-control input" required id="contact-name">
-                                            <label class="user-label">Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-item col-6 padd-15" id="email-form-item">
-                                        <div class="form-group" id="email-form-group">
-                                            <input type="email" name="email" class="form-control input" required id="contact-email-input">
-                                            <label class="user-label">Email</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15" id="subject-form-item">
-                                        <div class="form-group" id="subject-form-group">
-                                            <input type="text" name="subject" class="form-control input" required id="contact-subject">
-                                            <label class="user-label">Subject</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15" id="message-form-item">
-                                        <div class="form-group" id="message-form-group">
-                                            <textarea name="message" class="form-control input" required id="contact-message"></textarea>
-                                            <label class="user-label">Message</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="control-group" style="color: var(--text-black-900);" id="terms-checkbox-container">
-                                    <label class="agreeCheckbox-label" id="terms-checkbox-label">
-                                        <input type="checkbox" class="agreeCheckbox" id="agreeCheckbox" onchange="startCountdown()" required>I agree to the terms and conditions
-                                    </label>
-                                </div>
-                                <div id="countdown" style="color:var(--text-black-700); display: none; font-weight: bold;"></div> <!-- Countdown message -->
-                                <div class="row">
-                                    <div class="buttons col-12 padd-15" style="margin-top:10px" id="submit-button-container">
-                                        <button type="submit" class="btn" id="sendMessageButton" disabled><b style="color: #fff;">Send Message</b></button> <!-- Button is disabled initially -->
-                                    </div>
-                                </div>
-                            </form>
+
+                        <div class="contact-cta">
+                            <p>Choose your preferred way to connect. I typically respond within <span class="highlight">24 hours</span> and love discussing new projects!</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Contact Section End -->
-            <!-- Project Modal -->
-            <div class="modal-overlay" id="projectModal">
-                <div class="modal-container" id="modal-container">
-                    <div class="modal-header" id="modal-header">
-                        <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
-                            <source id="modalVideoSource" src="" type="video/mp4">
-                        </video>
-                        <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
-                        <button class="modal-close" id="modalClose">x</button>
-                    </div>
-                    <div class="modal-content" id="modal-content">
-                        <span class="modal-category" id="modalCategory"></span>
-                        <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link" id="modal-title-link"></a></h2>
-                        <p class="modal-description" id="modalDescription"></p>
-                        <ul class="modal-tags" id="modalTags"></ul>
-                        <div class="modal-actions" id="modal-actions">
-                            <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
-                                <i class="fa-solid fa-link"></i> View on GitHub
-                                <span class="arrow-container">
-                                    <i class="fa-solid fa-arrow-up arrowone"></i>
-                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
-                                <i class="fa-solid fa-meteor"></i> Live Demo
-                                <span class="arrow-container">
-                                    <i class="fa-solid fa-arrow-up arrowone"></i>
-                                    <i class="fa-solid fa-arrow-up arrowtwo"></i>
-                                </span>
-                            </a>
-                        </div>
+        </div>
+        </section>
+        <!-- Contact Section End -->
+        <!-- Project Modal Start -->
+        <div class="modal-overlay" id="projectModal">
+            <div class="modal-container" id="modal-container">
+                <div class="modal-header" id="modal-header">
+                    <video class="modal-media" id="modalMedia" autoplay loop playsinline style="display: none;">
+                        <source id="modalVideoSource" src="" type="video/mp4">
+                    </video>
+                    <img class="modal-media" id="modalImage" src="" alt="" style="display: none;">
+                    <button class="modal-close" id="modalClose">x</button>
+                </div>
+                <div class="modal-content" id="modal-content">
+                    <span class="modal-category" id="modalCategory"></span>
+                    <h2 class="modal-title" id="modalTitle"><a href="" target="_blank" class="link" id="modal-title-link"></a></h2>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <ul class="modal-tags" id="modalTags"></ul>
+                    <div class="modal-actions" id="modal-actions">
+                        <a href="#" class="modal-btn secondary" id="modalGithubBtn" target="_blank">
+                            <i class="fa-solid fa-link"></i> View on GitHub
+                            <span class="arrow-container">
+                                <i class="fa-solid fa-arrow-up arrowone"></i>
+                                <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="modal-btn secondary" id="modalLiveBtn" target="_blank">
+                            <i class="fa-solid fa-meteor"></i> Live Demo
+                            <span class="arrow-container">
+                                <i class="fa-solid fa-arrow-up arrowone"></i>
+                                <i class="fa-solid fa-arrow-up arrowtwo"></i>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Main Content End -->
+        <!-- Project Modal End -->
+    </div>
+    <!-- Main Content End -->
     </div>
     <!-- Main Container End -->
     <!-- Back-to-Top Button -->
@@ -1269,10 +1283,9 @@
         </div>
     </footer>
     <!-- Footer End -->
+
     <!-- JS Files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
-        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/style-switcher.js"></script>
     <script>
@@ -1287,6 +1300,40 @@
             }
         }
     </script>
+    <!-- Copy to Clipboard Script -->
+    <script>
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(function () {
+                const copyIcon = button.querySelector('.copy-icon svg');
+
+                // Change to copied state
+                button.classList.add('copied');
+                copyIcon.innerHTML = `
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                `;
+
+                if (navigator.vibrate) {
+                    navigator.vibrate(50);
+                }
+
+                setTimeout(() => {
+                    button.classList.remove('copied');
+                    copyIcon.innerHTML = `
+                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>`;
+                }, 2500);
+            }).catch(function (err) {
+                console.error('Could not copy text: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+            });
+        }
+
+    </script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -1298,34 +1345,6 @@
             delay: 50,
             anchorPlacement: 'top-bottom'
         });
-    </script>
-
-    <!-- Countdown Script -->
-    <script>
-        function startCountdown() {
-            var agreeCheckbox = document.getElementById("agreeCheckbox");
-            var countdown = document.getElementById("countdown");
-            var button = document.getElementById("sendMessageButton");
-
-            if (agreeCheckbox.checked) {
-                countdown.style.display = "block";
-                var count = 3;
-                button.disabled = true;
-                var interval = setInterval(function() {
-                    countdown.textContent = "You can submit the email after " + count + "s";
-                    count--;
-                    if (count < 0) {
-                        clearInterval(interval);
-                        countdown.textContent = "You can submit right now!";
-                        button.disabled = false; // Enable the button after countdown
-                    }
-                }, 1000);
-            } else {
-                countdown.style.display = "none";
-                countdown.textContent = "";
-                button.disabled = true; // Disable the button if unchecked
-            }
-        }
     </script>
 
 </body>
