@@ -1,19 +1,10 @@
 # Rasha Alsaleh — Portfolio Website
 
-Live site: `https://rashaalsaleh.com`
+Live site: [rashaalsaleh.com](https://rashaalsaleh.com)
 
 Professional, responsive portfolio website showcasing projects, skills, certificates and contact information.
 
 This repository contains the static site source (HTML, CSS, JS and assets). The site is optimized for clarity, performance and a clean, modern presentation.
-
-## Highlights 
-
-- Instant theme persistence: selected color theme and light/dark mode are applied on page load (no flash of unstyled content).
-- Responsive sidebar navigation with a mobile-friendly toggler for fast section access.
-- Lightweight animations: efficient background animation, typed hero text, and subtle micro-interactions that improve perceived performance.
-- Accessibility-focused: clear headings and readable typography with good contrast and keyboard-friendly navigation.
-- SEO & social sharing: meta and Open Graph tags included for better link previews and discoverability.
-- Minimal, dependency-light stack: no large frameworks required — static HTML/CSS/JS for portability.
 
 ## Tech & Tools
 
@@ -49,9 +40,6 @@ Portfolio/
 │	│   └── js/
 │	│       └── home.js
 │	└── videos/
-│		├── Game View.mp4
-│		├── PackTrack Recording.mp4
-│		└── the planetary explorer.mp4
 ├── index.html
 ├── LICENSE
 ├── README.md
