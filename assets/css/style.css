@@ -56,11 +56,12 @@ body {
     scrollbar-width: thin;
     scrollbar-color: var(--skin-color) var(--bg-black-100);
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 ::selection {
-    background-color: var(--skin-color);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--skin-color);
 }
 
 ::before,
@@ -68,19 +69,45 @@ body {
     box-sizing: border-box;
 }
 
-/* .cursor {
+.cursor {
     position: fixed;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: var(--text-black-900);
     transform: translate(-50%, -50%);
     pointer-events: none;
-    mix-blend-mode:difference;
+    mix-blend-mode: difference;
     z-index: 10001;
-    transition: transform 0.2s ease;
-}  */
+    transition: transform 0s, background 0.1s ease;
+}
 
+.light .cursor {
+    background: var(--bg-black-900);
+}
+
+.cursor.click {
+    background: var(--skin-color);
+    mix-blend-mode: normal;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+.cursor.hover {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+.cursor.hover.click {
+    transform: translate(-50%, -50%) scale(2.2);
+}
+
+.no-custom-cursor * {
+    cursor: auto !important;
+}
+
+.no-custom-cursor .cursor {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
 
 button:hover,
 .btn:hover {
@@ -96,7 +123,6 @@ textarea {
 }
 
 .link {
-    cursor: pointer;
     color: inherit;
     text-decoration: none;
 }
@@ -155,7 +181,6 @@ sup {
     background: var(--skin-color);
     transition: all 0.3s ease;
     position: relative;
-    cursor: pointer;
 }
 
 .btn i {
@@ -228,7 +253,6 @@ b {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
     z-index: 15;
     opacity: 0;
     visibility: hidden;
@@ -658,7 +682,6 @@ b {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     z-index: 12;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -899,7 +922,6 @@ h3.typing-text {
     gap: 0.5rem;
     transition: all 0.3s ease;
     border: none;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
 }
@@ -1146,7 +1168,6 @@ h3.typing-text {
     border-bottom: 1px solid var(--bg-black-50);
     transition: all 0.3s ease;
     animation: fadeIn 0.5s ease-in-out;
-    cursor: pointer;
 }
 
 .info-item:hover {
@@ -1296,7 +1317,6 @@ a:hover .arrowtwo {
     color: var(--text-black-700);
     font-weight: var(--secondary-font-weight);
     font-family: var(--secondary-font-family);
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -1516,7 +1536,6 @@ a:hover .arrowtwo {
     box-shadow: 0 0 20px rgba(var(--skin-color-rgb), 0.6);
     z-index: 10;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 
 .timeline-node:hover {
@@ -1559,7 +1578,6 @@ a:hover .arrowtwo {
 
 .timeline-header {
     padding: 25px 30px;
-    cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -1604,7 +1622,6 @@ a:hover .arrowtwo {
     position: absolute;
     top: 40px;
     right: 30px;
-    cursor: pointer;
     margin-left: 15px;
     font-size: 1.2rem;
     color: var(--skin-color);
@@ -1661,7 +1678,6 @@ a:hover .arrowtwo {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    cursor: pointer;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
@@ -1917,7 +1933,6 @@ a:hover .arrowtwo {
     text-decoration: none;
     border: 1px solid var(--bg-black-50);
     transition: background-color 0.3s ease;
-    cursor: pointer;
 }
 
 .project-tags li a:hover {
@@ -1941,7 +1956,6 @@ a:hover .arrowtwo {
     border-radius: 25px;
     font-family: var(--primary-font-family);
     font-weight: var(--secondary-font-weight);
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -2022,7 +2036,6 @@ a:hover .arrowtwo {
     border-radius: 50%;
     color: white;
     font-size: 18px;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2081,7 +2094,7 @@ a:hover .arrowtwo {
     margin-bottom: 25px;
 }
 
-.modal-tags {
+.project-tags {
     list-style: none;
     padding: 0;
     margin: 0 0 25px 0;
@@ -2089,12 +2102,12 @@ a:hover .arrowtwo {
     flex-wrap: wrap;
 }
 
-.modal-tags li {
+.project-tags li {
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.modal-tags li a {
+.project-tags li a {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 30px;
@@ -2107,10 +2120,9 @@ a:hover .arrowtwo {
     text-decoration: none;
     border: 1px solid var(--bg-black-50);
     transition: background-color 0.3s ease;
-    cursor: pointer;
 }
 
-.modal-tags li a:hover {
+.project-tags li a:hover {
     background-color: var(--skin-color);
     color: #fff;
 }
@@ -2133,7 +2145,6 @@ a:hover .arrowtwo {
     align-items: center;
     gap: 8px;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 
 .modal-btn:hover {
@@ -2523,7 +2534,6 @@ a:hover .arrowtwo {
     border-radius: 16px;
     border: 1px solid rgba(var(--skin-color-rgb), 0.08);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    cursor: pointer;
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(10px);
@@ -2560,7 +2570,7 @@ a:hover .arrowtwo {
     background: var(--border-gradient);
     border-radius: 14px;
     font-size: 25px;
-    color: white;
+    color: var(--skin-color);
     flex-shrink: 0;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     overflow: hidden;
@@ -2663,7 +2673,6 @@ a:hover .arrowtwo {
     color: var(--text-black-600);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    cursor: pointer;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     flex-shrink: 0;
     overflow: hidden;
@@ -3027,7 +3036,7 @@ a:hover .arrowtwo {
     .project .project-item,
     .service .service-item,
     .about .about-content .activities,
-    .about .about-content .certifications {
+    .about .about-content .development {
         flex: 0 0 100%;
         max-width: 100%;
     }

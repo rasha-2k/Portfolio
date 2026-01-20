@@ -1,49 +1,102 @@
 (() => {
     //! cursor functionality
     const cursor = document.querySelector('.cursor');
-    const linkElements = document.querySelectorAll('.link');
-    const aElements = document.querySelectorAll('a');
-    const socialButtons = document.querySelectorAll('.social-button');
-    const navToggleBtn = document.querySelectorAll('.nav-toggler');
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-    });
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+    
+    //if it's a touchable device, disable the custom cursor otherwise enable it :)
+    if (isTouchDevice) {
+        document.documentElement.classList.add('no-custom-cursor');
+    } else {
+        const cursorState = {
+            isHovering: false,
+            isClicking: false
+        };
 
-    const handleMouseEnter = () => {
-        cursor.style.transform = 'scale(2) translate(-25%, -25%)';
-    };
+        const CURSOR_SCALES = {
+            default: { scale: 1, translate: -50 },
+            hover: { scale: 2, translate: -25 },
+            click: { scale: 0.7, translate: -71.4 },
+            hoverClick: { scale: 1.85, translate: -27 }
+        };
 
-    const handleMouseLeave = () => {
-        cursor.style.transform = 'scale(1) translate(-50%, -50%)';
-    };
+        const cursorHoverSelectors = [
+            '.link',
+            '.social-button',
+            '.nav-toggler',
+            '.nav a',
+            '.btn',
+            'button',
+            '[role="button"]',
+            '.cta-primary',
+            '.cta-secondary',
+            '.achievements-tab-item',
+            '.skills-tab-item',
+            '.view-btn',
+            '.view-project-btn',
+            '.project-title a',
+            '#day-night-toggle',
+            '.progress-ring',
+            '#modal-title-link',
+            '.logo a',
+            '.colors span'
+        ];
 
-    const handleMouseRemove = () => {
-        cursor.style.transform = 'scale(0) translate(-50%, -50%)';
-    };
+        const disallowedClosestSelectors = ['.project-tags'];
+        const disallowedSelfSelectors = ['.logo-text'];
 
+        const applyCursorTransform = () => {
+            let config;
+            
+            if (cursorState.isHovering && cursorState.isClicking) {
+                config = CURSOR_SCALES.hoverClick;
+            } else if (cursorState.isClicking) {
+                config = CURSOR_SCALES.click;
+            } else if (cursorState.isHovering) {
+                config = CURSOR_SCALES.hover;
+            } else {
+                config = CURSOR_SCALES.default;
+            }
 
-    linkElements.forEach(link => {
-        link.addEventListener('mouseenter', handleMouseEnter);
-        link.addEventListener('mouseleave', handleMouseLeave);
-    });
+            cursor.style.transform = `scale(${config.scale}) translate(${config.translate}%, ${config.translate}%)`;
+        };
 
-    aElements.forEach(a => {
-        if (!a.classList.contains('social-button')) {
-            a.addEventListener('mouseenter', handleMouseEnter);
-            a.addEventListener('mouseleave', handleMouseLeave);
-        }
-    });
+        const isAllowedHoverTarget = (target) => {
+            if (disallowedSelfSelectors.some(sel => target.matches(sel))) return false;
+            if (disallowedClosestSelectors.some(sel => target.closest(sel))) return false;
 
-    socialButtons.forEach(button => {
-        button.addEventListener('mouseenter', handleMouseRemove);
-        button.addEventListener('mouseleave', handleMouseLeave);
-    });
+            return cursorHoverSelectors.some(sel => target.closest(sel) && !target.matches('.logo-text'));
+        };
+        const setCursorHoverState = (isHovering) => {
+            cursorState.isHovering = isHovering;
+            applyCursorTransform();
+        };
 
-    navToggleBtn.forEach(button => {
-        button.addEventListener('mouseenter', handleMouseRemove);
-        button.addEventListener('mouseleave', handleMouseLeave);
-    });
+        const setCursorClickState = (isClicking) => {
+            cursorState.isClicking = isClicking;
+            cursor.classList.toggle('click', isClicking);
+            applyCursorTransform();
+        };
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        document.addEventListener('mousedown', () => setCursorClickState(true));
+        document.addEventListener('mouseup', () => setCursorClickState(false));
+
+        document.addEventListener('mouseover', (e) => {
+            if (isAllowedHoverTarget(e.target)) {
+                setCursorHoverState(true);
+            }
+        }, true);
+
+        document.addEventListener('mouseout', (e) => {
+            if (isAllowedHoverTarget(e.target)) {
+                setCursorHoverState(false);
+            }
+        }, true);
+    }
 
     //! Typed Text Animation
     new Typed(".typing", {
@@ -236,18 +289,18 @@
 
     function createCodeElements() {
         const container = document.getElementById('codeElements');
-    if (!container) return;
+        if (!container) return;
 
-    container.innerHTML = '';
+        container.innerHTML = '';
 
-    const sections = ['home', 'about', 'projects', 'services', 'contact'];
-    const usedPositions = [];
+        const sections = ['home', 'about', 'projects', 'services', 'contact'];
+        const usedPositions = [];
 
-    const vw = window.innerWidth || document.documentElement.clientWidth;
-    let densityScale = 1;
-    if (vw < 480) densityScale = 0.35;
-    else if (vw < 768) densityScale = 0.5;
-    else if (vw < 1024) densityScale = 0.75;
+        const vw = window.innerWidth || document.documentElement.clientWidth;
+        let densityScale = 1;
+        if (vw < 480) densityScale = 0.35;
+        else if (vw < 768) densityScale = 0.5;
+        else if (vw < 1024) densityScale = 0.75;
 
         const quadrants = [
             { x: [0, 48], y: [0, 48] },     // top-left
@@ -290,11 +343,9 @@
         let position;
 
         do {
-            // Choose quadrant based on section and snippet index for better distribution
             const quadrantIndex = (sectionIndex * 2 + Math.floor(snippetIndex / 2)) % quadrants.length;
             const quadrant = quadrants[quadrantIndex];
 
-            // Add some randomness to quadrant selection (20% chance to pick random quadrant)
             const useRandomQuadrant = Math.random() < 0.01;
             const selectedQuadrant = useRandomQuadrant ?
                 quadrants[Math.floor(Math.random() * quadrants.length)] : quadrant;
@@ -311,7 +362,6 @@
                 const distance = Math.sqrt(
                     Math.pow(position.x - usedPos.x, 2) + Math.pow(position.y - usedPos.y, 2)
                 );
-                // Allow 10% chance of closer positioning
                 return distance > 8 || Math.random() < 0.1;
             });
 
@@ -353,17 +403,13 @@
         });
     }
 
-    // Initialize
     createCodeElements();
 
-    // Update code highlighting on scroll
     window.addEventListener('scroll', updateCodeHighlight);
     window.addEventListener('resize', updateCodeHighlight);
 
-    // Initial call
     updateCodeHighlight();
 
-    // Debounced rebuild on resize to respect responsive density
     let __codeResizeTimer = null;
     window.addEventListener('resize', () => {
         if (__codeResizeTimer) clearTimeout(__codeResizeTimer);
@@ -385,7 +431,6 @@
                 }
                 for (const c of contents) {
                     c.classList.remove(activeClass);
-                    // Reset AOS animations
                     const elements = c.querySelectorAll('[data-aos]');
                     elements.forEach(element => {
                         element.classList.remove('aos-animate');
@@ -396,7 +441,6 @@
                 const activeContent = document.querySelector(tab.getAttribute('data-target'));
                 activeContent.classList.add(activeClass);
 
-                // Refresh AOS animations
                 setTimeout(() => {
                     const elements = activeContent.querySelectorAll('[data-aos]');
                     elements.forEach(element => {
@@ -413,6 +457,18 @@
 
     //! Back-to-Top Button with Progress Ring
     document.addEventListener('DOMContentLoaded', () => {
+        const ageEl = document.getElementById('age-value');
+        if (ageEl) {
+            const birthDate = new Date('2005-02-05'); 
+            if (!isNaN(birthDate)) {
+                const today = new Date();
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const hasHadBirthday = (today.getMonth() > birthDate.getMonth()) ||
+                    (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+                if (!hasHadBirthday) age--;
+                ageEl.textContent = age.toString();
+            }
+        }
         const backToTop = document.getElementById("backToTop");
         const progressCircle = document.querySelector(".progress-ring-progress");
         const radius = progressCircle.r.baseVal.value;
@@ -451,6 +507,7 @@
         window.addEventListener("scroll", updateProgress);
         updateProgress();
 
+        //todo make this more dynamic
         //! Projects Section
         const projectData = {
             'packtrack': {
@@ -481,14 +538,13 @@
             }
         };
 
-        // Modal functionality
+        //! Modal functionality
         const modal = document.getElementById('projectModal');
         const modalClose = document.getElementById('modalClose');
         const modalVideo = document.getElementById('modalMedia');
         const modalVideoSource = document.getElementById('modalVideoSource');
         const modalImage = document.getElementById('modalImage');
 
-        // Open modal
         const viewProjectBtns = document.querySelectorAll('.view-project-btn');
         for (const viewBtn of viewProjectBtns) {
             viewBtn.addEventListener('click', (e) => {
@@ -664,24 +720,4 @@
         }
     });
 
-    //! Swipe Gesture Functionality
-    // let touchStartX = 0;
-    // let touchEndX = 0;
-
-    // function handleGesture() {
-    //     if (touchEndX < touchStartX - 50 && aside.classList.contains('open')) {
-    //         asideSectionTogglerBtn(); // Swipe left to close
-    //     } else if (touchEndX > touchStartX + 50 && !aside.classList.contains('open')) {
-    //         asideSectionTogglerBtn(); // Swipe right to open
-    //     }
-    // }
-
-    // document.addEventListener('touchstart', (e) => {
-    //     touchStartX = e.changedTouches[0].screenX;
-    // });
-
-    // document.addEventListener('touchend', (e) => {
-    //     touchEndX = e.changedTouches[0].screenX;
-    //     handleGesture();
-    // });
 })();
