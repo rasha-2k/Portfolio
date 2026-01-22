@@ -4,13 +4,6 @@ Live site: [rashaalsaleh.com](https://rashaalsaleh.com)
 
 Professional, responsive portfolio website showcasing projects, skills, certificates and contact information.
 
-## Tech & Tools
-
-- HTML5, CSS3, vanilla JavaScript
-- AOS for entry animations
-- Typed.js for hero typed text
-- LocalStorage for theme persistence
-
 ## Folder structure 
 
 ```bash
@@ -26,13 +19,16 @@ Portfolio/
 │   │   └── style.css
 │   ├── docs/
 │   ├── images/
+│   │   ├── projects/
 │   │   ├── technologies/
 │   │   ├── logo.png
 │   │   └── pfp.jpg
 │   ├── js/
+│   │   ├── data.js
 │   │   ├── script.js
 │   │   └── style-switcher.js
 │   └── videos/
+│       └── projects/
 └── index.html
 ```
 
