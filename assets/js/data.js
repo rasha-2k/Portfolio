@@ -1,5 +1,5 @@
 const PORTFOLIO_CONFIG = {
-    // Personal Information
+    /*! ========== PERSONAL INFORMATION ========== */
     personal: {
         name: "Rasha Alsaleh",
         title: "Software Engineer",
@@ -34,7 +34,7 @@ const PORTFOLIO_CONFIG = {
         }
     },
 
-    // Skills organized by category
+    /*! ========== SKILLS ========== */
     skills: {
         languages: [
             { name: "PHP", icon: "assets/images/technologies/PHP.svg" },
@@ -72,7 +72,7 @@ const PORTFOLIO_CONFIG = {
         ]
     },
 
-    // Projects
+    /*! ========== PROJECTS ========== */
     projects: [
         {
             id: "packtrack",
@@ -124,7 +124,7 @@ const PORTFOLIO_CONFIG = {
         }
     ],
 
-    // Services
+    /*! ========== SERVICES ========== */
     services: [
         {
             icon: "bug-outline",
@@ -158,7 +158,7 @@ const PORTFOLIO_CONFIG = {
         }
     ],
 
-    // Achievements
+    /*! ========== ACHIEVEMENTS ========== */
     achievements: {
         development: [
             {
@@ -257,7 +257,7 @@ const PORTFOLIO_CONFIG = {
         ]
     },
 
-    // Background code snippets for each section
+    /*! ========== BACKGROUND CODE SNIPPETS ========== */
     codeSnippets: {
         home: [
             'const dev = "Rasha Alsaleh";',
@@ -282,7 +282,7 @@ const PORTFOLIO_CONFIG = {
         ],
         projects: [
             'git clone repo.git',
-            'const projects = ["PackTrack", "DevTasks", "Portfolio"];',
+            'const projects = ["PackTrack", "Arduino-Smart-Alert-System", "DevTask"];',
             'function buildProject(name) { return `${name} ready`; }',
             'docker run project-container',
             'git push origin main',

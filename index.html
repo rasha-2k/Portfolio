@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rasha Alsaleh's portfolio - Software Engineer">
+    <meta name="description" content="Rasha Alsaleh - Software Engineer">
     <meta name="author" content="Rasha Alsaleh">
-    <meta name="keywords" content="Rasha Alsaleh, Software Engineer, Quality Control, Quality Assurance, QC, QA, manual Testing, Automation Testing, Full Stack Developer, Backend Developer, DevOps, Amman, Jordan">
+    <meta name="keywords" content="Software Engineering, QC, QA, Testing, Full Stack, Backend Development, DevOps, Amman, Jordan">
     <meta property="og:image" content="./assets/images/logo.png">
     <meta property="og:title" content="Rasha's Portfolio">
 
@@ -66,8 +66,6 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Slabo+27px&display=swap" rel="stylesheet">
 
@@ -333,10 +331,10 @@
                     </div>
                     <!-- Projects Filter -->
                     <div class="project-filter" data-aos="fade-up">
-                        <span class="filter-btn active" data-filter="all">All Projects</span>
-                        <span class="filter-btn" data-filter="web">Web Apps</span>
-                        <span class="filter-btn" data-filter="iot">IoT</span>
-                        <span class="filter-btn" data-filter="game">Games</span>
+                        <span class="project-filter-tab active" data-filter="all">All Projects</span>
+                        <span class="project-filter-tab" data-filter="web">Web Apps</span>
+                        <span class="project-filter-tab" data-filter="iot">IoT</span>
+                        <span class="project-filter-tab" data-filter="game">Games</span>
                     </div>
                     <!-- Projects Grid -->
                     <div class="project-grid" data-aos="fade-in" id="project-grid">
@@ -389,7 +387,7 @@
                                 <div class="contact-details">
                                     <div class="contact-label">
                                         <span>Phone</span>
-                                        <button class="copy-button" onclick="event.stopPropagation(); copyToClipboard(this.previousElementSibling.textContent, this)" title="Copy phone number">
+                                        <button class="copy-button" onclick="event.stopPropagation(); copyToClipboard(this)" title="Copy phone number">
                                             <div class="copy-icon">
                                                 <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
@@ -411,7 +409,7 @@
                                 <div class="contact-details">
                                     <div class="contact-label">
                                         <span>Email</span>
-                                        <button class="copy-button" onclick="event.stopPropagation(); copyToClipboard(this.previousElementSibling.textContent, this)" title="Copy email address">
+                                        <button class="copy-button" onclick="event.stopPropagation(); copyToClipboard(this)" title="Copy email address">
                                             <div class="copy-icon">
                                                 <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
@@ -563,6 +561,7 @@
     <!-- Footer End -->
 
     <!-- JS Files -->
+    <script src="assets/js/skeleton-loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/data.js"></script>
     <script src="assets/js/script.js"></script>
@@ -575,13 +574,25 @@
             }
 
             const timelineItem = element.closest('.timeline-item');
-            if (timelineItem) {
-                timelineItem.classList.toggle('expanded');
-            }
+            if (timelineItem) timelineItem.classList.toggle('expanded');
         }
 
-        function copyToClipboard(text, button) {
-            navigator.clipboard.writeText(text).then(function () {
+        function copyToClipboard(button) {
+            const contactItem = button.closest('.contact-item');
+            const contactLink = contactItem?.querySelector('.contact-link');
+
+            let valueToCopy = contactLink?.textContent?.trim() || '';
+
+            if (!valueToCopy && contactLink?.getAttribute('href')) {
+                valueToCopy = contactLink.getAttribute('href').replace(/^mailto:|^tel:/, '');
+            }
+
+            if (!valueToCopy) {
+                console.warn('No contact value found to copy');
+                return;
+            }
+
+            navigator.clipboard.writeText(valueToCopy).then(function () {
                 const copyIcon = button.querySelector('.copy-icon svg');
 
                 button.classList.add('copied');
@@ -601,7 +612,7 @@
             }).catch(function (err) {
                 console.error('Could not copy text: ', err);
                 const textArea = document.createElement('textarea');
-                textArea.value = text;
+                textArea.value = valueToCopy;
                 document.body.appendChild(textArea);
                 textArea.select();
                 document.execCommand('copy');
